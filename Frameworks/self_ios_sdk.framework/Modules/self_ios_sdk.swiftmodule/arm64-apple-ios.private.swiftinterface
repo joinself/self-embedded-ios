@@ -191,6 +191,12 @@ public struct DocumentType {
 public struct DocumentDataType {
   public static let DOCUMENT_IMAGE_FRONT: Swift.String
   public static let DOCUMENT_IMAGE_BACK: Swift.String
+  public static let SELFIE_IMAGE_ONBOARDING: Swift.String
+  public static let SELFIE_IMAGE: Swift.String
+  public static let DG1: Swift.String
+  public static let DG2: Swift.String
+  public static let SOD: Swift.String
+  public static let MRZ: Swift.String
 }
 @_hasMissingDesignatedInitializers public class Document : self_ios_sdk.DataObject {
   public class Builder {

@@ -5641,6 +5641,288 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "SELFIE_IMAGE_ONBOARDING",
+            "printedName": "SELFIE_IMAGE_ONBOARDING",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk16DocumentDataTypeV23SELFIE_IMAGE_ONBOARDINGSSvpZ",
+            "mangledName": "$s12self_ios_sdk16DocumentDataTypeV23SELFIE_IMAGE_ONBOARDINGSSvpZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk16DocumentDataTypeV23SELFIE_IMAGE_ONBOARDINGSSvgZ",
+                "mangledName": "$s12self_ios_sdk16DocumentDataTypeV23SELFIE_IMAGE_ONBOARDINGSSvgZ",
+                "moduleName": "self_ios_sdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "SELFIE_IMAGE",
+            "printedName": "SELFIE_IMAGE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk16DocumentDataTypeV12SELFIE_IMAGESSvpZ",
+            "mangledName": "$s12self_ios_sdk16DocumentDataTypeV12SELFIE_IMAGESSvpZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk16DocumentDataTypeV12SELFIE_IMAGESSvgZ",
+                "mangledName": "$s12self_ios_sdk16DocumentDataTypeV12SELFIE_IMAGESSvgZ",
+                "moduleName": "self_ios_sdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DG1",
+            "printedName": "DG1",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk16DocumentDataTypeV3DG1SSvpZ",
+            "mangledName": "$s12self_ios_sdk16DocumentDataTypeV3DG1SSvpZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk16DocumentDataTypeV3DG1SSvgZ",
+                "mangledName": "$s12self_ios_sdk16DocumentDataTypeV3DG1SSvgZ",
+                "moduleName": "self_ios_sdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DG2",
+            "printedName": "DG2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk16DocumentDataTypeV3DG2SSvpZ",
+            "mangledName": "$s12self_ios_sdk16DocumentDataTypeV3DG2SSvpZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk16DocumentDataTypeV3DG2SSvgZ",
+                "mangledName": "$s12self_ios_sdk16DocumentDataTypeV3DG2SSvgZ",
+                "moduleName": "self_ios_sdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "SOD",
+            "printedName": "SOD",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk16DocumentDataTypeV3SODSSvpZ",
+            "mangledName": "$s12self_ios_sdk16DocumentDataTypeV3SODSSvpZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk16DocumentDataTypeV3SODSSvgZ",
+                "mangledName": "$s12self_ios_sdk16DocumentDataTypeV3SODSSvgZ",
+                "moduleName": "self_ios_sdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "MRZ",
+            "printedName": "MRZ",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk16DocumentDataTypeV3MRZSSvpZ",
+            "mangledName": "$s12self_ios_sdk16DocumentDataTypeV3MRZSSvpZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk16DocumentDataTypeV3MRZSSvgZ",
+                "mangledName": "$s12self_ios_sdk16DocumentDataTypeV3MRZSSvgZ",
+                "moduleName": "self_ios_sdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -12869,6 +13151,48 @@
       "offset": 1519,
       "length": 21,
       "value": "\"document_image_back\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1589,
+      "length": 25,
+      "value": "\"selfie_image_onboarding\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1652,
+      "length": 14,
+      "value": "\"selfie_image\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1695,
+      "length": 5,
+      "value": "\"dg1\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1729,
+      "length": 5,
+      "value": "\"dg2\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1763,
+      "length": 5,
+      "value": "\"sod\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1797,
+      "length": 5,
+      "value": "\"mrz\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",

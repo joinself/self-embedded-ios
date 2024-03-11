@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GroupSessionWrapper.h</key>
 		<data>
-		/kSqC2D+ePQpI+rzRIvhi2QZ5O8=
+		l66XhXTIR8qTq29KWDP0MNVavX8=
 		</data>
 		<key>Headers/OlmAccountWrapper.h</key>
 		<data>
@@ -14,11 +14,7 @@
 		</data>
 		<key>Headers/OlmSessionWrapper.h</key>
 		<data>
-		g51xSPJJJ96uQAit8be23MuTDaw=
-		</data>
-		<key>Headers/OmemoUtils.h</key>
-		<data>
-		MDGf3bV02bs/n5ZE8U2zVHTdLIo=
+		5cVNROJLo9YMJBUdL8yKutCapqw=
 		</data>
 		<key>Headers/OmemoWrapper.h</key>
 		<data>
@@ -26,15 +22,15 @@
 		</data>
 		<key>Headers/libomemo.h</key>
 		<data>
-		eTF5RVWc+tglV0N+nScVZytbLu4=
+		26eY9Yu+o7Bib4K+VxbCirbjaQI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mUldhzC9Ze8JWSk40v1OSd/TGH8=
+		zgnzrPBuHVeuw7lanNz8tJDBWVo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		DWQamspBsU7PIwRsaANtA8NHXJ8=
+		w6wsL7wJU+InLK33XruuQznEow0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t4/hHNYDlQYup2r+x/YRkBc76cx1HP/a07XHCCfCRnw=
+			ET8BsCTPQeuU6TgPcldZvfr77MAQgYBOX6ZDXKZl4k8=
 			</data>
 		</dict>
 		<key>Headers/OlmAccountWrapper.h</key>
@@ -57,14 +53,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			49alGias6wQ7BQTPfYs4jbsCsmSEWBbDNpyFpOepO6o=
-			</data>
-		</dict>
-		<key>Headers/OmemoUtils.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			igAbG0RRatT/N4SWkhd0cnF6+lN2ryMFOqichvSvg8k=
+			wA+CUStnjfjFgHAKRwFqSZvq20f889PLSCkjdayXcsE=
 			</data>
 		</dict>
 		<key>Headers/OmemoWrapper.h</key>
@@ -78,14 +67,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3YS9w0L2gw0a5yGikV68VUYAGfvS4WJrHdxrmffBRqk=
+			zxudOZg8z3E8WchdXW12il9jsZReQ/O0nKSVc+krKkE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4KtChWjkIUHRsrzWHU2w+CAi+WE1MMC96vGDz14bSpU=
+			0xF9ZHm+GXIdLUdaxwnqi5wNkEtRHPSbe9jZTpeSbKo=
 			</data>
 		</dict>
 	</dict>

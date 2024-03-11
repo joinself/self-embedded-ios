@@ -1,8 +1,0 @@
-depends = Foundation
-language = Objective-C
-
-package = DemoLib
-modules = DemoLib
-
-compilerOpts = -framework DemoLib -fmodules
-linkerOpts = -framework DemoLib

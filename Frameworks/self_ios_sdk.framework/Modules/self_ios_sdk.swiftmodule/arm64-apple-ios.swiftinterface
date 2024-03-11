@@ -1,16 +1,18 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name self_ios_sdk
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name self_ios_sdk
 import AVFoundation
+import CoreLocation
 import CoreVideo
 import CryptoKit
 import DeviceCheck
 import Foundation
 import MLImage
 import MLKit
+import SSSSwift
 import Swift
 import UIKit
+import ZIPFoundation
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -119,6 +121,10 @@ extension Foundation.Date {
   }
   public func toRFC3339String() -> Swift.String
 }
+extension UIKit.UIImage {
+  public func imageRotatedByDegrees(degrees: CoreFoundation.CGFloat) -> UIKit.UIImage
+  public func fixedOrientation() -> UIKit.UIImage
+}
 @objc @_inheritsConvenienceInitializers public class LivenessCheck : ObjectiveC.NSObject {
   public enum Challenge : Swift.String {
     case None, Done, Smile, Blink, TurnLeft, TurnRight
@@ -146,7 +152,7 @@ extension Foundation.Date {
   }
   public var onStatusUpdated: ((self_ios_sdk.LivenessCheck.Status) -> Swift.Void)?
   public var onChallengeChanged: ((self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
-  public var onResult: ((self_ios_sdk.Attestation?) -> Swift.Void)?
+  public var onResult: ((Foundation.Data, self_ios_sdk.Attestation?) -> Swift.Void)?
   @objc override dynamic public init()
   public func initialize(account: self_ios_sdk.Account, cameraView: UIKit.UIView)
   public func start()
@@ -333,7 +339,7 @@ public struct ez {
   public func name() -> Swift.String
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class Account {
+@objc @_hasMissingDesignatedInitializers public class Account : ObjectiveC.NSObject {
   public class Builder {
     public init()
     public func withEnvironment(_ environment: self_ios_sdk.Environment) -> self_ios_sdk.Account.Builder
@@ -345,10 +351,13 @@ public struct ez {
   public func setOnRequestListener(_ onRequest: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)
   #if compiler(>=5.3) && $AsyncAwait
-  public func register(attestation: self_ios_sdk.Attestation) async throws -> Swift.String?
+  public func register(selfieImage: Foundation.Data, attestation: self_ios_sdk.Attestation) async throws -> Swift.String?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func register(selfId: Swift.String, selfieBase64: Swift.String) async -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func verify(selfieImage: Foundation.Data) async throws -> [self_ios_sdk.Attestation]
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async -> Swift.Bool
@@ -374,9 +383,23 @@ public struct ez {
   public func download(dataLink: self_ios_sdk.DataObject.Link) async throws -> self_ios_sdk.DataObject
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  public func backup() async -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func close() async throws
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func location() async throws -> [self_ios_sdk.Attestation]
+  #endif
   @objc deinit
+}
+extension self_ios_sdk.Account : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
 }
 public protocol Message {
   func id() -> Swift.String

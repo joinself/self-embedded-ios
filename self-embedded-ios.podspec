@@ -120,6 +120,7 @@ Pod::Spec.new do |spec|
 
   spec.ios.vendored_frameworks = 'Frameworks/self_ios_sdk.framework', 'Frameworks/self_mobile_kmp.framework'
   spec.dependency 'GoogleMLKit/FaceDetection'
+  spec.dependency 'ZIPFoundation'
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 

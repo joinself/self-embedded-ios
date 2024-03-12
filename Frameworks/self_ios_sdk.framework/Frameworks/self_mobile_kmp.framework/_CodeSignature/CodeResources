@@ -4,6 +4,22 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/DemoLib.def</key>
+		<data>
+		4jgTzTwxGH40u18vjn6R7rdvJlc=
+		</data>
+		<key>Frameworks/DemoLib.framework/DemoLib</key>
+		<data>
+		hXAvcWFzYNkDPFSRvV3UHOEZQb0=
+		</data>
+		<key>Frameworks/DemoLib.framework/Info.plist</key>
+		<data>
+		maiXfRqxqE5e/1yHWE+9J04HzxU=
+		</data>
+		<key>Frameworks/DemoLib.framework/_CodeSignature/CodeResources</key>
+		<data>
+		fkevljrKmE1QwnVOLsTrYB4J0xs=
+		</data>
 		<key>Frameworks/libomemo.def</key>
 		<data>
 		EbKuoc1OMkkI1265Ruvg43pDs5Q=
@@ -27,6 +43,34 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/DemoLib.def</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6D9rsmvl+kyr4oG+27t3lEIPk+C0JxdfTXHEM+peiqU=
+			</data>
+		</dict>
+		<key>Frameworks/DemoLib.framework/DemoLib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8oyotpQjjssQuP0hNOZzmmKhCePa362v6VlWtGuB50Y=
+			</data>
+		</dict>
+		<key>Frameworks/DemoLib.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZmeJjHLPjpHxw2LUrljB+Az9jitXozV/rMgCSBd7jxY=
+			</data>
+		</dict>
+		<key>Frameworks/DemoLib.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H74wk7iJuz73VuzoXxIrab/sIjV8UxTWYjQzv0Qu+fw=
+			</data>
+		</dict>
 		<key>Frameworks/libomemo.def</key>
 		<dict>
 			<key>hash2</key>

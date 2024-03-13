@@ -4,22 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/self_mobile_kmp.framework/Frameworks/DemoLib.def</key>
-		<data>
-		4jgTzTwxGH40u18vjn6R7rdvJlc=
-		</data>
-		<key>Frameworks/self_mobile_kmp.framework/Frameworks/DemoLib.framework/DemoLib</key>
-		<data>
-		hXAvcWFzYNkDPFSRvV3UHOEZQb0=
-		</data>
-		<key>Frameworks/self_mobile_kmp.framework/Frameworks/DemoLib.framework/Info.plist</key>
-		<data>
-		maiXfRqxqE5e/1yHWE+9J04HzxU=
-		</data>
-		<key>Frameworks/self_mobile_kmp.framework/Frameworks/DemoLib.framework/_CodeSignature/CodeResources</key>
-		<data>
-		fkevljrKmE1QwnVOLsTrYB4J0xs=
-		</data>
 		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.def</key>
 		<data>
 		EbKuoc1OMkkI1265Ruvg43pDs5Q=
@@ -42,11 +26,11 @@
 		</data>
 		<key>Frameworks/self_mobile_kmp.framework/_CodeSignature/CodeResources</key>
 		<data>
-		+38aT4LCcbfQGRZYQHK0tBDJ+RY=
+		NT2AvyIs8Rj9S3/XDVwTivBKqko=
 		</data>
 		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
 		<data>
-		lXmcNRrNaktId53KQKFIW7Gwa7c=
+		iL0qKtXTDGOutO4Ygzgrd+UlSDg=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<data>
@@ -62,7 +46,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		14srajh9BXmjvipOE+kppb6A6Y0=
+		2+KNab+veGuE8JYFZF6coUYlOj8=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -110,67 +94,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ISTN/Dmo19tUEcDwTS5ObFtK3/w=
+		kWsCI11ezzNdxL7RGkTWCQJBXfo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		oiXxM7HxeqeWcenJ1lw9uQ1LeuQ=
 		</data>
-		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		lm0NxVA75YZPn0HbBxHfIzviAC0=
-		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kWhUy2D9nZ2YxCgt/Q7iZlOiyX8=
+		O62VVmbqEBBq3fFnN1vdxO7cWA0=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		p7ibTTKQo9UQa32KPkU89JwioPM=
+		nNSmAyXCyUa2t8HK+OZ/3gbhM2s=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ujG/0e6wZ+VydEsGFGh8jxGtH7s=
+		ZTXZv6TaTNAIXTbJEyy2pxxf4ME=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		p7ibTTKQo9UQa32KPkU89JwioPM=
+		nNSmAyXCyUa2t8HK+OZ/3gbhM2s=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		TvZ7UH6oSJiozpYRfa+h6Ej/7Ac=
+		qViTMMb8LpE52pD21wueZYTZRQw=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/self_mobile_kmp.framework/Frameworks/DemoLib.def</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6D9rsmvl+kyr4oG+27t3lEIPk+C0JxdfTXHEM+peiqU=
-			</data>
-		</dict>
-		<key>Frameworks/self_mobile_kmp.framework/Frameworks/DemoLib.framework/DemoLib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8oyotpQjjssQuP0hNOZzmmKhCePa362v6VlWtGuB50Y=
-			</data>
-		</dict>
-		<key>Frameworks/self_mobile_kmp.framework/Frameworks/DemoLib.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZmeJjHLPjpHxw2LUrljB+Az9jitXozV/rMgCSBd7jxY=
-			</data>
-		</dict>
-		<key>Frameworks/self_mobile_kmp.framework/Frameworks/DemoLib.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			H74wk7iJuz73VuzoXxIrab/sIjV8UxTWYjQzv0Qu+fw=
-			</data>
-		</dict>
 		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.def</key>
 		<dict>
 			<key>hash2</key>
@@ -210,14 +162,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0XC0z9h02XylJTT3TF21pCuVfcVH53R4W57hiXQZ9kQ=
+			IJlU5grZIN9ua8mKHe7ZzkoTz8vkRxil6rIDMRYUwdI=
 			</data>
 		</dict>
 		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m6Hbytfn5yWmvi4Dojsa77huoV4lVACPZfbKHU05eqw=
+			ig1uwo/Hb02Kk3P3WOS1xWppwnO6m7rprc5dIGndvpc=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
@@ -245,7 +197,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zShzuNHVUqmHcthUWbsIqaV6ojKnt/wPSUdTA99vfmg=
+			ggTsQEZwy828BkouPJzVe9cIl32ULM8++h60mRhZlCE=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -332,46 +284,39 @@
 			vXlPCyr24dM2T7GHBv1ixPiElAZREoA+ks9bnyAv9BI=
 			</data>
 		</dict>
-		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uaHYb++l7H2Lpql92ydxIkcywEoXYDNB3aJ59UDgvgs=
-			</data>
-		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HPrOz53Ivo+bNIcbhfOCbv1AHdsRSsrsLm7Eo3Bgwl4=
+			tidEl+LoDjt9OdrIpzyXo0cwcgPHax7EIjse0spr/kI=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			03JUt36O8iarQtAIcbCI3sh0FpHPKAgsUNDlxiXh8N8=
+			yjwqnDFljT1z99GsiK+KTqL3ixhbMhn9NkgoD+keois=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vTCsSm3dnGVceroAhskINTD3HVw5pISmzdpKNS8OWXY=
+			3pzFFgHb9gVKE6YamdzdSWfyoYmVsxFeeZ0IyEmB7AI=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			03JUt36O8iarQtAIcbCI3sh0FpHPKAgsUNDlxiXh8N8=
+			yjwqnDFljT1z99GsiK+KTqL3ixhbMhn9NkgoD+keois=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YHfpb0Rs53KCosOH+YBYWNSs4augAaBQsaktlK6dt80=
+			IZ0pAGVkhxzjpM1G22pyQjGHAMujLscBOEDy4OJH+1k=
 			</data>
 		</dict>
 	</dict>

@@ -1,0 +1,8 @@
+depends = Foundation
+language = Objective-C
+
+package = libomemo
+modules = libomemo
+
+compilerOpts = -framework libomemo -fmodules
+linkerOpts = -framework libomemo

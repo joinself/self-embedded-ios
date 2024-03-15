@@ -4,6 +4,50 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/ZIPFoundation.framework/Info.plist</key>
+		<data>
+		mwLA0jschC9DYPxJZFVBhgj9P8g=
+		</data>
+		<key>Frameworks/ZIPFoundation.framework/PrivacyInfo.xcprivacy</key>
+		<data>
+		oq5maRl5GwGv66WP/ur+TmRsCks=
+		</data>
+		<key>Frameworks/ZIPFoundation.framework/ZIPFoundation</key>
+		<data>
+		LIWrOcIqeTH7JHNM0pj6g2Z/ndc=
+		</data>
+		<key>Frameworks/ZIPFoundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		Kwxbz0TDHgwnnAdJ4jjMyyoa4hk=
+		</data>
+		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.def</key>
+		<data>
+		EbKuoc1OMkkI1265Ruvg43pDs5Q=
+		</data>
+		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.framework/Info.plist</key>
+		<data>
+		zgnzrPBuHVeuw7lanNz8tJDBWVo=
+		</data>
+		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.framework/_CodeSignature/CodeResources</key>
+		<data>
+		KoELbjfSzRCuL+d5ZjbPANgOgis=
+		</data>
+		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.framework/libomemo</key>
+		<data>
+		lJTM0+v82BcfI0Ea2BK7fBwAX0k=
+		</data>
+		<key>Frameworks/self_mobile_kmp.framework/Info.plist</key>
+		<data>
+		vPwPz6KTXE0E32Pojutf0Lz1kho=
+		</data>
+		<key>Frameworks/self_mobile_kmp.framework/_CodeSignature/CodeResources</key>
+		<data>
+		NT2AvyIs8Rj9S3/XDVwTivBKqko=
+		</data>
+		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
+		<data>
+		tXCcdmbDwgXtaJ4TM4fE3Zbs9M4=
+		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<data>
 		96Uw5p4tLIiDbN11Du0p0c5xqE8=
@@ -94,11 +138,88 @@
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		r43RmjHHk4aLqZP+X681FoQ1TF8=
+		mqPqQyF9oFxhWAAGIXpU8wWXSrQ=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/ZIPFoundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B99LhcjGw5MO7vNurqrMOMhVAZZD5Mf/iJJS9/Ha4KI=
+			</data>
+		</dict>
+		<key>Frameworks/ZIPFoundation.framework/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vs/VTKOQBUB8CGYhtaqUfct3XpOmZiF1SdApRCyJdl8=
+			</data>
+		</dict>
+		<key>Frameworks/ZIPFoundation.framework/ZIPFoundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SvawWk1s+Krox0cWU5XVUBmeLiGDkAGjqOAws9mZaQs=
+			</data>
+		</dict>
+		<key>Frameworks/ZIPFoundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zhD++evSvF1ohMjHkRep0Jz44Tou7Zex/QWuW3L5ON8=
+			</data>
+		</dict>
+		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.def</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GnWwZdj3Z9f07w9zB8Ir1pc2558T7QskQ4WX+qGPSHk=
+			</data>
+		</dict>
+		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VWlYrBxdl/iclWiCaOhtCMbQlTb5vyz3XQQGTA/RdZk=
+			</data>
+		</dict>
+		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kWtgfLW9ifI2Fp0FgsrJPCjYIOG8qhT/ft3aTgzRub4=
+			</data>
+		</dict>
+		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.framework/libomemo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			09abBpdzy8PKGgdkyXsPOHE2y4jbGsITfeofpEikPNc=
+			</data>
+		</dict>
+		<key>Frameworks/self_mobile_kmp.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aCZs5xEGIpwsdr00JAk11nLwRF/MIwrV9Nb8ntvcX/E=
+			</data>
+		</dict>
+		<key>Frameworks/self_mobile_kmp.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IJlU5grZIN9ua8mKHe7ZzkoTz8vkRxil6rIDMRYUwdI=
+			</data>
+		</dict>
+		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2a+adWp/SqNcgi7yIAlfigQiTy254m5TA88tQ4tKvak=
+			</data>
+		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<dict>
 			<key>hash2</key>
@@ -250,7 +371,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SHtjvqq06HuSLa4W8jt3F9RO8z6FUTUn/ajTZ1YU9xM=
+			kqioMwRgPPt3spjYUqSs6dM46HLK8TtyQreWAnNpCjY=
 			</data>
 		</dict>
 	</dict>

@@ -1,0 +1,6 @@
+framework module libomemo {
+  umbrella header "libomemo.h"
+  export *
+
+  module * { export * }
+}

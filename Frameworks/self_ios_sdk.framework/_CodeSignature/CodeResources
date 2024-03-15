@@ -4,22 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/ZIPFoundation.framework/Info.plist</key>
-		<data>
-		mwLA0jschC9DYPxJZFVBhgj9P8g=
-		</data>
-		<key>Frameworks/ZIPFoundation.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		oq5maRl5GwGv66WP/ur+TmRsCks=
-		</data>
-		<key>Frameworks/ZIPFoundation.framework/ZIPFoundation</key>
-		<data>
-		LIWrOcIqeTH7JHNM0pj6g2Z/ndc=
-		</data>
-		<key>Frameworks/ZIPFoundation.framework/_CodeSignature/CodeResources</key>
-		<data>
-		Kwxbz0TDHgwnnAdJ4jjMyyoa4hk=
-		</data>
 		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.def</key>
 		<data>
 		EbKuoc1OMkkI1265Ruvg43pDs5Q=
@@ -46,7 +30,7 @@
 		</data>
 		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
 		<data>
-		tXCcdmbDwgXtaJ4TM4fE3Zbs9M4=
+		xbOpzw4aR1a1aMr0hUgJZv5we0A=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<data>
@@ -138,39 +122,11 @@
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		mqPqQyF9oFxhWAAGIXpU8wWXSrQ=
+		TvZ7UH6oSJiozpYRfa+h6Ej/7Ac=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/ZIPFoundation.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B99LhcjGw5MO7vNurqrMOMhVAZZD5Mf/iJJS9/Ha4KI=
-			</data>
-		</dict>
-		<key>Frameworks/ZIPFoundation.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Vs/VTKOQBUB8CGYhtaqUfct3XpOmZiF1SdApRCyJdl8=
-			</data>
-		</dict>
-		<key>Frameworks/ZIPFoundation.framework/ZIPFoundation</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SvawWk1s+Krox0cWU5XVUBmeLiGDkAGjqOAws9mZaQs=
-			</data>
-		</dict>
-		<key>Frameworks/ZIPFoundation.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zhD++evSvF1ohMjHkRep0Jz44Tou7Zex/QWuW3L5ON8=
-			</data>
-		</dict>
 		<key>Frameworks/self_mobile_kmp.framework/Frameworks/libomemo.def</key>
 		<dict>
 			<key>hash2</key>
@@ -217,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2a+adWp/SqNcgi7yIAlfigQiTy254m5TA88tQ4tKvak=
+			RkuDFKDW0bLLL/vpy3NjaA49w/eDE1MlzDwBpAEG27Q=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
@@ -371,7 +327,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kqioMwRgPPt3spjYUqSs6dM46HLK8TtyQreWAnNpCjY=
+			YHfpb0Rs53KCosOH+YBYWNSs4augAaBQsaktlK6dt80=
 			</data>
 		</dict>
 	</dict>

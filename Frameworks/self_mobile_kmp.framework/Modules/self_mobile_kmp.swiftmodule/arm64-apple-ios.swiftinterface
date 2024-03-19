@@ -433,6 +433,10 @@ extension self_mobile_kmp.SelfInteractor {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPublicKeyByRecipient(recipient: Swift.String) async throws -> self_mobile_kmp.KotlinByteArray?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func recoverIdentity(selfId: Swift.String, activeRecoveryKeyPair: self_mobile_kmp.Multiplatform_crypto_libsodium_bindingsSignatureKeyPair) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait

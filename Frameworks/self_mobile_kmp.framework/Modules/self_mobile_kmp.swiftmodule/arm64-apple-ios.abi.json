@@ -38056,6 +38056,50 @@
           },
           {
             "kind": "Function",
+            "name": "getPublicKeyByRecipient",
+            "printedName": "getPublicKeyByRecipient(recipient:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "self_mobile_kmp.KotlinByteArray?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinByteArray",
+                    "printedName": "self_mobile_kmp.KotlinByteArray",
+                    "usr": "c:objc(cs)Self_mobile_kmpKotlinByteArray"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So015Self_mobile_kmpA10InteractorC05self_b1_C0E23getPublicKeyByRecipient9recipientSo0a1_b1_C15KotlinByteArrayCSgSS_tYaKF",
+            "mangledName": "$sSo015Self_mobile_kmpA10InteractorC05self_b1_C0E23getPublicKeyByRecipient9recipientSo0a1_b1_C15KotlinByteArrayCSgSS_tYaKF",
+            "moduleName": "self_mobile_kmp",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "recoverIdentity",
             "printedName": "recoverIdentity(selfId:activeRecoveryKeyPair:)",
             "children": [

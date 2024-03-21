@@ -1,0 +1,1923 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -Onone -module-name self_mobile_kmp
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import self_mobile_kmp
+extension self_mobile_kmp.Skie.Okio.BufferedSource {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case buffer(self_mobile_kmp.OkioBuffer)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.Okio.BufferedSource.__Sealed, b: self_mobile_kmp.Skie.Okio.BufferedSource.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.Okio.BufferedSource.__Sealed where __Sealed : self_mobile_kmp.OkioBufferedSource
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.Okio.BufferedSource.__Sealed? where __Sealed : self_mobile_kmp.OkioBufferedSource
+extension self_mobile_kmp.Skie.Okio.BufferedSink {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case buffer(self_mobile_kmp.OkioBuffer)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.Okio.BufferedSink.__Sealed, b: self_mobile_kmp.Skie.Okio.BufferedSink.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.Okio.BufferedSink.__Sealed where __Sealed : self_mobile_kmp.OkioBufferedSink
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.Okio.BufferedSink.__Sealed? where __Sealed : self_mobile_kmp.OkioBufferedSink
+extension self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonNull(self_mobile_kmp.Kotlinx_serialization_jsonJsonNull)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive
+extension self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonPrimitive(self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonElement
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonElement
+@frozen public enum StatusEnum : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case unverified
+  case verified
+  case pending
+  case sent
+  case rejected
+  case accepted
+  case received
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__StatusEnum, result: inout self_mobile_kmp.StatusEnum?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__StatusEnum, result: inout self_mobile_kmp.StatusEnum?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__StatusEnum?) -> self_mobile_kmp.StatusEnum
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__StatusEnum
+  public typealias _ObjectiveCType = self_mobile_kmp.__StatusEnum
+  public static func == (a: self_mobile_kmp.StatusEnum, b: self_mobile_kmp.StatusEnum) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.StatusEnum]
+  public static var allCases: [self_mobile_kmp.StatusEnum] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.StatusEnum {
+  public func toKotlinEnum() -> self_mobile_kmp.__StatusEnum
+}
+extension self_mobile_kmp.__StatusEnum {
+  public func toSwiftEnum() -> self_mobile_kmp.StatusEnum
+}
+@frozen public enum DevMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case dev
+  case test
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__DevMode, result: inout self_mobile_kmp.DevMode?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__DevMode, result: inout self_mobile_kmp.DevMode?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__DevMode?) -> self_mobile_kmp.DevMode
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__DevMode
+  public typealias _ObjectiveCType = self_mobile_kmp.__DevMode
+  public static func == (a: self_mobile_kmp.DevMode, b: self_mobile_kmp.DevMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.DevMode]
+  public static var allCases: [self_mobile_kmp.DevMode] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.DevMode {
+  public func toKotlinEnum() -> self_mobile_kmp.__DevMode
+}
+extension self_mobile_kmp.__DevMode {
+  public func toSwiftEnum() -> self_mobile_kmp.DevMode
+}
+extension self_mobile_kmp.ExtensionsKt {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public static func suspendCoroutineWithTimeout(timeout: Swift.Int64, block: @escaping (any self_mobile_kmp.KotlinContinuation) -> Swift.Void) async throws -> Any?
+  #endif
+}
+public func __suspendCoroutineWithTimeout(timeout: Swift.Int64, block: @escaping (any self_mobile_kmp.KotlinContinuation) -> Swift.Void, completionHandler: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+#if compiler(>=5.3) && $AsyncAwait
+@available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+public func suspendCoroutineWithTimeout(timeout: Swift.Int64, block: @escaping (any self_mobile_kmp.KotlinContinuation) -> Swift.Void) async throws -> Any?
+#endif
+extension Swift.String {
+  public func fromDateString() -> self_mobile_kmp.Kotlinx_datetimeInstant
+  public func toNSData() -> Foundation.Data?
+}
+extension Foundation.Data {
+  public func string() -> Swift.String?
+  public func toByteArray() -> self_mobile_kmp.KotlinByteArray
+}
+@frozen public enum ACLCommand : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case list
+  case permit
+  case revoke
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.Int32 {
+    get
+  }
+  public static var companion: self_mobile_kmp.__ACLCommand.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__ACLCommand, result: inout self_mobile_kmp.ACLCommand?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__ACLCommand, result: inout self_mobile_kmp.ACLCommand?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__ACLCommand?) -> self_mobile_kmp.ACLCommand
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__ACLCommand
+  public typealias _ObjectiveCType = self_mobile_kmp.__ACLCommand
+  public typealias Companion = self_mobile_kmp.__ACLCommand.Companion
+  public static func == (a: self_mobile_kmp.ACLCommand, b: self_mobile_kmp.ACLCommand) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.ACLCommand]
+  public static var allCases: [self_mobile_kmp.ACLCommand] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.ACLCommand {
+  public func toKotlinEnum() -> self_mobile_kmp.__ACLCommand
+}
+extension self_mobile_kmp.__ACLCommand {
+  public func toSwiftEnum() -> self_mobile_kmp.ACLCommand
+}
+@frozen public enum Environment : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case review
+  case staging
+  case sandbox
+  case production
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__Environment, result: inout self_mobile_kmp.Environment?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Environment, result: inout self_mobile_kmp.Environment?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Environment?) -> self_mobile_kmp.Environment
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__Environment
+  public typealias _ObjectiveCType = self_mobile_kmp.__Environment
+  public static func == (a: self_mobile_kmp.Environment, b: self_mobile_kmp.Environment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.Environment]
+  public static var allCases: [self_mobile_kmp.Environment] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.Environment {
+  public func toKotlinEnum() -> self_mobile_kmp.__Environment
+}
+extension self_mobile_kmp.__Environment {
+  public func toSwiftEnum() -> self_mobile_kmp.Environment
+}
+@frozen public enum MessageStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case pending
+  case sent
+  case delivered
+  case read
+  case error
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__MessageStatus, result: inout self_mobile_kmp.MessageStatus?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__MessageStatus, result: inout self_mobile_kmp.MessageStatus?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__MessageStatus?) -> self_mobile_kmp.MessageStatus
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__MessageStatus
+  public typealias _ObjectiveCType = self_mobile_kmp.__MessageStatus
+  public static func == (a: self_mobile_kmp.MessageStatus, b: self_mobile_kmp.MessageStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.MessageStatus]
+  public static var allCases: [self_mobile_kmp.MessageStatus] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.MessageStatus {
+  public func toKotlinEnum() -> self_mobile_kmp.__MessageStatus
+}
+extension self_mobile_kmp.__MessageStatus {
+  public func toSwiftEnum() -> self_mobile_kmp.MessageStatus
+}
+extension self_mobile_kmp.Account {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func accept(message: self_mobile_kmp.Message, onAcknowledgement: @escaping (self_mobile_kmp.KotlinThrowable?) -> Swift.Void) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func backup(rootDir: Swift.String) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func close() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func download(dataLink: self_mobile_kmp.DataObject.Link) async throws -> self_mobile_kmp.DataObject
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async throws -> self_mobile_kmp.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func register(selfieImage: self_mobile_kmp.KotlinByteArray, selfieAttestation: self_mobile_kmp.Attestation) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func register(selfId: Swift.String, selfieBase64: Swift.String) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func reject(message: self_mobile_kmp.Message, onAcknowledgement: @escaping (self_mobile_kmp.KotlinThrowable?) -> Swift.Void) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func restore(backupDir: Swift.String, selfieImage: self_mobile_kmp.KotlinByteArray) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func send(message: self_mobile_kmp.Message, onAcknowledgement: @escaping (self_mobile_kmp.KotlinThrowable?) -> Swift.Void) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upload(dataObject: self_mobile_kmp.DataObject) async throws -> self_mobile_kmp.DataObject.Link?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func verifyLocation(locationData: self_mobile_kmp.LocationData) async throws -> [self_mobile_kmp.Attestation]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func verifySelfieImage(selfieImage: self_mobile_kmp.KotlinByteArray, isSaveResult: Swift.Bool) async throws -> [self_mobile_kmp.Attestation]
+  #endif
+}
+@frozen public enum ConversationType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case individual
+  case group
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__ConversationType, result: inout self_mobile_kmp.ConversationType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__ConversationType, result: inout self_mobile_kmp.ConversationType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__ConversationType?) -> self_mobile_kmp.ConversationType
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__ConversationType
+  public typealias _ObjectiveCType = self_mobile_kmp.__ConversationType
+  public static func == (a: self_mobile_kmp.ConversationType, b: self_mobile_kmp.ConversationType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.ConversationType]
+  public static var allCases: [self_mobile_kmp.ConversationType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.ConversationType {
+  public func toKotlinEnum() -> self_mobile_kmp.__ConversationType
+}
+extension self_mobile_kmp.__ConversationType {
+  public func toSwiftEnum() -> self_mobile_kmp.ConversationType
+}
+@frozen public enum MsgType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case msg
+  case ack
+  case err
+  case auth
+  case acl
+  case wtc
+  case sts
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.Int32 {
+    get
+  }
+  public static var companion: self_mobile_kmp.__MsgType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__MsgType, result: inout self_mobile_kmp.MsgType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__MsgType, result: inout self_mobile_kmp.MsgType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__MsgType?) -> self_mobile_kmp.MsgType
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__MsgType
+  public typealias _ObjectiveCType = self_mobile_kmp.__MsgType
+  public typealias Companion = self_mobile_kmp.__MsgType.Companion
+  public static func == (a: self_mobile_kmp.MsgType, b: self_mobile_kmp.MsgType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.MsgType]
+  public static var allCases: [self_mobile_kmp.MsgType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.MsgType {
+  public func toKotlinEnum() -> self_mobile_kmp.__MsgType
+}
+extension self_mobile_kmp.__MsgType {
+  public func toSwiftEnum() -> self_mobile_kmp.MsgType
+}
+@frozen public enum ErrType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case errConnection
+  case errBadRequest
+  case errInternal
+  case errMessage
+  case errAuth
+  case errAcl
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.Int32 {
+    get
+  }
+  public static var companion: self_mobile_kmp.__ErrType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__ErrType, result: inout self_mobile_kmp.ErrType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__ErrType, result: inout self_mobile_kmp.ErrType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__ErrType?) -> self_mobile_kmp.ErrType
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__ErrType
+  public typealias _ObjectiveCType = self_mobile_kmp.__ErrType
+  public typealias Companion = self_mobile_kmp.__ErrType.Companion
+  public static func == (a: self_mobile_kmp.ErrType, b: self_mobile_kmp.ErrType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.ErrType]
+  public static var allCases: [self_mobile_kmp.ErrType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.ErrType {
+  public func toKotlinEnum() -> self_mobile_kmp.__ErrType
+}
+extension self_mobile_kmp.__ErrType {
+  public func toSwiftEnum() -> self_mobile_kmp.ErrType
+}
+extension self_mobile_kmp.SelfInteractor {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func createSelfAccount(selfId: Swift.String, selfieBase64: Swift.String) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func createSelfAccount(pushToken: Swift.String?, idToken: Swift.String?, voipToken: Swift.String?, keyId: Swift.String?, challenge: Swift.String?, appattest: Swift.String?) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteAccount() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func downloadObject(link: Swift.String, sharedKey: Swift.String) async throws -> self_mobile_kmp.KotlinByteArray
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPublicKeyByRecipient(recipient: Swift.String) async throws -> self_mobile_kmp.KotlinByteArray?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func recoverIdentity(selfId: Swift.String, activeRecoveryKeyPair: self_mobile_kmp.Multiplatform_crypto_libsodium_bindingsSignatureKeyPair) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func sendBiometricsVerification(selfieData: self_mobile_kmp.KotlinByteArray) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func sendChatMessage(chatMsg: self_mobile_kmp.ChatMessage) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func sendDocumentVerification(deviceAttestation: [Swift.String : Swift.String], verificationRequest: self_mobile_kmp.VerificationRequest) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func uploadObject(byteArray: self_mobile_kmp.KotlinByteArray) async throws -> self_mobile_kmp.DataObject.Link?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func uploadObject(byteArray: self_mobile_kmp.KotlinByteArray, idToken: Swift.String) async throws -> self_mobile_kmp.DataObject.Link?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func uploadObject(byteArray: self_mobile_kmp.KotlinByteArray, keyId: Swift.String, challenge: Swift.String, appattest: Swift.String) async throws -> self_mobile_kmp.DataObject.Link?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deserializePDSData(backupDir: Swift.String, selfieImage: self_mobile_kmp.KotlinByteArray) async throws -> self_mobile_kmp.KotlinPair<Foundation.NSString, self_mobile_kmp.Multiplatform_crypto_libsodium_bindingsSignatureKeyPair>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func sendFactRequest(attestationRequest: self_mobile_kmp.AttestationRequest) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func sendFactResponse(attestationResponse: self_mobile_kmp.AttestationResponse) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func sendLocationVerifyRequest(locationData: self_mobile_kmp.LocationData) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func serializePDSData(backupDir: Swift.String) async throws
+  #endif
+}
+@frozen public enum ResponseStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case pending
+  case accepted
+  case rejected
+  case verified
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__ResponseStatus, result: inout self_mobile_kmp.ResponseStatus?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__ResponseStatus, result: inout self_mobile_kmp.ResponseStatus?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__ResponseStatus?) -> self_mobile_kmp.ResponseStatus
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__ResponseStatus
+  public typealias _ObjectiveCType = self_mobile_kmp.__ResponseStatus
+  public static func == (a: self_mobile_kmp.ResponseStatus, b: self_mobile_kmp.ResponseStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.ResponseStatus]
+  public static var allCases: [self_mobile_kmp.ResponseStatus] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.ResponseStatus {
+  public func toKotlinEnum() -> self_mobile_kmp.__ResponseStatus
+}
+extension self_mobile_kmp.__ResponseStatus {
+  public func toSwiftEnum() -> self_mobile_kmp.ResponseStatus
+}
+@frozen public enum PlatformName : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case android
+  case ios
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__PlatformName, result: inout self_mobile_kmp.PlatformName?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__PlatformName, result: inout self_mobile_kmp.PlatformName?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__PlatformName?) -> self_mobile_kmp.PlatformName
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__PlatformName
+  public typealias _ObjectiveCType = self_mobile_kmp.__PlatformName
+  public static func == (a: self_mobile_kmp.PlatformName, b: self_mobile_kmp.PlatformName) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.PlatformName]
+  public static var allCases: [self_mobile_kmp.PlatformName] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.PlatformName {
+  public func toKotlinEnum() -> self_mobile_kmp.__PlatformName
+}
+extension self_mobile_kmp.__PlatformName {
+  public func toSwiftEnum() -> self_mobile_kmp.PlatformName
+}
+extension self_mobile_kmp.SelfDataModel {
+  public typealias Type_ = self_mobile_kmp.__Bridge__SelfDataModel_Type_
+}
+extension self_mobile_kmp.__Bridge__SelfDataModel_Type_ {
+  public func toKotlinEnum() -> self_mobile_kmp.SelfDataModel.__Type_
+}
+extension self_mobile_kmp.SelfDataModel.__Type_ {
+  public func toSwiftEnum() -> self_mobile_kmp.SelfDataModel.Type_
+}
+@frozen public enum __Bridge__SelfDataModel_Type_ : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case registrationImage
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SelfDataModel.__Type_, result: inout self_mobile_kmp.__Bridge__SelfDataModel_Type_?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SelfDataModel.__Type_, result: inout self_mobile_kmp.__Bridge__SelfDataModel_Type_?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SelfDataModel.__Type_?) -> self_mobile_kmp.__Bridge__SelfDataModel_Type_
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.SelfDataModel.__Type_
+  public typealias _ObjectiveCType = self_mobile_kmp.SelfDataModel.__Type_
+  public static func == (a: self_mobile_kmp.__Bridge__SelfDataModel_Type_, b: self_mobile_kmp.__Bridge__SelfDataModel_Type_) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.__Bridge__SelfDataModel_Type_]
+  public static var allCases: [self_mobile_kmp.__Bridge__SelfDataModel_Type_] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.SelfServiceApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func accountRecovery(signedOperation: self_mobile_kmp.Kotlinx_serialization_jsonJsonElement, selfId: Swift.String, kid: Swift.String, recoveryKeyBytes: self_mobile_kmp.KotlinByteArray) async throws -> self_mobile_kmp.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteAccount(selfId: Swift.String) async throws -> self_mobile_kmp.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func downloadObject(link: Swift.String) async throws -> self_mobile_kmp.KotlinByteArray
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getBackupKeys(platform: Swift.String, backupId: Swift.String, imageAttestation: [Swift.String : self_mobile_kmp.Kotlinx_serialization_jsonJsonElement]?, idToken: Swift.String?, keyId: Swift.String?, challenge: Swift.String?, appattest: Swift.String?, livenessImage: self_mobile_kmp.DataObject.Link?, registrationImage: self_mobile_kmp.DataObject.Link?) async throws -> [Swift.String]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getDevices(selfId: Swift.String, force: Swift.Bool) async throws -> [Swift.String]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getIdentityHistory(selfId: Swift.String, keyId: Swift.String?, signedKeyBytes: self_mobile_kmp.KotlinByteArray?) async throws -> self_mobile_kmp.SignatureGraph
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPrekeys(selfId: Swift.String, deviceId: Swift.String, messageToken: Swift.String?) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func registerNewDevice(history: self_mobile_kmp.Kotlinx_serialization_jsonJsonElement, selfId: Swift.String) async throws -> self_mobile_kmp.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func registerSelfId(history: self_mobile_kmp.Kotlinx_serialization_jsonJsonElement?, platform: Swift.String, deviceId: Swift.String?, pushToken: Swift.String?, idToken: Swift.String?, voipToken: Swift.String?, keyId: Swift.String?, challenge: Swift.String?, appattest: Swift.String?) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func submitBackupKeys(backupId: Swift.String, hash: Swift.String, keys: [Swift.String]) async throws -> self_mobile_kmp.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func submitPrekeys(selfId: Swift.String, deviceId: Swift.String, keys: [self_mobile_kmp.Kotlinx_serialization_jsonJsonElement]) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateNewDevice(selfId: Swift.String, deviceId: Swift.String, uuid: Swift.String, kid: Swift.String) async throws -> self_mobile_kmp.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func uploadObject(byteArray: self_mobile_kmp.KotlinByteArray) async throws -> self_mobile_kmp.KotlinPair<Foundation.NSString, self_mobile_kmp.KotlinLong>?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func uploadObject(byteArray: self_mobile_kmp.KotlinByteArray, idToken: Swift.String) async throws -> self_mobile_kmp.KotlinPair<Foundation.NSString, self_mobile_kmp.KotlinLong>?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func uploadObject(byteArray: self_mobile_kmp.KotlinByteArray, keyId: Swift.String, challenge: Swift.String, appattest: Swift.String) async throws -> self_mobile_kmp.KotlinPair<Foundation.NSString, self_mobile_kmp.KotlinLong>?
+  #endif
+}
+extension self_mobile_kmp.EncryptionManager {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func decryptIncomingMessage(messageId: Swift.String, senderId: Swift.String, deviceId: Swift.String, message: Swift.String) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func encryptGroupMessage(recipients: [Swift.String], devices: [Swift.String], jwsMessage: Swift.String, forceGetDevices: Swift.Bool, forceNewOutboundSession: Swift.Bool, messageToken: Swift.String?) async throws -> self_mobile_kmp.KotlinPair<Foundation.NSString, Foundation.NSArray>?
+  #endif
+}
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T?) async throws
+  #endif
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public var subscriptionCount: self_mobile_kmp.SkieSwiftStateFlow<self_mobile_kmp.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinOptionalFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftOptionalFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftOptionalFlow<T>
+  @objc deinit
+}
+#endif
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = self_mobile_kmp.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = self_mobile_kmp.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = self_mobile_kmp.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = self_mobile_kmp.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = self_mobile_kmp.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = self_mobile_kmp.Skie_SuspendResult
+      public enum Canceled {
+        public typealias __Kotlin = self_mobile_kmp.Skie_SuspendResult.Canceled
+      }
+      public enum Error {
+        public typealias __Kotlin = self_mobile_kmp.Skie_SuspendResult.Error
+      }
+      public enum Success {
+        public typealias __Kotlin = self_mobile_kmp.Skie_SuspendResult.Success
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = self_mobile_kmp.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = self_mobile_kmp.Kotlinx_coroutines_coreFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = self_mobile_kmp.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = self_mobile_kmp.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = self_mobile_kmp.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = self_mobile_kmp.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = self_mobile_kmp.Kotlinx_coroutines_coreRunnable
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = self_mobile_kmp.Skie.KotlinxCoroutinesCore
+  public enum LibraryBase {
+    public enum RealmChange {
+    }
+    public enum ResultsChange {
+    }
+    public enum SingleQueryChange {
+    }
+    public enum RealmPropertyType {
+    }
+    public enum ObjectChange {
+    }
+  }
+  public typealias io_realm_kotlin__library_base = self_mobile_kmp.Skie.LibraryBase
+  public enum KotlinxSerializationCore {
+    public enum PolymorphicKind {
+    }
+    public enum SerialKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+    public enum SerializersModule {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = self_mobile_kmp.Skie.KotlinxSerializationCore
+  public enum KotlinxSerializationJson {
+    public enum JsonElement {
+    }
+    public enum JsonPrimitive {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_json = self_mobile_kmp.Skie.KotlinxSerializationJson
+  public enum Okio {
+    public enum BufferedSink {
+    }
+    public enum BufferedSource {
+    }
+  }
+  public typealias com_squareup_okio__okio = self_mobile_kmp.Skie.Okio
+}
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public var value: T {
+    get
+  }
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftStateFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>) -> self_mobile_kmp.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>) -> self_mobile_kmp.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>) -> self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension self_mobile_kmp.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  final public var value: T? {
+    get
+  }
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftOptionalStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalStateFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftOptionalStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftSharedFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T?) async throws
+  #endif
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public var subscriptionCount: self_mobile_kmp.SkieSwiftStateFlow<self_mobile_kmp.KotlinInt> {
+    get
+  }
+  final public var value: T? {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftOptionalMutableStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftOptionalSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T) async throws
+  #endif
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: self_mobile_kmp.SkieSwiftStateFlow<self_mobile_kmp.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftMutableSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftMutableSharedFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftMutableSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = self_mobile_kmp.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = self_mobile_kmp.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T) async throws
+  #endif
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: self_mobile_kmp.SkieSwiftStateFlow<self_mobile_kmp.KotlinInt> {
+    get
+  }
+  final public var value: T {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  final public func makeAsyncIterator() -> self_mobile_kmp.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> self_mobile_kmp.SkieSwiftMutableStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout self_mobile_kmp.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.SkieSwiftMutableStateFlow<T>._ObjectiveCType?) -> self_mobile_kmp.SkieSwiftMutableStateFlow<T>
+  @objc deinit
+}
+#endif
+extension self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(self_mobile_kmp.Skie_SuspendResult.Canceled)
+    case error(self_mobile_kmp.Skie_SuspendResult.Error)
+    case success(self_mobile_kmp.Skie_SuspendResult.Success)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : self_mobile_kmp.Skie_SuspendResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : self_mobile_kmp.Skie_SuspendResult
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  public typealias Element = T
+  @objc deinit
+  #if compiler(>=5.3) && $AsyncAwait
+  public func next() async -> self_mobile_kmp.SkieSwiftFlowIterator<T>.Element?
+  #endif
+}
+#endif
+extension self_mobile_kmp.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: self_mobile_kmp.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: self_mobile_kmp.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: self_mobile_kmp.SkieColdFlowIterator<E>) -> self_mobile_kmp.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension self_mobile_kmp.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> self_mobile_kmp.KotlinBoolean
+  #endif
+}
+@frozen public enum Wire_runtimeFieldEncoding : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case varint
+  case fixed64
+  case lengthDelimited
+  case fixed32
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: self_mobile_kmp.__Wire_runtimeFieldEncoding.Companion {
+    get
+  }
+  public func rawProtoAdapter() -> self_mobile_kmp.Wire_runtimeProtoAdapter<Swift.AnyObject>
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__Wire_runtimeFieldEncoding, result: inout self_mobile_kmp.Wire_runtimeFieldEncoding?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Wire_runtimeFieldEncoding, result: inout self_mobile_kmp.Wire_runtimeFieldEncoding?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Wire_runtimeFieldEncoding?) -> self_mobile_kmp.Wire_runtimeFieldEncoding
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__Wire_runtimeFieldEncoding
+  public typealias _ObjectiveCType = self_mobile_kmp.__Wire_runtimeFieldEncoding
+  public typealias Companion = self_mobile_kmp.__Wire_runtimeFieldEncoding.Companion
+  public static func == (a: self_mobile_kmp.Wire_runtimeFieldEncoding, b: self_mobile_kmp.Wire_runtimeFieldEncoding) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.Wire_runtimeFieldEncoding]
+  public static var allCases: [self_mobile_kmp.Wire_runtimeFieldEncoding] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.Wire_runtimeFieldEncoding {
+  public func toKotlinEnum() -> self_mobile_kmp.__Wire_runtimeFieldEncoding
+}
+extension self_mobile_kmp.__Wire_runtimeFieldEncoding {
+  public func toSwiftEnum() -> self_mobile_kmp.Wire_runtimeFieldEncoding
+}
+@frozen public enum Wire_runtimeSyntax : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case proto2
+  case proto3
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: self_mobile_kmp.__Wire_runtimeSyntax.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__Wire_runtimeSyntax, result: inout self_mobile_kmp.Wire_runtimeSyntax?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Wire_runtimeSyntax, result: inout self_mobile_kmp.Wire_runtimeSyntax?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Wire_runtimeSyntax?) -> self_mobile_kmp.Wire_runtimeSyntax
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__Wire_runtimeSyntax
+  public typealias _ObjectiveCType = self_mobile_kmp.__Wire_runtimeSyntax
+  public typealias Companion = self_mobile_kmp.__Wire_runtimeSyntax.Companion
+  public static func == (a: self_mobile_kmp.Wire_runtimeSyntax, b: self_mobile_kmp.Wire_runtimeSyntax) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.Wire_runtimeSyntax]
+  public static var allCases: [self_mobile_kmp.Wire_runtimeSyntax] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.Wire_runtimeSyntax {
+  public func toKotlinEnum() -> self_mobile_kmp.__Wire_runtimeSyntax
+}
+extension self_mobile_kmp.__Wire_runtimeSyntax {
+  public func toSwiftEnum() -> self_mobile_kmp.Wire_runtimeSyntax
+}
+extension self_mobile_kmp.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+  #endif
+}
+extension self_mobile_kmp.Kotlinx_coroutines_coreFlow {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any self_mobile_kmp.Kotlinx_coroutines_coreFlowCollector) async throws
+  #endif
+}
+extension self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(self_mobile_kmp.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(self_mobile_kmp.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(self_mobile_kmp.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(self_mobile_kmp.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreStructureKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreStructureKind
+extension self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(self_mobile_kmp.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(self_mobile_kmp.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(self_mobile_kmp.Kotlinx_serialization_coreStructureKind)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerialKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerialKind
+extension self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind
+extension self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerializersModule
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerializersModule
+extension self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind
+@frozen public enum Library_baseRealmStorageType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case bool
+  case int
+  case string
+  case binary
+  case object
+  case float
+  case double
+  case decimal128
+  case timestamp
+  case objectId
+  case uuid
+  case any
+  public var kClass: any self_mobile_kmp.KotlinKClass {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseRealmStorageType, result: inout self_mobile_kmp.Library_baseRealmStorageType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseRealmStorageType, result: inout self_mobile_kmp.Library_baseRealmStorageType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseRealmStorageType?) -> self_mobile_kmp.Library_baseRealmStorageType
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__Library_baseRealmStorageType
+  public typealias _ObjectiveCType = self_mobile_kmp.__Library_baseRealmStorageType
+  public static func == (a: self_mobile_kmp.Library_baseRealmStorageType, b: self_mobile_kmp.Library_baseRealmStorageType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.Library_baseRealmStorageType]
+  public static var allCases: [self_mobile_kmp.Library_baseRealmStorageType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.Library_baseRealmStorageType {
+  public func toKotlinEnum() -> self_mobile_kmp.__Library_baseRealmStorageType
+}
+extension self_mobile_kmp.__Library_baseRealmStorageType {
+  public func toSwiftEnum() -> self_mobile_kmp.Library_baseRealmStorageType
+}
+extension self_mobile_kmp.Skie.LibraryBase.SingleQueryChange {
+  @frozen public enum __Sealed {
+    case objectChange(any self_mobile_kmp.Library_baseObjectChange)
+    case pendingObject(any self_mobile_kmp.Library_basePendingObject)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.SingleQueryChange.__Sealed where __Sealed : self_mobile_kmp.Library_baseSingleQueryChange
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.SingleQueryChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseSingleQueryChange
+@frozen public enum Library_baseUpdatePolicy : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case error
+  case all
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseUpdatePolicy, result: inout self_mobile_kmp.Library_baseUpdatePolicy?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseUpdatePolicy, result: inout self_mobile_kmp.Library_baseUpdatePolicy?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseUpdatePolicy?) -> self_mobile_kmp.Library_baseUpdatePolicy
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__Library_baseUpdatePolicy
+  public typealias _ObjectiveCType = self_mobile_kmp.__Library_baseUpdatePolicy
+  public static func == (a: self_mobile_kmp.Library_baseUpdatePolicy, b: self_mobile_kmp.Library_baseUpdatePolicy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.Library_baseUpdatePolicy]
+  public static var allCases: [self_mobile_kmp.Library_baseUpdatePolicy] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.Library_baseUpdatePolicy {
+  public func toKotlinEnum() -> self_mobile_kmp.__Library_baseUpdatePolicy
+}
+extension self_mobile_kmp.__Library_baseUpdatePolicy {
+  public func toSwiftEnum() -> self_mobile_kmp.Library_baseUpdatePolicy
+}
+@frozen public enum Library_baseLogLevel : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case all
+  case trace
+  case debug
+  case info
+  case warn
+  case error
+  case wtf
+  case none
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var priority: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseLogLevel, result: inout self_mobile_kmp.Library_baseLogLevel?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseLogLevel, result: inout self_mobile_kmp.Library_baseLogLevel?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseLogLevel?) -> self_mobile_kmp.Library_baseLogLevel
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__Library_baseLogLevel
+  public typealias _ObjectiveCType = self_mobile_kmp.__Library_baseLogLevel
+  public static func == (a: self_mobile_kmp.Library_baseLogLevel, b: self_mobile_kmp.Library_baseLogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.Library_baseLogLevel]
+  public static var allCases: [self_mobile_kmp.Library_baseLogLevel] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.Library_baseLogLevel {
+  public func toKotlinEnum() -> self_mobile_kmp.__Library_baseLogLevel
+}
+extension self_mobile_kmp.__Library_baseLogLevel {
+  public func toSwiftEnum() -> self_mobile_kmp.Library_baseLogLevel
+}
+extension self_mobile_kmp.Skie.LibraryBase.RealmChange {
+  @frozen public enum __Sealed {
+    case initialRealm(any self_mobile_kmp.Library_baseInitialRealm)
+    case updatedRealm(any self_mobile_kmp.Library_baseUpdatedRealm)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.RealmChange.__Sealed where __Sealed : self_mobile_kmp.Library_baseRealmChange
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.RealmChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseRealmChange
+extension self_mobile_kmp.Skie.LibraryBase.ResultsChange {
+  @frozen public enum __Sealed {
+    case initialResults(any self_mobile_kmp.Library_baseInitialResults)
+    case updatedResults(any self_mobile_kmp.Library_baseUpdatedResults)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.ResultsChange.__Sealed where __Sealed : self_mobile_kmp.Library_baseResultsChange
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.ResultsChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseResultsChange
+@frozen public enum Library_baseRealmClassKind : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case standard
+  case embedded
+  case asymmetric
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseRealmClassKind, result: inout self_mobile_kmp.Library_baseRealmClassKind?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseRealmClassKind, result: inout self_mobile_kmp.Library_baseRealmClassKind?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseRealmClassKind?) -> self_mobile_kmp.Library_baseRealmClassKind
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__Library_baseRealmClassKind
+  public typealias _ObjectiveCType = self_mobile_kmp.__Library_baseRealmClassKind
+  public static func == (a: self_mobile_kmp.Library_baseRealmClassKind, b: self_mobile_kmp.Library_baseRealmClassKind) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.Library_baseRealmClassKind]
+  public static var allCases: [self_mobile_kmp.Library_baseRealmClassKind] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.Library_baseRealmClassKind {
+  public func toKotlinEnum() -> self_mobile_kmp.__Library_baseRealmClassKind
+}
+extension self_mobile_kmp.__Library_baseRealmClassKind {
+  public func toSwiftEnum() -> self_mobile_kmp.Library_baseRealmClassKind
+}
+@frozen public enum Library_baseSort : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case ascending
+  case descending
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseSort, result: inout self_mobile_kmp.Library_baseSort?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseSort, result: inout self_mobile_kmp.Library_baseSort?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: self_mobile_kmp.__Library_baseSort?) -> self_mobile_kmp.Library_baseSort
+  public func _bridgeToObjectiveC() -> self_mobile_kmp.__Library_baseSort
+  public typealias _ObjectiveCType = self_mobile_kmp.__Library_baseSort
+  public static func == (a: self_mobile_kmp.Library_baseSort, b: self_mobile_kmp.Library_baseSort) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [self_mobile_kmp.Library_baseSort]
+  public static var allCases: [self_mobile_kmp.Library_baseSort] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension self_mobile_kmp.Library_baseSort {
+  public func toKotlinEnum() -> self_mobile_kmp.__Library_baseSort
+}
+extension self_mobile_kmp.__Library_baseSort {
+  public func toSwiftEnum() -> self_mobile_kmp.Library_baseSort
+}
+extension self_mobile_kmp.Skie.LibraryBase.ObjectChange {
+  @frozen public enum __Sealed {
+    case deletedObject(any self_mobile_kmp.Library_baseDeletedObject)
+    case initialObject(any self_mobile_kmp.Library_baseInitialObject)
+    case updatedObject(any self_mobile_kmp.Library_baseUpdatedObject)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.ObjectChange.__Sealed where __Sealed : self_mobile_kmp.Library_baseObjectChange
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.ObjectChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseObjectChange
+extension self_mobile_kmp.Skie.LibraryBase.RealmPropertyType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case listPropertyType(self_mobile_kmp.Library_baseListPropertyType)
+    case mapPropertyType(self_mobile_kmp.Library_baseMapPropertyType)
+    case setPropertyType(self_mobile_kmp.Library_baseSetPropertyType)
+    case valuePropertyType(self_mobile_kmp.Library_baseValuePropertyType)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: self_mobile_kmp.Skie.LibraryBase.RealmPropertyType.__Sealed, b: self_mobile_kmp.Skie.LibraryBase.RealmPropertyType.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.RealmPropertyType.__Sealed where __Sealed : self_mobile_kmp.Library_baseRealmPropertyType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.RealmPropertyType.__Sealed? where __Sealed : self_mobile_kmp.Library_baseRealmPropertyType
+extension self_mobile_kmp.Library_baseRealm {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func write(block: @escaping (any self_mobile_kmp.Library_baseMutableRealm) -> Any?) async throws -> Any?
+  #endif
+}
+extension self_mobile_kmp.StatusEnum : Swift.Sendable {}
+extension self_mobile_kmp.DevMode : Swift.Sendable {}
+extension self_mobile_kmp.ACLCommand : Swift.Sendable {}
+extension self_mobile_kmp.Environment : Swift.Sendable {}
+extension self_mobile_kmp.MessageStatus : Swift.Sendable {}
+extension self_mobile_kmp.ConversationType : Swift.Sendable {}
+extension self_mobile_kmp.MsgType : Swift.Sendable {}
+extension self_mobile_kmp.ErrType : Swift.Sendable {}
+extension self_mobile_kmp.ResponseStatus : Swift.Sendable {}
+extension self_mobile_kmp.PlatformName : Swift.Sendable {}
+extension self_mobile_kmp.__Bridge__SelfDataModel_Type_ : Swift.Sendable {}
+extension self_mobile_kmp.Wire_runtimeFieldEncoding : Swift.Sendable {}
+extension self_mobile_kmp.Wire_runtimeSyntax : Swift.Sendable {}
+extension self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension self_mobile_kmp.Library_baseRealmStorageType : Swift.Sendable {}
+extension self_mobile_kmp.Library_baseUpdatePolicy : Swift.Sendable {}
+extension self_mobile_kmp.Library_baseLogLevel : Swift.Sendable {}
+extension self_mobile_kmp.Library_baseRealmClassKind : Swift.Sendable {}
+extension self_mobile_kmp.Library_baseSort : Swift.Sendable {}

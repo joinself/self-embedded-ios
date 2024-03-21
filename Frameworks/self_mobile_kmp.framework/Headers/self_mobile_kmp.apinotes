@@ -2491,14 +2491,6 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "MESSAGE_TYP_CHAT_REMOVE"
     Type: "NSString * _Nonnull"
-  - Name: "MESSAGE_TYP_CHAT_SESSION_CREATE"
-    PropertyKind: "Instance"
-    SwiftName: "MESSAGE_TYP_CHAT_SESSION_CREATE"
-    Type: "NSString * _Nonnull"
-  - Name: "MESSAGE_TYP_CHAT_SESSION_RECOVER"
-    PropertyKind: "Instance"
-    SwiftName: "MESSAGE_TYP_CHAT_SESSION_RECOVER"
-    Type: "NSString * _Nonnull"
   - Name: "MESSAGE_TYP_CHAT_TRANSFER"
     PropertyKind: "Instance"
     SwiftName: "MESSAGE_TYP_CHAT_TRANSFER"
@@ -2666,6 +2658,14 @@ Classes:
   - Name: "MESSAGE_TYP_PROFILE_SYNC"
     PropertyKind: "Instance"
     SwiftName: "MESSAGE_TYP_PROFILE_SYNC"
+    Type: "NSString * _Nonnull"
+  - Name: "MESSAGE_TYP_SESSIONS_CREATE"
+    PropertyKind: "Instance"
+    SwiftName: "MESSAGE_TYP_SESSIONS_CREATE"
+    Type: "NSString * _Nonnull"
+  - Name: "MESSAGE_TYP_SESSIONS_RECOVER"
+    PropertyKind: "Instance"
+    SwiftName: "MESSAGE_TYP_SESSIONS_RECOVER"
     Type: "NSString * _Nonnull"
   - Name: "MESSAGE_TYP_STATE_SYNC_REQ"
     PropertyKind: "Instance"
@@ -4047,9 +4047,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "decryptIncommingMessageMessageId:senderId:deviceId:message:completionHandler:"
+  - Selector: "decryptIncomingMessageMessageId:senderId:deviceId:message:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__decryptIncommingMessage(messageId:senderId:deviceId:message:completionHandler:)"
+    SwiftName: "__decryptIncomingMessage(messageId:senderId:deviceId:message:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -5106,20 +5106,9 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "clearEncryptedMessagesInQueue()"
     ResultType: "void"
-  - Selector: "isEqual:"
+  - Selector: "encryptAndSendPlainTextMessagePlainText:receiverIds:devices:forceGetDevices:forceNewOutboundSession:messageId:urgent:messageType:notificationMsgJWS:messageToken:"
     MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "sendPlainTextMessagePlainText:receiverIds:devices:forceGetDevices:forceNewOutboundSession:messageId:urgent:messageType:notificationMsgJWS:messageToken:"
-    MethodKind: "Instance"
-    SwiftName: "sendPlainTextMessage(plainText:receiverIds:devices:forceGetDevices:forceNewOutboundSession:messageId:urgent:messageType:notificationMsgJWS:messageToken:)"
+    SwiftName: "encryptAndSendPlainTextMessage(plainText:receiverIds:devices:forceGetDevices:forceNewOutboundSession:messageId:urgent:messageType:notificationMsgJWS:messageToken:)"
     ResultType: "void"
     Parameters:
     - Position: 0
@@ -5142,6 +5131,17 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 9
       Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
   - Selector: "setupMessagingUrl:"
     MethodKind: "Instance"
     SwiftName: "setup(messagingUrl:)"
@@ -8919,6 +8919,15 @@ Classes:
       Type: "Self_mobile_kmpInt * _Nullable"
     - Position: 3
       Type: "Self_mobile_kmpInt * _Nullable"
+  - Selector: "getRawMessagesFromId:receiverId:"
+    MethodKind: "Instance"
+    SwiftName: "getRawMessages(fromId:receiverId:)"
+    ResultType: "NSArray<Self_mobile_kmpRawMessage *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
   - Selector: "getRealmForceRefreshing:"
     MethodKind: "Instance"
     SwiftName: "getRealm(forceRefreshing:)"
@@ -8999,6 +9008,13 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+  - Selector: "removeRawMessagesReceiverId:"
+    MethodKind: "Instance"
+    SwiftName: "removeRawMessages(receiverId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
   - Selector: "saveFactRequestModelRequestModel:"
     MethodKind: "Instance"
     SwiftName: "saveFactRequestModel(requestModel:)"
@@ -9048,6 +9064,13 @@ Classes:
     Parameters:
     - Position: 0
       Type: "Self_mobile_kmpSessionModel * _Nonnull"
+  - Selector: "saveRawMessageRawMessage:"
+    MethodKind: "Instance"
+    SwiftName: "saveRawMessage(rawMessage:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "Self_mobile_kmpRawMessage * _Nonnull"
   - Selector: "saveSelfModelSelfIdModel:"
     MethodKind: "Instance"
     SwiftName: "saveSelfModel(selfIdModel:)"
@@ -10029,6 +10052,86 @@ Classes:
     ResultType: "Self_mobile_kmpChatMessage * _Nonnull"
 - Name: "Self_mobile_kmpMessageModelCompanion"
   SwiftName: "MessageModel.Companion"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "io_realm_kotlin_newInstance"
+    MethodKind: "Instance"
+    SwiftName: "io_realm_kotlin_newInstance()"
+    ResultType: "id _Nonnull"
+  - Selector: "io_realm_kotlin_schema"
+    MethodKind: "Instance"
+    SwiftName: "io_realm_kotlin_schema()"
+    ResultType: "id _Nonnull"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<Self_mobile_kmpKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "Self_mobile_kmpRawMessage"
+  SwiftName: "RawMessage"
+  Properties:
+  - Name: "content"
+    PropertyKind: "Instance"
+    SwiftName: "content"
+    Type: "NSString * _Nonnull"
+  - Name: "createdAt"
+    PropertyKind: "Instance"
+    SwiftName: "createdAt"
+    Type: "id<Self_mobile_kmpLibrary_baseRealmInstant> _Nonnull"
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "NSString * _Nonnull"
+  - Name: "messageId"
+    PropertyKind: "Instance"
+    SwiftName: "messageId"
+    Type: "NSString * _Nonnull"
+  - Name: "messageType"
+    PropertyKind: "Instance"
+    SwiftName: "messageType"
+    Type: "NSString * _Nonnull"
+  - Name: "notificationContent"
+    PropertyKind: "Instance"
+    SwiftName: "notificationContent"
+    Type: "NSString * _Nonnull"
+  - Name: "receiverId"
+    PropertyKind: "Instance"
+    SwiftName: "receiverId"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "Self_mobile_kmpRawMessageCompanion"
+  SwiftName: "RawMessage.Companion"
   Methods:
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -14109,9 +14212,9 @@ Classes:
       Type: "id _Nullable"
     - Position: 2
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__4__decryptIncommingMessageDispatchReceiver:messageId:senderId:deviceId:message:suspendHandler:"
+  - Selector: "Skie_Suspend__4__decryptIncomingMessageDispatchReceiver:messageId:senderId:deviceId:message:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__4__decryptIncommingMessage(dispatchReceiver:messageId:senderId:deviceId:message:suspendHandler:)"
+    SwiftName: "Skie_Suspend__4__decryptIncomingMessage(dispatchReceiver:messageId:senderId:deviceId:message:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -14816,9 +14919,9 @@ Classes:
 - Name: "Self_mobile_kmp__SkieTypeExportsKt"
   SwiftName: "__SkieTypeExportsKt"
   Methods:
-  - Selector: "skieTypeExportsP0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:p24:p25:p26:p27:p28:p29:p30:p31:p32:p33:p34:p35:p36:p37:p38:"
+  - Selector: "skieTypeExports_0P0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:p24:p25:p26:p27:p28:p29:"
     MethodKind: "Class"
-    SwiftName: "skieTypeExports(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:p24:p25:p26:p27:p28:p29:p30:p31:p32:p33:p34:p35:p36:p37:p38:)"
+    SwiftName: "skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:p24:p25:p26:p27:p28:p29:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -14882,23 +14985,29 @@ Classes:
       Type: "Self_mobile_kmpLibrary_baseSetPropertyType * _Nonnull"
     - Position: 29
       Type: "Self_mobile_kmpLibrary_baseValuePropertyType * _Nonnull"
-    - Position: 30
+  - Selector: "skieTypeExports_1P0:p1:p2:p3:p4:p5:p6:p7:p8:"
+    MethodKind: "Class"
+    SwiftName: "skieTypeExports_1(p0:p1:p2:p3:p4:p5:p6:p7:p8:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
       Type: "id<Self_mobile_kmpLibrary_baseInitialRealm> _Nonnull"
-    - Position: 31
+    - Position: 1
       Type: "id<Self_mobile_kmpLibrary_baseUpdatedRealm> _Nonnull"
-    - Position: 32
+    - Position: 2
       Type: "id<Self_mobile_kmpLibrary_baseInitialResults> _Nonnull"
-    - Position: 33
+    - Position: 3
       Type: "id<Self_mobile_kmpLibrary_baseUpdatedResults> _Nonnull"
-    - Position: 34
+    - Position: 4
       Type: "id<Self_mobile_kmpLibrary_baseObjectChange> _Nonnull"
-    - Position: 35
+    - Position: 5
       Type: "id<Self_mobile_kmpLibrary_basePendingObject> _Nonnull"
-    - Position: 36
+    - Position: 6
       Type: "id<Self_mobile_kmpLibrary_baseDeletedObject> _Nonnull"
-    - Position: 37
+    - Position: 7
       Type: "id<Self_mobile_kmpLibrary_baseInitialObject> _Nonnull"
-    - Position: 38
+    - Position: 8
       Type: "id<Self_mobile_kmpLibrary_baseUpdatedObject> _Nonnull"
 Protocols:
 - Name: "Self_mobile_kmpKotlinComparable"

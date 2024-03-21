@@ -19,7 +19,7 @@ extension self_mobile_kmp.Skie.Okio.BufferedSource {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.Okio.BufferedSource.__Sealed where __Sealed : self_mobile_kmp.OkioBufferedSource
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.Okio.BufferedSource.__Sealed? where __Sealed : self_mobile_kmp.OkioBufferedSource
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.Okio.BufferedSource.__Sealed? where __Sealed : self_mobile_kmp.OkioBufferedSource
 extension self_mobile_kmp.Skie.Okio.BufferedSink {
   @frozen public enum __Sealed : Swift.Hashable {
     case buffer(self_mobile_kmp.OkioBuffer)
@@ -32,7 +32,7 @@ extension self_mobile_kmp.Skie.Okio.BufferedSink {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.Okio.BufferedSink.__Sealed where __Sealed : self_mobile_kmp.OkioBufferedSink
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.Okio.BufferedSink.__Sealed? where __Sealed : self_mobile_kmp.OkioBufferedSink
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.Okio.BufferedSink.__Sealed? where __Sealed : self_mobile_kmp.OkioBufferedSink
 extension self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive {
   @frozen public enum __Sealed : Swift.Hashable {
     case jsonNull(self_mobile_kmp.Kotlinx_serialization_jsonJsonNull)
@@ -45,7 +45,7 @@ extension self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive
 extension self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement {
   @frozen public enum __Sealed : Swift.Hashable {
     case jsonPrimitive(self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive)
@@ -58,7 +58,7 @@ extension self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonElement
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonElement
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonElement
 @frozen public enum StatusEnum : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case none
   case unverified
@@ -644,7 +644,7 @@ extension self_mobile_kmp.SelfServiceApi {
 extension self_mobile_kmp.EncryptionManager {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func decryptIncommingMessage(messageId: Swift.String, senderId: Swift.String, deviceId: Swift.String, message: Swift.String) async throws -> Swift.String?
+  public func decryptIncomingMessage(messageId: Swift.String, senderId: Swift.String, deviceId: Swift.String, message: Swift.String) async throws -> Swift.String?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -1493,7 +1493,7 @@ extension self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : self_mobile_kmp.Skie_SuspendResult
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : self_mobile_kmp.Skie_SuspendResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : self_mobile_kmp.Skie_SuspendResult
 #if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
   public typealias Element = T
@@ -1613,7 +1613,7 @@ extension self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreStructureKind
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreStructureKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreStructureKind
 extension self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case polymorphicKind(self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind)
@@ -1629,7 +1629,7 @@ extension self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerialKind
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerialKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerialKind
 extension self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case oPEN(self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind.OPEN)
@@ -1642,7 +1642,7 @@ extension self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind
 extension self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule {
   @frozen public enum __Sealed : Swift.Hashable {
     case `else`
@@ -1654,7 +1654,7 @@ extension self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerializersModule
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerializersModule
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerializersModule
 extension self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case bOOLEAN(self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
@@ -1674,7 +1674,7 @@ extension self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind
 @frozen public enum Library_baseRealmStorageType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case bool
   case int
@@ -1725,7 +1725,7 @@ extension self_mobile_kmp.Skie.LibraryBase.SingleQueryChange {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.SingleQueryChange.__Sealed where __Sealed : self_mobile_kmp.Library_baseSingleQueryChange
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.SingleQueryChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseSingleQueryChange
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.SingleQueryChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseSingleQueryChange
 @frozen public enum Library_baseUpdatePolicy : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case error
   case all
@@ -1802,7 +1802,7 @@ extension self_mobile_kmp.Skie.LibraryBase.RealmChange {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.RealmChange.__Sealed where __Sealed : self_mobile_kmp.Library_baseRealmChange
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.RealmChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseRealmChange
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.RealmChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseRealmChange
 extension self_mobile_kmp.Skie.LibraryBase.ResultsChange {
   @frozen public enum __Sealed {
     case initialResults(any self_mobile_kmp.Library_baseInitialResults)
@@ -1810,7 +1810,7 @@ extension self_mobile_kmp.Skie.LibraryBase.ResultsChange {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.ResultsChange.__Sealed where __Sealed : self_mobile_kmp.Library_baseResultsChange
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.ResultsChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseResultsChange
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.ResultsChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseResultsChange
 @frozen public enum Library_baseRealmClassKind : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case standard
   case embedded
@@ -1880,7 +1880,7 @@ extension self_mobile_kmp.Skie.LibraryBase.ObjectChange {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.ObjectChange.__Sealed where __Sealed : self_mobile_kmp.Library_baseObjectChange
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.ObjectChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseObjectChange
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.ObjectChange.__Sealed? where __Sealed : self_mobile_kmp.Library_baseObjectChange
 extension self_mobile_kmp.Skie.LibraryBase.RealmPropertyType {
   @frozen public enum __Sealed : Swift.Hashable {
     case listPropertyType(self_mobile_kmp.Library_baseListPropertyType)
@@ -1895,7 +1895,7 @@ extension self_mobile_kmp.Skie.LibraryBase.RealmPropertyType {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> self_mobile_kmp.Skie.LibraryBase.RealmPropertyType.__Sealed where __Sealed : self_mobile_kmp.Library_baseRealmPropertyType
-public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.RealmPropertyType.__Sealed? where __Sealed : self_mobile_kmp.Library_baseRealmPropertyType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> self_mobile_kmp.Skie.LibraryBase.RealmPropertyType.__Sealed? where __Sealed : self_mobile_kmp.Library_baseRealmPropertyType
 extension self_mobile_kmp.Library_baseRealm {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)

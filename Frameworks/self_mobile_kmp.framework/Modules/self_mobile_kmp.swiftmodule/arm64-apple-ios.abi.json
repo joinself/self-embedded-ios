@@ -79,7 +79,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.OkioBufferedSource>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.OkioBufferedSource>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -158,7 +159,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.OkioBufferedSink>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.OkioBufferedSink>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -237,7 +239,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonPrimitive>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -316,7 +319,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Kotlinx_serialization_jsonJsonElement>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_jsonJsonElement>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -29294,7 +29298,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Skie_SuspendResult>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Skie_SuspendResult>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -30838,7 +30843,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Kotlinx_serialization_coreStructureKind>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreStructureKind>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -30917,7 +30923,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Kotlinx_serialization_coreSerialKind>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerialKind>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -30996,7 +31003,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePolymorphicKind>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -31075,7 +31083,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Kotlinx_serialization_coreSerializersModule>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_coreSerializersModule>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -31154,7 +31163,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Kotlinx_serialization_corePrimitiveKind>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -32221,7 +32231,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Library_baseSingleQueryChange>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Library_baseSingleQueryChange>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -33704,7 +33715,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Library_baseRealmChange>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Library_baseRealmChange>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -33783,7 +33795,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Library_baseResultsChange>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Library_baseResultsChange>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -35036,7 +35049,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Library_baseObjectChange>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Library_baseObjectChange>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -35115,7 +35129,8 @@
         "genericSig": "<τ_0_0 where τ_0_0 : self_mobile_kmp.Library_baseRealmPropertyType>",
         "sugared_genericSig": "<__Sealed where __Sealed : self_mobile_kmp.Library_baseRealmPropertyType>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "DisfavoredOverload"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -40064,8 +40079,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "decryptIncommingMessage",
-            "printedName": "decryptIncommingMessage(messageId:senderId:deviceId:message:)",
+            "name": "decryptIncomingMessage",
+            "printedName": "decryptIncomingMessage(messageId:senderId:deviceId:message:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -40107,8 +40122,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So32Self_mobile_kmpEncryptionManagerC05self_b1_C0E23decryptIncommingMessage9messageId06senderK006deviceK00J0SSSgSS_S3StYaKF",
-            "mangledName": "$sSo32Self_mobile_kmpEncryptionManagerC05self_b1_C0E23decryptIncommingMessage9messageId06senderK006deviceK00J0SSSgSS_S3StYaKF",
+            "usr": "s:So32Self_mobile_kmpEncryptionManagerC05self_b1_C0E22decryptIncomingMessage9messageId06senderK006deviceK00J0SSSgSS_S3StYaKF",
+            "mangledName": "$sSo32Self_mobile_kmpEncryptionManagerC05self_b1_C0E22decryptIncomingMessage9messageId06senderK006deviceK00J0SSSgSS_S3StYaKF",
             "moduleName": "self_mobile_kmp",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",

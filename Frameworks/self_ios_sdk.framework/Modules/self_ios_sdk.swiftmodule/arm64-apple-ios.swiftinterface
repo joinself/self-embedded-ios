@@ -358,9 +358,6 @@ public struct ez {
   public func register(selfId: Swift.String, selfieBase64: Swift.String) async -> Swift.String?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func verify(selfieImage: Foundation.Data) async throws -> [self_ios_sdk.Attestation]
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async -> Swift.Bool
   #endif
   public func identifier() -> Swift.String?

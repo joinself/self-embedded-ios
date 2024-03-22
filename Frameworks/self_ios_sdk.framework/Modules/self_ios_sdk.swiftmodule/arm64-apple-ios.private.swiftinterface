@@ -351,6 +351,7 @@ public struct ez {
   public func setOnMessageListener(_ onMessage: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnRequestListener(_ onRequest: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)
+  public func setDevMode(enabled: Swift.Bool)
   #if compiler(>=5.3) && $AsyncAwait
   public func register(selfieImage: Foundation.Data, attestation: self_ios_sdk.Attestation) async throws -> Swift.String?
   #endif

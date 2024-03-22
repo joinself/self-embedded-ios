@@ -9865,6 +9865,33 @@
           },
           {
             "kind": "Function",
+            "name": "setDevMode",
+            "printedName": "setDevMode(enabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC10setDevMode7enabledySb_tF",
+            "mangledName": "$s12self_ios_sdk7AccountC10setDevMode7enabledySb_tF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "register",
             "printedName": "register(selfieImage:attestation:)",
             "children": [

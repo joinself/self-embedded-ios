@@ -5867,6 +5867,13 @@ Classes:
     Parameters:
     - Position: 0
       Type: "id _Nullable"
+  - Selector: "getKey:"
+    MethodKind: "Instance"
+    SwiftName: "get(key:)"
+    ResultType: "Self_mobile_kmpKeyValue * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
   - Selector: "getSelfieAttestationSelfieData:"
     MethodKind: "Instance"
     SwiftName: "getSelfieAttestation(selfieData:)"
@@ -5953,6 +5960,13 @@ Classes:
       Type: "void (^ _Nonnull)(Self_mobile_kmpKotlinThrowable * _Nullable)"
     - Position: 2
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "removeKey:"
+    MethodKind: "Instance"
+    SwiftName: "remove(key:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
   - Selector: "restoreBackupDir:selfieImage:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__restore(backupDir:selfieImage:completionHandler:)"
@@ -6025,6 +6039,13 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+  - Selector: "storeKeyValue:"
+    MethodKind: "Instance"
+    SwiftName: "store(keyValue:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "Self_mobile_kmpKeyValue * _Nonnull"
   - Selector: "description"
     MethodKind: "Instance"
     SwiftName: "description()"
@@ -7081,6 +7102,105 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "setValue(value:)"
     ResultType: "Self_mobile_kmpFactBuilder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "Self_mobile_kmpKeyValue"
+  SwiftName: "KeyValue"
+  Methods:
+  - Selector: "initWithKey:value:mime:sensitive:"
+    MethodKind: "Instance"
+    SwiftName: "init(key:value:mime:sensitive:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "BOOL"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "isSensitive"
+    MethodKind: "Instance"
+    SwiftName: "isSensitive()"
+    ResultType: "BOOL"
+  - Selector: "key"
+    MethodKind: "Instance"
+    SwiftName: "key()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "mime"
+    MethodKind: "Instance"
+    SwiftName: "mime()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "value"
+    MethodKind: "Instance"
+    SwiftName: "value()"
+    ResultType: "NSString * _Nonnull"
+- Name: "Self_mobile_kmpKeyValueBuilder"
+  SwiftName: "KeyValue.Builder"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "build"
+    MethodKind: "Instance"
+    SwiftName: "build()"
+    ResultType: "Self_mobile_kmpKeyValue * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "setKeyKey:"
+    MethodKind: "Instance"
+    SwiftName: "setKey(key:)"
+    ResultType: "Self_mobile_kmpKeyValueBuilder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "setMimeMime:"
+    MethodKind: "Instance"
+    SwiftName: "setMime(mime:)"
+    ResultType: "Self_mobile_kmpKeyValueBuilder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "setSensitiveSensitive:"
+    MethodKind: "Instance"
+    SwiftName: "setSensitive(sensitive:)"
+    ResultType: "Self_mobile_kmpKeyValueBuilder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "setValueValue:"
+    MethodKind: "Instance"
+    SwiftName: "setValue(value:)"
+    ResultType: "Self_mobile_kmpKeyValueBuilder * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
@@ -8888,6 +9008,17 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "BOOL"
+  - Selector: "getKeyValueModelKey:"
+    MethodKind: "Instance"
+    SwiftName: "getKeyValueModel(key:)"
+    ResultType: "Self_mobile_kmpKeyValueModel * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getKeyValueModels"
+    MethodKind: "Instance"
+    SwiftName: "getKeyValueModels()"
+    ResultType: "NSArray<Self_mobile_kmpKeyValueModel *> * _Nonnull"
   - Selector: "getMessageId:"
     MethodKind: "Instance"
     SwiftName: "getMessage(id:)"
@@ -9008,6 +9139,13 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+  - Selector: "removeKeyValueModelKey:"
+    MethodKind: "Instance"
+    SwiftName: "removeKeyValueModel(key:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
   - Selector: "removeRawMessagesReceiverId:"
     MethodKind: "Instance"
     SwiftName: "removeRawMessages(receiverId:)"
@@ -9022,6 +9160,13 @@ Classes:
     Parameters:
     - Position: 0
       Type: "Self_mobile_kmpFactRequestModel * _Nonnull"
+  - Selector: "saveKeyValueModelKeyValue:"
+    MethodKind: "Instance"
+    SwiftName: "saveKeyValueModel(keyValue:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "Self_mobile_kmpKeyValueModel * _Nonnull"
   - Selector: "saveOrUpdateAttachmentAttachment:"
     MethodKind: "Instance"
     SwiftName: "saveOrUpdateAttachment(attachment:)"
@@ -9928,6 +10073,86 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "Self_mobile_kmpFactRequestModelCompanion"
   SwiftName: "FactRequestModel.Companion"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "io_realm_kotlin_newInstance"
+    MethodKind: "Instance"
+    SwiftName: "io_realm_kotlin_newInstance()"
+    ResultType: "id _Nonnull"
+  - Selector: "io_realm_kotlin_schema"
+    MethodKind: "Instance"
+    SwiftName: "io_realm_kotlin_schema()"
+    ResultType: "id _Nonnull"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<Self_mobile_kmpKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "Self_mobile_kmpKeyValueModel"
+  SwiftName: "KeyValueModel"
+  Properties:
+  - Name: "createdAt"
+    PropertyKind: "Instance"
+    SwiftName: "createdAt"
+    Type: "id<Self_mobile_kmpLibrary_baseRealmInstant> _Nonnull"
+  - Name: "key"
+    PropertyKind: "Instance"
+    SwiftName: "key"
+    Type: "NSString * _Nonnull"
+  - Name: "mimeType"
+    PropertyKind: "Instance"
+    SwiftName: "mimeType"
+    Type: "NSString * _Nonnull"
+  - Name: "sensitive"
+    PropertyKind: "Instance"
+    SwiftName: "sensitive"
+    Type: "BOOL"
+  - Name: "updatedAt"
+    PropertyKind: "Instance"
+    SwiftName: "updatedAt"
+    Type: "id<Self_mobile_kmpLibrary_baseRealmInstant> _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "toKeyValue"
+    MethodKind: "Instance"
+    SwiftName: "toKeyValue()"
+    ResultType: "Self_mobile_kmpKeyValue * _Nonnull"
+- Name: "Self_mobile_kmpKeyValueModelCompanion"
+  SwiftName: "KeyValueModel.Companion"
   Methods:
   - Selector: "isEqual:"
     MethodKind: "Instance"

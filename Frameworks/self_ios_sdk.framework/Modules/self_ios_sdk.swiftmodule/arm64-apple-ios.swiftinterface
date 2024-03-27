@@ -163,6 +163,22 @@ extension UIKit.UIImage {
 extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
   @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
 }
+@_hasMissingDesignatedInitializers public class KeyValue {
+  public class Builder {
+    public init()
+    public func withKey(_ key: Swift.String) -> self_ios_sdk.KeyValue.Builder
+    public func withValue(_ value: Swift.String) -> self_ios_sdk.KeyValue.Builder
+    public func withMime(_ mime: Swift.String) -> self_ios_sdk.KeyValue.Builder
+    public func withSensitive(_ sensitive: Swift.Bool) -> self_ios_sdk.KeyValue.Builder
+    public func build() -> self_ios_sdk.KeyValue
+    @objc deinit
+  }
+  public func key() -> Swift.String
+  public func value() -> Swift.String
+  public func mime() -> Swift.String
+  public func isSensitive() -> Swift.Bool
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class Fact {
   public class Builder {
     public init()
@@ -387,6 +403,9 @@ public struct ez {
   #if compiler(>=5.3) && $AsyncAwait
   public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async
   #endif
+  public func store(keyValue: self_ios_sdk.KeyValue)
+  public func get(key: Swift.String) -> self_ios_sdk.KeyValue?
+  public func remove(key: Swift.String) -> Swift.Bool
   #if compiler(>=5.3) && $AsyncAwait
   public func close() async throws
   #endif

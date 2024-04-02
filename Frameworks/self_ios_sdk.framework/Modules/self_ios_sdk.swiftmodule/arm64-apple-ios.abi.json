@@ -3338,6 +3338,43 @@
                 "moduleName": "self_ios_sdk"
               },
               {
+                "kind": "Var",
+                "name": "LookUp",
+                "printedName": "LookUp",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(self_ios_sdk.LivenessCheck.Challenge.Type) -> self_ios_sdk.LivenessCheck.Challenge",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Challenge",
+                        "printedName": "self_ios_sdk.LivenessCheck.Challenge",
+                        "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "self_ios_sdk.LivenessCheck.Challenge.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Challenge",
+                            "printedName": "self_ios_sdk.LivenessCheck.Challenge",
+                            "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO6LookUpyA2EmF",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC9ChallengeO6LookUpyA2EmF",
+                "moduleName": "self_ios_sdk"
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -14148,231 +14185,231 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 635,
+      "offset": 656,
       "length": 54,
       "value": "\"com.google.mlkit.visiondetector.VideoDataOutputQueue\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 729,
+      "offset": 750,
       "length": 46,
       "value": "\"com.google.mlkit.visiondetector.SessionQueue\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 821,
+      "offset": 842,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 865,
+      "offset": 886,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 913,
+      "offset": 934,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 955,
+      "offset": 976,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1009,
+      "offset": 1030,
       "length": 5,
       "value": "200.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "IntegerLiteral",
-      "offset": 1054,
+      "offset": 1075,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1100,
+      "offset": 1121,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1148,
+      "offset": 1169,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1200,
+      "offset": 1221,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1253,
+      "offset": 1274,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1309,
+      "offset": 1330,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1466,
+      "offset": 1487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1499,
+      "offset": 1520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1536,
+      "offset": 1557,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1573,
+      "offset": 1594,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1610,
+      "offset": 1631,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "Array",
-      "offset": 1651,
+      "offset": 1672,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "Array",
-      "offset": 1689,
+      "offset": 1710,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2306,
+      "offset": 2327,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2348,
+      "offset": 2369,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2390,
+      "offset": 2411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2432,
+      "offset": 2453,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "Dictionary",
-      "offset": 2493,
+      "offset": 2514,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "IntegerLiteral",
-      "offset": 2574,
+      "offset": 2595,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "IntegerLiteral",
-      "offset": 2617,
+      "offset": 2638,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "Array",
-      "offset": 2683,
+      "offset": 2704,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2723,
+      "offset": 2744,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2771,
+      "offset": 2792,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2903,
+      "offset": 2924,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 3414,
+      "offset": 3435,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 3648,
+      "offset": 3669,
       "length": 5,
       "value": "false"
     },

@@ -1584,6 +1584,7 @@ __attribute__((swift_name("Account")))
 */
 - (void)downloadDataLink:(Self_mobile_kmpDataObjectLink *)dataLink completionHandler:(void (^)(Self_mobile_kmpDataObject * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("download(dataLink:completionHandler:)")));
 - (Self_mobile_kmpKeyValue * _Nullable)getKey:(NSString *)key __attribute__((swift_name("get(key:)")));
+- (Self_mobile_kmpDevMode * _Nullable)getDevMode __attribute__((swift_name("getDevMode()")));
 - (Self_mobile_kmpAttestation * _Nullable)getSelfieAttestationSelfieData:(Self_mobile_kmpKotlinByteArray *)selfieData __attribute__((swift_name("getSelfieAttestation(selfieData:)")));
 
 /**
@@ -1634,6 +1635,7 @@ __attribute__((swift_name("Account")))
 - (Self_mobile_kmpAccount *)setOnRequestOnRequest:(void (^ _Nullable)(Self_mobile_kmpMessage *))onRequest __attribute__((swift_name("setOnRequest(onRequest:)")));
 - (Self_mobile_kmpAccount *)setOnResponseOnResponse:(void (^ _Nullable)(Self_mobile_kmpMessage *))onResponse __attribute__((swift_name("setOnResponse(onResponse:)")));
 - (Self_mobile_kmpSignable * _Nullable)signPayload:(NSString *)payload __attribute__((swift_name("sign(payload:)")));
+- (void)startWebsocket __attribute__((swift_name("startWebsocket()")));
 - (void)storeKeyValue:(Self_mobile_kmpKeyValue *)keyValue __attribute__((swift_name("store(keyValue:)")));
 
 /**

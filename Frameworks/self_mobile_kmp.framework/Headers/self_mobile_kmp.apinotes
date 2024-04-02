@@ -5874,6 +5874,10 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+  - Selector: "getDevMode"
+    MethodKind: "Instance"
+    SwiftName: "getDevMode()"
+    ResultType: "Self_mobile_kmpDevMode * _Nullable"
   - Selector: "getSelfieAttestationSelfieData:"
     MethodKind: "Instance"
     SwiftName: "getSelfieAttestation(selfieData:)"
@@ -6039,6 +6043,10 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+  - Selector: "startWebsocket"
+    MethodKind: "Instance"
+    SwiftName: "startWebsocket()"
+    ResultType: "void"
   - Selector: "storeKeyValue:"
     MethodKind: "Instance"
     SwiftName: "store(keyValue:)"

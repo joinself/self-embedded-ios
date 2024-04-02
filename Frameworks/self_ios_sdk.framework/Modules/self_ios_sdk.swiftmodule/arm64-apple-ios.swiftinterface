@@ -128,7 +128,7 @@ extension UIKit.UIImage {
 }
 @objc @_inheritsConvenienceInitializers public class LivenessCheck : ObjectiveC.NSObject {
   public enum Challenge : Swift.String {
-    case None, Done, Smile, Blink, TurnLeft, TurnRight
+    case None, Done, Smile, Blink, TurnLeft, TurnRight, LookUp
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {

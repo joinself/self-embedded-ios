@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "self-embedded-ios"
-  spec.version      = "0.0.23"
+  spec.version      = "0.0.24"
   spec.summary      = "A short description of self-embedded-ios."
 
   # This description is used to generate tags and improve search results.

@@ -36997,6 +36997,35 @@
           },
           {
             "kind": "Function",
+            "name": "createAccount",
+            "printedName": "createAccount()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So22Self_mobile_kmpAccountC05self_b1_C0E06createD0yyYaKF",
+            "mangledName": "$sSo22Self_mobile_kmpAccountC05self_b1_C0E06createD0yyYaKF",
+            "moduleName": "self_mobile_kmp",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "download",
             "printedName": "download(dataLink:)",
             "children": [
@@ -37076,7 +37105,7 @@
           {
             "kind": "Function",
             "name": "register",
-            "printedName": "register(selfieImage:selfieAttestation:)",
+            "printedName": "register(selfieImage:attestations:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -37100,14 +37129,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Attestation",
-                "printedName": "self_mobile_kmp.Attestation",
-                "usr": "c:objc(cs)Self_mobile_kmpAttestation"
+                "name": "Array",
+                "printedName": "[self_mobile_kmp.Attestation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Attestation",
+                    "printedName": "self_mobile_kmp.Attestation",
+                    "usr": "c:objc(cs)Self_mobile_kmpAttestation"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So22Self_mobile_kmpAccountC05self_b1_C0E8register11selfieImage0G11AttestationSSSgSo0a1_b1_C15KotlinByteArrayC_So0a1_b1_cI0CtYaKF",
-            "mangledName": "$sSo22Self_mobile_kmpAccountC05self_b1_C0E8register11selfieImage0G11AttestationSSSgSo0a1_b1_C15KotlinByteArrayC_So0a1_b1_cI0CtYaKF",
+            "usr": "s:So22Self_mobile_kmpAccountC05self_b1_C0E8register11selfieImage12attestationsSSSgSo0a1_b1_C15KotlinByteArrayC_SaySo0a1_b1_C11AttestationCGtYaKF",
+            "mangledName": "$sSo22Self_mobile_kmpAccountC05self_b1_C0E8register11selfieImage12attestationsSSSgSo0a1_b1_C15KotlinByteArrayC_SaySo0a1_b1_C11AttestationCGtYaKF",
             "moduleName": "self_mobile_kmp",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -37427,7 +37464,7 @@
           {
             "kind": "Function",
             "name": "verifySelfieImage",
-            "printedName": "verifySelfieImage(selfieImage:isSaveResult:)",
+            "printedName": "verifySelfieImage(selfieImage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -37448,17 +37485,11 @@
                 "name": "KotlinByteArray",
                 "printedName": "self_mobile_kmp.KotlinByteArray",
                 "usr": "c:objc(cs)Self_mobile_kmpKotlinByteArray"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So22Self_mobile_kmpAccountC05self_b1_C0E17verifySelfieImage06selfieH012isSaveResultSaySo0a1_b1_C11AttestationCGSo0a1_b1_C15KotlinByteArrayC_SbtYaKF",
-            "mangledName": "$sSo22Self_mobile_kmpAccountC05self_b1_C0E17verifySelfieImage06selfieH012isSaveResultSaySo0a1_b1_C11AttestationCGSo0a1_b1_C15KotlinByteArrayC_SbtYaKF",
+            "usr": "s:So22Self_mobile_kmpAccountC05self_b1_C0E17verifySelfieImage06selfieH0SaySo0a1_b1_C11AttestationCGSo0a1_b1_C15KotlinByteArrayC_tYaKF",
+            "mangledName": "$sSo22Self_mobile_kmpAccountC05self_b1_C0E17verifySelfieImage06selfieH0SaySo0a1_b1_C11AttestationCGSo0a1_b1_C15KotlinByteArrayC_tYaKF",
             "moduleName": "self_mobile_kmp",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",

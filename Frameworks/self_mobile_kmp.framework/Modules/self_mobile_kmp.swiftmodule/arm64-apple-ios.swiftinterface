@@ -262,6 +262,10 @@ extension self_mobile_kmp.Account {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func createAccount() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func download(dataLink: self_mobile_kmp.DataObject.Link) async throws -> self_mobile_kmp.DataObject
   #endif
   #if compiler(>=5.3) && $AsyncAwait
@@ -270,7 +274,7 @@ extension self_mobile_kmp.Account {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func register(selfieImage: self_mobile_kmp.KotlinByteArray, selfieAttestation: self_mobile_kmp.Attestation) async throws -> Swift.String?
+  public func register(selfieImage: self_mobile_kmp.KotlinByteArray, attestations: [self_mobile_kmp.Attestation]) async throws -> Swift.String?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -298,7 +302,7 @@ extension self_mobile_kmp.Account {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func verifySelfieImage(selfieImage: self_mobile_kmp.KotlinByteArray, isSaveResult: Swift.Bool) async throws -> [self_mobile_kmp.Attestation]
+  public func verifySelfieImage(selfieImage: self_mobile_kmp.KotlinByteArray) async throws -> [self_mobile_kmp.Attestation]
   #endif
 }
 @frozen public enum ConversationType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {

@@ -153,7 +153,7 @@ extension UIKit.UIImage {
   }
   public var onStatusUpdated: ((self_ios_sdk.LivenessCheck.Status) -> Swift.Void)?
   public var onChallengeChanged: ((self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
-  public var onResult: ((Foundation.Data, self_ios_sdk.Attestation?) -> Swift.Void)?
+  public var onResult: ((Foundation.Data, [self_ios_sdk.Attestation]) -> Swift.Void)?
   @objc override dynamic public init()
   public func initialize(account: self_ios_sdk.Account, cameraView: UIKit.UIView)
   public func start()
@@ -369,7 +369,7 @@ public struct ez {
   public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setDevMode(enabled: Swift.Bool)
   #if compiler(>=5.3) && $AsyncAwait
-  public func register(selfieImage: Foundation.Data, attestation: self_ios_sdk.Attestation) async throws -> Swift.String?
+  public func register(selfieImage: Foundation.Data, attestations: [self_ios_sdk.Attestation]) async throws -> Swift.String?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func register(selfId: Swift.String, selfieBase64: Swift.String) async -> Swift.String?
@@ -404,8 +404,7 @@ public struct ez {
   public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async
   #endif
   public func store(keyValue: self_ios_sdk.KeyValue)
-  public func get(key: Swift.String) -> self_ios_sdk.KeyValue?
-  public func remove(key: Swift.String) -> Swift.Bool
+  public func get(key: Swift.String, attestations: [self_ios_sdk.Attestation]) -> self_ios_sdk.KeyValue?
   #if compiler(>=5.3) && $AsyncAwait
   public func close() async throws
   #endif

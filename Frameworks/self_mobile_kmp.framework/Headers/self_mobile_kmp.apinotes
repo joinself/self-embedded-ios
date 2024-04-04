@@ -3710,6 +3710,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "KeyStoreDecryptFailed"
     Type: "NSString * _Nonnull"
+  - Name: "NOT_REGISTERED"
+    PropertyKind: "Instance"
+    SwiftName: "NOT_REGISTERED"
+    Type: "NSString * _Nonnull"
   - Name: "NO_ACTIVE_DEVICES"
     PropertyKind: "Instance"
     SwiftName: "NO_ACTIVE_DEVICES"
@@ -4761,10 +4765,6 @@ Classes:
     Parameters:
     - Position: 0
       Type: "id _Nullable"
-  - Selector: "getMySelfId"
-    MethodKind: "Instance"
-    SwiftName: "getMySelfId()"
-    ResultType: "NSString * _Nullable"
   - Selector: "getPublicKey"
     MethodKind: "Instance"
     SwiftName: "getPublicKey()"
@@ -5850,6 +5850,14 @@ Classes:
     Parameters:
     - Position: 0
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "createAccountWithCompletionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__createAccount(completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
   - Selector: "downloadDataLink:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__download(dataLink:completionHandler:)"
@@ -5867,13 +5875,15 @@ Classes:
     Parameters:
     - Position: 0
       Type: "id _Nullable"
-  - Selector: "getKey:"
+  - Selector: "getKey:attestations:"
     MethodKind: "Instance"
-    SwiftName: "get(key:)"
+    SwiftName: "get(key:attestations:)"
     ResultType: "Self_mobile_kmpKeyValue * _Nullable"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSArray<Self_mobile_kmpAttestation *> * _Nonnull"
   - Selector: "getDevMode"
     MethodKind: "Instance"
     SwiftName: "getDevMode()"
@@ -5928,16 +5938,16 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "publicKey()"
     ResultType: "NSString * _Nonnull"
-  - Selector: "registerSelfieImage:selfieAttestation:completionHandler:"
+  - Selector: "registerSelfieImage:attestations:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__register(selfieImage:selfieAttestation:completionHandler:)"
+    SwiftName: "__register(selfieImage:attestations:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
     - Position: 0
       Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
     - Position: 1
-      Type: "Self_mobile_kmpAttestation * _Nonnull"
+      Type: "NSArray<Self_mobile_kmpAttestation *> * _Nonnull"
     - Position: 2
       Type: "void (^ _Nonnull)(NSString * _Nullable_result, NSError * _Nullable)"
   - Selector: "registerSelfId:selfieBase64:completionHandler:"
@@ -6085,17 +6095,15 @@ Classes:
       Type: "Self_mobile_kmpLocationData * _Nonnull"
     - Position: 1
       Type: "void (^ _Nonnull)(NSArray<Self_mobile_kmpAttestation *> * _Nullable, NSError * _Nullable)"
-  - Selector: "verifySelfieImageSelfieImage:isSaveResult:completionHandler:"
+  - Selector: "verifySelfieImageSelfieImage:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__verifySelfieImage(selfieImage:isSaveResult:completionHandler:)"
+    SwiftName: "__verifySelfieImage(selfieImage:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
     - Position: 0
       Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
     - Position: 1
-      Type: "BOOL"
-    - Position: 2
       Type: "void (^ _Nonnull)(NSArray<Self_mobile_kmpAttestation *> * _Nullable, NSError * _Nullable)"
 - Name: "Self_mobile_kmpAccountBuilder"
   SwiftName: "Account.Builder"
@@ -14941,9 +14949,19 @@ Classes:
       Type: "Self_mobile_kmpAccount * _Nonnull"
     - Position: 1
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__36__downloadDispatchReceiver:dataLink:suspendHandler:"
+  - Selector: "Skie_Suspend__36__createAccountDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__36__download(dispatchReceiver:dataLink:suspendHandler:)"
+    SwiftName: "Skie_Suspend__36__createAccount(dispatchReceiver:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "Self_mobile_kmpAccount * _Nonnull"
+    - Position: 1
+      Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__37__downloadDispatchReceiver:dataLink:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__37__download(dispatchReceiver:dataLink:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -14953,9 +14971,9 @@ Classes:
       Type: "Self_mobile_kmpDataObjectLink * _Nonnull"
     - Position: 2
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__37__handleSignInRequestForSDKDispatchReceiver:deviceId:publicKeyBase64:suspendHandler:"
+  - Selector: "Skie_Suspend__38__handleSignInRequestForSDKDispatchReceiver:deviceId:publicKeyBase64:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__37__handleSignInRequestForSDK(dispatchReceiver:deviceId:publicKeyBase64:suspendHandler:)"
+    SwiftName: "Skie_Suspend__38__handleSignInRequestForSDK(dispatchReceiver:deviceId:publicKeyBase64:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -14967,9 +14985,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__38__registerDispatchReceiver:selfieImage:selfieAttestation:suspendHandler:"
+  - Selector: "Skie_Suspend__39__registerDispatchReceiver:selfieImage:attestations:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__38__register(dispatchReceiver:selfieImage:selfieAttestation:suspendHandler:)"
+    SwiftName: "Skie_Suspend__39__register(dispatchReceiver:selfieImage:attestations:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -14978,12 +14996,12 @@ Classes:
     - Position: 1
       Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
     - Position: 2
-      Type: "Self_mobile_kmpAttestation * _Nonnull"
+      Type: "NSArray<Self_mobile_kmpAttestation *> * _Nonnull"
     - Position: 3
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__39__registerDispatchReceiver:selfId:selfieBase64:suspendHandler:"
+  - Selector: "Skie_Suspend__40__registerDispatchReceiver:selfId:selfieBase64:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__39__register(dispatchReceiver:selfId:selfieBase64:suspendHandler:)"
+    SwiftName: "Skie_Suspend__40__register(dispatchReceiver:selfId:selfieBase64:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -14995,9 +15013,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__40__rejectDispatchReceiver:message:onAcknowledgement:suspendHandler:"
+  - Selector: "Skie_Suspend__41__rejectDispatchReceiver:message:onAcknowledgement:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__40__reject(dispatchReceiver:message:onAcknowledgement:suspendHandler:)"
+    SwiftName: "Skie_Suspend__41__reject(dispatchReceiver:message:onAcknowledgement:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15009,9 +15027,9 @@ Classes:
       Type: "void (^ _Nonnull)(Self_mobile_kmpKotlinThrowable * _Nullable)"
     - Position: 3
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__41__restoreDispatchReceiver:backupDir:selfieImage:suspendHandler:"
+  - Selector: "Skie_Suspend__42__restoreDispatchReceiver:backupDir:selfieImage:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__41__restore(dispatchReceiver:backupDir:selfieImage:suspendHandler:)"
+    SwiftName: "Skie_Suspend__42__restore(dispatchReceiver:backupDir:selfieImage:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15023,9 +15041,9 @@ Classes:
       Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
     - Position: 3
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__42__sendDispatchReceiver:message:onAcknowledgement:suspendHandler:"
+  - Selector: "Skie_Suspend__43__sendDispatchReceiver:message:onAcknowledgement:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__42__send(dispatchReceiver:message:onAcknowledgement:suspendHandler:)"
+    SwiftName: "Skie_Suspend__43__send(dispatchReceiver:message:onAcknowledgement:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15037,9 +15055,9 @@ Classes:
       Type: "void (^ _Nonnull)(Self_mobile_kmpKotlinThrowable * _Nullable)"
     - Position: 3
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__43__uploadDispatchReceiver:dataObject:suspendHandler:"
+  - Selector: "Skie_Suspend__44__uploadDispatchReceiver:dataObject:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__43__upload(dispatchReceiver:dataObject:suspendHandler:)"
+    SwiftName: "Skie_Suspend__44__upload(dispatchReceiver:dataObject:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15049,9 +15067,9 @@ Classes:
       Type: "Self_mobile_kmpDataObject * _Nonnull"
     - Position: 2
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__44__verifyLocationDispatchReceiver:locationData:suspendHandler:"
+  - Selector: "Skie_Suspend__45__verifyLocationDispatchReceiver:locationData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__44__verifyLocation(dispatchReceiver:locationData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__45__verifyLocation(dispatchReceiver:locationData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15061,9 +15079,9 @@ Classes:
       Type: "Self_mobile_kmpLocationData * _Nonnull"
     - Position: 2
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__45__verifySelfieImageDispatchReceiver:selfieImage:isSaveResult:suspendHandler:"
+  - Selector: "Skie_Suspend__46__verifySelfieImageDispatchReceiver:selfieImage:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__45__verifySelfieImage(dispatchReceiver:selfieImage:isSaveResult:suspendHandler:)"
+    SwiftName: "Skie_Suspend__46__verifySelfieImage(dispatchReceiver:selfieImage:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15072,12 +15090,10 @@ Classes:
     - Position: 1
       Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
     - Position: 2
-      Type: "BOOL"
-    - Position: 3
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__46__writeDispatchReceiver:block:suspendHandler:"
+  - Selector: "Skie_Suspend__47__writeDispatchReceiver:block:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__46__write(dispatchReceiver:block:suspendHandler:)"
+    SwiftName: "Skie_Suspend__47__write(dispatchReceiver:block:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15087,9 +15103,9 @@ Classes:
       Type: "id _Nullable (^ _Nonnull)(id<Self_mobile_kmpLibrary_baseMutableRealm> _Nonnull)"
     - Position: 2
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__47__deserializePDSDataExtensionReceiver:backupDir:selfieImage:suspendHandler:"
+  - Selector: "Skie_Suspend__48__deserializePDSDataExtensionReceiver:backupDir:selfieImage:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__47__deserializePDSData(extensionReceiver:backupDir:selfieImage:suspendHandler:)"
+    SwiftName: "Skie_Suspend__48__deserializePDSData(extensionReceiver:backupDir:selfieImage:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15101,9 +15117,9 @@ Classes:
       Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
     - Position: 3
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__48__sendFactRequestExtensionReceiver:attestationRequest:suspendHandler:"
+  - Selector: "Skie_Suspend__49__sendFactRequestExtensionReceiver:attestationRequest:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__48__sendFactRequest(extensionReceiver:attestationRequest:suspendHandler:)"
+    SwiftName: "Skie_Suspend__49__sendFactRequest(extensionReceiver:attestationRequest:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15113,9 +15129,9 @@ Classes:
       Type: "Self_mobile_kmpAttestationRequest * _Nonnull"
     - Position: 2
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__49__sendFactResponseExtensionReceiver:attestationResponse:suspendHandler:"
+  - Selector: "Skie_Suspend__50__sendFactResponseExtensionReceiver:attestationResponse:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__49__sendFactResponse(extensionReceiver:attestationResponse:suspendHandler:)"
+    SwiftName: "Skie_Suspend__50__sendFactResponse(extensionReceiver:attestationResponse:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15125,9 +15141,9 @@ Classes:
       Type: "Self_mobile_kmpAttestationResponse * _Nonnull"
     - Position: 2
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__50__sendLocationVerifyRequestExtensionReceiver:locationData:suspendHandler:"
+  - Selector: "Skie_Suspend__51__sendLocationVerifyRequestExtensionReceiver:locationData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__50__sendLocationVerifyRequest(extensionReceiver:locationData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__51__sendLocationVerifyRequest(extensionReceiver:locationData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -15137,9 +15153,9 @@ Classes:
       Type: "Self_mobile_kmpLocationData * _Nonnull"
     - Position: 2
       Type: "Self_mobile_kmpSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__51__serializePDSDataExtensionReceiver:backupDir:suspendHandler:"
+  - Selector: "Skie_Suspend__52__serializePDSDataExtensionReceiver:backupDir:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__51__serializePDSData(extensionReceiver:backupDir:suspendHandler:)"
+    SwiftName: "Skie_Suspend__52__serializePDSData(extensionReceiver:backupDir:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:

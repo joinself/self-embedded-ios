@@ -4300,12 +4300,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Foundation.Data, self_ios_sdk.Attestation?) -> ())?",
+                "printedName": "((Foundation.Data, [self_ios_sdk.Attestation]) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Foundation.Data, self_ios_sdk.Attestation?) -> ()",
+                    "printedName": "(Foundation.Data, [self_ios_sdk.Attestation]) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4315,7 +4315,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Foundation.Data, self_ios_sdk.Attestation?)",
+                        "printedName": "(Foundation.Data, [self_ios_sdk.Attestation])",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4325,8 +4325,8 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "self_ios_sdk.Attestation?",
+                            "name": "Array",
+                            "printedName": "[self_ios_sdk.Attestation]",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -4335,7 +4335,7 @@
                                 "usr": "s:12self_ios_sdk11AttestationC"
                               }
                             ],
-                            "usr": "s:Sq"
+                            "usr": "s:Sa"
                           }
                         ]
                       }
@@ -4346,8 +4346,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_AA11AttestationCSgtcSgvp",
-            "mangledName": "$s12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_AA11AttestationCSgtcSgvp",
+            "usr": "s:12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_SayAA11AttestationCGtcSgvp",
+            "mangledName": "$s12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_SayAA11AttestationCGtcSgvp",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
@@ -4365,12 +4365,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Foundation.Data, self_ios_sdk.Attestation?) -> ())?",
+                    "printedName": "((Foundation.Data, [self_ios_sdk.Attestation]) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Foundation.Data, self_ios_sdk.Attestation?) -> ()",
+                        "printedName": "(Foundation.Data, [self_ios_sdk.Attestation]) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4380,7 +4380,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Foundation.Data, self_ios_sdk.Attestation?)",
+                            "printedName": "(Foundation.Data, [self_ios_sdk.Attestation])",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -4390,8 +4390,8 @@
                               },
                               {
                                 "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "self_ios_sdk.Attestation?",
+                                "name": "Array",
+                                "printedName": "[self_ios_sdk.Attestation]",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -4400,7 +4400,7 @@
                                     "usr": "s:12self_ios_sdk11AttestationC"
                                   }
                                 ],
-                                "usr": "s:Sq"
+                                "usr": "s:Sa"
                               }
                             ]
                           }
@@ -4411,8 +4411,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_AA11AttestationCSgtcSgvg",
-                "mangledName": "$s12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_AA11AttestationCSgtcSgvg",
+                "usr": "s:12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_SayAA11AttestationCGtcSgvg",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_SayAA11AttestationCGtcSgvg",
                 "moduleName": "self_ios_sdk",
                 "implicit": true,
                 "isOpen": true,
@@ -4431,12 +4431,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Foundation.Data, self_ios_sdk.Attestation?) -> ())?",
+                    "printedName": "((Foundation.Data, [self_ios_sdk.Attestation]) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Foundation.Data, self_ios_sdk.Attestation?) -> ()",
+                        "printedName": "(Foundation.Data, [self_ios_sdk.Attestation]) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4446,7 +4446,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Foundation.Data, self_ios_sdk.Attestation?)",
+                            "printedName": "(Foundation.Data, [self_ios_sdk.Attestation])",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -4456,8 +4456,8 @@
                               },
                               {
                                 "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "self_ios_sdk.Attestation?",
+                                "name": "Array",
+                                "printedName": "[self_ios_sdk.Attestation]",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
@@ -4466,7 +4466,7 @@
                                     "usr": "s:12self_ios_sdk11AttestationC"
                                   }
                                 ],
-                                "usr": "s:Sq"
+                                "usr": "s:Sa"
                               }
                             ]
                           }
@@ -4477,8 +4477,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_AA11AttestationCSgtcSgvs",
-                "mangledName": "$s12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_AA11AttestationCSgtcSgvs",
+                "usr": "s:12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_SayAA11AttestationCGtcSgvs",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_SayAA11AttestationCGtcSgvs",
                 "moduleName": "self_ios_sdk",
                 "implicit": true,
                 "isOpen": true,
@@ -4496,8 +4496,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_AA11AttestationCSgtcSgvM",
-                "mangledName": "$s12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_AA11AttestationCSgtcSgvM",
+                "usr": "s:12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_SayAA11AttestationCGtcSgvM",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC8onResulty10Foundation4DataV_SayAA11AttestationCGtcSgvM",
                 "moduleName": "self_ios_sdk",
                 "implicit": true,
                 "isOpen": true,
@@ -10067,13 +10067,13 @@
           },
           {
             "kind": "Function",
-            "name": "getSelfieAttestation",
-            "printedName": "getSelfieAttestation(selfieData:)",
+            "name": "verifySelfieImage",
+            "printedName": "verifySelfieImage(selfieData:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "self_ios_sdk.Attestation?",
+                "name": "Array",
+                "printedName": "[self_ios_sdk.Attestation]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -10082,7 +10082,7 @@
                     "usr": "s:12self_ios_sdk11AttestationC"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
@@ -10092,13 +10092,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC20getSelfieAttestation10selfieDataAA0G0CSg10Foundation0I0V_tF",
-            "mangledName": "$s12self_ios_sdk7AccountC20getSelfieAttestation10selfieDataAA0G0CSg10Foundation0I0V_tF",
+            "usr": "s:12self_ios_sdk7AccountC17verifySelfieImage10selfieDataSayAA11AttestationCG10Foundation0I0V_tYaKF",
+            "mangledName": "$s12self_ios_sdk7AccountC17verifySelfieImage10selfieDataSayAA11AttestationCG10Foundation0I0V_tYaKF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -10272,7 +10274,7 @@
           {
             "kind": "Function",
             "name": "register",
-            "printedName": "register(selfieImage:attestation:)",
+            "printedName": "register(selfieImage:attestations:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10296,14 +10298,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Attestation",
-                "printedName": "self_ios_sdk.Attestation",
-                "usr": "s:12self_ios_sdk11AttestationC"
+                "name": "Array",
+                "printedName": "[self_ios_sdk.Attestation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Attestation",
+                    "printedName": "self_ios_sdk.Attestation",
+                    "usr": "s:12self_ios_sdk11AttestationC"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC8register11selfieImage11attestationSSSg10Foundation4DataV_AA11AttestationCtYaKF",
-            "mangledName": "$s12self_ios_sdk7AccountC8register11selfieImage11attestationSSSg10Foundation4DataV_AA11AttestationCtYaKF",
+            "usr": "s:12self_ios_sdk7AccountC8register11selfieImage12attestationsSSSg10Foundation4DataV_SayAA11AttestationCGtYaKF",
+            "mangledName": "$s12self_ios_sdk7AccountC8register11selfieImage12attestationsSSSg10Foundation4DataV_SayAA11AttestationCGtYaKF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
@@ -10897,7 +10907,7 @@
           {
             "kind": "Function",
             "name": "get",
-            "printedName": "get(key:)",
+            "printedName": "get(key:attestations:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10918,40 +10928,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC3get3keyAA8KeyValueCSgSS_tF",
-            "mangledName": "$s12self_ios_sdk7AccountC3get3keyAA8KeyValueCSgSS_tF",
-            "moduleName": "self_ios_sdk",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "remove",
-            "printedName": "remove(key:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Array",
+                "printedName": "[self_ios_sdk.Attestation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Attestation",
+                    "printedName": "self_ios_sdk.Attestation",
+                    "usr": "s:12self_ios_sdk11AttestationC"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC6remove3keySbSS_tF",
-            "mangledName": "$s12self_ios_sdk7AccountC6remove3keySbSS_tF",
+            "usr": "s:12self_ios_sdk7AccountC3get3key12attestationsAA8KeyValueCSgSS_SayAA11AttestationCGtF",
+            "mangledName": "$s12self_ios_sdk7AccountC3get3key12attestationsAA8KeyValueCSgSS_SayAA11AttestationCGtF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
@@ -11923,6 +11918,57 @@
         "children": [
           {
             "kind": "Var",
+            "name": "InvalidAccountError",
+            "printedName": "InvalidAccountError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.SelfError.Type) -> (Swift.String) -> self_ios_sdk.SelfError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> self_ios_sdk.SelfError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SelfError",
+                        "printedName": "self_ios_sdk.SelfError",
+                        "usr": "s:12self_ios_sdk9SelfErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.SelfError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SelfError",
+                        "printedName": "self_ios_sdk.SelfError",
+                        "usr": "s:12self_ios_sdk9SelfErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk9SelfErrorO014InvalidAccountE0yACSScACmF",
+            "mangledName": "$s12self_ios_sdk9SelfErrorO014InvalidAccountE0yACSScACmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
             "name": "InvalidAttestationError",
             "printedName": "InvalidAttestationError",
             "children": [
@@ -11970,7 +12016,7 @@
             "usr": "s:12self_ios_sdk9SelfErrorO018InvalidAttestationE0yACSScACmF",
             "mangledName": "$s12self_ios_sdk9SelfErrorO018InvalidAttestationE0yACSScACmF",
             "moduleName": "self_ios_sdk",
-            "fixedbinaryorder": 0
+            "fixedbinaryorder": 1
           },
           {
             "kind": "Var",
@@ -12021,7 +12067,7 @@
             "usr": "s:12self_ios_sdk9SelfErrorO016InvalidParameterE0yACSScACmF",
             "mangledName": "$s12self_ios_sdk9SelfErrorO016InvalidParameterE0yACSScACmF",
             "moduleName": "self_ios_sdk",
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -12072,7 +12118,7 @@
             "usr": "s:12self_ios_sdk9SelfErrorO18PermissionRequiredyACSScACmF",
             "mangledName": "$s12self_ios_sdk9SelfErrorO18PermissionRequiredyACSScACmF",
             "moduleName": "self_ios_sdk",
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -12123,7 +12169,7 @@
             "usr": "s:12self_ios_sdk9SelfErrorO07UnknownE0yACSScACmF",
             "mangledName": "$s12self_ios_sdk9SelfErrorO07UnknownE0yACSScACmF",
             "moduleName": "self_ios_sdk",
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           }
         ],
         "declKind": "Enum",
@@ -14402,14 +14448,14 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 3435,
+      "offset": 3436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 3669,
+      "offset": 3670,
       "length": 5,
       "value": "false"
     },

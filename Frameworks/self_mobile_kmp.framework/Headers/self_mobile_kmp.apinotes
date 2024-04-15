@@ -6024,7 +6024,7 @@ Classes:
     ResultType: "Self_mobile_kmpAccount * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "Self_mobile_kmpDevMode * _Nonnull"
+      Type: "Self_mobile_kmpDevMode * _Nullable"
   - Selector: "setOnMessageOnMessage:"
     MethodKind: "Instance"
     SwiftName: "setOnMessage(onMessage:)"

@@ -1636,7 +1636,7 @@ __attribute__((swift_name("Account")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)sendMessage:(Self_mobile_kmpMessage *)message onAcknowledgement:(void (^)(Self_mobile_kmpKotlinThrowable * _Nullable))onAcknowledgement completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("send(message:onAcknowledgement:completionHandler:)")));
-- (Self_mobile_kmpAccount *)setDevModeDevMode:(Self_mobile_kmpDevMode *)devMode __attribute__((swift_name("setDevMode(devMode:)")));
+- (Self_mobile_kmpAccount *)setDevModeDevMode:(Self_mobile_kmpDevMode * _Nullable)devMode __attribute__((swift_name("setDevMode(devMode:)")));
 - (Self_mobile_kmpAccount *)setOnMessageOnMessage:(void (^ _Nullable)(Self_mobile_kmpMessage *))onMessage __attribute__((swift_name("setOnMessage(onMessage:)")));
 - (Self_mobile_kmpAccount *)setOnRequestOnRequest:(void (^ _Nullable)(Self_mobile_kmpMessage *))onRequest __attribute__((swift_name("setOnRequest(onRequest:)")));
 - (Self_mobile_kmpAccount *)setOnResponseOnResponse:(void (^ _Nullable)(Self_mobile_kmpMessage *))onResponse __attribute__((swift_name("setOnResponse(onResponse:)")));

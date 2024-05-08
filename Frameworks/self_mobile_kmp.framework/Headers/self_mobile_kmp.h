@@ -1304,7 +1304,6 @@ __attribute__((swift_name("SelfInteractor")))
 */
 - (void)getPublicKeyByRecipientRecipient:(NSString *)recipient completionHandler:(void (^)(Self_mobile_kmpKotlinByteArray * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getPublicKeyByRecipient(recipient:completionHandler:)")));
 - (NSString * _Nullable)getRegistrationImage __attribute__((swift_name("getRegistrationImage()")));
-- (Self_mobile_kmpAttestation * _Nullable)getSelfieAttestationSelfieData:(Self_mobile_kmpKotlinByteArray *)selfieData __attribute__((swift_name("getSelfieAttestation(selfieData:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1591,7 +1590,6 @@ __attribute__((swift_name("Account")))
 - (void)downloadDataLink:(Self_mobile_kmpDataObjectLink *)dataLink completionHandler:(void (^)(Self_mobile_kmpDataObject * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("download(dataLink:completionHandler:)")));
 - (Self_mobile_kmpKeyValue * _Nullable)getKey:(NSString *)key attestations:(NSArray<Self_mobile_kmpAttestation *> *)attestations __attribute__((swift_name("get(key:attestations:)")));
 - (Self_mobile_kmpDevMode * _Nullable)getDevMode __attribute__((swift_name("getDevMode()")));
-- (Self_mobile_kmpAttestation * _Nullable)getSelfieAttestationSelfieData:(Self_mobile_kmpKotlinByteArray *)selfieData __attribute__((swift_name("getSelfieAttestation(selfieData:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1628,7 +1626,6 @@ __attribute__((swift_name("Account")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)restoreBackupDir:(NSString *)backupDir selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("restore(backupDir:selfieImage:completionHandler:)")));
-- (void)saveSelfieDataType:(NSString *)type selfieData:(Self_mobile_kmpKotlinByteArray *)selfieData __attribute__((swift_name("saveSelfieData(type:selfieData:)")));
 - (NSString * _Nullable)selfieImage __attribute__((swift_name("selfieImage()")));
 
 /**

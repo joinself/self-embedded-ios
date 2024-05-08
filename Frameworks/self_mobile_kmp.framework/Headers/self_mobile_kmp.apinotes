@@ -4783,13 +4783,6 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "getRegistrationImage()"
     ResultType: "NSString * _Nullable"
-  - Selector: "getSelfieAttestationSelfieData:"
-    MethodKind: "Instance"
-    SwiftName: "getSelfieAttestation(selfieData:)"
-    ResultType: "Self_mobile_kmpAttestation * _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
   - Selector: "hash"
     MethodKind: "Instance"
     SwiftName: "hash()"
@@ -5888,13 +5881,6 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "getDevMode()"
     ResultType: "Self_mobile_kmpDevMode * _Nullable"
-  - Selector: "getSelfieAttestationSelfieData:"
-    MethodKind: "Instance"
-    SwiftName: "getSelfieAttestation(selfieData:)"
-    ResultType: "Self_mobile_kmpAttestation * _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
   - Selector: "handleSignInRequestForSDKDeviceId:publicKeyBase64:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__handleSignInRequestForSDK(deviceId:publicKeyBase64:completionHandler:)"
@@ -5993,15 +5979,6 @@ Classes:
       Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
     - Position: 2
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
-  - Selector: "saveSelfieDataType:selfieData:"
-    MethodKind: "Instance"
-    SwiftName: "saveSelfieData(type:selfieData:)"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "Self_mobile_kmpKotlinByteArray * _Nonnull"
   - Selector: "selfieImage"
     MethodKind: "Instance"
     SwiftName: "selfieImage()"

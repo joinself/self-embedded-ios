@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class Self_mobile_kmpBase, Self_mobile_kmpMutableSet<E>, Self_mobile_kmpMutableDictionary<K, V>, Self_mobile_kmpNumber, Self_mobile_kmpByte, Self_mobile_kmpUByte, Self_mobile_kmpShort, Self_mobile_kmpUShort, Self_mobile_kmpInt, Self_mobile_kmpUInt, Self_mobile_kmpLong, Self_mobile_kmpULong, Self_mobile_kmpFloat, Self_mobile_kmpDouble, Self_mobile_kmpBoolean, Self_mobile_kmpKotlinEnum<E>, Self_mobile_kmpKotlinEnumCompanion, Self_mobile_kmpKotlinException, Self_mobile_kmpKotlinThrowable, Self_mobile_kmpKotlinByteArray, Self_mobile_kmpKotlinCancellationException, Self_mobile_kmpKotlinIllegalStateException, Self_mobile_kmpKotlinRuntimeException, Self_mobile_kmpKotlinArray<T>, Self_mobile_kmpKotlinPair<A, B>, Self_mobile_kmpKotlinNothing, Self_mobile_kmpKotlinByteIterator, Self_mobile_kmpKotlinIntArray, Self_mobile_kmpKotlinDoubleArray, Self_mobile_kmpKotlinUnit, Self_mobile_kmpKotlinLongArray, Self_mobile_kmpKotlinFloatArray, Self_mobile_kmpKotlinIntIterator, Self_mobile_kmpKotlinDoubleIterator, Self_mobile_kmpKotlinLongIterator, Self_mobile_kmpKotlinFloatIterator, Self_mobile_kmpSkieColdFlowIterator<E>, Self_mobile_kmpSkieKotlinFlow<T>, Self_mobile_kmpSkieKotlinMutableSharedFlow<T>, Self_mobile_kmpSkieKotlinMutableStateFlow<T>, Self_mobile_kmpSkieKotlinOptionalFlow<T>, Self_mobile_kmpSkieKotlinOptionalMutableSharedFlow<T>, Self_mobile_kmpSkieKotlinOptionalMutableStateFlow<T>, Self_mobile_kmpSkieKotlinOptionalSharedFlow<T>, Self_mobile_kmpSkieKotlinOptionalStateFlow<T>, Self_mobile_kmpSkieKotlinSharedFlow<T>, Self_mobile_kmpSkieKotlinStateFlow<T>, Self_mobile_kmpSkie_CancellationHandler, Self_mobile_kmpSkie_SuspendHandler, Self_mobile_kmpSkie_SuspendResult, Self_mobile_kmpSkie_SuspendResultCanceled, Self_mobile_kmpSkie_SuspendResultError, Self_mobile_kmpSkie_SuspendResultSuccess, Self_mobile_kmpConstants, Self_mobile_kmpConstantsCompanion, Self_mobile_kmpConversationType, Self_mobile_kmpDevMode, Self_mobile_kmpDocumentType, Self_mobile_kmpDocumentTypeCompanion, Self_mobile_kmpEnvironment, Self_mobile_kmpLogger, Self_mobile_kmpLoggerCompanion, Self_mobile_kmpMessageFrom, Self_mobile_kmpMessageFromCompanion, Self_mobile_kmpMessageStatus, Self_mobile_kmpMimeType, Self_mobile_kmpMimeTypeCompanion, Self_mobile_kmpPlatformName, Self_mobile_kmpStatusEnum, Self_mobile_kmpTimeUtils, Self_mobile_kmpTimeUtilsCompanion, Self_mobile_kmpUtils, Self_mobile_kmpUtilsCompanion, Self_mobile_kmpErrors, Self_mobile_kmpErrorsCompanion, Self_mobile_kmpSelfException, Self_mobile_kmpSelfExceptionCompanion, Self_mobile_kmpAction, Self_mobile_kmpEncryptionManager, Self_mobile_kmpKey, Self_mobile_kmpMessagingManager, Self_mobile_kmpOperation, Self_mobile_kmpPreferenceManager, Self_mobile_kmpPreferenceManagerCompanion, Self_mobile_kmpSelfInteractor, Self_mobile_kmpSelfInteractorCompanion, Self_mobile_kmpSelfMessaging, Self_mobile_kmpSelfSdkKMP, Self_mobile_kmpSelfSdkKMPCompanion, Self_mobile_kmpSelfServiceApi, Self_mobile_kmpSignatureGraph, Self_mobile_kmpSodiumManager, Self_mobile_kmpSodiumManagerCompanion, Self_mobile_kmpAccount, Self_mobile_kmpAccountBuilder, Self_mobile_kmpAttachment, Self_mobile_kmpAttachmentBuilder, Self_mobile_kmpDataObject, Self_mobile_kmpDataObjectBuilder, Self_mobile_kmpDataObjectLink, Self_mobile_kmpAttestation, Self_mobile_kmpAttestationBuilder, Self_mobile_kmpSignable, Self_mobile_kmpAttestationRequest, Self_mobile_kmpAttestationRequestBuilder, Self_mobile_kmpMessage, Self_mobile_kmpAttestationResponse, Self_mobile_kmpAttestationResponseBuilder, Self_mobile_kmpChatMessage, Self_mobile_kmpChatMessageBuilder, Self_mobile_kmpDocument, Self_mobile_kmpDocumentBuilder, Self_mobile_kmpFact, Self_mobile_kmpFactBuilder, Self_mobile_kmpKeyValue, Self_mobile_kmpKeyValueBuilder, Self_mobile_kmpLocationData, Self_mobile_kmpResponseStatus, Self_mobile_kmpSigner, Self_mobile_kmpVerificationRequest, Self_mobile_kmpVerificationRequestBuilder, Self_mobile_kmpVerificationResponse, Self_mobile_kmpVerificationResponseBuilder, Self_mobile_kmpACLCommand, Self_mobile_kmpACLCommandCompanion, Self_mobile_kmpAccessControlList, Self_mobile_kmpAccessControlListCompanion, Self_mobile_kmpAuth, Self_mobile_kmpAuthCompanion, Self_mobile_kmpErrType, Self_mobile_kmpErrTypeCompanion, Self_mobile_kmpHeader, Self_mobile_kmpHeaderCompanion, Self_mobile_kmpMessage_, Self_mobile_kmpMessage_Companion, Self_mobile_kmpMsgType, Self_mobile_kmpMsgTypeCompanion, Self_mobile_kmpNotification, Self_mobile_kmpNotificationCompanion, Self_mobile_kmpStatus, Self_mobile_kmpStatusCompanion, Self_mobile_kmpWatch, Self_mobile_kmpWatchCompanion, Self_mobile_kmpSelfDao, Self_mobile_kmpSelfDaoCompanion, Self_mobile_kmpAttachmentModel, Self_mobile_kmpAttachmentModelCompanion, Self_mobile_kmpConversationModel, Self_mobile_kmpConversationModelCompanion, Self_mobile_kmpEncryptedMessageModel, Self_mobile_kmpEncryptedMessageModelCompanion, Self_mobile_kmpFactAttributeModel, Self_mobile_kmpFactAttributeModelCompanion, Self_mobile_kmpFactModel, Self_mobile_kmpFactModelCompanion, Self_mobile_kmpFactQueryModel, Self_mobile_kmpFactQueryModelCompanion, Self_mobile_kmpFactRequestModel, Self_mobile_kmpFactRequestModelCompanion, Self_mobile_kmpKeyValueModel, Self_mobile_kmpKeyValueModelCompanion, Self_mobile_kmpMessageModel, Self_mobile_kmpMessageModelCompanion, Self_mobile_kmpRawMessage, Self_mobile_kmpRawMessageCompanion, Self_mobile_kmpSelfDataModel, Self_mobile_kmpSelfDataModelCompanion, Self_mobile_kmpSelfDataModelType, Self_mobile_kmpSelfIdModel, Self_mobile_kmpSelfIdModelCompanion, Self_mobile_kmpSessionModel, Self_mobile_kmpSessionModelCompanion, Self_mobile_kmpVerificationModel, Self_mobile_kmpVerificationModelCompanion, Self_mobile_kmpRealmInstantSerializer, Self_mobile_kmpRealmUUIDSerializer, Self_mobile_kmpExtensionsKt, Self_mobile_kmpIosExtensionsKt, Self_mobile_kmpWire_runtimeMessage<M, B>, Self_mobile_kmpWire_runtimeMessageBuilder<M, B>, Self_mobile_kmpWire_runtimeProtoAdapter<E>, Self_mobile_kmpWire_runtimeProtoAdapterCompanion, Self_mobile_kmpWire_runtimeInstant, Self_mobile_kmpWire_runtimeFieldEncoding, Self_mobile_kmpWire_runtimeFieldEncodingCompanion, Self_mobile_kmpWire_runtimeSyntax, Self_mobile_kmpWire_runtimeSyntaxCompanion, Self_mobile_kmpWire_runtimeProtoReader, Self_mobile_kmpWire_runtimeProtoReaderCompanion, Self_mobile_kmpWire_runtimeProtoWriter, Self_mobile_kmpWire_runtimeProtoWriterCompanion, Self_mobile_kmpWire_runtimeReverseProtoWriter, Self_mobile_kmpWire_runtimeDuration, Self_mobile_kmpLibrary_baseListPropertyType, Self_mobile_kmpLibrary_baseMapPropertyType, Self_mobile_kmpLibrary_baseSetPropertyType, Self_mobile_kmpLibrary_baseValuePropertyType, Self_mobile_kmpLibrary_baseListChangeSetRange, Self_mobile_kmpLibrary_baseVersionId, Self_mobile_kmpLibrary_baseUpdatePolicy, Self_mobile_kmpLibrary_baseRealmStorageType, Self_mobile_kmpLibrary_baseInitialRealmFileConfiguration, Self_mobile_kmpLibrary_baseLogConfiguration, Self_mobile_kmpLibrary_baseSort, Self_mobile_kmpLibrary_baseLogLevel, Self_mobile_kmpLibrary_baseRealmClassKind, Self_mobile_kmpKotlinx_serialization_corePolymorphicKind, Self_mobile_kmpKotlinx_serialization_corePolymorphicKindOPEN, Self_mobile_kmpKotlinx_serialization_corePolymorphicKindSEALED, Self_mobile_kmpKotlinx_serialization_coreSerialKind, Self_mobile_kmpKotlinx_serialization_coreSerialKindCONTEXTUAL, Self_mobile_kmpKotlinx_serialization_coreSerialKindENUM, Self_mobile_kmpKotlinx_serialization_corePrimitiveKind, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindBOOLEAN, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindBYTE, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindCHAR, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindDOUBLE, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindFLOAT, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindINT, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindLONG, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindSHORT, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindSTRING, Self_mobile_kmpKotlinx_serialization_coreStructureKind, Self_mobile_kmpKotlinx_serialization_coreStructureKindCLASS, Self_mobile_kmpKotlinx_serialization_coreStructureKindLIST, Self_mobile_kmpKotlinx_serialization_coreStructureKindMAP, Self_mobile_kmpKotlinx_serialization_coreStructureKindOBJECT, Self_mobile_kmpKotlinx_serialization_coreSerializersModule, Self_mobile_kmpKotlinx_datetimeInstant, Self_mobile_kmpKotlinx_datetimeInstantCompanion, Self_mobile_kmpKotlinx_serialization_jsonJsonElement, Self_mobile_kmpKotlinx_serialization_jsonJsonElementCompanion, Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitive, Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitiveCompanion, Self_mobile_kmpKotlinx_serialization_jsonJsonNull, Self_mobile_kmpMultiplatform_crypto_libsodium_bindingsSignatureKeyPair, Self_mobile_kmpOkioByteString, Self_mobile_kmpOkioByteStringCompanion, Self_mobile_kmpOkioBuffer, Self_mobile_kmpOkioBufferUnsafeCursor, Self_mobile_kmpOkioIOException, Self_mobile_kmpOkioTimeout, Self_mobile_kmpOkioTimeoutCompanion, Self_mobile_kmp__SkieSuspendWrappersKt, Self_mobile_kmp__SkieTypeExportsKt, NSObject, NSError, NSString, NSArray<E>, NSMutableArray<E>, NSSet<E>, NSDictionary<K, V>, NSMutableSet, NSMutableDictionary, NSNumber, NSData, GroupSessionWrapper, OlmSessionWrapper, OlmAccountWrapper;
+@class Self_mobile_kmp__SkieTypeExportsKt, Self_mobile_kmp__SkieSuspendWrappersKt, Self_mobile_kmpWire_runtimeSyntaxCompanion, Self_mobile_kmpWire_runtimeSyntax, Self_mobile_kmpWire_runtimeReverseProtoWriter, Self_mobile_kmpWire_runtimeProtoWriterCompanion, Self_mobile_kmpWire_runtimeProtoWriter, Self_mobile_kmpWire_runtimeProtoReaderCompanion, Self_mobile_kmpWire_runtimeProtoReader, Self_mobile_kmpWire_runtimeProtoAdapterCompanion, Self_mobile_kmpWire_runtimeProtoAdapter<E>, Self_mobile_kmpWire_runtimeMessageBuilder<M, B>, Self_mobile_kmpWire_runtimeMessage<M, B>, Self_mobile_kmpWire_runtimeInstant, Self_mobile_kmpWire_runtimeFieldEncodingCompanion, Self_mobile_kmpWire_runtimeFieldEncoding, Self_mobile_kmpWire_runtimeDuration, Self_mobile_kmpWatchCompanion, Self_mobile_kmpWatch, Self_mobile_kmpVerificationResponseBuilder, Self_mobile_kmpVerificationResponse, Self_mobile_kmpVerificationRequestBuilder, Self_mobile_kmpVerificationRequest, Self_mobile_kmpVerificationModelCompanion, Self_mobile_kmpVerificationModel, Self_mobile_kmpUtilsCompanion, Self_mobile_kmpUtils, Self_mobile_kmpUShort, Self_mobile_kmpULong, Self_mobile_kmpUInt, Self_mobile_kmpUByte, Self_mobile_kmpTimeUtilsCompanion, Self_mobile_kmpTimeUtils, Self_mobile_kmpStatusEnum, Self_mobile_kmpStatusCompanion, Self_mobile_kmpStatus, Self_mobile_kmpSodiumManagerCompanion, Self_mobile_kmpSodiumManager, Self_mobile_kmpSkie_SuspendResultSuccess, Self_mobile_kmpSkie_SuspendResultError, Self_mobile_kmpSkie_SuspendResultCanceled, Self_mobile_kmpSkie_SuspendResult, Self_mobile_kmpSkie_SuspendHandler, Self_mobile_kmpSkie_CancellationHandler, Self_mobile_kmpSkieKotlinStateFlow<T>, Self_mobile_kmpSkieKotlinSharedFlow<T>, Self_mobile_kmpSkieKotlinOptionalStateFlow<T>, Self_mobile_kmpSkieKotlinOptionalSharedFlow<T>, Self_mobile_kmpSkieKotlinOptionalMutableStateFlow<T>, Self_mobile_kmpSkieKotlinOptionalMutableSharedFlow<T>, Self_mobile_kmpSkieKotlinOptionalFlow<T>, Self_mobile_kmpSkieKotlinMutableStateFlow<T>, Self_mobile_kmpSkieKotlinMutableSharedFlow<T>, Self_mobile_kmpSkieKotlinFlow<T>, Self_mobile_kmpSkieColdFlowIterator<E>, Self_mobile_kmpSigner, Self_mobile_kmpSignatureGraph, Self_mobile_kmpSignable, Self_mobile_kmpShort, Self_mobile_kmpSettingModelCompanion, Self_mobile_kmpSettingModel, Self_mobile_kmpSettingKey, Self_mobile_kmpSessionModelCompanion, Self_mobile_kmpSessionModel, Self_mobile_kmpSelfServiceApi, Self_mobile_kmpSelfSdkKMPCompanion, Self_mobile_kmpSelfSdkKMP, Self_mobile_kmpSelfMessaging, Self_mobile_kmpSelfInteractorCompanion, Self_mobile_kmpSelfInteractor, Self_mobile_kmpSelfIdModelCompanion, Self_mobile_kmpSelfIdModel, Self_mobile_kmpSelfExceptionCompanion, Self_mobile_kmpSelfException, Self_mobile_kmpSelfDataModelType, Self_mobile_kmpSelfDataModelCompanion, Self_mobile_kmpSelfDataModel, Self_mobile_kmpSelfDaoCompanion, Self_mobile_kmpSelfDao, Self_mobile_kmpResponseStatus, Self_mobile_kmpRealmUUIDSerializer, Self_mobile_kmpRealmInstantSerializer, Self_mobile_kmpRawMessageCompanion, Self_mobile_kmpRawMessage, Self_mobile_kmpPreferenceManagerCompanion, Self_mobile_kmpPreferenceManager, Self_mobile_kmpPlatformName, Self_mobile_kmpOperation, Self_mobile_kmpOkioTimeoutCompanion, Self_mobile_kmpOkioTimeout, Self_mobile_kmpOkioIOException, Self_mobile_kmpOkioByteStringCompanion, Self_mobile_kmpOkioByteString, Self_mobile_kmpOkioBufferUnsafeCursor, Self_mobile_kmpOkioBuffer, Self_mobile_kmpNumber, Self_mobile_kmpNotificationCompanion, Self_mobile_kmpNotification, Self_mobile_kmpMutableSet<ObjectType>, Self_mobile_kmpMutableDictionary<KeyType, ObjectType>, Self_mobile_kmpMultiplatform_crypto_libsodium_bindingsSignatureKeyPair, Self_mobile_kmpMsgTypeCompanion, Self_mobile_kmpMsgType, Self_mobile_kmpMimeTypeCompanion, Self_mobile_kmpMimeType, Self_mobile_kmpMessagingManager, Self_mobile_kmpMessage_Companion, Self_mobile_kmpMessage_, Self_mobile_kmpMessageStatus, Self_mobile_kmpMessageModelCompanion, Self_mobile_kmpMessageModel, Self_mobile_kmpMessageFromCompanion, Self_mobile_kmpMessageFrom, Self_mobile_kmpMessage, Self_mobile_kmpLong, Self_mobile_kmpLoggerCompanion, Self_mobile_kmpLogger, Self_mobile_kmpLocationData, Self_mobile_kmpLibrary_baseVersionId, Self_mobile_kmpLibrary_baseValuePropertyType, Self_mobile_kmpLibrary_baseUpdatePolicy, Self_mobile_kmpLibrary_baseSort, Self_mobile_kmpLibrary_baseSetPropertyType, Self_mobile_kmpLibrary_baseRealmStorageType, Self_mobile_kmpLibrary_baseRealmClassKind, Self_mobile_kmpLibrary_baseMapPropertyType, Self_mobile_kmpLibrary_baseLogLevel, Self_mobile_kmpLibrary_baseLogConfiguration, Self_mobile_kmpLibrary_baseListPropertyType, Self_mobile_kmpLibrary_baseListChangeSetRange, Self_mobile_kmpLibrary_baseInitialRealmFileConfiguration, Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitiveCompanion, Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitive, Self_mobile_kmpKotlinx_serialization_jsonJsonNull, Self_mobile_kmpKotlinx_serialization_jsonJsonElementCompanion, Self_mobile_kmpKotlinx_serialization_jsonJsonElement, Self_mobile_kmpKotlinx_serialization_coreStructureKindOBJECT, Self_mobile_kmpKotlinx_serialization_coreStructureKindMAP, Self_mobile_kmpKotlinx_serialization_coreStructureKindLIST, Self_mobile_kmpKotlinx_serialization_coreStructureKindCLASS, Self_mobile_kmpKotlinx_serialization_coreStructureKind, Self_mobile_kmpKotlinx_serialization_coreSerializersModule, Self_mobile_kmpKotlinx_serialization_coreSerialKindENUM, Self_mobile_kmpKotlinx_serialization_coreSerialKindCONTEXTUAL, Self_mobile_kmpKotlinx_serialization_coreSerialKind, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindSTRING, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindSHORT, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindLONG, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindINT, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindFLOAT, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindDOUBLE, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindCHAR, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindBYTE, Self_mobile_kmpKotlinx_serialization_corePrimitiveKindBOOLEAN, Self_mobile_kmpKotlinx_serialization_corePrimitiveKind, Self_mobile_kmpKotlinx_serialization_corePolymorphicKindSEALED, Self_mobile_kmpKotlinx_serialization_corePolymorphicKindOPEN, Self_mobile_kmpKotlinx_serialization_corePolymorphicKind, Self_mobile_kmpKotlinx_datetimeInstantCompanion, Self_mobile_kmpKotlinx_datetimeInstant, Self_mobile_kmpKotlinUnit, Self_mobile_kmpKotlinThrowable, Self_mobile_kmpKotlinRuntimeException, Self_mobile_kmpKotlinPair<A, B>, Self_mobile_kmpKotlinNothing, Self_mobile_kmpKotlinLongIterator, Self_mobile_kmpKotlinLongArray, Self_mobile_kmpKotlinIntIterator, Self_mobile_kmpKotlinIntArray, Self_mobile_kmpKotlinIllegalStateException, Self_mobile_kmpKotlinFloatIterator, Self_mobile_kmpKotlinFloatArray, Self_mobile_kmpKotlinException, Self_mobile_kmpKotlinEnumCompanion, Self_mobile_kmpKotlinEnum<E>, Self_mobile_kmpKotlinDoubleIterator, Self_mobile_kmpKotlinDoubleArray, Self_mobile_kmpKotlinCancellationException, Self_mobile_kmpKotlinByteIterator, Self_mobile_kmpKotlinByteArray, Self_mobile_kmpKotlinArray<T>, Self_mobile_kmpKeyValueModelCompanion, Self_mobile_kmpKeyValueModel, Self_mobile_kmpKeyValueBuilder, Self_mobile_kmpKeyValue, Self_mobile_kmpKey, Self_mobile_kmpIosExtensionsKt, Self_mobile_kmpInt, Self_mobile_kmpHeaderCompanion, Self_mobile_kmpHeader, Self_mobile_kmpFloat, Self_mobile_kmpFactRequestModelCompanion, Self_mobile_kmpFactRequestModel, Self_mobile_kmpFactQueryModelCompanion, Self_mobile_kmpFactQueryModel, Self_mobile_kmpFactModelCompanion, Self_mobile_kmpFactModel, Self_mobile_kmpFactBuilder, Self_mobile_kmpFactAttributeModelCompanion, Self_mobile_kmpFactAttributeModel, Self_mobile_kmpFact, Self_mobile_kmpExtensionsKt, Self_mobile_kmpErrorsCompanion, Self_mobile_kmpErrors, Self_mobile_kmpErrTypeCompanion, Self_mobile_kmpErrType, Self_mobile_kmpEnvironment, Self_mobile_kmpEncryptionManager, Self_mobile_kmpEncryptedMessageModelCompanion, Self_mobile_kmpEncryptedMessageModel, Self_mobile_kmpDouble, Self_mobile_kmpDocumentTypeCompanion, Self_mobile_kmpDocumentType, Self_mobile_kmpDocumentBuilder, Self_mobile_kmpDocument, Self_mobile_kmpDevMode, Self_mobile_kmpDataObjectLink, Self_mobile_kmpDataObjectBuilder, Self_mobile_kmpDataObject, Self_mobile_kmpConversationType, Self_mobile_kmpConversationModelCompanion, Self_mobile_kmpConversationModel, Self_mobile_kmpConstantsCompanion, Self_mobile_kmpConstants, Self_mobile_kmpChatMessageBuilder, Self_mobile_kmpChatMessage, Self_mobile_kmpByte, Self_mobile_kmpBoolean, Self_mobile_kmpBase, Self_mobile_kmpAuthCompanion, Self_mobile_kmpAuth, Self_mobile_kmpAttestationResponseBuilder, Self_mobile_kmpAttestationResponse, Self_mobile_kmpAttestationRequestBuilder, Self_mobile_kmpAttestationRequest, Self_mobile_kmpAttestationBuilder, Self_mobile_kmpAttestation, Self_mobile_kmpAttachmentModelCompanion, Self_mobile_kmpAttachmentModel, Self_mobile_kmpAttachmentBuilder, Self_mobile_kmpAttachment, Self_mobile_kmpAction, Self_mobile_kmpAccountBuilder, Self_mobile_kmpAccount, Self_mobile_kmpAccessControlListCompanion, Self_mobile_kmpAccessControlList, Self_mobile_kmpACLCommandCompanion, Self_mobile_kmpACLCommand, OlmSessionWrapper, OlmAccountWrapper, NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSData, NSArray<ObjectType>, GroupSessionWrapper;
 
-@protocol Self_mobile_kmpKotlinComparable, Self_mobile_kmpKotlinIterator, Self_mobile_kmpKotlinContinuation, Self_mobile_kmpKotlinKClass, Self_mobile_kmpKotlinKDeclarationContainer, Self_mobile_kmpKotlinKAnnotatedElement, Self_mobile_kmpKotlinKClassifier, Self_mobile_kmpKotlinAnnotation, Self_mobile_kmpKotlinCoroutineContext, Self_mobile_kmpKotlinCoroutineContextElement, Self_mobile_kmpKotlinCoroutineContextKey, Self_mobile_kmpSkie_DispatcherDelegate, Self_mobile_kmpKotlinx_coroutines_coreFlow, Self_mobile_kmpKotlinx_coroutines_coreMutableSharedFlow, Self_mobile_kmpKotlinx_coroutines_coreSharedFlow, Self_mobile_kmpKotlinx_coroutines_coreFlowCollector, Self_mobile_kmpKotlinx_coroutines_coreMutableStateFlow, Self_mobile_kmpKotlinx_coroutines_coreStateFlow, Self_mobile_kmpKotlinx_coroutines_coreRunnable, Self_mobile_kmpWire_runtimeWireEnum, Self_mobile_kmpLibrary_baseRealmObject, Self_mobile_kmpLibrary_baseTypedRealmObject, Self_mobile_kmpLibrary_baseBaseRealmObject, Self_mobile_kmpLibrary_baseDeleteable, Self_mobile_kmpLibrary_baseRealm, Self_mobile_kmpLibrary_baseTypedRealm, Self_mobile_kmpLibrary_baseBaseRealm, Self_mobile_kmpLibrary_baseVersioned, Self_mobile_kmpLibrary_baseRealmInstant, Self_mobile_kmpLibrary_baseRealmUUID, Self_mobile_kmpLibrary_baseMutableRealm, Self_mobile_kmpLibrary_baseRealmChange, Self_mobile_kmpLibrary_baseResultsChange, Self_mobile_kmpLibrary_baseSingleQueryChange, Self_mobile_kmpLibrary_baseRealmPropertyType, Self_mobile_kmpLibrary_baseInitialRealm, Self_mobile_kmpLibrary_baseUpdatedRealm, Self_mobile_kmpLibrary_baseInitialResults, Self_mobile_kmpLibrary_baseUpdatedResults, Self_mobile_kmpLibrary_baseListChangeSet, Self_mobile_kmpLibrary_baseObjectChange, Self_mobile_kmpLibrary_basePendingObject, Self_mobile_kmpLibrary_baseDeletedObject, Self_mobile_kmpLibrary_baseInitialObject, Self_mobile_kmpLibrary_baseUpdatedObject, Self_mobile_kmpLibrary_baseConfiguration, Self_mobile_kmpLibrary_baseRealmQuery, Self_mobile_kmpLibrary_baseRealmElementQuery, Self_mobile_kmpLibrary_baseRealmSchema, Self_mobile_kmpLibrary_baseCompactOnLaunchCallback, Self_mobile_kmpLibrary_baseInitialDataCallback, Self_mobile_kmpLibrary_baseRealmScalarQuery, Self_mobile_kmpLibrary_baseRealmSingleQuery, Self_mobile_kmpLibrary_baseRealmScalarNullableQuery, Self_mobile_kmpLibrary_baseRealmClass, Self_mobile_kmpLibrary_baseRealmLogger, Self_mobile_kmpLibrary_baseRealmProperty, Self_mobile_kmpKotlinx_serialization_coreKSerializer, Self_mobile_kmpKotlinx_serialization_coreSerializationStrategy, Self_mobile_kmpKotlinx_serialization_coreDeserializationStrategy, Self_mobile_kmpKotlinx_serialization_coreEncoder, Self_mobile_kmpKotlinx_serialization_coreSerialDescriptor, Self_mobile_kmpKotlinx_serialization_coreDecoder, Self_mobile_kmpKotlinx_serialization_coreCompositeEncoder, Self_mobile_kmpKotlinx_serialization_coreCompositeDecoder, Self_mobile_kmpKotlinx_serialization_coreSerializersModuleCollector, Self_mobile_kmpOkioBufferedSink, Self_mobile_kmpOkioSink, Self_mobile_kmpOkioCloseable, Self_mobile_kmpOkioBufferedSource, Self_mobile_kmpOkioSource, NSCopying;
+@protocol Self_mobile_kmpWire_runtimeWireEnum, Self_mobile_kmpSkie_DispatcherDelegate, Self_mobile_kmpOkioSource, Self_mobile_kmpOkioSink, Self_mobile_kmpOkioCloseable, Self_mobile_kmpOkioBufferedSource, Self_mobile_kmpOkioBufferedSink, Self_mobile_kmpLibrary_baseVersioned, Self_mobile_kmpLibrary_baseUpdatedResults, Self_mobile_kmpLibrary_baseUpdatedRealm, Self_mobile_kmpLibrary_baseUpdatedObject, Self_mobile_kmpLibrary_baseTypedRealmObject, Self_mobile_kmpLibrary_baseTypedRealm, Self_mobile_kmpLibrary_baseSingleQueryChange, Self_mobile_kmpLibrary_baseResultsChange, Self_mobile_kmpLibrary_baseRealmUUID, Self_mobile_kmpLibrary_baseRealmSingleQuery, Self_mobile_kmpLibrary_baseRealmSchema, Self_mobile_kmpLibrary_baseRealmScalarQuery, Self_mobile_kmpLibrary_baseRealmScalarNullableQuery, Self_mobile_kmpLibrary_baseRealmQuery, Self_mobile_kmpLibrary_baseRealmPropertyType, Self_mobile_kmpLibrary_baseRealmProperty, Self_mobile_kmpLibrary_baseRealmObject, Self_mobile_kmpLibrary_baseRealmLogger, Self_mobile_kmpLibrary_baseRealmInstant, Self_mobile_kmpLibrary_baseRealmElementQuery, Self_mobile_kmpLibrary_baseRealmClass, Self_mobile_kmpLibrary_baseRealmChange, Self_mobile_kmpLibrary_baseRealm, Self_mobile_kmpLibrary_basePendingObject, Self_mobile_kmpLibrary_baseObjectChange, Self_mobile_kmpLibrary_baseMutableRealm, Self_mobile_kmpLibrary_baseListChangeSet, Self_mobile_kmpLibrary_baseInitialResults, Self_mobile_kmpLibrary_baseInitialRealm, Self_mobile_kmpLibrary_baseInitialObject, Self_mobile_kmpLibrary_baseInitialDataCallback, Self_mobile_kmpLibrary_baseDeletedObject, Self_mobile_kmpLibrary_baseDeleteable, Self_mobile_kmpLibrary_baseConfiguration, Self_mobile_kmpLibrary_baseCompactOnLaunchCallback, Self_mobile_kmpLibrary_baseBaseRealmObject, Self_mobile_kmpLibrary_baseBaseRealm, Self_mobile_kmpKotlinx_serialization_coreSerializersModuleCollector, Self_mobile_kmpKotlinx_serialization_coreSerializationStrategy, Self_mobile_kmpKotlinx_serialization_coreSerialDescriptor, Self_mobile_kmpKotlinx_serialization_coreKSerializer, Self_mobile_kmpKotlinx_serialization_coreEncoder, Self_mobile_kmpKotlinx_serialization_coreDeserializationStrategy, Self_mobile_kmpKotlinx_serialization_coreDecoder, Self_mobile_kmpKotlinx_serialization_coreCompositeEncoder, Self_mobile_kmpKotlinx_serialization_coreCompositeDecoder, Self_mobile_kmpKotlinx_datetimeDateTimeFormat, Self_mobile_kmpKotlinx_coroutines_coreStateFlow, Self_mobile_kmpKotlinx_coroutines_coreSharedFlow, Self_mobile_kmpKotlinx_coroutines_coreRunnable, Self_mobile_kmpKotlinx_coroutines_coreMutableStateFlow, Self_mobile_kmpKotlinx_coroutines_coreMutableSharedFlow, Self_mobile_kmpKotlinx_coroutines_coreFlowCollector, Self_mobile_kmpKotlinx_coroutines_coreFlow, Self_mobile_kmpKotlinKDeclarationContainer, Self_mobile_kmpKotlinKClassifier, Self_mobile_kmpKotlinKClass, Self_mobile_kmpKotlinKAnnotatedElement, Self_mobile_kmpKotlinIterator, Self_mobile_kmpKotlinCoroutineContextKey, Self_mobile_kmpKotlinCoroutineContextElement, Self_mobile_kmpKotlinCoroutineContext, Self_mobile_kmpKotlinContinuation, Self_mobile_kmpKotlinComparable, Self_mobile_kmpKotlinAppendable, Self_mobile_kmpKotlinAnnotation, NSCopying;
 
 // Due to an Obj-C/Swift interop limitation, SKIE cannot generate Swift types with a lambda type argument.
 // Example of such type is: A<() -> Unit> where A<T> is a generic class.
@@ -822,6 +822,7 @@ __attribute__((swift_name("Environment")))
 @property (class, readonly) Self_mobile_kmpEnvironment *staging __attribute__((swift_name("staging")));
 @property (class, readonly) Self_mobile_kmpEnvironment *sandbox __attribute__((swift_name("sandbox")));
 @property (class, readonly) Self_mobile_kmpEnvironment *production __attribute__((swift_name("production")));
+@property (class, readonly) Self_mobile_kmpEnvironment *integration __attribute__((swift_name("integration")));
 @property (class, readonly) NSArray<Self_mobile_kmpEnvironment *> *entries __attribute__((swift_name("entries")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
@@ -945,6 +946,17 @@ __attribute__((swift_name("PlatformName")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (Self_mobile_kmpKotlinArray<Self_mobile_kmpPlatformName *> *)values __attribute__((swift_name("values()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SettingKey")))
+@interface Self_mobile_kmpSettingKey : Self_mobile_kmpKotlinEnum<Self_mobile_kmpSettingKey *>
+@property (class, readonly) Self_mobile_kmpSettingKey *livenesserrornumber __attribute__((swift_name("livenesserrornumber")));
+@property (class, readonly) NSArray<Self_mobile_kmpSettingKey *> *entries __attribute__((swift_name("entries")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (Self_mobile_kmpKotlinArray<Self_mobile_kmpSettingKey *> *)values __attribute__((swift_name("values()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1590,6 +1602,8 @@ __attribute__((swift_name("Account")))
 - (void)downloadDataLink:(Self_mobile_kmpDataObjectLink *)dataLink completionHandler:(void (^)(Self_mobile_kmpDataObject * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("download(dataLink:completionHandler:)")));
 - (Self_mobile_kmpKeyValue * _Nullable)getKey:(NSString *)key attestations:(NSArray<Self_mobile_kmpAttestation *> *)attestations __attribute__((swift_name("get(key:attestations:)")));
 - (Self_mobile_kmpDevMode * _Nullable)getDevMode __attribute__((swift_name("getDevMode()")));
+- (NSString * _Nullable)getSettingKey:(NSString *)key __attribute__((swift_name("getSetting(key:)")));
+- (NSDictionary<NSString *, NSString *> *)getSettings __attribute__((swift_name("getSettings()")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1620,12 +1634,14 @@ __attribute__((swift_name("Account")))
 */
 - (void)rejectMessage:(Self_mobile_kmpMessage *)message onAcknowledgement:(void (^)(Self_mobile_kmpKotlinThrowable * _Nullable))onAcknowledgement completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("reject(message:onAcknowledgement:completionHandler:)")));
 - (BOOL)removeKey:(NSString *)key __attribute__((swift_name("remove(key:)")));
+- (BOOL)removeSettingKey:(NSString *)key __attribute__((swift_name("removeSetting(key:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)restoreBackupDir:(NSString *)backupDir selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("restore(backupDir:selfieImage:completionHandler:)")));
+- (void)saveSettingKey:(NSString *)key value:(NSString *)value __attribute__((swift_name("saveSetting(key:value:)")));
 - (NSString * _Nullable)selfieImage __attribute__((swift_name("selfieImage()")));
 
 /**
@@ -2369,6 +2385,8 @@ __attribute__((swift_name("SelfDao")))
 - (Self_mobile_kmpSelfDataModel * _Nullable)getSelfData __attribute__((swift_name("getSelfData()")));
 - (Self_mobile_kmpSelfIdModel * _Nullable)getSelfModelForceRefreshing:(BOOL)forceRefreshing __attribute__((swift_name("getSelfModel(forceRefreshing:)")));
 - (Self_mobile_kmpSessionModel * _Nullable)getSessionSessionId:(NSString *)sessionId __attribute__((swift_name("getSession(sessionId:)")));
+- (NSString * _Nullable)getSettingKey:(NSString *)key __attribute__((swift_name("getSetting(key:)")));
+- (NSDictionary<NSString *, NSString *> *)getSettings __attribute__((swift_name("getSettings()")));
 - (NSArray<NSString *> *)getUnreadMessageIdsConversationId:(NSString *)conversationId __attribute__((swift_name("getUnreadMessageIds(conversationId:)")));
 - (NSArray<Self_mobile_kmpMessageModel *> *)getUnsentMessagesConversationId:(NSString *)conversationId notIds:(NSArray<NSString *> *)notIds __attribute__((swift_name("getUnsentMessages(conversationId:notIds:)")));
 - (Self_mobile_kmpVerificationModel * _Nullable)getVerificationModelByIdId:(NSString *)id __attribute__((swift_name("getVerificationModelById(id:)")));
@@ -2378,6 +2396,7 @@ __attribute__((swift_name("SelfDao")))
 - (Self_mobile_kmpConversationModel * _Nullable)pinOrUnPinConversationConversationId:(NSString *)conversationId __attribute__((swift_name("pinOrUnPinConversation(conversationId:)")));
 - (BOOL)removeKeyValueModelKey:(NSString *)key __attribute__((swift_name("removeKeyValueModel(key:)")));
 - (void)removeRawMessagesReceiverId:(NSString *)receiverId __attribute__((swift_name("removeRawMessages(receiverId:)")));
+- (BOOL)removeSettingKey:(NSString *)key __attribute__((swift_name("removeSetting(key:)")));
 - (void)saveFactRequestModelRequestModel:(Self_mobile_kmpFactRequestModel *)requestModel __attribute__((swift_name("saveFactRequestModel(requestModel:)")));
 - (void)saveKeyValueModelKeyValue:(Self_mobile_kmpKeyValueModel *)keyValue __attribute__((swift_name("saveKeyValueModel(keyValue:)")));
 - (void)saveOrUpdateAttachmentAttachment:(Self_mobile_kmpAttachmentModel *)attachment __attribute__((swift_name("saveOrUpdateAttachment(attachment:)")));
@@ -2389,6 +2408,7 @@ __attribute__((swift_name("SelfDao")))
 - (void)saveRawMessageRawMessage:(Self_mobile_kmpRawMessage *)rawMessage __attribute__((swift_name("saveRawMessage(rawMessage:)")));
 - (BOOL)saveSelfModelSelfIdModel:(Self_mobile_kmpSelfIdModel *)selfIdModel __attribute__((swift_name("saveSelfModel(selfIdModel:)")));
 - (void)saveSessionSessionId:(NSString *)sessionId pickledDataEncodeBase64:(NSString *)pickledDataEncodeBase64 pickleKey:(NSString *)pickleKey __attribute__((swift_name("saveSession(sessionId:pickledDataEncodeBase64:pickleKey:)")));
+- (void)saveSettingKey:(NSString *)key value:(NSString *)value __attribute__((swift_name("saveSetting(key:value:)")));
 - (void)saveVerificationModelVerificationModel:(Self_mobile_kmpVerificationModel *)verificationModel __attribute__((swift_name("saveVerificationModel(verificationModel:)")));
 - (void)updateConversationListList:(NSMutableArray<Self_mobile_kmpConversationModel *> *)list __attribute__((swift_name("updateConversationList(list:)")));
 - (void)updateFactByKeyFactModel:(Self_mobile_kmpFactModel *)factModel __attribute__((swift_name("updateFactByKey(factModel:)")));
@@ -3357,6 +3377,48 @@ __attribute__((swift_name("SessionModel.Companion")))
 /**
  * @note annotations
  *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SettingModel")))
+@interface Self_mobile_kmpSettingModel : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmObject>
+@property (class, readonly, getter=companion) Self_mobile_kmpSettingModelCompanion *companion __attribute__((swift_name("companion")));
+@property id<Self_mobile_kmpLibrary_baseRealmInstant> createdAt __attribute__((swift_name("createdAt")));
+@property NSString *key __attribute__((swift_name("key")));
+@property id<Self_mobile_kmpLibrary_baseRealmInstant> updatedAt __attribute__((swift_name("updatedAt")));
+@property NSString *value __attribute__((swift_name("value")));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="created_at")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="updated_at")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SettingModel.Companion")))
+@interface Self_mobile_kmpSettingModelCompanion : Self_mobile_kmpBase
+@property (class, readonly, getter=shared) Self_mobile_kmpSettingModelCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id)io_realm_kotlin_newInstance __attribute__((swift_name("io_realm_kotlin_newInstance()")));
+- (id)io_realm_kotlin_schema __attribute__((swift_name("io_realm_kotlin_schema()")));
+- (id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
  *   kotlinx.serialization.SerialName(value="VerificationModel")
 */
 __attribute__((objc_subclassing_restricted))
@@ -3591,47 +3653,47 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("__SkieSuspendWrappersKt")))
 @interface Self_mobile_kmp__SkieSuspendWrappersKt : Self_mobile_kmpBase
 + (void)Skie_Suspend__0__suspendCoroutineWithTimeoutTimeout:(int64_t)timeout block:(void (^)(id<Self_mobile_kmpKotlinContinuation>))block suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__0__suspendCoroutineWithTimeout(timeout:block:suspendHandler:)")));
-+ (void)Skie_Suspend__10__getPublicKeyByRecipientDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver recipient:(NSString *)recipient suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__10__getPublicKeyByRecipient(dispatchReceiver:recipient:suspendHandler:)")));
-+ (void)Skie_Suspend__11__recoverIdentityDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver selfId:(NSString *)selfId activeRecoveryKeyPair:(Self_mobile_kmpMultiplatform_crypto_libsodium_bindingsSignatureKeyPair *)activeRecoveryKeyPair suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__11__recoverIdentity(dispatchReceiver:selfId:activeRecoveryKeyPair:suspendHandler:)")));
-+ (void)Skie_Suspend__12__sendBiometricsVerificationDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver selfieData:(Self_mobile_kmpKotlinByteArray *)selfieData suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__12__sendBiometricsVerification(dispatchReceiver:selfieData:suspendHandler:)")));
-+ (void)Skie_Suspend__13__sendChatMessageDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver chatMsg:(Self_mobile_kmpChatMessage *)chatMsg suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__13__sendChatMessage(dispatchReceiver:chatMsg:suspendHandler:)")));
-+ (void)Skie_Suspend__14__sendDocumentVerificationDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver deviceAttestation:(NSDictionary<NSString *, NSString *> *)deviceAttestation verificationRequest:(Self_mobile_kmpVerificationRequest *)verificationRequest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__14__sendDocumentVerification(dispatchReceiver:deviceAttestation:verificationRequest:suspendHandler:)")));
-+ (void)Skie_Suspend__15__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__15__uploadObject(dispatchReceiver:byteArray:suspendHandler:)")));
-+ (void)Skie_Suspend__16__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray idToken:(NSString *)idToken suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__16__uploadObject(dispatchReceiver:byteArray:idToken:suspendHandler:)")));
-+ (void)Skie_Suspend__17__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray keyId:(NSString *)keyId challenge:(NSString *)challenge appattest:(NSString *)appattest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__17__uploadObject(dispatchReceiver:byteArray:keyId:challenge:appattest:suspendHandler:)")));
-+ (void)Skie_Suspend__18__accountRecoveryDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver signedOperation:(Self_mobile_kmpKotlinx_serialization_jsonJsonElement *)signedOperation selfId:(NSString *)selfId kid:(NSString *)kid recoveryKeyBytes:(Self_mobile_kmpKotlinByteArray *)recoveryKeyBytes suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__18__accountRecovery(dispatchReceiver:signedOperation:selfId:kid:recoveryKeyBytes:suspendHandler:)")));
-+ (void)Skie_Suspend__19__deleteAccountDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__19__deleteAccount(dispatchReceiver:selfId:suspendHandler:)")));
++ (void)Skie_Suspend__10__getDevicesDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId force:(BOOL)force suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__10__getDevices(dispatchReceiver:selfId:force:suspendHandler:)")));
++ (void)Skie_Suspend__11__getIdentityHistoryDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId keyId:(NSString * _Nullable)keyId signedKeyBytes:(Self_mobile_kmpKotlinByteArray * _Nullable)signedKeyBytes suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__11__getIdentityHistory(dispatchReceiver:selfId:keyId:signedKeyBytes:suspendHandler:)")));
++ (void)Skie_Suspend__12__getPrekeysDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId deviceId:(NSString *)deviceId messageToken:(NSString * _Nullable)messageToken suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__12__getPrekeys(dispatchReceiver:selfId:deviceId:messageToken:suspendHandler:)")));
++ (void)Skie_Suspend__13__registerNewDeviceDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver history:(Self_mobile_kmpKotlinx_serialization_jsonJsonElement *)history selfId:(NSString *)selfId suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__13__registerNewDevice(dispatchReceiver:history:selfId:suspendHandler:)")));
++ (void)Skie_Suspend__14__registerSelfIdDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver history:(Self_mobile_kmpKotlinx_serialization_jsonJsonElement * _Nullable)history platform:(NSString *)platform deviceId:(NSString * _Nullable)deviceId pushToken:(NSString * _Nullable)pushToken idToken:(NSString * _Nullable)idToken voipToken:(NSString * _Nullable)voipToken keyId:(NSString * _Nullable)keyId challenge:(NSString * _Nullable)challenge appattest:(NSString * _Nullable)appattest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__14__registerSelfId(dispatchReceiver:history:platform:deviceId:pushToken:idToken:voipToken:keyId:challenge:appattest:suspendHandler:)")));
++ (void)Skie_Suspend__15__submitBackupKeysDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver backupId:(NSString *)backupId hash:(NSString *)hash keys:(NSArray<NSString *> *)keys suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__15__submitBackupKeys(dispatchReceiver:backupId:hash:keys:suspendHandler:)")));
++ (void)Skie_Suspend__16__submitPrekeysDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId deviceId:(NSString *)deviceId keys:(NSArray<Self_mobile_kmpKotlinx_serialization_jsonJsonElement *> *)keys suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__16__submitPrekeys(dispatchReceiver:selfId:deviceId:keys:suspendHandler:)")));
++ (void)Skie_Suspend__17__updateNewDeviceDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId deviceId:(NSString *)deviceId uuid:(NSString *)uuid kid:(NSString *)kid suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__17__updateNewDevice(dispatchReceiver:selfId:deviceId:uuid:kid:suspendHandler:)")));
++ (void)Skie_Suspend__18__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__18__uploadObject(dispatchReceiver:byteArray:suspendHandler:)")));
++ (void)Skie_Suspend__19__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray idToken:(NSString *)idToken suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__19__uploadObject(dispatchReceiver:byteArray:idToken:suspendHandler:)")));
 + (void)Skie_Suspend__1__hasNextDispatchReceiver:(Self_mobile_kmpSkieColdFlowIterator<id> *)dispatchReceiver suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__1__hasNext(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__20__downloadObjectDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver link:(NSString *)link suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__20__downloadObject(dispatchReceiver:link:suspendHandler:)")));
-+ (void)Skie_Suspend__21__getBackupKeysDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver platform:(NSString *)platform backupId:(NSString *)backupId imageAttestation:(NSDictionary<NSString *, Self_mobile_kmpKotlinx_serialization_jsonJsonElement *> * _Nullable)imageAttestation idToken:(NSString * _Nullable)idToken keyId:(NSString * _Nullable)keyId challenge:(NSString * _Nullable)challenge appattest:(NSString * _Nullable)appattest livenessImage:(Self_mobile_kmpDataObjectLink * _Nullable)livenessImage registrationImage:(Self_mobile_kmpDataObjectLink * _Nullable)registrationImage suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__21__getBackupKeys(dispatchReceiver:platform:backupId:imageAttestation:idToken:keyId:challenge:appattest:livenessImage:registrationImage:suspendHandler:)")));
-+ (void)Skie_Suspend__22__getDevicesDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId force:(BOOL)force suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__22__getDevices(dispatchReceiver:selfId:force:suspendHandler:)")));
-+ (void)Skie_Suspend__23__getIdentityHistoryDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId keyId:(NSString * _Nullable)keyId signedKeyBytes:(Self_mobile_kmpKotlinByteArray * _Nullable)signedKeyBytes suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__23__getIdentityHistory(dispatchReceiver:selfId:keyId:signedKeyBytes:suspendHandler:)")));
-+ (void)Skie_Suspend__24__getPrekeysDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId deviceId:(NSString *)deviceId messageToken:(NSString * _Nullable)messageToken suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__24__getPrekeys(dispatchReceiver:selfId:deviceId:messageToken:suspendHandler:)")));
-+ (void)Skie_Suspend__25__registerNewDeviceDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver history:(Self_mobile_kmpKotlinx_serialization_jsonJsonElement *)history selfId:(NSString *)selfId suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__25__registerNewDevice(dispatchReceiver:history:selfId:suspendHandler:)")));
-+ (void)Skie_Suspend__26__registerSelfIdDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver history:(Self_mobile_kmpKotlinx_serialization_jsonJsonElement * _Nullable)history platform:(NSString *)platform deviceId:(NSString * _Nullable)deviceId pushToken:(NSString * _Nullable)pushToken idToken:(NSString * _Nullable)idToken voipToken:(NSString * _Nullable)voipToken keyId:(NSString * _Nullable)keyId challenge:(NSString * _Nullable)challenge appattest:(NSString * _Nullable)appattest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__26__registerSelfId(dispatchReceiver:history:platform:deviceId:pushToken:idToken:voipToken:keyId:challenge:appattest:suspendHandler:)")));
-+ (void)Skie_Suspend__27__submitBackupKeysDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver backupId:(NSString *)backupId hash:(NSString *)hash keys:(NSArray<NSString *> *)keys suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__27__submitBackupKeys(dispatchReceiver:backupId:hash:keys:suspendHandler:)")));
-+ (void)Skie_Suspend__28__submitPrekeysDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId deviceId:(NSString *)deviceId keys:(NSArray<Self_mobile_kmpKotlinx_serialization_jsonJsonElement *> *)keys suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__28__submitPrekeys(dispatchReceiver:selfId:deviceId:keys:suspendHandler:)")));
-+ (void)Skie_Suspend__29__updateNewDeviceDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId deviceId:(NSString *)deviceId uuid:(NSString *)uuid kid:(NSString *)kid suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__29__updateNewDevice(dispatchReceiver:selfId:deviceId:uuid:kid:suspendHandler:)")));
++ (void)Skie_Suspend__20__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray keyId:(NSString *)keyId challenge:(NSString *)challenge appattest:(NSString *)appattest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__20__uploadObject(dispatchReceiver:byteArray:keyId:challenge:appattest:suspendHandler:)")));
++ (void)Skie_Suspend__21__writeDispatchReceiver:(id<Self_mobile_kmpLibrary_baseRealm>)dispatchReceiver block:(id _Nullable (^)(id<Self_mobile_kmpLibrary_baseMutableRealm>))block suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__21__write(dispatchReceiver:block:suspendHandler:)")));
++ (void)Skie_Suspend__22__createSelfAccountDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver selfId:(NSString *)selfId selfieBase64:(NSString *)selfieBase64 suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__22__createSelfAccount(dispatchReceiver:selfId:selfieBase64:suspendHandler:)")));
++ (void)Skie_Suspend__23__createSelfAccountDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver pushToken:(NSString * _Nullable)pushToken idToken:(NSString * _Nullable)idToken voipToken:(NSString * _Nullable)voipToken keyId:(NSString * _Nullable)keyId challenge:(NSString * _Nullable)challenge appattest:(NSString * _Nullable)appattest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__23__createSelfAccount(dispatchReceiver:pushToken:idToken:voipToken:keyId:challenge:appattest:suspendHandler:)")));
++ (void)Skie_Suspend__24__deleteAccountDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__24__deleteAccount(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__25__downloadObjectDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver link:(NSString *)link sharedKey:(NSString *)sharedKey suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__25__downloadObject(dispatchReceiver:link:sharedKey:suspendHandler:)")));
++ (void)Skie_Suspend__26__getPublicKeyByRecipientDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver recipient:(NSString *)recipient suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__26__getPublicKeyByRecipient(dispatchReceiver:recipient:suspendHandler:)")));
++ (void)Skie_Suspend__27__recoverIdentityDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver selfId:(NSString *)selfId activeRecoveryKeyPair:(Self_mobile_kmpMultiplatform_crypto_libsodium_bindingsSignatureKeyPair *)activeRecoveryKeyPair suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__27__recoverIdentity(dispatchReceiver:selfId:activeRecoveryKeyPair:suspendHandler:)")));
++ (void)Skie_Suspend__28__sendBiometricsVerificationDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver selfieData:(Self_mobile_kmpKotlinByteArray *)selfieData suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__28__sendBiometricsVerification(dispatchReceiver:selfieData:suspendHandler:)")));
++ (void)Skie_Suspend__29__sendChatMessageDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver chatMsg:(Self_mobile_kmpChatMessage *)chatMsg suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__29__sendChatMessage(dispatchReceiver:chatMsg:suspendHandler:)")));
 + (void)Skie_Suspend__2__collectDispatchReceiver:(id<Self_mobile_kmpKotlinx_coroutines_coreFlow>)dispatchReceiver collector:(id<Self_mobile_kmpKotlinx_coroutines_coreFlowCollector>)collector suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__2__collect(dispatchReceiver:collector:suspendHandler:)")));
-+ (void)Skie_Suspend__30__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__30__uploadObject(dispatchReceiver:byteArray:suspendHandler:)")));
-+ (void)Skie_Suspend__31__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray idToken:(NSString *)idToken suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__31__uploadObject(dispatchReceiver:byteArray:idToken:suspendHandler:)")));
-+ (void)Skie_Suspend__32__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray keyId:(NSString *)keyId challenge:(NSString *)challenge appattest:(NSString *)appattest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__32__uploadObject(dispatchReceiver:byteArray:keyId:challenge:appattest:suspendHandler:)")));
-+ (void)Skie_Suspend__33__acceptDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver message:(Self_mobile_kmpMessage *)message onAcknowledgement:(void (^)(Self_mobile_kmpKotlinThrowable * _Nullable))onAcknowledgement suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__33__accept(dispatchReceiver:message:onAcknowledgement:suspendHandler:)")));
-+ (void)Skie_Suspend__34__backupDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver rootDir:(NSString *)rootDir suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__34__backup(dispatchReceiver:rootDir:suspendHandler:)")));
-+ (void)Skie_Suspend__35__closeDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__35__close(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__36__createAccountDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__36__createAccount(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__37__downloadDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver dataLink:(Self_mobile_kmpDataObjectLink *)dataLink suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__37__download(dispatchReceiver:dataLink:suspendHandler:)")));
-+ (void)Skie_Suspend__38__handleSignInRequestForSDKDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver deviceId:(NSString *)deviceId publicKeyBase64:(NSString *)publicKeyBase64 suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__38__handleSignInRequestForSDK(dispatchReceiver:deviceId:publicKeyBase64:suspendHandler:)")));
-+ (void)Skie_Suspend__39__registerDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage attestations:(NSArray<Self_mobile_kmpAttestation *> *)attestations suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__39__register(dispatchReceiver:selfieImage:attestations:suspendHandler:)")));
++ (void)Skie_Suspend__30__sendDocumentVerificationDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver deviceAttestation:(NSDictionary<NSString *, NSString *> *)deviceAttestation verificationRequest:(Self_mobile_kmpVerificationRequest *)verificationRequest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__30__sendDocumentVerification(dispatchReceiver:deviceAttestation:verificationRequest:suspendHandler:)")));
++ (void)Skie_Suspend__31__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__31__uploadObject(dispatchReceiver:byteArray:suspendHandler:)")));
++ (void)Skie_Suspend__32__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray idToken:(NSString *)idToken suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__32__uploadObject(dispatchReceiver:byteArray:idToken:suspendHandler:)")));
++ (void)Skie_Suspend__33__uploadObjectDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver byteArray:(Self_mobile_kmpKotlinByteArray *)byteArray keyId:(NSString *)keyId challenge:(NSString *)challenge appattest:(NSString *)appattest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__33__uploadObject(dispatchReceiver:byteArray:keyId:challenge:appattest:suspendHandler:)")));
++ (void)Skie_Suspend__34__acceptDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver message:(Self_mobile_kmpMessage *)message onAcknowledgement:(void (^)(Self_mobile_kmpKotlinThrowable * _Nullable))onAcknowledgement suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__34__accept(dispatchReceiver:message:onAcknowledgement:suspendHandler:)")));
++ (void)Skie_Suspend__35__backupDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver rootDir:(NSString *)rootDir suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__35__backup(dispatchReceiver:rootDir:suspendHandler:)")));
++ (void)Skie_Suspend__36__closeDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__36__close(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__37__createAccountDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__37__createAccount(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__38__downloadDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver dataLink:(Self_mobile_kmpDataObjectLink *)dataLink suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__38__download(dispatchReceiver:dataLink:suspendHandler:)")));
++ (void)Skie_Suspend__39__handleSignInRequestForSDKDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver deviceId:(NSString *)deviceId publicKeyBase64:(NSString *)publicKeyBase64 suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__39__handleSignInRequestForSDK(dispatchReceiver:deviceId:publicKeyBase64:suspendHandler:)")));
 + (void)Skie_Suspend__3__emitDispatchReceiver:(id<Self_mobile_kmpKotlinx_coroutines_coreFlowCollector>)dispatchReceiver value:(id _Nullable)value suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__3__emit(dispatchReceiver:value:suspendHandler:)")));
-+ (void)Skie_Suspend__40__registerDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver selfId:(NSString *)selfId selfieBase64:(NSString *)selfieBase64 suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__40__register(dispatchReceiver:selfId:selfieBase64:suspendHandler:)")));
-+ (void)Skie_Suspend__41__rejectDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver message:(Self_mobile_kmpMessage *)message onAcknowledgement:(void (^)(Self_mobile_kmpKotlinThrowable * _Nullable))onAcknowledgement suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__41__reject(dispatchReceiver:message:onAcknowledgement:suspendHandler:)")));
-+ (void)Skie_Suspend__42__restoreDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver backupDir:(NSString *)backupDir selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__42__restore(dispatchReceiver:backupDir:selfieImage:suspendHandler:)")));
-+ (void)Skie_Suspend__43__sendDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver message:(Self_mobile_kmpMessage *)message onAcknowledgement:(void (^)(Self_mobile_kmpKotlinThrowable * _Nullable))onAcknowledgement suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__43__send(dispatchReceiver:message:onAcknowledgement:suspendHandler:)")));
-+ (void)Skie_Suspend__44__uploadDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver dataObject:(Self_mobile_kmpDataObject *)dataObject suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__44__upload(dispatchReceiver:dataObject:suspendHandler:)")));
-+ (void)Skie_Suspend__45__verifyLocationDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver locationData:(Self_mobile_kmpLocationData *)locationData suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__45__verifyLocation(dispatchReceiver:locationData:suspendHandler:)")));
-+ (void)Skie_Suspend__46__verifySelfieImageDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__46__verifySelfieImage(dispatchReceiver:selfieImage:suspendHandler:)")));
-+ (void)Skie_Suspend__47__writeDispatchReceiver:(id<Self_mobile_kmpLibrary_baseRealm>)dispatchReceiver block:(id _Nullable (^)(id<Self_mobile_kmpLibrary_baseMutableRealm>))block suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__47__write(dispatchReceiver:block:suspendHandler:)")));
++ (void)Skie_Suspend__40__registerDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage attestations:(NSArray<Self_mobile_kmpAttestation *> *)attestations suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__40__register(dispatchReceiver:selfieImage:attestations:suspendHandler:)")));
++ (void)Skie_Suspend__41__registerDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver selfId:(NSString *)selfId selfieBase64:(NSString *)selfieBase64 suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__41__register(dispatchReceiver:selfId:selfieBase64:suspendHandler:)")));
++ (void)Skie_Suspend__42__rejectDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver message:(Self_mobile_kmpMessage *)message onAcknowledgement:(void (^)(Self_mobile_kmpKotlinThrowable * _Nullable))onAcknowledgement suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__42__reject(dispatchReceiver:message:onAcknowledgement:suspendHandler:)")));
++ (void)Skie_Suspend__43__restoreDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver backupDir:(NSString *)backupDir selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__43__restore(dispatchReceiver:backupDir:selfieImage:suspendHandler:)")));
++ (void)Skie_Suspend__44__sendDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver message:(Self_mobile_kmpMessage *)message onAcknowledgement:(void (^)(Self_mobile_kmpKotlinThrowable * _Nullable))onAcknowledgement suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__44__send(dispatchReceiver:message:onAcknowledgement:suspendHandler:)")));
++ (void)Skie_Suspend__45__uploadDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver dataObject:(Self_mobile_kmpDataObject *)dataObject suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__45__upload(dispatchReceiver:dataObject:suspendHandler:)")));
++ (void)Skie_Suspend__46__verifyLocationDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver locationData:(Self_mobile_kmpLocationData *)locationData suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__46__verifyLocation(dispatchReceiver:locationData:suspendHandler:)")));
++ (void)Skie_Suspend__47__verifySelfieImageDispatchReceiver:(Self_mobile_kmpAccount *)dispatchReceiver selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__47__verifySelfieImage(dispatchReceiver:selfieImage:suspendHandler:)")));
 + (void)Skie_Suspend__48__deserializePDSDataExtensionReceiver:(Self_mobile_kmpSelfInteractor *)extensionReceiver backupDir:(NSString *)backupDir selfieImage:(Self_mobile_kmpKotlinByteArray *)selfieImage suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__48__deserializePDSData(extensionReceiver:backupDir:selfieImage:suspendHandler:)")));
 + (void)Skie_Suspend__49__sendFactRequestExtensionReceiver:(Self_mobile_kmpSelfInteractor *)extensionReceiver attestationRequest:(Self_mobile_kmpAttestationRequest *)attestationRequest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__49__sendFactRequest(extensionReceiver:attestationRequest:suspendHandler:)")));
 + (void)Skie_Suspend__4__decryptIncomingMessageDispatchReceiver:(Self_mobile_kmpEncryptionManager *)dispatchReceiver messageId:(NSString *)messageId senderId:(NSString *)senderId deviceId:(NSString *)deviceId message:(NSString *)message suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__4__decryptIncomingMessage(dispatchReceiver:messageId:senderId:deviceId:message:suspendHandler:)")));
@@ -3639,17 +3701,17 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__51__sendLocationVerifyRequestExtensionReceiver:(Self_mobile_kmpSelfInteractor *)extensionReceiver locationData:(Self_mobile_kmpLocationData *)locationData suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__51__sendLocationVerifyRequest(extensionReceiver:locationData:suspendHandler:)")));
 + (void)Skie_Suspend__52__serializePDSDataExtensionReceiver:(Self_mobile_kmpSelfInteractor *)extensionReceiver backupDir:(NSString *)backupDir suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__52__serializePDSData(extensionReceiver:backupDir:suspendHandler:)")));
 + (void)Skie_Suspend__5__encryptGroupMessageDispatchReceiver:(Self_mobile_kmpEncryptionManager *)dispatchReceiver recipients:(NSArray<NSString *> *)recipients devices:(NSArray<NSString *> *)devices jwsMessage:(NSString *)jwsMessage forceGetDevices:(BOOL)forceGetDevices forceNewOutboundSession:(BOOL)forceNewOutboundSession messageToken:(NSString * _Nullable)messageToken suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__5__encryptGroupMessage(dispatchReceiver:recipients:devices:jwsMessage:forceGetDevices:forceNewOutboundSession:messageToken:suspendHandler:)")));
-+ (void)Skie_Suspend__6__createSelfAccountDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver selfId:(NSString *)selfId selfieBase64:(NSString *)selfieBase64 suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__createSelfAccount(dispatchReceiver:selfId:selfieBase64:suspendHandler:)")));
-+ (void)Skie_Suspend__7__createSelfAccountDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver pushToken:(NSString * _Nullable)pushToken idToken:(NSString * _Nullable)idToken voipToken:(NSString * _Nullable)voipToken keyId:(NSString * _Nullable)keyId challenge:(NSString * _Nullable)challenge appattest:(NSString * _Nullable)appattest suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__7__createSelfAccount(dispatchReceiver:pushToken:idToken:voipToken:keyId:challenge:appattest:suspendHandler:)")));
-+ (void)Skie_Suspend__8__deleteAccountDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__8__deleteAccount(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__9__downloadObjectDispatchReceiver:(Self_mobile_kmpSelfInteractor *)dispatchReceiver link:(NSString *)link sharedKey:(NSString *)sharedKey suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__downloadObject(dispatchReceiver:link:sharedKey:suspendHandler:)")));
++ (void)Skie_Suspend__6__accountRecoveryDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver signedOperation:(Self_mobile_kmpKotlinx_serialization_jsonJsonElement *)signedOperation selfId:(NSString *)selfId kid:(NSString *)kid recoveryKeyBytes:(Self_mobile_kmpKotlinByteArray *)recoveryKeyBytes suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__accountRecovery(dispatchReceiver:signedOperation:selfId:kid:recoveryKeyBytes:suspendHandler:)")));
++ (void)Skie_Suspend__7__deleteAccountDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver selfId:(NSString *)selfId suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__7__deleteAccount(dispatchReceiver:selfId:suspendHandler:)")));
++ (void)Skie_Suspend__8__downloadObjectDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver link:(NSString *)link suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__8__downloadObject(dispatchReceiver:link:suspendHandler:)")));
++ (void)Skie_Suspend__9__getBackupKeysDispatchReceiver:(Self_mobile_kmpSelfServiceApi *)dispatchReceiver platform:(NSString *)platform backupId:(NSString *)backupId imageAttestation:(NSDictionary<NSString *, Self_mobile_kmpKotlinx_serialization_jsonJsonElement *> * _Nullable)imageAttestation idToken:(NSString * _Nullable)idToken keyId:(NSString * _Nullable)keyId challenge:(NSString * _Nullable)challenge appattest:(NSString * _Nullable)appattest livenessImage:(Self_mobile_kmpDataObjectLink * _Nullable)livenessImage registrationImage:(Self_mobile_kmpDataObjectLink * _Nullable)registrationImage suspendHandler:(Self_mobile_kmpSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__getBackupKeys(dispatchReceiver:platform:backupId:imageAttestation:idToken:keyId:challenge:appattest:livenessImage:registrationImage:suspendHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("__SkieTypeExportsKt")))
 @interface Self_mobile_kmp__SkieTypeExportsKt : Self_mobile_kmpBase
-+ (void)skieTypeExports_0P0:(Self_mobile_kmpWire_runtimeMessageBuilder<id, id> *)p0 p1:(id<Self_mobile_kmpLibrary_baseRealmChange>)p1 p2:(id<Self_mobile_kmpLibrary_baseResultsChange>)p2 p3:(id<Self_mobile_kmpLibrary_baseSingleQueryChange>)p3 p4:(Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitive *)p4 p5:(Self_mobile_kmpKotlinx_serialization_jsonJsonNull *)p5 p6:(Self_mobile_kmpKotlinx_serialization_corePolymorphicKind *)p6 p7:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKind *)p7 p8:(Self_mobile_kmpKotlinx_serialization_coreSerialKindCONTEXTUAL *)p8 p9:(Self_mobile_kmpKotlinx_serialization_coreSerialKindENUM *)p9 p10:(Self_mobile_kmpKotlinx_serialization_coreStructureKind *)p10 p11:(Self_mobile_kmpKotlinx_serialization_corePolymorphicKindOPEN *)p11 p12:(Self_mobile_kmpKotlinx_serialization_corePolymorphicKindSEALED *)p12 p13:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindBOOLEAN *)p13 p14:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindBYTE *)p14 p15:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindCHAR *)p15 p16:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindDOUBLE *)p16 p17:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindFLOAT *)p17 p18:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindINT *)p18 p19:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindLONG *)p19 p20:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindSHORT *)p20 p21:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindSTRING *)p21 p22:(Self_mobile_kmpKotlinx_serialization_coreStructureKindCLASS *)p22 p23:(Self_mobile_kmpKotlinx_serialization_coreStructureKindLIST *)p23 p24:(Self_mobile_kmpKotlinx_serialization_coreStructureKindMAP *)p24 p25:(Self_mobile_kmpKotlinx_serialization_coreStructureKindOBJECT *)p25 p26:(Self_mobile_kmpLibrary_baseListPropertyType *)p26 p27:(Self_mobile_kmpLibrary_baseMapPropertyType *)p27 p28:(Self_mobile_kmpLibrary_baseSetPropertyType *)p28 p29:(Self_mobile_kmpLibrary_baseValuePropertyType *)p29 __attribute__((swift_name("skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:p24:p25:p26:p27:p28:p29:)")));
-+ (void)skieTypeExports_1P0:(id<Self_mobile_kmpLibrary_baseInitialRealm>)p0 p1:(id<Self_mobile_kmpLibrary_baseUpdatedRealm>)p1 p2:(id<Self_mobile_kmpLibrary_baseInitialResults>)p2 p3:(id<Self_mobile_kmpLibrary_baseUpdatedResults>)p3 p4:(id<Self_mobile_kmpLibrary_baseObjectChange>)p4 p5:(id<Self_mobile_kmpLibrary_basePendingObject>)p5 p6:(id<Self_mobile_kmpLibrary_baseDeletedObject>)p6 p7:(id<Self_mobile_kmpLibrary_baseInitialObject>)p7 p8:(id<Self_mobile_kmpLibrary_baseUpdatedObject>)p8 __attribute__((swift_name("skieTypeExports_1(p0:p1:p2:p3:p4:p5:p6:p7:p8:)")));
++ (void)skieTypeExports_0P0:(Self_mobile_kmpWire_runtimeMessageBuilder<id, id> *)p0 p1:(id<Self_mobile_kmpLibrary_baseRealmChange>)p1 p2:(id<Self_mobile_kmpLibrary_baseResultsChange>)p2 p3:(id<Self_mobile_kmpLibrary_baseSingleQueryChange>)p3 p4:(Self_mobile_kmpLibrary_baseListPropertyType *)p4 p5:(Self_mobile_kmpLibrary_baseMapPropertyType *)p5 p6:(Self_mobile_kmpLibrary_baseSetPropertyType *)p6 p7:(Self_mobile_kmpLibrary_baseValuePropertyType *)p7 p8:(Self_mobile_kmpKotlinx_serialization_corePolymorphicKind *)p8 p9:(Self_mobile_kmpKotlinx_serialization_corePolymorphicKindOPEN *)p9 p10:(Self_mobile_kmpKotlinx_serialization_corePolymorphicKindSEALED *)p10 p11:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKind *)p11 p12:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindBOOLEAN *)p12 p13:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindBYTE *)p13 p14:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindCHAR *)p14 p15:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindDOUBLE *)p15 p16:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindFLOAT *)p16 p17:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindINT *)p17 p18:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindLONG *)p18 p19:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindSHORT *)p19 p20:(Self_mobile_kmpKotlinx_serialization_corePrimitiveKindSTRING *)p20 p21:(Self_mobile_kmpKotlinx_serialization_coreSerialKindCONTEXTUAL *)p21 p22:(Self_mobile_kmpKotlinx_serialization_coreSerialKindENUM *)p22 p23:(Self_mobile_kmpKotlinx_serialization_coreStructureKind *)p23 p24:(Self_mobile_kmpKotlinx_serialization_coreStructureKindCLASS *)p24 p25:(Self_mobile_kmpKotlinx_serialization_coreStructureKindLIST *)p25 p26:(Self_mobile_kmpKotlinx_serialization_coreStructureKindMAP *)p26 p27:(Self_mobile_kmpKotlinx_serialization_coreStructureKindOBJECT *)p27 p28:(Self_mobile_kmpKotlinx_serialization_jsonJsonNull *)p28 p29:(Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitive *)p29 __attribute__((swift_name("skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:p24:p25:p26:p27:p28:p29:)")));
++ (void)skieTypeExports_1P0:(id<Self_mobile_kmpLibrary_baseDeletedObject>)p0 p1:(id<Self_mobile_kmpLibrary_baseInitialObject>)p1 p2:(id<Self_mobile_kmpLibrary_baseInitialRealm>)p2 p3:(id<Self_mobile_kmpLibrary_baseInitialResults>)p3 p4:(id<Self_mobile_kmpLibrary_baseObjectChange>)p4 p5:(id<Self_mobile_kmpLibrary_basePendingObject>)p5 p6:(id<Self_mobile_kmpLibrary_baseUpdatedObject>)p6 p7:(id<Self_mobile_kmpLibrary_baseUpdatedRealm>)p7 p8:(id<Self_mobile_kmpLibrary_baseUpdatedResults>)p8 __attribute__((swift_name("skieTypeExports_1(p0:p1:p2:p3:p4:p5:p6:p7:p8:)")));
 @end
 
 __attribute__((swift_name("KotlinRuntimeException")))
@@ -4102,7 +4164,7 @@ __attribute__((swift_name("Kotlinx_datetimeInstant.Companion")))
 - (Self_mobile_kmpKotlinx_datetimeInstant *)fromEpochSecondsEpochSeconds:(int64_t)epochSeconds nanosecondAdjustment:(int32_t)nanosecondAdjustment __attribute__((swift_name("fromEpochSeconds(epochSeconds:nanosecondAdjustment:)")));
 - (Self_mobile_kmpKotlinx_datetimeInstant *)fromEpochSecondsEpochSeconds:(int64_t)epochSeconds nanosecondAdjustment_:(int64_t)nanosecondAdjustment __attribute__((swift_name("fromEpochSeconds(epochSeconds:nanosecondAdjustment_:)")));
 - (Self_mobile_kmpKotlinx_datetimeInstant *)now __attribute__((swift_name("now()"))) __attribute__((unavailable("Use Clock.System.now() instead")));
-- (Self_mobile_kmpKotlinx_datetimeInstant *)parseIsoString:(NSString *)isoString __attribute__((swift_name("parse(isoString:)")));
+- (Self_mobile_kmpKotlinx_datetimeInstant *)parseInput:(id)input format:(id<Self_mobile_kmpKotlinx_datetimeDateTimeFormat>)format __attribute__((swift_name("parse(input:format:)")));
 - (id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -4162,35 +4224,63 @@ __attribute__((swift_name("Library_baseSingleQueryChange")))
 @property (readonly) id<Self_mobile_kmpLibrary_baseBaseRealmObject> _Nullable obj __attribute__((swift_name("obj")));
 @end
 
+__attribute__((swift_name("Library_baseRealmPropertyType")))
+@protocol Self_mobile_kmpLibrary_baseRealmPropertyType
+@required
+@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
+@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
+@end
 
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable(with=NormalClass(value=kotlinx/serialization/json/JsonPrimitiveSerializer))
-*/
-__attribute__((swift_name("Kotlinx_serialization_jsonJsonPrimitive")))
-@interface Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitive : Self_mobile_kmpKotlinx_serialization_jsonJsonElement
-@property (class, readonly, getter=companion) Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitiveCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) NSString *content __attribute__((swift_name("content")));
-@property (readonly) BOOL isString __attribute__((swift_name("isString")));
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Library_baseListPropertyType")))
+@interface Self_mobile_kmpLibrary_baseListPropertyType : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmPropertyType>
+@property (readonly) BOOL isComputed __attribute__((swift_name("isComputed")));
+@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
+@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
+- (instancetype)initWithStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable isComputed:(BOOL)isComputed __attribute__((swift_name("init(storageType:isNullable:isComputed:)"))) __attribute__((objc_designated_initializer));
+- (Self_mobile_kmpLibrary_baseListPropertyType *)doCopyStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable isComputed:(BOOL)isComputed __attribute__((swift_name("doCopy(storageType:isNullable:isComputed:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable(with=NormalClass(value=kotlinx/serialization/json/JsonNullSerializer))
-*/
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Kotlinx_serialization_jsonJsonNull")))
-@interface Self_mobile_kmpKotlinx_serialization_jsonJsonNull : Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitive
-@property (class, readonly, getter=shared) Self_mobile_kmpKotlinx_serialization_jsonJsonNull *shared __attribute__((swift_name("shared")));
-@property (readonly) NSString *content __attribute__((swift_name("content")));
-@property (readonly) BOOL isString __attribute__((swift_name("isString")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)jsonNull __attribute__((swift_name("init()")));
-- (id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-- (id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(Self_mobile_kmpKotlinArray<id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+__attribute__((swift_name("Library_baseMapPropertyType")))
+@interface Self_mobile_kmpLibrary_baseMapPropertyType : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmPropertyType>
+@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
+@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
+- (instancetype)initWithStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable __attribute__((swift_name("init(storageType:isNullable:)"))) __attribute__((objc_designated_initializer));
+- (Self_mobile_kmpLibrary_baseMapPropertyType *)doCopyStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable __attribute__((swift_name("doCopy(storageType:isNullable:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Library_baseSetPropertyType")))
+@interface Self_mobile_kmpLibrary_baseSetPropertyType : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmPropertyType>
+@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
+@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
+- (instancetype)initWithStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable __attribute__((swift_name("init(storageType:isNullable:)"))) __attribute__((objc_designated_initializer));
+- (Self_mobile_kmpLibrary_baseSetPropertyType *)doCopyStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable __attribute__((swift_name("doCopy(storageType:isNullable:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Library_baseValuePropertyType")))
+@interface Self_mobile_kmpLibrary_baseValuePropertyType : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmPropertyType>
+@property (readonly) BOOL isFullTextIndexed __attribute__((swift_name("isFullTextIndexed")));
+@property (readonly) BOOL isIndexed __attribute__((swift_name("isIndexed")));
+@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
+@property (readonly) BOOL isPrimaryKey __attribute__((swift_name("isPrimaryKey")));
+@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
+- (instancetype)initWithStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable isPrimaryKey:(BOOL)isPrimaryKey isIndexed:(BOOL)isIndexed isFullTextIndexed:(BOOL)isFullTextIndexed __attribute__((swift_name("init(storageType:isNullable:isPrimaryKey:isIndexed:isFullTextIndexed:)"))) __attribute__((objc_designated_initializer));
+- (Self_mobile_kmpLibrary_baseValuePropertyType *)doCopyStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable isPrimaryKey:(BOOL)isPrimaryKey isIndexed:(BOOL)isIndexed isFullTextIndexed:(BOOL)isFullTextIndexed __attribute__((swift_name("doCopy(storageType:isNullable:isPrimaryKey:isIndexed:isFullTextIndexed:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
 @end
 
 
@@ -4213,47 +4303,6 @@ __attribute__((swift_name("Kotlinx_serialization_corePolymorphicKind")))
 @interface Self_mobile_kmpKotlinx_serialization_corePolymorphicKind : Self_mobile_kmpKotlinx_serialization_coreSerialKind
 @end
 
-__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind")))
-@interface Self_mobile_kmpKotlinx_serialization_corePrimitiveKind : Self_mobile_kmpKotlinx_serialization_coreSerialKind
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Kotlinx_serialization_coreSerialKind.CONTEXTUAL")))
-@interface Self_mobile_kmpKotlinx_serialization_coreSerialKindCONTEXTUAL : Self_mobile_kmpKotlinx_serialization_coreSerialKind
-@property (class, readonly, getter=shared) Self_mobile_kmpKotlinx_serialization_coreSerialKindCONTEXTUAL *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)cONTEXTUAL __attribute__((swift_name("init()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Kotlinx_serialization_coreSerialKind.ENUM")))
-@interface Self_mobile_kmpKotlinx_serialization_coreSerialKindENUM : Self_mobile_kmpKotlinx_serialization_coreSerialKind
-@property (class, readonly, getter=shared) Self_mobile_kmpKotlinx_serialization_coreSerialKindENUM *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)eNUM __attribute__((swift_name("init()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-__attribute__((swift_name("Kotlinx_serialization_coreStructureKind")))
-@interface Self_mobile_kmpKotlinx_serialization_coreStructureKind : Self_mobile_kmpKotlinx_serialization_coreSerialKind
-@end
-
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Kotlinx_serialization_corePolymorphicKind.OPEN")))
 @interface Self_mobile_kmpKotlinx_serialization_corePolymorphicKindOPEN : Self_mobile_kmpKotlinx_serialization_corePolymorphicKind
@@ -4270,6 +4319,10 @@ __attribute__((swift_name("Kotlinx_serialization_corePolymorphicKind.SEALED")))
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)sEALED __attribute__((swift_name("init()")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind")))
+@interface Self_mobile_kmpKotlinx_serialization_corePrimitiveKind : Self_mobile_kmpKotlinx_serialization_coreSerialKind
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -4353,6 +4406,43 @@ __attribute__((swift_name("Kotlinx_serialization_corePrimitiveKind.STRING")))
 + (instancetype)sTRING __attribute__((swift_name("init()")));
 @end
 
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_coreSerialKind.CONTEXTUAL")))
+@interface Self_mobile_kmpKotlinx_serialization_coreSerialKindCONTEXTUAL : Self_mobile_kmpKotlinx_serialization_coreSerialKind
+@property (class, readonly, getter=shared) Self_mobile_kmpKotlinx_serialization_coreSerialKindCONTEXTUAL *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)cONTEXTUAL __attribute__((swift_name("init()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_coreSerialKind.ENUM")))
+@interface Self_mobile_kmpKotlinx_serialization_coreSerialKindENUM : Self_mobile_kmpKotlinx_serialization_coreSerialKind
+@property (class, readonly, getter=shared) Self_mobile_kmpKotlinx_serialization_coreSerialKindENUM *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)eNUM __attribute__((swift_name("init()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+__attribute__((swift_name("Kotlinx_serialization_coreStructureKind")))
+@interface Self_mobile_kmpKotlinx_serialization_coreStructureKind : Self_mobile_kmpKotlinx_serialization_coreSerialKind
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Kotlinx_serialization_coreStructureKind.CLASS")))
 @interface Self_mobile_kmpKotlinx_serialization_coreStructureKindCLASS : Self_mobile_kmpKotlinx_serialization_coreStructureKind
@@ -4389,63 +4479,50 @@ __attribute__((swift_name("Kotlinx_serialization_coreStructureKind.OBJECT")))
 + (instancetype)oBJECT __attribute__((swift_name("init()")));
 @end
 
-__attribute__((swift_name("Library_baseRealmPropertyType")))
-@protocol Self_mobile_kmpLibrary_baseRealmPropertyType
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable(with=NormalClass(value=kotlinx/serialization/json/JsonPrimitiveSerializer))
+*/
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonPrimitive")))
+@interface Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitive : Self_mobile_kmpKotlinx_serialization_jsonJsonElement
+@property (class, readonly, getter=companion) Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitiveCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString *content __attribute__((swift_name("content")));
+@property (readonly) BOOL isString __attribute__((swift_name("isString")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable(with=NormalClass(value=kotlinx/serialization/json/JsonNullSerializer))
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonNull")))
+@interface Self_mobile_kmpKotlinx_serialization_jsonJsonNull : Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitive
+@property (class, readonly, getter=shared) Self_mobile_kmpKotlinx_serialization_jsonJsonNull *shared __attribute__((swift_name("shared")));
+@property (readonly) NSString *content __attribute__((swift_name("content")));
+@property (readonly) BOOL isString __attribute__((swift_name("isString")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)jsonNull __attribute__((swift_name("init()")));
+- (id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+- (id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(Self_mobile_kmpKotlinArray<id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+@end
+
+__attribute__((swift_name("Library_baseObjectChange")))
+@protocol Self_mobile_kmpLibrary_baseObjectChange <Self_mobile_kmpLibrary_baseSingleQueryChange>
 @required
-@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
-@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Library_baseListPropertyType")))
-@interface Self_mobile_kmpLibrary_baseListPropertyType : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmPropertyType>
-@property (readonly) BOOL isComputed __attribute__((swift_name("isComputed")));
-@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
-@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
-- (instancetype)initWithStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable isComputed:(BOOL)isComputed __attribute__((swift_name("init(storageType:isNullable:isComputed:)"))) __attribute__((objc_designated_initializer));
-- (Self_mobile_kmpLibrary_baseListPropertyType *)doCopyStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable isComputed:(BOOL)isComputed __attribute__((swift_name("doCopy(storageType:isNullable:isComputed:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
+__attribute__((swift_name("Library_baseDeletedObject")))
+@protocol Self_mobile_kmpLibrary_baseDeletedObject <Self_mobile_kmpLibrary_baseObjectChange>
+@required
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Library_baseMapPropertyType")))
-@interface Self_mobile_kmpLibrary_baseMapPropertyType : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmPropertyType>
-@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
-@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
-- (instancetype)initWithStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable __attribute__((swift_name("init(storageType:isNullable:)"))) __attribute__((objc_designated_initializer));
-- (Self_mobile_kmpLibrary_baseMapPropertyType *)doCopyStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable __attribute__((swift_name("doCopy(storageType:isNullable:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Library_baseSetPropertyType")))
-@interface Self_mobile_kmpLibrary_baseSetPropertyType : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmPropertyType>
-@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
-@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
-- (instancetype)initWithStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable __attribute__((swift_name("init(storageType:isNullable:)"))) __attribute__((objc_designated_initializer));
-- (Self_mobile_kmpLibrary_baseSetPropertyType *)doCopyStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable __attribute__((swift_name("doCopy(storageType:isNullable:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Library_baseValuePropertyType")))
-@interface Self_mobile_kmpLibrary_baseValuePropertyType : Self_mobile_kmpBase <Self_mobile_kmpLibrary_baseRealmPropertyType>
-@property (readonly) BOOL isFullTextIndexed __attribute__((swift_name("isFullTextIndexed")));
-@property (readonly) BOOL isIndexed __attribute__((swift_name("isIndexed")));
-@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
-@property (readonly) BOOL isPrimaryKey __attribute__((swift_name("isPrimaryKey")));
-@property (readonly) Self_mobile_kmpLibrary_baseRealmStorageType *storageType __attribute__((swift_name("storageType")));
-- (instancetype)initWithStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable isPrimaryKey:(BOOL)isPrimaryKey isIndexed:(BOOL)isIndexed isFullTextIndexed:(BOOL)isFullTextIndexed __attribute__((swift_name("init(storageType:isNullable:isPrimaryKey:isIndexed:isFullTextIndexed:)"))) __attribute__((objc_designated_initializer));
-- (Self_mobile_kmpLibrary_baseValuePropertyType *)doCopyStorageType:(Self_mobile_kmpLibrary_baseRealmStorageType *)storageType isNullable:(BOOL)isNullable isPrimaryKey:(BOOL)isPrimaryKey isIndexed:(BOOL)isIndexed isFullTextIndexed:(BOOL)isFullTextIndexed __attribute__((swift_name("doCopy(storageType:isNullable:isPrimaryKey:isIndexed:isFullTextIndexed:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
+__attribute__((swift_name("Library_baseInitialObject")))
+@protocol Self_mobile_kmpLibrary_baseInitialObject <Self_mobile_kmpLibrary_baseObjectChange>
+@required
 @end
 
 __attribute__((swift_name("Library_baseInitialRealm")))
@@ -4453,13 +4530,25 @@ __attribute__((swift_name("Library_baseInitialRealm")))
 @required
 @end
 
-__attribute__((swift_name("Library_baseUpdatedRealm")))
-@protocol Self_mobile_kmpLibrary_baseUpdatedRealm <Self_mobile_kmpLibrary_baseRealmChange>
+__attribute__((swift_name("Library_baseInitialResults")))
+@protocol Self_mobile_kmpLibrary_baseInitialResults <Self_mobile_kmpLibrary_baseResultsChange>
 @required
 @end
 
-__attribute__((swift_name("Library_baseInitialResults")))
-@protocol Self_mobile_kmpLibrary_baseInitialResults <Self_mobile_kmpLibrary_baseResultsChange>
+__attribute__((swift_name("Library_basePendingObject")))
+@protocol Self_mobile_kmpLibrary_basePendingObject <Self_mobile_kmpLibrary_baseSingleQueryChange>
+@required
+@end
+
+__attribute__((swift_name("Library_baseUpdatedObject")))
+@protocol Self_mobile_kmpLibrary_baseUpdatedObject <Self_mobile_kmpLibrary_baseObjectChange>
+@required
+- (BOOL)isFieldChangedFieldName:(NSString *)fieldName __attribute__((swift_name("isFieldChanged(fieldName:)")));
+@property (readonly) Self_mobile_kmpKotlinArray<NSString *> *changedFields __attribute__((swift_name("changedFields")));
+@end
+
+__attribute__((swift_name("Library_baseUpdatedRealm")))
+@protocol Self_mobile_kmpLibrary_baseUpdatedRealm <Self_mobile_kmpLibrary_baseRealmChange>
 @required
 @end
 
@@ -4477,33 +4566,6 @@ __attribute__((swift_name("Library_baseListChangeSet")))
 __attribute__((swift_name("Library_baseUpdatedResults")))
 @protocol Self_mobile_kmpLibrary_baseUpdatedResults <Self_mobile_kmpLibrary_baseResultsChange, Self_mobile_kmpLibrary_baseListChangeSet>
 @required
-@end
-
-__attribute__((swift_name("Library_baseObjectChange")))
-@protocol Self_mobile_kmpLibrary_baseObjectChange <Self_mobile_kmpLibrary_baseSingleQueryChange>
-@required
-@end
-
-__attribute__((swift_name("Library_basePendingObject")))
-@protocol Self_mobile_kmpLibrary_basePendingObject <Self_mobile_kmpLibrary_baseSingleQueryChange>
-@required
-@end
-
-__attribute__((swift_name("Library_baseDeletedObject")))
-@protocol Self_mobile_kmpLibrary_baseDeletedObject <Self_mobile_kmpLibrary_baseObjectChange>
-@required
-@end
-
-__attribute__((swift_name("Library_baseInitialObject")))
-@protocol Self_mobile_kmpLibrary_baseInitialObject <Self_mobile_kmpLibrary_baseObjectChange>
-@required
-@end
-
-__attribute__((swift_name("Library_baseUpdatedObject")))
-@protocol Self_mobile_kmpLibrary_baseUpdatedObject <Self_mobile_kmpLibrary_baseObjectChange>
-@required
-- (BOOL)isFieldChangedFieldName:(NSString *)fieldName __attribute__((swift_name("isFieldChanged(fieldName:)")));
-@property (readonly) Self_mobile_kmpKotlinArray<NSString *> *changedFields __attribute__((swift_name("changedFields")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -5046,6 +5108,15 @@ __attribute__((swift_name("Kotlinx_serialization_coreCompositeDecoder")))
 @property (readonly) Self_mobile_kmpKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end
 
+__attribute__((swift_name("Kotlinx_datetimeDateTimeFormat")))
+@protocol Self_mobile_kmpKotlinx_datetimeDateTimeFormat
+@required
+- (NSString *)formatValue:(id _Nullable)value __attribute__((swift_name("format(value:)")));
+- (id<Self_mobile_kmpKotlinAppendable>)formatToAppendable:(id<Self_mobile_kmpKotlinAppendable>)appendable value:(id _Nullable)value __attribute__((swift_name("formatTo(appendable:value:)")));
+- (id _Nullable)parseInput:(id)input __attribute__((swift_name("parse(input:)")));
+- (id _Nullable)parseOrNullInput:(id)input __attribute__((swift_name("parseOrNull(input:)")));
+@end
+
 
 /**
  * @note annotations
@@ -5073,16 +5144,6 @@ __attribute__((swift_name("Library_baseUpdatePolicy")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Kotlinx_serialization_jsonJsonPrimitive.Companion")))
-@interface Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitiveCompanion : Self_mobile_kmpBase
-@property (class, readonly, getter=shared) Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitiveCompanion *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Library_baseRealmStorageType")))
 @interface Self_mobile_kmpLibrary_baseRealmStorageType : Self_mobile_kmpKotlinEnum<Self_mobile_kmpLibrary_baseRealmStorageType *>
 @property (class, readonly) Self_mobile_kmpLibrary_baseRealmStorageType *bool_ __attribute__((swift_name("bool_")));
@@ -5103,6 +5164,16 @@ __attribute__((swift_name("Library_baseRealmStorageType")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (Self_mobile_kmpKotlinArray<Self_mobile_kmpLibrary_baseRealmStorageType *> *)values __attribute__((swift_name("values()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonPrimitive.Companion")))
+@interface Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitiveCompanion : Self_mobile_kmpBase
+@property (class, readonly, getter=shared) Self_mobile_kmpKotlinx_serialization_jsonJsonPrimitiveCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<Self_mobile_kmpKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -5350,6 +5421,14 @@ __attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector"
 - (void)polymorphicDefaultBaseClass:(id<Self_mobile_kmpKotlinKClass>)baseClass defaultDeserializerProvider:(id<Self_mobile_kmpKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
 - (void)polymorphicDefaultDeserializerBaseClass:(id<Self_mobile_kmpKotlinKClass>)baseClass defaultDeserializerProvider:(id<Self_mobile_kmpKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
 - (void)polymorphicDefaultSerializerBaseClass:(id<Self_mobile_kmpKotlinKClass>)baseClass defaultSerializerProvider:(id<Self_mobile_kmpKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
+@end
+
+__attribute__((swift_name("KotlinAppendable")))
+@protocol Self_mobile_kmpKotlinAppendable
+@required
+- (id<Self_mobile_kmpKotlinAppendable>)appendValue:(unichar)value __attribute__((swift_name("append(value:)")));
+- (id<Self_mobile_kmpKotlinAppendable>)appendValue_:(id _Nullable)value __attribute__((swift_name("append(value_:)")));
+- (id<Self_mobile_kmpKotlinAppendable>)appendValue:(id _Nullable)value startIndex:(int32_t)startIndex endIndex:(int32_t)endIndex __attribute__((swift_name("append(value:startIndex:endIndex:)")));
 @end
 
 __attribute__((swift_name("KotlinCoroutineContextElement")))

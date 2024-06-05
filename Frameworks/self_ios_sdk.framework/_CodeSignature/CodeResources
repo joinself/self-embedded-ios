@@ -42,7 +42,7 @@
 		</data>
 		<key>Frameworks/SelfUI.framework/SelfUI</key>
 		<data>
-		0zPCNdlHOiLGlvYsMCYwSKef1KY=
+		9olM0MMFdRMqtpznknpSysOJyIs=
 		</data>
 		<key>Frameworks/SelfUI.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -91,7 +91,7 @@
 		</data>
 		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
 		<data>
-		+1wyJYmLD0lgmGyIYf9NusCBng0=
+		jpP00TDxk4d3SqrWppP+QQvatXA=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<data>
@@ -175,7 +175,7 @@
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		44zIIDnZXL8/Bcp1DxJX8GC2P+Q=
+		TxZpUZLIKzTtPeiV12BiShRcpEY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -247,7 +247,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mHye+RLhskH19x0rID7sqs3SNoSuWTx4kOC6g+W8Na0=
+			gNbtzcHUI6N+7Yc4dh8TDzR39XFNBY9JCxt6z5lbScI=
 			</data>
 		</dict>
 		<key>Frameworks/SelfUI.framework/_CodeSignature/CodeResources</key>
@@ -326,7 +326,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MJ+FonkDYjRjab7Dw5WZBYyPPCy+AOT0Tc4hVkvSvLU=
+			K49iuIxxlbScI7G74f+7is/SVPwSCUs2BobW363OSNk=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
@@ -466,7 +466,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cQnm85veOx6CP9wsC/L1uAup/YHvMipwqX0ZjYjeLog=
+			OIuk7kD75gEYilHlfirdioy7oUgveNd0uX7eVvdmwQs=
 			</data>
 		</dict>
 	</dict>

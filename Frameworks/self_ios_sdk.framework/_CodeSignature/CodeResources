@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/SelfUI.framework/Assets.car</key>
 		<data>
-		allndlvDY0+srGwXS/w16/CuUwg=
+		2wSj3mOK4bCtkNdpxsnhx5Ea6H4=
 		</data>
 		<key>Frameworks/SelfUI.framework/Barlow-Black.ttf</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Frameworks/SelfUI.framework/SelfUI</key>
 		<data>
-		IpyNMN3Qans9fBU5532YAiLwCQw=
+		fgBVPDK3+c0iH+NbY2LteJDdjHM=
 		</data>
 		<key>Frameworks/SelfUI.framework/_CodeSignature/CodeResources</key>
 		<data>
-		AlCS9U6gLKgJejEkKSMe8zrzhMk=
+		8XMScUiHSErdN7hyziCkLk1jW30=
 		</data>
 		<key>Frameworks/SelfUI.framework/en.lproj/Localizable.strings</key>
 		<dict>
@@ -91,7 +91,7 @@
 		</data>
 		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
 		<data>
-		iHgSPUENRrLmRdooaNeNZqMqT/Q=
+		HTENifIvNL8DZvlRBKtHg78VK3g=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<data>
@@ -161,21 +161,25 @@
 		<data>
 		oiXxM7HxeqeWcenJ1lw9uQ1LeuQ=
 		</data>
-		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		wTBhAziXcZn/ZEWVqI+NRApjL6M=
-		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		p+wjIgH7sRBAvXT3Lqq0vqSnjKQ=
+		</data>
+		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		c46EUU01mr31KVAKs7zJPKl27Rg=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		4GuYZxew6YzARBkyiuamVKwIJRM=
+		qP3cbtVh9sU06kGTLjmdNpQd27Y=
+		</data>
+		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		c46EUU01mr31KVAKs7zJPKl27Rg=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nsS+gK3RgPwA5PkC8H5AmCLUaaM=
+		lMoOz3IilvvtjszKNKjqpOiBTMI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -184,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iTw4fsc3Ksr+CH23UHKlTaLlw8vVPymog5UJp0F7nxY=
+			XixDroh3ikOF9Y8T3QryLP4AOEV2nt4GCIAlTUxBAiY=
 			</data>
 		</dict>
 		<key>Frameworks/SelfUI.framework/Barlow-Black.ttf</key>
@@ -247,14 +251,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			10xHm7eWvDBR4pFifR5aghUqLrZio6SBKHDudYXx790=
+			2A96dseEvVLquPwtAo5PIbokpB4dSRVCFqRP0CdG494=
 			</data>
 		</dict>
 		<key>Frameworks/SelfUI.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwEUqVUZjno+zsaItJFSPClMhZEbNH55vf5BjUpItM0=
+			250R5OAklzTBKm2q+LKab0kg/A1sgGLz1Ga9hsyRevs=
 			</data>
 		</dict>
 		<key>Frameworks/SelfUI.framework/en.lproj/Localizable.strings</key>
@@ -326,7 +330,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nWAk3uDebt9GJpkaxXJi47gc05mSj4tgI3flwj994cw=
+			iIGSW2wpFdCrvxz+Dil6cu0TsOxZuwDB3EjT1EwPzOA=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
@@ -441,32 +445,39 @@
 			vXlPCyr24dM2T7GHBv1ixPiElAZREoA+ks9bnyAv9BI=
 			</data>
 		</dict>
-		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Lejd4Dk0s/m8q02vWHzi4Mr8qLbbccZa8d7mZcLUlPA=
-			</data>
-		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			UXscelx4TFBSDUv8vZOQGWS2Ev1wVkVI0ADzc4UUjik=
+			</data>
+		</dict>
+		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M+5p0ldkZHpWsUN5OOlK/tsVFZ1q3AGHrh+TU9UsiWg=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3QOxh59fDNfdIz71BfFIWVEagOIdcu2D7xo0PEQ4EfA=
+			RvaFVoeK/rj2e/xjdFWssrivy7oaqb+yuK1jdZoRUYo=
+			</data>
+		</dict>
+		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M+5p0ldkZHpWsUN5OOlK/tsVFZ1q3AGHrh+TU9UsiWg=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TeVkHH2W8NzdcdLAOHWgp1zyktxiE5M+5qGJBGTUvJA=
+			14r5LFYAFElOYXyD69jXhbhZ6E7cYZWcOASPwyQxJwo=
 			</data>
 		</dict>
 	</dict>

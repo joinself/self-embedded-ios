@@ -12,7 +12,6 @@ import MLImage
 import MLKit
 import NFCPassportReader
 import SSSSwift
-import SelfUI
 import Swift
 import SwiftUI
 import UIKit

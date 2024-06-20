@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "self-embedded-ios"
-  spec.version      = "0.0.33"
+  spec.version      = "0.0.34"
   spec.summary      = "A short description of self-embedded-ios."
 
   # This description is used to generate tags and improve search results.
@@ -119,9 +119,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.ios.vendored_frameworks = 'Frameworks/self_ios_sdk.framework'
-  spec.dependency 'GoogleMLKit/FaceDetection'
-  spec.dependency 'NFCPassportReader', '~> 2.0.2'
-  spec.dependency 'FLAnimatedImage'
+  # spec.dependency 'GoogleMLKit/FaceDetection'
+  # spec.dependency 'NFCPassportReader', '~> 2.0.2'
+  # spec.dependency 'FLAnimatedImage'
   # spec.dependency 'ZIPFoundation'
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"

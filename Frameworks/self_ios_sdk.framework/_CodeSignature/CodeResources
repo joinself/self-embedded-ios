@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/SelfUI.framework/Assets.car</key>
 		<data>
-		2wSj3mOK4bCtkNdpxsnhx5Ea6H4=
+		allndlvDY0+srGwXS/w16/CuUwg=
 		</data>
 		<key>Frameworks/SelfUI.framework/Barlow-Black.ttf</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Frameworks/SelfUI.framework/SelfUI</key>
 		<data>
-		W3idcc/Tp4wwPYSJAJZ3cjqSh90=
+		Kg8f+ZMimTUlxHhBoQW9jfkyOQ0=
 		</data>
 		<key>Frameworks/SelfUI.framework/_CodeSignature/CodeResources</key>
 		<data>
-		8XMScUiHSErdN7hyziCkLk1jW30=
+		AlCS9U6gLKgJejEkKSMe8zrzhMk=
 		</data>
 		<key>Frameworks/SelfUI.framework/en.lproj/Localizable.strings</key>
 		<dict>
@@ -91,7 +91,7 @@
 		</data>
 		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
 		<data>
-		HYdvJewH1eneFqfIRS4XfJBfEt4=
+		ijJE/R9XA3QXZkWGgpaO+bzvBT4=
 		</data>
 		<key>Headers/self_ios_sdk-Swift.h</key>
 		<data>
@@ -109,25 +109,29 @@
 		<data>
 		oiXxM7HxeqeWcenJ1lw9uQ1LeuQ=
 		</data>
+		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<data>
+		0qBP7jilnzTeQqYHqghYVKlB3FI=
+		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		5p0sHWHdu6cJ5NhJwXFMdqmMYbM=
+		MtxzdFvYm0vKUlzq945p2/pa1Rk=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		kh8pgmPktadORIB6whbbRIbl/zw=
+		N8mjN3K2bhYYmq7JqFHZHoCLUiM=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		qP3cbtVh9sU06kGTLjmdNpQd27Y=
+		4GuYZxew6YzARBkyiuamVKwIJRM=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		kh8pgmPktadORIB6whbbRIbl/zw=
+		N8mjN3K2bhYYmq7JqFHZHoCLUiM=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ZM5Uh2RDRu6cByiUVFfuJxpDzyM=
+		Ft340f4FOFTZkp9FGMaTm56pVjA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -136,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XixDroh3ikOF9Y8T3QryLP4AOEV2nt4GCIAlTUxBAiY=
+			iTw4fsc3Ksr+CH23UHKlTaLlw8vVPymog5UJp0F7nxY=
 			</data>
 		</dict>
 		<key>Frameworks/SelfUI.framework/Barlow-Black.ttf</key>
@@ -199,14 +203,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8J9Ae+sLM1lxXKon39zxg7SNoq817TtvpVLkC2rh73I=
+			Lm2q6hoFVUAE09rGD6IGlv5bRdCEuQ1fUqYw9dHBfBs=
 			</data>
 		</dict>
 		<key>Frameworks/SelfUI.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			250R5OAklzTBKm2q+LKab0kg/A1sgGLz1Ga9hsyRevs=
+			QwEUqVUZjno+zsaItJFSPClMhZEbNH55vf5BjUpItM0=
 			</data>
 		</dict>
 		<key>Frameworks/SelfUI.framework/en.lproj/Localizable.strings</key>
@@ -278,7 +282,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/IYkxqwwq2k25zRhaiBXZi/zzgEqj5RwGy8H9VUHvW0=
+			b8j/uq/ld0uLXnROLdbW0bcZAYhaixmgWx4haGiBQIY=
 			</data>
 		</dict>
 		<key>Headers/self_ios_sdk-Swift.h</key>
@@ -302,39 +306,46 @@
 			vXlPCyr24dM2T7GHBv1ixPiElAZREoA+ks9bnyAv9BI=
 			</data>
 		</dict>
+		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sG7h2TgPPE63tty/psOXGbu2a2R3yhET+i3+Rg5XbgY=
+			</data>
+		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SVRKb/A9l724dl+RR3vd3VlIenzP5aZ6T18O5McFRwU=
+			MTf21guASfThk9ToDXXXBZBizwtmCMpH1n1k1JIohCc=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dL9+W16Hgi+V7H3uLiqY9j6OyoCyEz0a8E3Yqx0tQEA=
+			XC65PCvkt3DqCgvUvG/cJCy19QjD287MIFVfcV+II+o=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RvaFVoeK/rj2e/xjdFWssrivy7oaqb+yuK1jdZoRUYo=
+			3QOxh59fDNfdIz71BfFIWVEagOIdcu2D7xo0PEQ4EfA=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dL9+W16Hgi+V7H3uLiqY9j6OyoCyEz0a8E3Yqx0tQEA=
+			XC65PCvkt3DqCgvUvG/cJCy19QjD287MIFVfcV+II+o=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			paZkN4mfzqe8xH8K3ZPK1kWqYLd35B0+UkXY2Zm6dAA=
+			41JTk1OBfv8ZVOCsvM7LaOHJYyltr4hP3m3C8smuRBU=
 			</data>
 		</dict>
 	</dict>

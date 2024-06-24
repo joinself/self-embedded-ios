@@ -4,6 +4,30 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/NFCPassportReader.framework/Info.plist</key>
+		<data>
+		9FwY4fpdC5V52ZAHeyqvTIGyzKE=
+		</data>
+		<key>Frameworks/NFCPassportReader.framework/NFCPassportReader</key>
+		<data>
+		UBH7+/8V8Xfk36OmSEoQqamDKiU=
+		</data>
+		<key>Frameworks/NFCPassportReader.framework/_CodeSignature/CodeResources</key>
+		<data>
+		cKAkIbfErDrsSp8O0jyQv9OUpdg=
+		</data>
+		<key>Frameworks/OpenSSL.framework/Info.plist</key>
+		<data>
+		R4w9Yn6kWzy3bsdpKnsV3t6Jqbw=
+		</data>
+		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
+		<data>
+		GXIg8aTcnphCammMORMm9X4ZbLM=
+		</data>
+		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
+		<data>
+		yyuOf2fZI7DF6IEKg2Ib1UUq/50=
+		</data>
 		<key>Frameworks/SelfUI.framework/Assets.car</key>
 		<data>
 		allndlvDY0+srGwXS/w16/CuUwg=
@@ -42,7 +66,7 @@
 		</data>
 		<key>Frameworks/SelfUI.framework/SelfUI</key>
 		<data>
-		kLpVL/NCbNrLxAwxbQQe4xCAOiI=
+		NuR5wwoU+eU3XHKKTuHMbLCEw2M=
 		</data>
 		<key>Frameworks/SelfUI.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -91,7 +115,7 @@
 		</data>
 		<key>Frameworks/self_mobile_kmp.framework/self_mobile_kmp</key>
 		<data>
-		+7RJn8+M9S49Gb07zBer6GHFz0I=
+		jv8AxJmJ9nx+YGxi9hIb86GNkVo=
 		</data>
 		<key>Headers/self_ios_sdk-Swift.h</key>
 		<data>
@@ -111,7 +135,7 @@
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		SPsncQ4/QpMF6MTyz3JrBnSbgOw=
+		0qtyp27gPltzZa85ZyCkNCxeUgQ=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -131,11 +155,53 @@
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hGIAI3BHpNzxbs0i9CN/EGD9CQA=
+		wBX1UXVC81ou15WM376hL9fAHMM=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/NFCPassportReader.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jPPgqdvAKNZZac/kV+xyuz0bCvogkpz7noTnFPt7yBA=
+			</data>
+		</dict>
+		<key>Frameworks/NFCPassportReader.framework/NFCPassportReader</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tUo8oAXUbxraYSgyCWjGHhvON4BVkYCBzbdGIqITJ5E=
+			</data>
+		</dict>
+		<key>Frameworks/NFCPassportReader.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jfTlhKAiWv6yLjvZOki9jxRg1Pyeleqjf9+LwE76GzA=
+			</data>
+		</dict>
+		<key>Frameworks/OpenSSL.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rWnTrErtrwABu4GTUiNkKVn32rx+bxLt+ZPbcUuwun8=
+			</data>
+		</dict>
+		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NDSMf0UAU5Q8U1afrk9WCsc2wKfwvaSJv0Nn8mKTYFk=
+			</data>
+		</dict>
+		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TpBQpGoGjpVSydYf7niyGhFVH5k6dw+31T0QFNmjhO0=
+			</data>
+		</dict>
 		<key>Frameworks/SelfUI.framework/Assets.car</key>
 		<dict>
 			<key>hash2</key>
@@ -203,7 +269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N0W9sXxiq0BaeOvfF4wGrHzaT8K3f6aThsaJkWNv0nE=
+			J6bFSsTOI2/pIqmNGMeoFTxiUTL9pG7E0v+gLH5EMFM=
 			</data>
 		</dict>
 		<key>Frameworks/SelfUI.framework/_CodeSignature/CodeResources</key>
@@ -282,7 +348,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JKr6SLTmQBfR7EJOztLnsEjrWz2BTxjc5AYSubzxg9Y=
+			BB3zXNXejUVv2lHRsFir5lyFWGv7L6HRvWjz8KBr7Bo=
 			</data>
 		</dict>
 		<key>Headers/self_ios_sdk-Swift.h</key>
@@ -310,7 +376,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8zlSGgIoou5h6gD2mAUpGD9SaQZRVWhGa+By/8ttwME=
+			ZhhDlfvvnufW0j2KBjUuBImC5wwRLyJDEzI50iI4NaE=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -345,7 +411,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+5ebOisGkc4hwsg4U7cQhxKOp/M1T7hearKUFeqJoFs=
+			2xYkHdwOpAIBWze/LLptNWhUdiB4uqgkFzvh6VhAnEA=
 			</data>
 		</dict>
 	</dict>

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "self-embedded-ios"
-  spec.version      = "0.0.37"
+  spec.version      = "0.0.38"
   spec.summary      = "A short description of self-embedded-ios."
 
   # This description is used to generate tags and improve search results.
@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/joinself/self-embedded-ios.git", :tag => "#{spec.version}" }
 
-  spec.ios.vendored_frameworks = 'Frameworks/self_ios_sdk.framework'
+  spec.ios.vendored_frameworks = 'Frameworks/self_ios_sdk.xcframework'
   spec.dependency 'NFCPassportReader', '~> 2.0.2'
   
 

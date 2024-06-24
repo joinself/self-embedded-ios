@@ -7,6 +7,7 @@
 
 import XCTest
 import self_ios_sdk
+import self_sdk
 
 final class TestSelfSdk: XCTestCase {
 
@@ -20,6 +21,10 @@ final class TestSelfSdk: XCTestCase {
 
     func testLoadSdk() throws {
         let sdk = SelfSDK.initialize()
+    }
+    
+    func testLoadSelfSdk() throws {
+        
     }
 
     func testPerformanceExample() throws {

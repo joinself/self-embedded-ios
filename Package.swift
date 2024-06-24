@@ -16,18 +16,18 @@ let package = Package(
         .library(name: "self_sdk", targets: ["self_sdk"])
     ],
     dependencies: [
-        .package(url: "https://github.com/AndyQ/NFCPassportReader.git", .upToNextMajor(from: "2.1.1"))
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.1900"))
     ],
     targets: [
         .target(name: "self_sdk",
                 dependencies: [
                     "self_ios_sdk",
-                    "NFCPassportReader"
+                    "OpenSSL"
                 ]
                ),
         .binaryTarget(name: "self_ios_sdk", path: "Frameworks/self_ios_sdk.xcframework"),
         .testTarget(
             name: "TestSdk",
-            dependencies: ["self_ios_sdk"]),
+            dependencies: ["self_ios_sdk", "self_sdk"]),
     ]
 )

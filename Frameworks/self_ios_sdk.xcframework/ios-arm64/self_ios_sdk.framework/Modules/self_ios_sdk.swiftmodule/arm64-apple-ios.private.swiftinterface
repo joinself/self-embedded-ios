@@ -1,0 +1,454 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name self_ios_sdk
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreLocation
+import CoreVideo
+import CryptoKit
+import DeviceCheck
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import self_ios_sdk
+@_hasMissingDesignatedInitializers public class AttestationRequest : self_ios_sdk.Message {
+  public class Builder {
+    public init()
+    public func withId(_ messageId: Swift.String) -> self_ios_sdk.AttestationRequest.Builder
+    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.AttestationRequest.Builder
+    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.AttestationRequest.Builder
+    public func withFacts(_ facts: [self_ios_sdk.Fact]) -> self_ios_sdk.AttestationRequest.Builder
+    public func build() -> self_ios_sdk.AttestationRequest
+    @objc deinit
+  }
+  public func id() -> Swift.String
+  public func toIdentifier() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  public func facts() -> [self_ios_sdk.Fact]
+  public func makeAttestationResponse(status: self_ios_sdk.ResponseStatus, attestations: [self_ios_sdk.Attestation]) -> self_ios_sdk.AttestationResponse
+  @objc deinit
+}
+public struct Signer {
+}
+@_hasMissingDesignatedInitializers public class Attestation : self_ios_sdk.Signable {
+  public func id() -> Swift.String
+  public func fact() -> self_ios_sdk.Fact
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.Message {
+  public class Builder {
+    public init()
+    public func withRequestId(_ requestId: Swift.String) -> self_ios_sdk.VerificationResponse.Builder
+    public func withStatus(_ status: self_ios_sdk.ResponseStatus) -> self_ios_sdk.VerificationResponse.Builder
+    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.VerificationResponse.Builder
+    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.VerificationResponse.Builder
+    public func withAttestations(_ attestations: [self_ios_sdk.Attestation]) -> self_ios_sdk.VerificationResponse.Builder
+    public func build() -> self_ios_sdk.VerificationResponse
+    @objc deinit
+  }
+  public func id() -> Swift.String
+  public func toIdentifier() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  public func requestId() -> Swift.String
+  public func status() -> self_ios_sdk.ResponseStatus
+  public func attestations() -> [self_ios_sdk.Attestation]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DataObject {
+  public struct Link {
+    public var link: Swift.String
+    public var expires: Swift.Int64
+    public var key: Swift.String
+  }
+  public class Builder {
+    public init()
+    public func withData(_ data: Foundation.Data) -> self_ios_sdk.DataObject.Builder
+    public func withContentType(_ contentType: Swift.String) -> self_ios_sdk.DataObject.Builder
+    public func build() -> self_ios_sdk.DataObject
+    @objc deinit
+  }
+  public func content() -> Foundation.Data
+  public func contentType() -> Swift.String
+  @objc deinit
+}
+extension self_ios_sdk.SelfSDK {
+  public static func startLiveness(account: self_ios_sdk.Account, currentVC: UIKit.UIViewController, isVerificationRequired: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Attestation], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
+}
+@_hasMissingDesignatedInitializers public class ChatMessage : self_ios_sdk.Message {
+  public class Builder {
+    public init()
+    public func withId(_ messageId: Swift.String) -> self_ios_sdk.ChatMessage.Builder
+    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.ChatMessage.Builder
+    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.ChatMessage.Builder
+    public func withMessage(_ message: Swift.String) -> self_ios_sdk.ChatMessage.Builder
+    public func withAttachments(_ attachments: [self_ios_sdk.Attachment]) -> self_ios_sdk.ChatMessage.Builder
+    public func build() -> self_ios_sdk.ChatMessage
+    @objc deinit
+  }
+  public func id() -> Swift.String
+  public func toIdentifier() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  public func message() -> Swift.String
+  public func attachments() -> [self_ios_sdk.Attachment]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AttestationResponse : self_ios_sdk.Message {
+  public class Builder {
+    public init()
+    public func withRequestId(_ requestId: Swift.String) -> self_ios_sdk.AttestationResponse.Builder
+    public func withStatus(_ status: self_ios_sdk.ResponseStatus) -> self_ios_sdk.AttestationResponse.Builder
+    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.AttestationResponse.Builder
+    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.AttestationResponse.Builder
+    public func withAttestations(_ attestations: [self_ios_sdk.Attestation]) -> self_ios_sdk.AttestationResponse.Builder
+    public func build() -> self_ios_sdk.AttestationResponse
+    @objc deinit
+  }
+  public func id() -> Swift.String
+  public func toIdentifier() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  public func requestId() -> Swift.String
+  public func status() -> self_ios_sdk.ResponseStatus
+  public func attestations() -> [self_ios_sdk.Attestation]
+  @objc deinit
+}
+extension Foundation.Date {
+  public var unixTimestamp: Swift.Int64 {
+    get
+  }
+  public func toRFC3339String() -> Swift.String
+}
+extension UIKit.UIImage {
+  public func imageRotatedByDegrees(degrees: CoreFoundation.CGFloat) -> UIKit.UIImage
+  public func fixedOrientation() -> UIKit.UIImage
+}
+@objc @_inheritsConvenienceInitializers public class LivenessCheck : ObjectiveC.NSObject {
+  public enum Challenge : Swift.String {
+    case None, Done, Smile, Blink, TurnLeft, TurnRight, LookUp, LookDown
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Error : Swift.String {
+    case FaceChanged, OutOfPreview
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Status : Swift.String {
+    case Info, Passed, Error
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var onStatusUpdated: ((self_ios_sdk.LivenessCheck.Status) -> Swift.Void)?
+  public var onChallengeChanged: ((self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
+  public var onResult: ((Foundation.Data, [self_ios_sdk.Attestation], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
+  @objc override dynamic public init()
+  public func initialize(account: self_ios_sdk.Account, cameraView: UIKit.UIView)
+  public func start()
+  public func stop()
+  @objc deinit
+}
+extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+@_hasMissingDesignatedInitializers public class KeyValue {
+  public class Builder {
+    public init()
+    public func withKey(_ key: Swift.String) -> self_ios_sdk.KeyValue.Builder
+    public func withValue(_ value: Swift.String) -> self_ios_sdk.KeyValue.Builder
+    public func withMime(_ mime: Swift.String) -> self_ios_sdk.KeyValue.Builder
+    public func withSensitive(_ sensitive: Swift.Bool) -> self_ios_sdk.KeyValue.Builder
+    public func build() -> self_ios_sdk.KeyValue
+    @objc deinit
+  }
+  public func key() -> Swift.String
+  public func value() -> Swift.String
+  public func mime() -> Swift.String
+  public func isSensitive() -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Fact {
+  public class Builder {
+    public init()
+    public func withSource(_ source: Swift.String) -> self_ios_sdk.Fact.Builder
+    public func withName(_ name: Swift.String) -> self_ios_sdk.Fact.Builder
+    public func withValue(_ value: Swift.String) -> self_ios_sdk.Fact.Builder
+    public func build() -> self_ios_sdk.Fact
+    @objc deinit
+  }
+  public func name() -> Swift.String
+  public func source() -> Swift.String
+  public func value() -> Swift.String
+  @objc deinit
+}
+public enum Environment : Swift.String {
+  case review
+  case staging
+  case sandbox
+  case production
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct DocumentType {
+  public static let IDCARD: Swift.String
+  public static let PASSPORT: Swift.String
+  public static let DRIVING_LICENSE: Swift.String
+  public static let APP_SPECIFIC: Swift.String
+  public static let SOURCE_USER_SPECIFIED: Swift.String
+}
+public struct DocumentDataType {
+  public static let DOCUMENT_IMAGE_FRONT: Swift.String
+  public static let DOCUMENT_IMAGE_BACK: Swift.String
+  public static let SELFIE_IMAGE_ONBOARDING: Swift.String
+  public static let SELFIE_IMAGE: Swift.String
+  public static let PASSPORT_IMAGE: Swift.String
+  public static let DG1: Swift.String
+  public static let DG2: Swift.String
+  public static let SOD: Swift.String
+  public static let MRZ: Swift.String
+}
+@_hasMissingDesignatedInitializers public class Document : self_ios_sdk.DataObject {
+  public class Builder {
+    public init()
+    public func withData(_ data: Foundation.Data) -> self_ios_sdk.Document.Builder
+    public func build() -> self_ios_sdk.Document
+    @objc deinit
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class VerificationRequest : self_ios_sdk.Message {
+  public class Builder {
+    public init()
+    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.VerificationRequest.Builder
+    public func withType(_ type: Swift.String) -> self_ios_sdk.VerificationRequest.Builder
+    public func withProofs(_ proofs: [Swift.String : self_ios_sdk.DataObject]) -> self_ios_sdk.VerificationRequest.Builder
+    public func build() -> self_ios_sdk.VerificationRequest
+    @objc deinit
+  }
+  public func id() -> Swift.String
+  public func toIdentifier() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  public func type() -> Swift.String
+  public func proofs() -> [Swift.String : self_ios_sdk.DataObject]
+  @objc deinit
+}
+public enum ResponseStatus : Swift.String {
+  case none
+  case pending
+  case accepted
+  case rejected
+  case verified
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ez {
+  public static func GetCurrentTimeStamp() -> Swift.String
+  public static var appDisplayName: Swift.String? {
+    get
+  }
+  public static var appVersion: Swift.String? {
+    get
+  }
+  public static var appBuild: Swift.String? {
+    get
+  }
+  public static var appBundleID: Swift.String? {
+    get
+  }
+  public static var appVersionAndBuild: Swift.String? {
+    get
+  }
+  public static var deviceVersion: Swift.String {
+    get
+  }
+  public static var isDebug: Swift.Bool {
+    get
+  }
+  public static var isRelease: Swift.Bool {
+    get
+  }
+  public static var isSimulator: Swift.Bool {
+    get
+  }
+  public static var isDevice: Swift.Bool {
+    get
+  }
+  public static var isInTestFlight: Swift.Bool {
+    get
+  }
+  public static var screenOrientation: UIKit.UIInterfaceOrientation {
+    get
+  }
+  public static var screenWidth: CoreFoundation.CGFloat {
+    get
+  }
+  public static var screenHeight: CoreFoundation.CGFloat {
+    get
+  }
+  public static var screenStatusBarHeight: CoreFoundation.CGFloat {
+    get
+  }
+  public static var screenHeightWithoutStatusBar: CoreFoundation.CGFloat {
+    get
+  }
+  public static var currentRegion: Swift.String? {
+    get
+  }
+  public static func iterateEnum<T>(_: T.Type) -> Swift.AnyIterator<T> where T : Swift.Hashable
+  public static func dispatchDelay(_ second: Swift.Double, closure: @escaping () -> Swift.Void)
+  public static func runThisAfterDelay(seconds: Swift.Double, after: @escaping () -> Swift.Void)
+  public static func runThisAfterDelay(seconds: Swift.Double, queue: Dispatch.DispatchQueue, after: @escaping () -> Swift.Void)
+  public static func runThisInMainThread(_ block: @escaping () -> Swift.Void)
+  public static func runThisInBackground(_ block: @escaping () -> Swift.Void)
+  @discardableResult
+  public static func runThisEvery(seconds: Foundation.TimeInterval, startAfterSeconds: Foundation.TimeInterval, handler: @escaping (CoreFoundation.CFRunLoopTimer?) -> Swift.Void) -> Foundation.Timer
+  @available(*, deprecated, renamed: "DispatchQueue.main")
+  public var globalMainQueue: Dispatch.DispatchQueue {
+    get
+  }
+  @available(*, deprecated, renamed: "DispatchQueue.main")
+  public var globalUserInteractiveQueue: Dispatch.DispatchQueue {
+    get
+  }
+  @available(*, deprecated, renamed: "DispatchQueue.global()")
+  public var globalUserInitiatedQueue: Dispatch.DispatchQueue {
+    get
+  }
+  @available(*, deprecated, renamed: "DispatchQueue.global()")
+  public var globalUtilityQueue: Dispatch.DispatchQueue {
+    get
+  }
+  @available(*, deprecated, renamed: "DispatchQueue.global()")
+  public var globalBackgroundQueue: Dispatch.DispatchQueue {
+    get
+  }
+  @available(*, deprecated, renamed: "DispatchQueue.global()")
+  public var globalQueue: Dispatch.DispatchQueue {
+    get
+  }
+  public static func requestImage(_ url: Swift.String, success: @escaping (UIKit.UIImage?) -> Swift.Void)
+  public static func requestJSON(_ url: Swift.String, success: @escaping ((Any?) -> Swift.Void), error: ((Foundation.NSError) -> Swift.Void)?)
+}
+@_hasMissingDesignatedInitializers public class Attachment : self_ios_sdk.DataObject {
+  public class Builder {
+    public init()
+    public func withName(_ name: Swift.String) -> self_ios_sdk.Attachment.Builder
+    public func withData(_ data: Foundation.Data) -> self_ios_sdk.Attachment.Builder
+    public func withContentType(_ contentType: Swift.String) -> self_ios_sdk.Attachment.Builder
+    public func build() -> self_ios_sdk.Attachment
+    @objc deinit
+  }
+  public func name() -> Swift.String
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class Account : ObjectiveC.NSObject {
+  public class Builder {
+    public init()
+    public func withEnvironment(_ environment: self_ios_sdk.Environment) -> self_ios_sdk.Account.Builder
+    public func withStoragePath(_ storagePath: Swift.String) -> self_ios_sdk.Account.Builder
+    public func build() -> self_ios_sdk.Account
+    @objc deinit
+  }
+  public func setOnMessageListener(_ onMessage: ((any self_ios_sdk.Message) -> Swift.Void)?)
+  public func setOnRequestListener(_ onRequest: ((any self_ios_sdk.Message) -> Swift.Void)?)
+  public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)
+  public func setDevMode(enabled: Swift.Bool)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func register(selfieImage: Foundation.Data, attestations: [self_ios_sdk.Attestation]) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func register(selfId: Swift.String, selfieBase64: Swift.String) async -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async -> Swift.Bool
+  #endif
+  public func identifier() -> Swift.String?
+  #if compiler(>=5.3) && $AsyncAwait
+  public func send(message: any self_ios_sdk.Message, onAcknowledgement: @escaping ((any Swift.Error)?) -> Swift.Void) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func accept(message: any self_ios_sdk.Message, onAcknowledgement: @escaping ((any Swift.Error)?) -> Swift.Void) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func reject(message: any self_ios_sdk.Message, onAcknowledgement: @escaping ((any Swift.Error)?) -> Swift.Void) async throws
+  #endif
+  public func attestations() -> [self_ios_sdk.Attestation]
+  public func makeSelfSignedAttestation(source: Swift.String, name: Swift.String, value: Swift.String) -> self_ios_sdk.Attestation?
+  public func sign(payload: Swift.String) -> self_ios_sdk.Signable?
+  public func verify(signable: self_ios_sdk.Signable) -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
+  public func upload(dataObject: self_ios_sdk.DataObject) async throws -> self_ios_sdk.DataObject.Link?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func download(dataLink: self_ios_sdk.DataObject.Link) async throws -> self_ios_sdk.DataObject
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func backup() async -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async
+  #endif
+  public func store(keyValue: self_ios_sdk.KeyValue)
+  public func get(key: Swift.String, attestations: [self_ios_sdk.Attestation]) -> self_ios_sdk.KeyValue?
+  #if compiler(>=5.3) && $AsyncAwait
+  public func close() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func location() async throws -> [self_ios_sdk.Attestation]
+  #endif
+  @objc deinit
+}
+extension self_ios_sdk.Account : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
+}
+public protocol Message {
+  func id() -> Swift.String
+  func toIdentifier() -> Swift.String
+  func fromIdentifier() -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class Signable {
+  public func signer() -> self_ios_sdk.Signer
+  public func signedValue() -> Swift.String
+  public func payload() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SelfSDK {
+  public static func initialize()
+  public static func startPassportVerification(account: self_ios_sdk.Account, currentVC: UIKit.UIViewController, isDevMode: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension self_ios_sdk.LivenessCheck.Challenge : Swift.Equatable {}
+extension self_ios_sdk.LivenessCheck.Challenge : Swift.Hashable {}
+extension self_ios_sdk.LivenessCheck.Challenge : Swift.RawRepresentable {}
+extension self_ios_sdk.LivenessCheck.Error : Swift.Equatable {}
+extension self_ios_sdk.LivenessCheck.Error : Swift.Hashable {}
+extension self_ios_sdk.LivenessCheck.Error : Swift.RawRepresentable {}
+extension self_ios_sdk.LivenessCheck.Status : Swift.Equatable {}
+extension self_ios_sdk.LivenessCheck.Status : Swift.Hashable {}
+extension self_ios_sdk.LivenessCheck.Status : Swift.RawRepresentable {}
+extension self_ios_sdk.Environment : Swift.Equatable {}
+extension self_ios_sdk.Environment : Swift.Hashable {}
+extension self_ios_sdk.Environment : Swift.RawRepresentable {}
+extension self_ios_sdk.ResponseStatus : Swift.Equatable {}
+extension self_ios_sdk.ResponseStatus : Swift.Hashable {}
+extension self_ios_sdk.ResponseStatus : Swift.RawRepresentable {}

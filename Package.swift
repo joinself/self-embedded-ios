@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "self_ios_sdk",
-            targets: ["self_ios_sdk", "TestSdk"]),
+            targets: ["self_ios_sdk"]),
         .library(name: "self_sdk", targets: ["self_sdk"])
     ],
     dependencies: [

@@ -9,11 +9,7 @@ let package = Package(
             .iOS(.v15)
         ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "self_ios_sdk",
-            targets: ["self_ios_sdk"]),
-        .library(name: "self_sdk", targets: ["self_sdk"])
+        .library(name: "self_ios_sdk", targets: ["self_sdk"])
     ],
     dependencies: [
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.1900"))

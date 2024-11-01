@@ -8,3 +8,5 @@ pod 'self-embedded-ios', :git => 'https://github.com/joinself/self-embedded-ios.
 
 If you are using Xcode 15 and above. Please set `ENABLE_USER_SCRIPT_SANDBOXING = NO`
 Project build settings -> Build Options -> User Script Sandboxing -> No 
+
+.package(url: "https://github.com/joinself/self-embedded-ios.git", .upToNextMajor(from: "0.0.38")),

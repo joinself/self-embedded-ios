@@ -40,7 +40,11 @@ import _SwiftConcurrencyShims
   public func types() -> [Swift.String]
   public func claims() -> [self_ios_sdk.Claim]
   public func attachment() -> self_ios_sdk.Attachment?
+  public func created() -> Swift.Int64
+  public func validFrom() -> Swift.Int64
   @objc deinit
+}
+public struct CredentialsByType {
 }
 @_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.Message {
   public class Builder {
@@ -526,6 +530,7 @@ public struct ez {
   public func registered() -> Swift.Bool
   public func send(message: any self_ios_sdk.Message, onAcknowledgement: @escaping (Swift.String, (any Swift.Error)?) -> Swift.Void) async throws
   public func credentials() -> [self_ios_sdk.Credential]
+  public func credentialsByType() -> [self_ios_sdk.CredentialsByType]
   public func lookUpCredentials(claims: [self_ios_sdk.Claim]) -> [self_ios_sdk.Credential]
   public func qrCode() async throws -> Foundation.Data
   public func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
@@ -555,7 +560,7 @@ public protocol Message {
 }
 @_hasMissingDesignatedInitializers public class SelfSDK {
   public static func initialize()
-  public static func startPassportVerification(account: self_ios_sdk.Account, currentVC: UIKit.UIViewController, isDevMode: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  public static func startPassportVerification(account: self_ios_sdk.Account, currentVC: UIKit.UIViewController? = nil, isDevMode: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   public static func readPassport(currentVC: UIKit.UIViewController, isDevMode: Swift.Bool = false, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   public static func verifyEmail(account: self_ios_sdk.Account, transitionAsModal: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   public static func verifyPhoneNumber(account: self_ios_sdk.Account, sendTo: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)

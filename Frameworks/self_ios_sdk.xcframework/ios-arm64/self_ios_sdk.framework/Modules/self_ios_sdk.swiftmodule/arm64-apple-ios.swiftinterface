@@ -45,6 +45,8 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 public struct CredentialsByType {
+  public let types: [Swift.String]
+  public let credentials: [self_ios_sdk.Credential]
 }
 @_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.Message {
   public class Builder {
@@ -266,6 +268,7 @@ extension self_ios_sdk.SelfSDK {
   public func subject() -> Swift.String
   public func types() -> [Swift.String]
   public func value() -> Swift.String
+  public func subjectToFriendlyString() -> Swift.String
   @objc deinit
 }
 public enum Environment : Swift.String {
@@ -292,7 +295,10 @@ public struct Constants {
   public static let SUBJECT_NAME: Swift.String
   public static let SUBJECT_GIVEN_NAME: Swift.String
   public static let SUBJECT_SURNAME: Swift.String
+  public static let SUBJECT_FIRST_NAME: Swift.String
+  public static let SUBJECT_LAST_NAME: Swift.String
   public static let SUBJECT_GENDER: Swift.String
+  public static let SUBJECT_SEX: Swift.String
   public static let SUBJECT_NUMBER: Swift.String
   public static let SUBJECT_ADDRESS: Swift.String
   public static let SUBJECT_NATIONALITY: Swift.String
@@ -300,16 +306,18 @@ public struct Constants {
   public static let SUBJECT_POB: Swift.String
   public static let SUBJECT_DATE_OF_EXPIRATION: Swift.String
   public static let SUBJECT_DATE_OF_ISSUANCE: Swift.String
+  public static let SUBJECT_DATE_OF_ISSUE: Swift.String
   public static let SUBJECT_ISSUE_AUTHORITY: Swift.String
+  public static let SUBJECT_COUNTRY_OF_ISSUANCE: Swift.String
+  public static let SUBJECT_MRZ: Swift.String
+  public static let SUBJECT_LOCATION: Swift.String
+  public static let SUBJECT_SOURCE_IMAGE_HASH: Swift.String
+  public static let SUBJECT_DISPLAY_NAME: Swift.String
   public static let SUBJECT_VALID_FROM: Swift.String
   public static let SUBJECT_VALID_TO: Swift.String
   public static let SUBJECT_CATEGORIES: Swift.String
   public static let SUBJECT_SORT_CODE: Swift.String
-  public static let SUBJECT_COUNTRY_OF_ISSUANCE: Swift.String
-  public static let SUBJECT_MRZ: Swift.String
-  public static let SUBJECT_LOCATION: Swift.String
-  public static let SUBJECT_LIVENESS_IMAGE_HASH: Swift.String
-  public static let SUBJECT_DISPLAY_NAME: Swift.String
+  public static let SUBJECT_LIVENESS_IMAGE: Swift.String
   public static let SUBJECT_SELFIE_IMAGE: Swift.String
   public static let SUBJECT_PASSPORT_IMAGE: Swift.String
   public static let SUBJECT_DOCUMENT_IMAGE_FRONT: Swift.String
@@ -337,6 +345,7 @@ public struct CredentialType {
   public static let Passport: Swift.String
   public static let IDCard: Swift.String
   public static let DrivingLicense: Swift.String
+  public static let Document: Swift.String
 }
 @_Concurrency.MainActor @preconcurrency public struct SelfNextWrapperTestView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init()

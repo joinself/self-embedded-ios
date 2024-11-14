@@ -22,15 +22,15 @@
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		HAEplStdqwvahg6reu9u6eriiG4=
+		GOomlwJREEHORjq+WTZUoRAvEJ0=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		DPgDAqsxmAM4SzqbN5CwLghBRzI=
+		Wsjq8lzX2qIXYS52bqFJJCdQvn0=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		jZJuwh0s417Jegjt+xDtHQy0o7M=
+		RABfVzDdlIaEGCNUl/MG31YIX8M=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,12 +38,21 @@
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		jZJuwh0s417Jegjt+xDtHQy0o7M=
+		RABfVzDdlIaEGCNUl/MG31YIX8M=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		dc+Eb7NACO80gcB0wVvQAB7NedA=
+		9RNkvvCfH1V6Z4ZnxwwTEP/wa94=
 		</data>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			os4tHvEWaAbN7B2BuCwKKKQhgdw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -72,21 +81,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lXQmXNvVnua4//Jt5FvOvyGKl2+FS0LePfB2YKaqeso=
+			dp37k57WE/Q75XDa36thLGkgc0PDxA9GHzqMzB8wMFE=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Sp6JbpCT4fqIQUCkRXIdu3TGr5KQFOUm54FB0wD6qc=
+			z2N83Nqila0QaZM6+DAmSmQdcFwhKSYiGxswRlq93ow=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ll4faq5Lit19KoAcm3onSjcpOzJJprSmRv8ZvuPwsA=
+			IR/bV0o2mwCTDmn/fN5/6FslimAQYFjDzeg8rTdUfDs=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -100,15 +109,24 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ll4faq5Lit19KoAcm3onSjcpOzJJprSmRv8ZvuPwsA=
+			IR/bV0o2mwCTDmn/fN5/6FslimAQYFjDzeg8rTdUfDs=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WrVw75Yzx923e6sqfyvAtkgvoWIAj4QB6LApASxTLyQ=
+			WtV8m/fMEZMvtg8h3ULoFihXhSlNayZ/q9ZD/qZjQXw=
 			</data>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zDdOQMXqUYMcnX5olG2FhzcMzolH3YyGLnFq1fPcxUk=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

@@ -3289,6 +3289,96 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ShareResources",
+        "printedName": "ShareResources",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "subjectToFriendlyString",
+            "printedName": "subjectToFriendlyString(subject:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk14ShareResourcesC23subjectToFriendlyString0F0S2S_tFZ",
+            "mangledName": "$s12self_ios_sdk14ShareResourcesC23subjectToFriendlyString0F0S2S_tFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ShareResources",
+                "printedName": "self_ios_sdk.ShareResources",
+                "usr": "s:12self_ios_sdk14ShareResourcesC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12self_ios_sdk14ShareResourcesCACycfc",
+            "mangledName": "$s12self_ios_sdk14ShareResourcesCACycfc",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12self_ios_sdk14ShareResourcesC",
+        "mangledName": "$s12self_ios_sdk14ShareResourcesC",
+        "moduleName": "self_ios_sdk",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -14931,14 +15021,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk5UtilsV18getRandomByteArray4size10Foundation4DataVs5Int32V_tFZ",
-            "mangledName": "$s12self_ios_sdk5UtilsV18getRandomByteArray4size10Foundation4DataVs5Int32V_tFZ",
+            "usr": "s:12self_ios_sdk5UtilsV18getRandomByteArray4size10Foundation4DataVSi_tFZ",
+            "mangledName": "$s12self_ios_sdk5UtilsV18getRandomByteArray4size10Foundation4DataVSi_tFZ",
             "moduleName": "self_ios_sdk",
             "static": true,
             "declAttributes": [
@@ -28787,21 +28877,21 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1426,
+      "offset": 1627,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7361,
+      "offset": 7562,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7381,
+      "offset": 7582,
       "length": 1,
       "value": "2"
     },

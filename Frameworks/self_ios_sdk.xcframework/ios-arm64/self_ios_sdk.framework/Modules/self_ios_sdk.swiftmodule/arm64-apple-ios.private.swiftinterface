@@ -110,6 +110,10 @@ extension self_ios_sdk.SelfSDK {
   @objc deinit
 }
 
+@_hasMissingDesignatedInitializers public class ShareResources {
+  public static func subjectToFriendlyString(subject: Swift.String) -> Swift.String
+  @objc deinit
+}
 @_Concurrency.MainActor @preconcurrency public struct CreateAccountView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(onEnteredName: ((Swift.String) -> Swift.Void)? = nil, onScanQRCode: ((Swift.String?) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {

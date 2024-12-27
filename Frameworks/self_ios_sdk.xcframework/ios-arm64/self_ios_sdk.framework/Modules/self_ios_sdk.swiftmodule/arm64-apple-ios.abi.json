@@ -2219,6 +2219,13 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4578,6 +4585,13 @@
         "moduleName": "self_ios_sdk"
       },
       {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
         "kind": "TypeDecl",
         "name": "LivenessCheck",
         "printedName": "LivenessCheck",
@@ -6401,6 +6415,268 @@
           },
           {
             "kind": "Var",
+            "name": "statusPublisher",
+            "printedName": "statusPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<self_ios_sdk.LivenessCheck.Status, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "self_ios_sdk.LivenessCheck.Status",
+                    "usr": "s:12self_ios_sdk13LivenessCheckC6StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk13LivenessCheckC15statusPublisher7Combine18PassthroughSubjectCyAC6StatusOs5NeverOGvp",
+            "mangledName": "$s12self_ios_sdk13LivenessCheckC15statusPublisher7Combine18PassthroughSubjectCyAC6StatusOs5NeverOGvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<self_ios_sdk.LivenessCheck.Status, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "self_ios_sdk.LivenessCheck.Status",
+                        "usr": "s:12self_ios_sdk13LivenessCheckC6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15statusPublisher7Combine18PassthroughSubjectCyAC6StatusOs5NeverOGvg",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15statusPublisher7Combine18PassthroughSubjectCyAC6StatusOs5NeverOGvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<self_ios_sdk.LivenessCheck.Status, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "self_ios_sdk.LivenessCheck.Status",
+                        "usr": "s:12self_ios_sdk13LivenessCheckC6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15statusPublisher7Combine18PassthroughSubjectCyAC6StatusOs5NeverOGvs",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15statusPublisher7Combine18PassthroughSubjectCyAC6StatusOs5NeverOGvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15statusPublisher7Combine18PassthroughSubjectCyAC6StatusOs5NeverOGvM",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15statusPublisher7Combine18PassthroughSubjectCyAC6StatusOs5NeverOGvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "challengePublisher",
+            "printedName": "challengePublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<self_ios_sdk.LivenessCheck.Challenge, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "self_ios_sdk.LivenessCheck.Challenge",
+                    "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvp",
+            "mangledName": "$s12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<self_ios_sdk.LivenessCheck.Challenge, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Challenge",
+                        "printedName": "self_ios_sdk.LivenessCheck.Challenge",
+                        "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvg",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<self_ios_sdk.LivenessCheck.Challenge, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Challenge",
+                        "printedName": "self_ios_sdk.LivenessCheck.Challenge",
+                        "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvs",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvM",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "onStatusUpdated",
             "printedName": "onStatusUpdated",
             "children": [
@@ -7044,6 +7320,33 @@
             "init_kind": "Designated"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessCheck",
+                "printedName": "self_ios_sdk.LivenessCheck",
+                "usr": "c:@M@self_ios_sdk@objc(cs)LivenessCheck"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "self_ios_sdk.Account",
+                "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12self_ios_sdk13LivenessCheckC7accountAcA7AccountC_tcfc",
+            "mangledName": "$s12self_ios_sdk13LivenessCheckC7accountAcA7AccountC_tcfc",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(account:cameraView:)",
@@ -7069,81 +7372,6 @@
             "declKind": "Func",
             "usr": "s:12self_ios_sdk13LivenessCheckC10initialize7account10cameraViewyAA7AccountC_So6UIViewCtF",
             "mangledName": "$s12self_ios_sdk13LivenessCheckC10initialize7account10cameraViewyAA7AccountC_So6UIViewCtF",
-            "moduleName": "self_ios_sdk",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "detector",
-            "printedName": "detector",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceOrientationDetector",
-                "printedName": "self_ios_sdk.FaceOrientationDetector",
-                "usr": "s:12self_ios_sdk23FaceOrientationDetectorC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12self_ios_sdk13LivenessCheckC8detectorAA23FaceOrientationDetectorCvp",
-            "mangledName": "$s12self_ios_sdk13LivenessCheckC8detectorAA23FaceOrientationDetectorCvp",
-            "moduleName": "self_ios_sdk",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceOrientationDetector",
-                    "printedName": "self_ios_sdk.FaceOrientationDetector",
-                    "usr": "s:12self_ios_sdk23FaceOrientationDetectorC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12self_ios_sdk13LivenessCheckC8detectorAA23FaceOrientationDetectorCvg",
-                "mangledName": "$s12self_ios_sdk13LivenessCheckC8detectorAA23FaceOrientationDetectorCvg",
-                "moduleName": "self_ios_sdk",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "handleImage",
-            "printedName": "handleImage(img:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk13LivenessCheckC11handleImage3imgySo7UIImageC_tF",
-            "mangledName": "$s12self_ios_sdk13LivenessCheckC11handleImage3imgySo7UIImageC_tF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
@@ -7347,75 +7575,6 @@
           },
           {
             "kind": "Function",
-            "name": "start",
-            "printedName": "start(onChallengeChanged:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Challenge",
-                            "printedName": "self_ios_sdk.LivenessCheck.Challenge",
-                            "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "self_ios_sdk.LivenessCheck.Error?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "self_ios_sdk.LivenessCheck.Error",
-                                "usr": "s:12self_ios_sdk13LivenessCheckC5ErrorO"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk13LivenessCheckC5start18onChallengeChangedyyAC0H0O_AC5ErrorOSgtcSg_tF",
-            "mangledName": "$s12self_ios_sdk13LivenessCheckC5start18onChallengeChangedyyAC0H0O_AC5ErrorOSgtcSg_tF",
-            "moduleName": "self_ios_sdk",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "setupAndStart",
             "printedName": "setupAndStart()",
             "children": [
@@ -7494,6 +7653,28 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -15574,6 +15755,1168 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SelfUI",
+        "printedName": "SelfUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NewLivenessCheckViewModel",
+        "printedName": "NewLivenessCheckViewModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "account",
+            "printedName": "account",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "self_ios_sdk.Account",
+                "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC7accountAA7AccountCvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC7accountAA7AccountCvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Account",
+                    "printedName": "self_ios_sdk.Account",
+                    "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC7accountAA7AccountCvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC7accountAA7AccountCvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "challenge",
+            "printedName": "challenge",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Challenge",
+                "printedName": "self_ios_sdk.LivenessCheck.Challenge",
+                "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC9challengeAA0eF0C9ChallengeOvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC9challengeAA0eF0C9ChallengeOvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "self_ios_sdk.LivenessCheck.Challenge",
+                    "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC9challengeAA0eF0C9ChallengeOvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC9challengeAA0eF0C9ChallengeOvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "self_ios_sdk.LivenessCheck.Challenge",
+                    "usr": "s:12self_ios_sdk13LivenessCheckC9ChallengeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC9challengeAA0eF0C9ChallengeOvs",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC9challengeAA0eF0C9ChallengeOvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC9challengeAA0eF0C9ChallengeOvM",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC9challengeAA0eF0C9ChallengeOvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$challenge",
+            "printedName": "$challenge",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<self_ios_sdk.LivenessCheck.Challenge>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC10$challenge7Combine9PublishedV9PublisherVyAA0eF0C9ChallengeO_Gvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC10$challenge7Combine9PublishedV9PublisherVyAA0eF0C9ChallengeO_Gvp",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<self_ios_sdk.LivenessCheck.Challenge>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC10$challenge7Combine9PublishedV9PublisherVyAA0eF0C9ChallengeO_Gvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC10$challenge7Combine9PublishedV9PublisherVyAA0eF0C9ChallengeO_Gvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<self_ios_sdk.LivenessCheck.Challenge>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC10$challenge7Combine9PublishedV9PublisherVyAA0eF0C9ChallengeO_Gvs",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC10$challenge7Combine9PublishedV9PublisherVyAA0eF0C9ChallengeO_Gvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC10$challenge7Combine9PublishedV9PublisherVyAA0eF0C9ChallengeO_GvM",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC10$challenge7Combine9PublishedV9PublisherVyAA0eF0C9ChallengeO_GvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isFinished",
+            "printedName": "isFinished",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC10isFinishedSbvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC10isFinishedSbvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC10isFinishedSbvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC10isFinishedSbvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC10isFinishedSbvs",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC10isFinishedSbvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC10isFinishedSbvM",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC10isFinishedSbvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isFinished",
+            "printedName": "$isFinished",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC11$isFinished7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC11$isFinished7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC11$isFinished7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC11$isFinished7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC11$isFinished7Combine9PublishedV9PublisherVySb_Gvs",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC11$isFinished7Combine9PublishedV9PublisherVySb_Gvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC11$isFinished7Combine9PublishedV9PublisherVySb_GvM",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC11$isFinished7Combine9PublishedV9PublisherVySb_GvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Challenge",
+                "printedName": "SelfUI.Challenge",
+                "usr": "s:6SelfUI9ChallengeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC5state6SelfUI9ChallengeOvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC5state6SelfUI9ChallengeOvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "SelfUI.Challenge",
+                    "usr": "s:6SelfUI9ChallengeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC5state6SelfUI9ChallengeOvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC5state6SelfUI9ChallengeOvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "SelfUI.Challenge",
+                    "usr": "s:6SelfUI9ChallengeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC5state6SelfUI9ChallengeOvs",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC5state6SelfUI9ChallengeOvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC5state6SelfUI9ChallengeOvM",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC5state6SelfUI9ChallengeOvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$state",
+            "printedName": "$state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<SelfUI.Challenge>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC6$state7Combine9PublishedV9PublisherVy6SelfUI9ChallengeO_Gvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC6$state7Combine9PublishedV9PublisherVy6SelfUI9ChallengeO_Gvp",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<SelfUI.Challenge>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC6$state7Combine9PublishedV9PublisherVy6SelfUI9ChallengeO_Gvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC6$state7Combine9PublishedV9PublisherVy6SelfUI9ChallengeO_Gvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<SelfUI.Challenge>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC6$state7Combine9PublishedV9PublisherVy6SelfUI9ChallengeO_Gvs",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC6$state7Combine9PublishedV9PublisherVy6SelfUI9ChallengeO_Gvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC6$state7Combine9PublishedV9PublisherVy6SelfUI9ChallengeO_GvM",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC6$state7Combine9PublishedV9PublisherVy6SelfUI9ChallengeO_GvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "livenessCheck",
+            "printedName": "livenessCheck",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessCheck",
+                "printedName": "self_ios_sdk.LivenessCheck",
+                "usr": "c:@M@self_ios_sdk@objc(cs)LivenessCheck"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC08livenessF0AA0eF0Cvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC08livenessF0AA0eF0Cvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LivenessCheck",
+                    "printedName": "self_ios_sdk.LivenessCheck",
+                    "usr": "c:@M@self_ios_sdk@objc(cs)LivenessCheck"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC08livenessF0AA0eF0Cvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC08livenessF0AA0eF0Cvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LivenessCheck",
+                    "printedName": "self_ios_sdk.LivenessCheck",
+                    "usr": "c:@M@self_ios_sdk@objc(cs)LivenessCheck"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC08livenessF0AA0eF0Cvs",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC08livenessF0AA0eF0Cvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC08livenessF0AA0eF0CvM",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC08livenessF0AA0eF0CvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$livenessCheck",
+            "printedName": "$livenessCheck",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<self_ios_sdk.LivenessCheck>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC09$livenessF07Combine9PublishedV9PublisherVyAA0eF0C_Gvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC09$livenessF07Combine9PublishedV9PublisherVyAA0eF0C_Gvp",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<self_ios_sdk.LivenessCheck>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC09$livenessF07Combine9PublishedV9PublisherVyAA0eF0C_Gvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC09$livenessF07Combine9PublishedV9PublisherVyAA0eF0C_Gvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<self_ios_sdk.LivenessCheck>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC09$livenessF07Combine9PublishedV9PublisherVyAA0eF0C_Gvs",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC09$livenessF07Combine9PublishedV9PublisherVyAA0eF0C_Gvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC09$livenessF07Combine9PublishedV9PublisherVyAA0eF0C_GvM",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC09$livenessF07Combine9PublishedV9PublisherVyAA0eF0C_GvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showIntroduction",
+            "printedName": "showIntroduction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC16showIntroductionSbvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC16showIntroductionSbvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC16showIntroductionSbvg",
+                "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC16showIntroductionSbvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(account:showIntroduction:onResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NewLivenessCheckViewModel",
+                "printedName": "self_ios_sdk.NewLivenessCheckViewModel",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "self_ios_sdk.Account",
+                "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.Data, [self_ios_sdk.Credential], (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data, [self_ios_sdk.Credential], (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data, [self_ios_sdk.Credential], (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[self_ios_sdk.Credential]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Credential",
+                                "printedName": "self_ios_sdk.Credential",
+                                "usr": "s:12self_ios_sdk10CredentialC"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC7account16showIntroduction8onResultAcA7AccountC_Sby10Foundation4DataV_SayAA10CredentialCGs5Error_pSgtcSgtcfc",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC7account16showIntroduction8onResultAcA7AccountC_Sby10Foundation4DataV_SayAA10CredentialCGs5Error_pSgtcSgtcfc",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "handleImageBuffer",
+            "printedName": "handleImageBuffer(sampleBuffer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC17handleImageBuffer06sampleK0ySo08CMSampleK3Refa_tF",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC17handleImageBuffer06sampleK0ySo08CMSampleK3Refa_tF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC",
+        "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC",
+        "moduleName": "self_ios_sdk",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -21242,6 +22585,300 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SelfUI",
+        "printedName": "SelfUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NewLivenessCheckFlow",
+        "printedName": "NewLivenessCheckFlow",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "audoDimiss",
+            "printedName": "audoDimiss",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV10audoDimissSbvp",
+            "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV10audoDimissSbvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV10audoDimissSbvg",
+                "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV10audoDimissSbvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewModel:autoDismiss:onResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NewLivenessCheckFlow",
+                "printedName": "self_ios_sdk.NewLivenessCheckFlow",
+                "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NewLivenessCheckViewModel",
+                "printedName": "self_ios_sdk.NewLivenessCheckViewModel",
+                "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[self_ios_sdk.Credential]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Credential",
+                                "printedName": "self_ios_sdk.Credential",
+                                "usr": "s:12self_ios_sdk10CredentialC"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "self_ios_sdk.LivenessCheck.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "self_ios_sdk.LivenessCheck.Error",
+                                "usr": "s:12self_ios_sdk13LivenessCheckC5ErrorO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV9viewModel11autoDismiss8onResultAcA0def4ViewI0C_Sby10Foundation4DataV_SayAA10CredentialCGAA0eF0C5ErrorOSgtcSgtcfc",
+            "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV9viewModel11autoDismiss8onResultAcA0def4ViewI0C_Sby10Foundation4DataV_SayAA10CredentialCGAA0eF0C5ErrorOSgtcSgtcfc",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV4bodyQrvp",
+            "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV4bodyQrvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV4bodyQrvg",
+                "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV4bodyQrvg",
+                "moduleName": "self_ios_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV",
+        "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -23202,6 +24839,13 @@
         "moduleName": "self_ios_sdk"
       },
       {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
         "kind": "TypeDecl",
         "name": "SelfSDK",
         "printedName": "SelfSDK",
@@ -23718,6 +25362,111 @@
             "declKind": "Func",
             "usr": "s:12self_ios_sdk7SelfSDKC13startLiveness7account9currentVC22isVerificationRequired9dismissal0K25RequireCaptureSelfieImage8onResultyAA7AccountCSg_So16UIViewControllerCSgS3by10Foundation4DataV_SayAA10CredentialCGAA0G5CheckC5ErrorOSgtcSgtFZ",
             "mangledName": "$s12self_ios_sdk7SelfSDKC13startLiveness7account9currentVC22isVerificationRequired9dismissal0K25RequireCaptureSelfieImage8onResultyAA7AccountCSg_So16UIViewControllerCSgS3by10Foundation4DataV_SayAA10CredentialCGAA0G5CheckC5ErrorOSgtcSgtFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showLiveness",
+            "printedName": "showLiveness(account:showIntroduction:audoDismiss:onResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "self_ios_sdk.Account",
+                "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[self_ios_sdk.Credential]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Credential",
+                                "printedName": "self_ios_sdk.Credential",
+                                "usr": "s:12self_ios_sdk10CredentialC"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "self_ios_sdk.LivenessCheck.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "self_ios_sdk.LivenessCheck.Error",
+                                "usr": "s:12self_ios_sdk13LivenessCheckC5ErrorO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7SelfSDKC12showLiveness7account0F12Introduction11audoDismiss8onResultyAA7AccountC_S2by10Foundation4DataV_SayAA10CredentialCGAA0G5CheckC5ErrorOSgtcSgtFZ",
+            "mangledName": "$s12self_ios_sdk7SelfSDKC12showLiveness7account0F12Introduction11audoDismiss8onResultyAA7AccountC_S2by10Foundation4DataV_SayAA10CredentialCGAA0G5CheckC5ErrorOSgtcSgtFZ",
             "moduleName": "self_ios_sdk",
             "static": true,
             "declAttributes": [
@@ -27953,21 +29702,35 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK+Liveness.swift",
       "kind": "BooleanLiteral",
-      "offset": 358,
+      "offset": 373,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK+Liveness.swift",
       "kind": "BooleanLiteral",
-      "offset": 419,
+      "offset": 434,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK+Liveness.swift",
       "kind": "BooleanLiteral",
-      "offset": 498,
+      "offset": 513,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK+Liveness.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1298,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK+Liveness.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1361,
       "length": 4,
       "value": "true"
     },
@@ -28044,268 +29807,275 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 703,
-      "length": 54,
-      "value": "\"com.google.mlkit.visiondetector.VideoDataOutputQueue\""
+      "offset": 736,
+      "length": 36,
+      "value": "\"livenessCheck.VideoDataOutputQueue\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 797,
-      "length": 46,
-      "value": "\"com.google.mlkit.visiondetector.SessionQueue\""
+      "offset": 812,
+      "length": 28,
+      "value": "\"livenessCheck.SessionQueue\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 889,
+      "offset": 886,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 933,
+      "offset": 930,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 981,
+      "offset": 978,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1023,
+      "offset": 1020,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1077,
+      "offset": 1074,
       "length": 5,
       "value": "200.0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "IntegerLiteral",
-      "offset": 1122,
+      "offset": 1119,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1168,
+      "offset": 1165,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1216,
+      "offset": 1213,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1268,
+      "offset": 1265,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1321,
+      "offset": 1318,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "FloatLiteral",
-      "offset": 1377,
+      "offset": 1374,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1532,
+      "offset": 1529,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1565,
+      "offset": 1562,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1602,
+      "offset": 1599,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1639,
+      "offset": 1636,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 1676,
+      "offset": 1673,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "Array",
-      "offset": 1717,
+      "offset": 1714,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "Array",
-      "offset": 1755,
+      "offset": 1752,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2450,
+      "offset": 2447,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2492,
+      "offset": 2489,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2534,
+      "offset": 2531,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2576,
+      "offset": 2573,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "Dictionary",
-      "offset": 2637,
+      "offset": 2634,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "IntegerLiteral",
-      "offset": 2717,
+      "offset": 2714,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "IntegerLiteral",
-      "offset": 2760,
+      "offset": 2757,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2799,
+      "offset": 2796,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2847,
+      "offset": 2844,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 2979,
+      "offset": 2976,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 3277,
+      "offset": 3409,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 3382,
+      "offset": 3514,
       "length": 31,
       "value": "\"SettingKeyLivenessErrorNumber\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 3682,
+      "offset": 3814,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 3916,
+      "offset": 4048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 5390,
+      "offset": 4632,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7479,
+      "offset": 6621,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7537,
+      "offset": 6679,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7613,
+      "offset": 6755,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14781,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LivenessCheckFlow.swift",
@@ -28896,6 +30666,20 @@
       "value": "2"
     },
     {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 376,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 588,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/SecurityCodeRequest.swift",
       "kind": "StringLiteral",
       "offset": 808,
@@ -28994,6 +30778,34 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckFlow.swift",
+      "kind": "StringLiteral",
+      "offset": 288,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckFlow.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 325,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 675,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SDKRequests.swift",
       "kind": "IntegerLiteral",
       "offset": 2984,
@@ -29024,35 +30836,35 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 616,
+      "offset": 631,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3548,
+      "offset": 3563,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4201,
+      "offset": 4216,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 10721,
+      "offset": 10736,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 29531,
+      "offset": 29546,
       "length": 5,
       "value": "false"
     },

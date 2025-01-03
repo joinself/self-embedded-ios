@@ -99,6 +99,7 @@ extension self_ios_sdk.SelfSDK {
     public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.ChatMessage.Builder
     public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.ChatMessage.Builder
     public func withMessage(_ message: Swift.String) -> self_ios_sdk.ChatMessage.Builder
+    public func withReference(_ reference: Swift.String) -> self_ios_sdk.ChatMessage.Builder
     public func withAttachments(_ attachments: [self_ios_sdk.Attachment]) -> self_ios_sdk.ChatMessage.Builder
     public func build() -> self_ios_sdk.ChatMessage
     @objc deinit
@@ -108,6 +109,7 @@ extension self_ios_sdk.SelfSDK {
   public func fromIdentifier() -> Swift.String
   public func properties() -> [Swift.String : Swift.String]
   public func message() -> Swift.String
+  public func reference() -> Swift.String?
   public func attachments() -> [self_ios_sdk.Attachment]
   @objc deinit
 }

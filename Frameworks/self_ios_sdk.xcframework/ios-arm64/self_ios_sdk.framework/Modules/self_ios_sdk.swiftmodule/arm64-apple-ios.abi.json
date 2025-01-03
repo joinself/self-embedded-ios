@@ -2440,6 +2440,34 @@
               },
               {
                 "kind": "Function",
+                "name": "withReference",
+                "printedName": "withReference(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "self_ios_sdk.ChatMessage.Builder",
+                    "usr": "s:12self_ios_sdk11ChatMessageC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12self_ios_sdk11ChatMessageC7BuilderC13withReferenceyAESSF",
+                "mangledName": "$s12self_ios_sdk11ChatMessageC7BuilderC13withReferenceyAESSF",
+                "moduleName": "self_ios_sdk",
+                "isOpen": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
                 "name": "withAttachments",
                 "printedName": "withAttachments(_:)",
                 "children": [
@@ -2639,6 +2667,36 @@
             "declKind": "Func",
             "usr": "s:12self_ios_sdk11ChatMessageC7messageSSyF",
             "mangledName": "$s12self_ios_sdk11ChatMessageC7messageSSyF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reference",
+            "printedName": "reference()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk11ChatMessageC9referenceSSSgyF",
+            "mangledName": "$s12self_ios_sdk11ChatMessageC9referenceSSSgyF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
@@ -29765,7 +29823,7 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/ChatMessage.swift",
       "kind": "Array",
-      "offset": 844,
+      "offset": 889,
       "length": 2,
       "value": "[]"
     },

@@ -90,7 +90,7 @@ public struct DiscoveryData {
 }
 extension self_ios_sdk.SelfSDK {
   public static func startLiveness(account: self_ios_sdk.Account? = nil, currentVC: UIKit.UIViewController? = nil, isVerificationRequired: Swift.Bool = true, dismissal: Swift.Bool = true, isRequireCaptureSelfieImage: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
-  public static func showLiveness(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, audoDismiss: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
+  public static func showLiveness(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, audoDismiss: Swift.Bool = true, isVerificationRequired: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
 }
 @_hasMissingDesignatedInitializers public class ChatMessage : self_ios_sdk.Message {
   public class Builder {
@@ -190,6 +190,7 @@ extension UIKit.UIImage {
   public var onStatusUpdated: ((self_ios_sdk.LivenessCheck.Status) -> Swift.Void)?
   public var onChallengeChanged: ((self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
   public var onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
+  public var isVerificationRequired: Swift.Bool
   @objc override dynamic public init()
   public init(account: self_ios_sdk.Account)
   public func initialize(account: self_ios_sdk.Account, cameraView: UIKit.UIView)
@@ -369,7 +370,7 @@ public class NewLivenessCheckViewModel : Foundation.ObservableObject {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  public init(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], (any Swift.Error)?) -> Swift.Void)? = nil)
+  public init(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, isVerificationRequired: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], (any Swift.Error)?) -> Swift.Void)? = nil)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }

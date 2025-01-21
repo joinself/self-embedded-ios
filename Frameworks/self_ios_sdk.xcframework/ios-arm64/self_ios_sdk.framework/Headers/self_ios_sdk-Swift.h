@@ -308,8 +308,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 /// Create Self Account
-/// \param withEnvironment specifies an environment
-///
 SWIFT_CLASS("_TtC12self_ios_sdk7Account")
 @interface Account : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

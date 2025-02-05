@@ -326,14 +326,15 @@ public struct Constants {
   public static let SUBJECT_VALID_TO: Swift.String
   public static let SUBJECT_CATEGORIES: Swift.String
   public static let SUBJECT_SORT_CODE: Swift.String
-  public static let SUBJECT_LIVENESS_IMAGE: Swift.String
+  public static let SUBJECT_DG1: Swift.String
+  public static let SUBJECT_DG2: Swift.String
+  public static let SUBJECT_SOD: Swift.String
+  public static let SUBJECT_AVATAR_IMAGE: Swift.String
+  public static let SUBJECT_SOURCE_IMAGE: Swift.String
   public static let SUBJECT_SELFIE_IMAGE: Swift.String
   public static let SUBJECT_PASSPORT_IMAGE: Swift.String
   public static let SUBJECT_DOCUMENT_IMAGE_FRONT: Swift.String
   public static let SUBJECT_DOCUMENT_IMAGE_BACK: Swift.String
-  public static let SUBJECT_DG1: Swift.String
-  public static let SUBJECT_DG2: Swift.String
-  public static let SUBJECT_SOD: Swift.String
   public static let SUBJECT_AGREEMENT_TERMS: Swift.String
   public static let FIELD_VERIFIED_ON: Swift.String
   public static let FIELD_VERIFIED_BY: Swift.String
@@ -530,6 +531,8 @@ public struct ez {
     public func build() -> self_ios_sdk.Account
     @objc deinit
   }
+  public func setOnUserInfoRequest(_ onUserInfoRequest: @escaping ((Swift.String) -> Any?))
+  public func setOnUserInfoResponse(_ onUserInfoResponse: @escaping ((Swift.String, [Swift.String : Any]) -> Swift.Void))
   public func setOnStatusListener(_ onStatus: @escaping ((Swift.UInt64) -> Swift.Void))
   public func setOnMessageListener(_ onMessage: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnRequestListener(_ onRequest: ((any self_ios_sdk.Message) -> Swift.Void)?)
@@ -569,7 +572,7 @@ public protocol Message {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SelfSDK {
-  public static func initialize()
+  public static func initialize(log: ((Swift.String) -> Swift.Void)? = nil)
   public static func startPassportVerification(account: self_ios_sdk.Account, currentVC: UIKit.UIViewController? = nil, isDevMode: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   public static func readPassport(currentVC: UIKit.UIViewController, isDevMode: Swift.Bool = false, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   public static func verifyEmail(account: self_ios_sdk.Account, transitionAsModal: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)

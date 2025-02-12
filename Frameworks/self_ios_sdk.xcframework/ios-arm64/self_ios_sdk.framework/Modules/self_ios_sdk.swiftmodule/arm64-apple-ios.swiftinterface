@@ -114,6 +114,26 @@ extension self_ios_sdk.SelfSDK {
   @objc deinit
 }
 
+@_hasMissingDesignatedInitializers public class SigningResponse : self_ios_sdk.Message {
+  public class Builder {
+    public init()
+    public func withRequestId(_ requestId: Swift.String) -> self_ios_sdk.SigningResponse.Builder
+    public func withStatus(_ status: self_ios_sdk.ResponseStatus) -> self_ios_sdk.SigningResponse.Builder
+    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.SigningResponse.Builder
+    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.SigningResponse.Builder
+    public func withCredentials(_ credentials: [self_ios_sdk.Credential]) -> self_ios_sdk.SigningResponse.Builder
+    public func build() -> self_ios_sdk.SigningResponse
+    @objc deinit
+  }
+  public func id() -> Swift.String
+  public func toIdentifier() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  public func properties() -> [Swift.String : Swift.String]
+  public func requestId() -> Swift.String
+  public func status() -> self_ios_sdk.ResponseStatus
+  public func credentials() -> [self_ios_sdk.Credential]
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class ShareResources {
   public static func subjectToFriendlyString(subject: Swift.String) -> Swift.String
   @objc deinit
@@ -191,6 +211,7 @@ extension UIKit.UIImage {
   public var onChallengeChanged: ((self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
   public var onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
   public var isVerificationRequired: Swift.Bool
+  public var properties: [Swift.String : Swift.String]
   @objc override dynamic public init()
   public init(account: self_ios_sdk.Account)
   public func initialize(account: self_ios_sdk.Account, cameraView: UIKit.UIView)
@@ -423,6 +444,24 @@ public enum ResponseStatus : Swift.String {
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk23DeveloperOnboardingViewV4bodyQrvp", 0) __
 }
 
+@_hasMissingDesignatedInitializers public class SigningRequest : self_ios_sdk.Message {
+  public class Builder {
+    public init()
+    public func withId(_ messageId: Swift.String) -> self_ios_sdk.SigningRequest.Builder
+    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.SigningRequest.Builder
+    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.SigningRequest.Builder
+    public func withDetails(_ details: [self_ios_sdk.Claim]) -> self_ios_sdk.SigningRequest.Builder
+    public func withTypes(_ types: [Swift.String]) -> self_ios_sdk.SigningRequest.Builder
+    public func build() -> self_ios_sdk.SigningRequest
+    @objc deinit
+  }
+  public func id() -> Swift.String
+  public func toIdentifier() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  public func properties() -> [Swift.String : Swift.String]
+  public func details() -> [self_ios_sdk.Claim]
+  @objc deinit
+}
 public struct ez {
   public static func GetCurrentTimeStamp() -> Swift.String
   public static var appDisplayName: Swift.String? {
@@ -539,8 +578,10 @@ public struct ez {
   public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func addResponseListenerForRequest(id: Swift.String, callback: @escaping (Any) -> Swift.Void)
   public func register(selfieImage: Foundation.Data, credentials: [self_ios_sdk.Credential]) async throws -> Swift.Bool
+  public func register(selfieImage: Foundation.Data, forAddress: Swift.String, presentation: Foundation.Data) async throws -> Swift.Bool
   public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async -> Swift.Bool
   public func registered() -> Swift.Bool
+  public func generateAddress() -> Swift.String
   public func send(message: any self_ios_sdk.Message, onAcknowledgement: @escaping (Swift.String, (any Swift.Error)?) -> Swift.Void) async throws
   public func credentials() -> [self_ios_sdk.Credential]
   public func credentialsByType() -> [self_ios_sdk.CredentialsByType]

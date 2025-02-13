@@ -212,6 +212,7 @@ extension UIKit.UIImage {
   public var onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
   public var isVerificationRequired: Swift.Bool
   public var properties: [Swift.String : Swift.String]
+  public func getAttemptsNumber() -> Swift.Int
   @objc override dynamic public init()
   public init(account: self_ios_sdk.Account)
   public func initialize(account: self_ios_sdk.Account, cameraView: UIKit.UIView)

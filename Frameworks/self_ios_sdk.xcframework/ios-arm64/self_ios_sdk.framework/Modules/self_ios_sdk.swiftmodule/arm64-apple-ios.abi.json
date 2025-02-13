@@ -27153,7 +27153,7 @@
           {
             "kind": "Function",
             "name": "showLiveness",
-            "printedName": "showLiveness(account:showIntroduction:audoDismiss:isVerificationRequired:onResult:)",
+            "printedName": "showLiveness(account:showIntroduction:autoDismiss:isVerificationRequired:onResult:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -27251,8 +27251,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7SelfSDKC12showLiveness7account0F12Introduction11audoDismiss22isVerificationRequired8onResultyAA7AccountC_S3by10Foundation4DataV_SayAA10CredentialCGAA0G5CheckC5ErrorOSgtcSgtFZ",
-            "mangledName": "$s12self_ios_sdk7SelfSDKC12showLiveness7account0F12Introduction11audoDismiss22isVerificationRequired8onResultyAA7AccountC_S3by10Foundation4DataV_SayAA10CredentialCGAA0G5CheckC5ErrorOSgtcSgtFZ",
+            "usr": "s:12self_ios_sdk7SelfSDKC12showLiveness7account0F12Introduction11autoDismiss22isVerificationRequired8onResultyAA7AccountC_S3by10Foundation4DataV_SayAA10CredentialCGAA0G5CheckC5ErrorOSgtcSgtFZ",
+            "mangledName": "$s12self_ios_sdk7SelfSDKC12showLiveness7account0F12Introduction11autoDismiss22isVerificationRequired8onResultyAA7AccountC_S3by10Foundation4DataV_SayAA10CredentialCGAA0G5CheckC5ErrorOSgtcSgtFZ",
             "moduleName": "self_ios_sdk",
             "static": true,
             "declAttributes": [
@@ -31906,6 +31906,13 @@
       "offset": 14852,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
+      "kind": "StringLiteral",
+      "offset": 18004,
+      "length": 21,
+      "value": "\"checking_your_image\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LivenessCheckFlow.swift",

@@ -12173,8 +12173,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "sandbox",
-            "printedName": "sandbox",
+            "name": "dev",
+            "printedName": "dev",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -12204,8 +12204,119 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:12self_ios_sdk11EnvironmentO7sandboxyA2CmF",
-            "mangledName": "$s12self_ios_sdk11EnvironmentO7sandboxyA2CmF",
+            "usr": "s:12self_ios_sdk11EnvironmentO3devyA2CmF",
+            "mangledName": "$s12self_ios_sdk11EnvironmentO3devyA2CmF",
+            "moduleName": "self_ios_sdk"
+          },
+          {
+            "kind": "Var",
+            "name": "test",
+            "printedName": "test",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.Environment.Type) -> self_ios_sdk.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "self_ios_sdk.Environment",
+                    "usr": "s:12self_ios_sdk11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "self_ios_sdk.Environment",
+                        "usr": "s:12self_ios_sdk11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk11EnvironmentO4testyA2CmF",
+            "mangledName": "$s12self_ios_sdk11EnvironmentO4testyA2CmF",
+            "moduleName": "self_ios_sdk"
+          },
+          {
+            "kind": "Var",
+            "name": "preview",
+            "printedName": "preview",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.Environment.Type) -> self_ios_sdk.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "self_ios_sdk.Environment",
+                    "usr": "s:12self_ios_sdk11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "self_ios_sdk.Environment",
+                        "usr": "s:12self_ios_sdk11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk11EnvironmentO7previewyA2CmF",
+            "mangledName": "$s12self_ios_sdk11EnvironmentO7previewyA2CmF",
+            "moduleName": "self_ios_sdk"
+          },
+          {
+            "kind": "Var",
+            "name": "staging",
+            "printedName": "staging",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.Environment.Type) -> self_ios_sdk.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "self_ios_sdk.Environment",
+                    "usr": "s:12self_ios_sdk11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "self_ios_sdk.Environment",
+                        "usr": "s:12self_ios_sdk11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk11EnvironmentO7stagingyA2CmF",
+            "mangledName": "$s12self_ios_sdk11EnvironmentO7stagingyA2CmF",
             "moduleName": "self_ios_sdk"
           },
           {
@@ -16090,12 +16201,18 @@
           {
             "kind": "Function",
             "name": "getDeviceCheckInfo",
-            "printedName": "getDeviceCheckInfo(completion:)",
+            "printedName": "getDeviceCheckInfo(challenge:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
               },
               {
                 "kind": "TypeFunc",
@@ -16165,8 +16282,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk5UtilsV18getDeviceCheckInfo10completionyySS5keyId_SS17attestationBase64SS09challengeM0tSg_s5Error_pSgtc_tFZ",
-            "mangledName": "$s12self_ios_sdk5UtilsV18getDeviceCheckInfo10completionyySS5keyId_SS17attestationBase64SS09challengeM0tSg_s5Error_pSgtc_tFZ",
+            "usr": "s:12self_ios_sdk5UtilsV18getDeviceCheckInfo9challenge10completiony10Foundation4DataV_ySS5keyId_SS17attestationBase64SS0iP0tSg_s5Error_pSgtctFZ",
+            "mangledName": "$s12self_ios_sdk5UtilsV18getDeviceCheckInfo9challenge10completiony10Foundation4DataV_ySS5keyId_SS17attestationBase64SS0iP0tSg_s5Error_pSgtctFZ",
             "moduleName": "self_ios_sdk",
             "static": true,
             "funcSelfKind": "NonMutating"
@@ -22588,6 +22705,34 @@
               },
               {
                 "kind": "Function",
+                "name": "withSandbox",
+                "printedName": "withSandbox(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "self_ios_sdk.Account.Builder",
+                    "usr": "s:12self_ios_sdk7AccountC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12self_ios_sdk7AccountC7BuilderC11withSandboxyAESbF",
+                "mangledName": "$s12self_ios_sdk7AccountC7BuilderC11withSandboxyAESbF",
+                "moduleName": "self_ios_sdk",
+                "isOpen": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
                 "name": "withStoragePath",
                 "printedName": "withStoragePath(_:)",
                 "children": [
@@ -23297,6 +23442,9 @@
             "mangledName": "$s12self_ios_sdk7AccountC22presentationForAddress03forG011credentials10Foundation4DataVSS_SayAA10CredentialCGtF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -32037,448 +32185,448 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1069,
+      "offset": 1395,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1115,
+      "offset": 1441,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1170,
+      "offset": 1496,
       "length": 7,
       "value": "5000000"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1235,
+      "offset": 1561,
       "length": 4,
       "value": "2048"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1285,
+      "offset": 1611,
       "length": 4,
       "value": "3072"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1325,
+      "offset": 1651,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1366,
+      "offset": 1692,
       "length": 14,
       "value": "\"emailAddress\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1419,
+      "offset": 1745,
       "length": 13,
       "value": "\"phoneNumber\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1479,
+      "offset": 1805,
       "length": 14,
       "value": "\"securityCode\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1543,
+      "offset": 1869,
       "length": 23,
       "value": "\"unverifiedPhoneNumber\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1605,
+      "offset": 1931,
       "length": 7,
       "value": "\"photo\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1650,
+      "offset": 1976,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1708,
+      "offset": 2034,
       "length": 12,
       "value": "\"givenNames\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 2087,
       "length": 9,
       "value": "\"surname\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1814,
+      "offset": 2140,
       "length": 11,
       "value": "\"firstName\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1868,
+      "offset": 2194,
       "length": 10,
       "value": "\"lastName\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1918,
+      "offset": 2244,
       "length": 8,
       "value": "\"gender\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1963,
+      "offset": 2289,
       "length": 5,
       "value": "\"sex\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2008,
+      "offset": 2334,
       "length": 16,
       "value": "\"documentNumber\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2065,
+      "offset": 2391,
       "length": 9,
       "value": "\"address\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2119,
+      "offset": 2445,
       "length": 13,
       "value": "\"nationality\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2169,
+      "offset": 2495,
       "length": 13,
       "value": "\"dateOfBirth\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2219,
+      "offset": 2545,
       "length": 14,
       "value": "\"placeOfBirth\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2285,
+      "offset": 2611,
       "length": 18,
       "value": "\"dateOfExpiration\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2353,
+      "offset": 2679,
       "length": 16,
       "value": "\"dateOfIssuance\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2416,
+      "offset": 2742,
       "length": 13,
       "value": "\"dateOfIssue\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2478,
+      "offset": 2804,
       "length": 18,
       "value": "\"issuingAuthority\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2549,
+      "offset": 2875,
       "length": 19,
       "value": "\"countryOfIssuance\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2605,
+      "offset": 2931,
       "length": 13,
       "value": "\"documentMrz\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2660,
+      "offset": 2986,
       "length": 10,
       "value": "\"location\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2721,
+      "offset": 3047,
       "length": 17,
       "value": "\"sourceImageHash\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2784,
+      "offset": 3110,
       "length": 13,
       "value": "\"displayName\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2841,
+      "offset": 3167,
       "length": 12,
       "value": "\"valid_from\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2895,
+      "offset": 3221,
       "length": 10,
       "value": "\"valid_to\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2949,
+      "offset": 3275,
       "length": 12,
       "value": "\"categories\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3004,
+      "offset": 3330,
       "length": 11,
       "value": "\"sort_code\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3052,
+      "offset": 3378,
       "length": 12,
       "value": "\"datagroup1\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3101,
+      "offset": 3427,
       "length": 12,
       "value": "\"datagroup2\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3150,
+      "offset": 3476,
       "length": 24,
       "value": "\"documentSecurityObject\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3220,
+      "offset": 3546,
       "length": 13,
       "value": "\"avatarImage\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3279,
+      "offset": 3605,
       "length": 13,
       "value": "\"sourceImage\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3338,
+      "offset": 3664,
       "length": 13,
       "value": "\"selfieImage\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3399,
+      "offset": 3725,
       "length": 15,
       "value": "\"passportImage\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3468,
+      "offset": 3794,
       "length": 12,
       "value": "\"frontImage\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3533,
+      "offset": 3859,
       "length": 11,
       "value": "\"backImage\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3593,
+      "offset": 3919,
       "length": 7,
       "value": "\"terms\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3644,
+      "offset": 3970,
       "length": 13,
       "value": "\"verified_on\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3700,
+      "offset": 4026,
       "length": 13,
       "value": "\"verified_by\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3761,
+      "offset": 4087,
       "length": 18,
       "value": "\"last_verified_on\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3827,
+      "offset": 4153,
       "length": 18,
       "value": "\"last_verified_by\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3885,
+      "offset": 4211,
       "length": 10,
       "value": "\"added_on\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3965,
+      "offset": 4291,
       "length": 22,
       "value": "\"VerifiableCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4025,
+      "offset": 4351,
       "length": 24,
       "value": "\"OrganisationCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4086,
+      "offset": 4412,
       "length": 23,
       "value": "\"ApplicationCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4144,
+      "offset": 4470,
       "length": 21,
       "value": "\"AgreementCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4199,
+      "offset": 4525,
       "length": 20,
       "value": "\"LivenessCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4250,
+      "offset": 4576,
       "length": 17,
       "value": "\"EmailCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4298,
+      "offset": 4624,
       "length": 17,
       "value": "\"PhoneCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4353,
+      "offset": 4679,
       "length": 24,
       "value": "\"PhoneConfirmCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4409,
+      "offset": 4735,
       "length": 18,
       "value": "\"CustomCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4461,
+      "offset": 4787,
       "length": 20,
       "value": "\"PassportCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4513,
+      "offset": 4839,
       "length": 24,
       "value": "\"IdentityCardCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4577,
+      "offset": 4903,
       "length": 26,
       "value": "\"DrivingLicenseCredential\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 4637,
+      "offset": 4963,
       "length": 20,
       "value": "\"DocumentCredential\""
     },
@@ -32520,14 +32668,14 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7562,
+      "offset": 7665,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7582,
+      "offset": 7685,
       "length": 1,
       "value": "2"
     },
@@ -32681,7 +32829,7 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/Account.swift",
       "kind": "Dictionary",
-      "offset": 751,
+      "offset": 673,
       "length": 3,
       "value": "[]"
     },
@@ -32751,28 +32899,28 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3990,
+      "offset": 4174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4938,
+      "offset": 5122,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 11935,
+      "offset": 12119,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 30998,
+      "offset": 31182,
       "length": 5,
       "value": "false"
     },

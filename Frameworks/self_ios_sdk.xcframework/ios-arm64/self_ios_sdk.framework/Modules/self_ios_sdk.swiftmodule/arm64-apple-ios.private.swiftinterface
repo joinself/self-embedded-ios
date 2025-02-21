@@ -303,7 +303,10 @@ extension self_ios_sdk.SelfSDK {
   @objc deinit
 }
 public enum Environment : Swift.String {
-  case sandbox
+  case dev
+  case test
+  case preview
+  case staging
   case production
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -567,6 +570,7 @@ public struct ez {
   public class Builder {
     public init()
     public func withEnvironment(_ environment: self_ios_sdk.Environment) -> self_ios_sdk.Account.Builder
+    public func withSandbox(_ sandbox: Swift.Bool) -> self_ios_sdk.Account.Builder
     public func withStoragePath(_ storagePath: Swift.String) -> self_ios_sdk.Account.Builder
     public func build() -> self_ios_sdk.Account
     @objc deinit
@@ -582,6 +586,7 @@ public struct ez {
   public func register(selfieImage: Foundation.Data, forAddress: Swift.String, presentation: Foundation.Data) async throws -> Swift.Bool
   public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async -> Swift.Bool
   public func registered() -> Swift.Bool
+  public func presentationForAddress(forAddress: Swift.String, credentials: [self_ios_sdk.Credential]) -> Foundation.Data
   public func generateAddress() -> Swift.String
   public func send(message: any self_ios_sdk.Message, onAcknowledgement: @escaping (Swift.String, (any Swift.Error)?) -> Swift.Void) async throws
   public func credentials() -> [self_ios_sdk.Credential]

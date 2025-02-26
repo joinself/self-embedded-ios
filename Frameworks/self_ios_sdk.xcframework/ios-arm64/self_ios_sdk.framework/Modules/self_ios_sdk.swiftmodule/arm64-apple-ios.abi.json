@@ -32052,35 +32052,35 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7112,
+      "offset": 7047,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7170,
+      "offset": 7105,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7246,
+      "offset": 7181,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 15294,
+      "offset": 15229,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 18055,
+      "offset": 17990,
       "length": 21,
       "value": "\"checking_your_image\""
     },
@@ -32857,7 +32857,14 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 670,
+      "offset": 346,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 689,
       "length": 4,
       "value": "true"
     },

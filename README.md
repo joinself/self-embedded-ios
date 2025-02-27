@@ -1,4 +1,4 @@
-# self-embedded-ios
+# Self Embedded iOS
 
 ## Installation & Usage
 If using ***Cocoapods*** . Just add this line to your `Podfile`
@@ -34,3 +34,15 @@ more functions here https://github.com/joinself/self-mobile-embedded-samples/blo
 .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.1900"))
 ```
 So if you use another of `OpenSSL` in your app. It might cause an unexpected issue.
+
+## Support
+
+Looking for help? Reach out to us at [support@joinself.com](mailto:support@joinself.com)
+
+## Contributing
+
+See [Contributing](CONTRIBUTING.md).
+
+## License
+
+See [License](LICENSE).

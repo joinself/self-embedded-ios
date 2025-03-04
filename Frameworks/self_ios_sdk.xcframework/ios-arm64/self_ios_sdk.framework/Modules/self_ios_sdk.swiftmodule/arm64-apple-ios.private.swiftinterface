@@ -87,6 +87,7 @@ public struct CredentialsByType {
 public struct DiscoveryData {
   public var requestId: Swift.String
   public var address: Swift.String
+  public var sandbox: Swift.Bool
 }
 extension self_ios_sdk.SelfSDK {
   public static func startLiveness(account: self_ios_sdk.Account? = nil, currentVC: UIKit.UIViewController? = nil, isVerificationRequired: Swift.Bool = true, dismissal: Swift.Bool = true, isRequireCaptureSelfieImage: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
@@ -609,6 +610,7 @@ public struct ez {
   public func lookUpCredentials(claims: [self_ios_sdk.Claim]) -> [self_ios_sdk.Credential]
   public func qrCode() async throws -> Foundation.Data
   public func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
+  public func connectWith(qrCode: Foundation.Data) async throws
   public func backup() async -> Foundation.URL?
   public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async
   public func store(keyValue: self_ios_sdk.KeyValue)

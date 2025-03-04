@@ -2098,6 +2098,92 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk13DiscoveryDataV7sandboxSbvp",
+            "mangledName": "$s12self_ios_sdk13DiscoveryDataV7sandboxSbvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13DiscoveryDataV7sandboxSbvg",
+                "mangledName": "$s12self_ios_sdk13DiscoveryDataV7sandboxSbvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13DiscoveryDataV7sandboxSbvs",
+                "mangledName": "$s12self_ios_sdk13DiscoveryDataV7sandboxSbvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13DiscoveryDataV7sandboxSbvM",
+                "mangledName": "$s12self_ios_sdk13DiscoveryDataV7sandboxSbvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "toKMP",
             "printedName": "toKMP()",
@@ -2149,7 +2235,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(requestId:address:)",
+            "printedName": "init(requestId:address:sandbox:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2168,11 +2254,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk13DiscoveryDataV9requestId7addressACSS_SStcfc",
-            "mangledName": "$s12self_ios_sdk13DiscoveryDataV9requestId7addressACSS_SStcfc",
+            "usr": "s:12self_ios_sdk13DiscoveryDataV9requestId7address7sandboxACSS_SSSbtcfc",
+            "mangledName": "$s12self_ios_sdk13DiscoveryDataV9requestId7address7sandboxACSS_SSSbtcfc",
             "moduleName": "self_ios_sdk",
             "implicit": true,
             "init_kind": "Designated"
@@ -24510,6 +24602,34 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectWith",
+            "printedName": "connectWith(qrCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC11connectWith6qrCodey10Foundation4DataV_tYaKF",
+            "mangledName": "$s12self_ios_sdk7AccountC11connectWith6qrCodey10Foundation4DataV_tYaKF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"

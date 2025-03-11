@@ -114,7 +114,6 @@ extension self_ios_sdk.SelfSDK {
   public func attachments() -> [self_ios_sdk.Attachment]
   @objc deinit
 }
-
 @_hasMissingDesignatedInitializers public class SigningResponse : self_ios_sdk.Message {
   public class Builder {
     public init()
@@ -139,14 +138,6 @@ extension self_ios_sdk.SelfSDK {
   public static func subjectToFriendlyString(subject: Swift.String) -> Swift.String
   @objc deinit
 }
-@_Concurrency.MainActor @preconcurrency public struct CreateAccountView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(onEnteredName: ((Swift.String) -> Swift.Void)? = nil, onScanQRCode: ((Swift.String?) -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk17CreateAccountViewV4bodyQrvp", 0) __
-}
-
 @_hasMissingDesignatedInitializers public class CredentialResponse : self_ios_sdk.Message {
   public class Builder {
     public init()
@@ -264,14 +255,6 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 extension self_ios_sdk.SelfSDK {
   public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
 }
-@_Concurrency.MainActor @preconcurrency public struct FlowGetStarted : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(callback: ((Swift.Bool) -> Swift.Void)? = nil, onRecover: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk14FlowGetStartedV4bodyQrvp", 0) __
-}
-
 @_hasMissingDesignatedInitializers public class KeyValue {
   public class Builder {
     public init()
@@ -456,14 +439,6 @@ public enum ResponseStatus : Swift.String {
     get
   }
 }
-@_Concurrency.MainActor @preconcurrency public struct DeveloperOnboardingView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk23DeveloperOnboardingViewV4bodyQrvp", 0) __
-}
-
 @_hasMissingDesignatedInitializers public class SigningRequest : self_ios_sdk.Message {
   public class Builder {
     public init()
@@ -664,7 +639,6 @@ public protocol Message {
 extension self_ios_sdk.SelfSDK {
   public static func readingPassportChip(mrzKey: Swift.String, completion: ((Foundation.Data?, [Swift.String : Swift.String]?) -> Swift.Void)? = nil)
 }
-extension self_ios_sdk.CreateAccountView : Swift.Sendable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.Equatable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.Hashable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.RawRepresentable {}
@@ -676,7 +650,6 @@ extension self_ios_sdk.LivenessCheck.Status : Swift.Hashable {}
 extension self_ios_sdk.LivenessCheck.Status : Swift.RawRepresentable {}
 extension self_ios_sdk.QRCodeReaderView : Swift.Sendable {}
 extension self_ios_sdk.LivenessCheckFlow : Swift.Sendable {}
-extension self_ios_sdk.FlowGetStarted : Swift.Sendable {}
 extension self_ios_sdk.ComparisonOperator : Swift.Equatable {}
 extension self_ios_sdk.ComparisonOperator : Swift.Hashable {}
 extension self_ios_sdk.ComparisonOperator : Swift.RawRepresentable {}
@@ -686,4 +659,3 @@ extension self_ios_sdk.Environment : Swift.RawRepresentable {}
 extension self_ios_sdk.ResponseStatus : Swift.Equatable {}
 extension self_ios_sdk.ResponseStatus : Swift.Hashable {}
 extension self_ios_sdk.ResponseStatus : Swift.RawRepresentable {}
-extension self_ios_sdk.DeveloperOnboardingView : Swift.Sendable {}

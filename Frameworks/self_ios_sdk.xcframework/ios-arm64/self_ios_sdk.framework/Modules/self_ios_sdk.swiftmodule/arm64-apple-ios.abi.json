@@ -30771,35 +30771,35 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7047,
+      "offset": 6895,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7105,
+      "offset": 6953,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7181,
+      "offset": 7029,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 15229,
+      "offset": 15042,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 17990,
+      "offset": 17803,
       "length": 21,
       "value": "\"checking_your_image\""
     },
@@ -31576,28 +31576,28 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4219,
+      "offset": 4296,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5167,
+      "offset": 5244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12164,
+      "offset": 12241,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 31227,
+      "offset": 31304,
       "length": 5,
       "value": "false"
     },

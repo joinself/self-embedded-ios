@@ -6016,7 +6016,8 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6238,6 +6239,373 @@
                 "declKind": "Accessor",
                 "usr": "s:12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvM",
                 "mangledName": "$s12self_ios_sdk13LivenessCheckC18challengePublisher7Combine18PassthroughSubjectCyAC9ChallengeOs5NeverOGvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "verifyPublisher",
+            "printedName": "verifyPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<Swift.Bool, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk13LivenessCheckC15verifyPublisher7Combine18PassthroughSubjectCySbs5NeverOGvp",
+            "mangledName": "$s12self_ios_sdk13LivenessCheckC15verifyPublisher7Combine18PassthroughSubjectCySbs5NeverOGvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<Swift.Bool, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15verifyPublisher7Combine18PassthroughSubjectCySbs5NeverOGvg",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15verifyPublisher7Combine18PassthroughSubjectCySbs5NeverOGvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<Swift.Bool, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15verifyPublisher7Combine18PassthroughSubjectCySbs5NeverOGvs",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15verifyPublisher7Combine18PassthroughSubjectCySbs5NeverOGvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15verifyPublisher7Combine18PassthroughSubjectCySbs5NeverOGvM",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15verifyPublisher7Combine18PassthroughSubjectCySbs5NeverOGvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resultPublisher",
+            "printedName": "resultPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[self_ios_sdk.Credential]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Credential",
+                            "printedName": "self_ios_sdk.Credential",
+                            "usr": "s:12self_ios_sdk10CredentialC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "self_ios_sdk.LivenessCheck.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "self_ios_sdk.LivenessCheck.Error",
+                            "usr": "s:12self_ios_sdk13LivenessCheckC5ErrorO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk13LivenessCheckC15resultPublisher7Combine18PassthroughSubjectCy10Foundation4DataV_SayAA10CredentialCGAC5ErrorOSgts5NeverOGvp",
+            "mangledName": "$s12self_ios_sdk13LivenessCheckC15resultPublisher7Combine18PassthroughSubjectCy10Foundation4DataV_SayAA10CredentialCGAC5ErrorOSgts5NeverOGvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[self_ios_sdk.Credential]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Credential",
+                                "printedName": "self_ios_sdk.Credential",
+                                "usr": "s:12self_ios_sdk10CredentialC"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "self_ios_sdk.LivenessCheck.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "self_ios_sdk.LivenessCheck.Error",
+                                "usr": "s:12self_ios_sdk13LivenessCheckC5ErrorO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15resultPublisher7Combine18PassthroughSubjectCy10Foundation4DataV_SayAA10CredentialCGAC5ErrorOSgts5NeverOGvg",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15resultPublisher7Combine18PassthroughSubjectCy10Foundation4DataV_SayAA10CredentialCGAC5ErrorOSgts5NeverOGvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[self_ios_sdk.Credential]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Credential",
+                                "printedName": "self_ios_sdk.Credential",
+                                "usr": "s:12self_ios_sdk10CredentialC"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "self_ios_sdk.LivenessCheck.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "self_ios_sdk.LivenessCheck.Error",
+                                "usr": "s:12self_ios_sdk13LivenessCheckC5ErrorO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15resultPublisher7Combine18PassthroughSubjectCy10Foundation4DataV_SayAA10CredentialCGAC5ErrorOSgts5NeverOGvs",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15resultPublisher7Combine18PassthroughSubjectCy10Foundation4DataV_SayAA10CredentialCGAC5ErrorOSgts5NeverOGvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk13LivenessCheckC15resultPublisher7Combine18PassthroughSubjectCy10Foundation4DataV_SayAA10CredentialCGAC5ErrorOSgts5NeverOGvM",
+                "mangledName": "$s12self_ios_sdk13LivenessCheckC15resultPublisher7Combine18PassthroughSubjectCy10Foundation4DataV_SayAA10CredentialCGAC5ErrorOSgts5NeverOGvM",
                 "moduleName": "self_ios_sdk",
                 "implicit": true,
                 "isOpen": true,
@@ -17109,6 +17477,31 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isVerificationRequired",
+            "printedName": "isVerificationRequired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC22isVerificationRequired33_77F529F4D5D1388965902A15DF702C62LLSbvp",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC22isVerificationRequired33_77F529F4D5D1388965902A15DF702C62LLSbvp",
+            "moduleName": "self_ios_sdk",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 9,
+            "hasStorage": true
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(account:showIntroduction:isVerificationRequired:customLivenessIntroductionTitle:customLivenessIntroductionBody:onResult:)",
@@ -17243,6 +17636,24 @@
             "declKind": "Func",
             "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC17handleImageBuffer06sampleK0ySo08CMSampleK3Refa_tF",
             "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC17handleImageBuffer06sampleK0ySo08CMSampleK3Refa_tF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "retry",
+            "printedName": "retry()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk25NewLivenessCheckViewModelC5retryyyF",
+            "mangledName": "$s12self_ios_sdk25NewLivenessCheckViewModelC5retryyyF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "funcSelfKind": "NonMutating"
@@ -30729,77 +31140,77 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 3408,
+      "offset": 3611,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "Dictionary",
-      "offset": 3459,
+      "offset": 3662,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 3563,
+      "offset": 3766,
       "length": 31,
       "value": "\"SettingKeyLivenessErrorNumber\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 4305,
+      "offset": 4508,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 4539,
+      "offset": 4742,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 5123,
+      "offset": 5326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 6895,
+      "offset": 7098,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 6953,
+      "offset": 7156,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 7029,
+      "offset": 7232,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "BooleanLiteral",
-      "offset": 15042,
+      "offset": 15344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 17803,
+      "offset": 18315,
       "length": 21,
       "value": "\"checking_your_image\""
     },
@@ -31415,14 +31826,21 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 759,
+      "offset": 726,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 812,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 812,
+      "offset": 865,
       "length": 4,
       "value": "true"
     },
@@ -31534,7 +31952,7 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 672,
+      "offset": 532,
       "length": 4,
       "value": "true"
     },

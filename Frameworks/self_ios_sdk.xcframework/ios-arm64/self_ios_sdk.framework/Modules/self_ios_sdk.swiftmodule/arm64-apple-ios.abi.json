@@ -31210,7 +31210,7 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/LivenessCheck.swift",
       "kind": "StringLiteral",
-      "offset": 18315,
+      "offset": 18255,
       "length": 21,
       "value": "\"checking_your_image\""
     },

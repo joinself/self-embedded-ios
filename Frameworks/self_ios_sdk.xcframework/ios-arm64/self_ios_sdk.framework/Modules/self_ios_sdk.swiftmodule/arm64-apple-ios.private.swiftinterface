@@ -381,6 +381,24 @@ public struct CredentialType {
   public static let DrivingLicense: Swift.String
   public static let Document: Swift.String
 }
+public class NewLivenessCheckViewModel : Foundation.ObservableObject {
+  final public let account: self_ios_sdk.Account
+  @Combine.Published @_projectedValueProperty($livenessCheck) public var livenessCheck: self_ios_sdk.LivenessCheck {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $livenessCheck: Combine.Published<self_ios_sdk.LivenessCheck>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, isVerificationRequired: Swift.Bool = true, customLivenessIntroductionTitle: Swift.String, customLivenessIntroductionBody: Swift.String, onResult: ((Foundation.Data, [self_ios_sdk.Credential], (any Swift.Error)?) -> Swift.Void)? = nil)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class Document : self_ios_sdk.DataObject {
   public class Builder {
     public init()
@@ -587,7 +605,7 @@ public struct ez {
   public func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
   public func connectWith(qrCode: Foundation.Data) async throws
   public func backup() async -> Foundation.URL?
-  public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async
+  public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async -> (any Swift.Error)?
   public func store(keyValue: self_ios_sdk.KeyValue)
   public func get(key: Swift.String, credentials: [self_ios_sdk.Credential]) -> self_ios_sdk.KeyValue?
   public func close() async throws
@@ -598,6 +616,13 @@ extension self_ios_sdk.Account : CoreLocation.CLLocationManagerDelegate {
   @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
+}
+@_Concurrency.MainActor @preconcurrency public struct NewLivenessCheckFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(viewModel: self_ios_sdk.NewLivenessCheckViewModel, autoDismiss: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk20NewLivenessCheckFlowV4bodyQrvp", 0) __
 }
 public protocol Message {
   func id() -> Swift.String
@@ -659,3 +684,4 @@ extension self_ios_sdk.Environment : Swift.RawRepresentable {}
 extension self_ios_sdk.ResponseStatus : Swift.Equatable {}
 extension self_ios_sdk.ResponseStatus : Swift.Hashable {}
 extension self_ios_sdk.ResponseStatus : Swift.RawRepresentable {}
+extension self_ios_sdk.NewLivenessCheckFlow : Swift.Sendable {}

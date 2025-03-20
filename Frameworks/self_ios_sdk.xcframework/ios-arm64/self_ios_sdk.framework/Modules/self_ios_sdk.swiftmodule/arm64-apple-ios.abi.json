@@ -21998,6 +21998,44 @@
           },
           {
             "kind": "Function",
+            "name": "setOnRelayConnectListener",
+            "printedName": "setOnRelayConnectListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC25setOnRelayConnectListeneryyyycF",
+            "mangledName": "$s12self_ios_sdk7AccountC25setOnRelayConnectListeneryyyycF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setOnMessageListener",
             "printedName": "setOnMessageListener(_:)",
             "children": [

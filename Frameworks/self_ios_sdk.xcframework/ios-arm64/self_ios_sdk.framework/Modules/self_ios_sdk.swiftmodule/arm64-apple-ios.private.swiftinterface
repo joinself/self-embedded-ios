@@ -587,6 +587,7 @@ public struct ez {
   public func setOnUserInfoRequest(_ onUserInfoRequest: @escaping ((Swift.String) -> Any?))
   public func setOnUserInfoResponse(_ onUserInfoResponse: @escaping ((Swift.String, [Swift.String : Any]) -> Swift.Void))
   public func setOnStatusListener(_ onStatus: @escaping ((Swift.UInt64) -> Swift.Void))
+  public func setOnRelayConnectListener(_ onRelayConnect: @escaping (() -> Swift.Void))
   public func setOnMessageListener(_ onMessage: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnRequestListener(_ onRequest: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)

@@ -24353,8 +24353,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "audoDimiss",
-            "printedName": "audoDimiss",
+            "name": "autoDismiss",
+            "printedName": "autoDismiss",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24364,8 +24364,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV10audoDimissSbvp",
-            "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV10audoDimissSbvp",
+            "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV11autoDismissSbvp",
+            "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV11autoDismissSbvp",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -24388,8 +24388,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV10audoDimissSbvg",
-                "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV10audoDimissSbvg",
+                "usr": "s:12self_ios_sdk20NewLivenessCheckFlowV11autoDismissSbvg",
+                "mangledName": "$s12self_ios_sdk20NewLivenessCheckFlowV11autoDismissSbvg",
                 "moduleName": "self_ios_sdk",
                 "implicit": true,
                 "accessorKind": "get"
@@ -32854,7 +32854,7 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/NewLivenessCheckFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 537,
+      "offset": 538,
       "length": 4,
       "value": "true"
     },

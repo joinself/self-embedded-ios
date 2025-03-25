@@ -9063,6 +9063,170 @@
             "hasStorage": true
           },
           {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentVerification",
+                "printedName": "self_ios_sdk.DocumentVerification",
+                "usr": "c:@M@self_ios_sdk@objc(cs)DocumentVerification"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk20DocumentVerificationC6sharedACvpZ",
+            "mangledName": "$s12self_ios_sdk20DocumentVerificationC6sharedACvpZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentVerification",
+                    "printedName": "self_ios_sdk.DocumentVerification",
+                    "usr": "c:@M@self_ios_sdk@objc(cs)DocumentVerification"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk20DocumentVerificationC6sharedACvgZ",
+                "mangledName": "$s12self_ios_sdk20DocumentVerificationC6sharedACvgZ",
+                "moduleName": "self_ios_sdk",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "passport",
+            "printedName": "passport",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NFCPassportReader.NFCPassportModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCPassportModel",
+                    "printedName": "NFCPassportReader.NFCPassportModel",
+                    "usr": "s:17NFCPassportReader0A5ModelC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk20DocumentVerificationC8passport17NFCPassportReader0G5ModelCSgvp",
+            "mangledName": "$s12self_ios_sdk20DocumentVerificationC8passport17NFCPassportReader0G5ModelCSgvp",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NFCPassportReader.NFCPassportModel?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCPassportModel",
+                        "printedName": "NFCPassportReader.NFCPassportModel",
+                        "usr": "s:17NFCPassportReader0A5ModelC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk20DocumentVerificationC8passport17NFCPassportReader0G5ModelCSgvg",
+                "mangledName": "$s12self_ios_sdk20DocumentVerificationC8passport17NFCPassportReader0G5ModelCSgvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NFCPassportReader.NFCPassportModel?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NFCPassportModel",
+                        "printedName": "NFCPassportReader.NFCPassportModel",
+                        "usr": "s:17NFCPassportReader0A5ModelC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk20DocumentVerificationC8passport17NFCPassportReader0G5ModelCSgvs",
+                "mangledName": "$s12self_ios_sdk20DocumentVerificationC8passport17NFCPassportReader0G5ModelCSgvs",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk20DocumentVerificationC8passport17NFCPassportReader0G5ModelCSgvM",
+                "mangledName": "$s12self_ios_sdk20DocumentVerificationC8passport17NFCPassportReader0G5ModelCSgvM",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "readPassport",
             "printedName": "readPassport(mrzKey:)",
@@ -19572,6 +19736,859 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SelfUI",
+        "printedName": "SelfUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DocumentFlowViewType",
+        "printedName": "DocumentFlowViewType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "selectDocument",
+            "printedName": "selectDocument",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO06selectD0yA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO06selectD0yA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "checkNFC",
+            "printedName": "checkNFC",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO8checkNFCyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO8checkNFCyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "captureDocumentIntroduction",
+            "printedName": "captureDocumentIntroduction",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO07captureD12IntroductionyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO07captureD12IntroductionyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "captureDocumentFrontIntroduction",
+            "printedName": "captureDocumentFrontIntroduction",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO07captureD17FrontIntroductionyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO07captureD17FrontIntroductionyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "captureDocumentBackIntroduction",
+            "printedName": "captureDocumentBackIntroduction",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO07captureD16BackIntroductionyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO07captureD16BackIntroductionyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "takeImageOfPassportIntroduction",
+            "printedName": "takeImageOfPassportIntroduction",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO31takeImageOfPassportIntroductionyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO31takeImageOfPassportIntroductionyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "scanPassportNFCIntroduction",
+            "printedName": "scanPassportNFCIntroduction",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO27scanPassportNFCIntroductionyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO27scanPassportNFCIntroductionyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "scanPassportNFC",
+            "printedName": "scanPassportNFC",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO15scanPassportNFCyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO15scanPassportNFCyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "enterMRZManual",
+            "printedName": "enterMRZManual",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO14enterMRZManualyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO14enterMRZManualyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "verifying",
+            "printedName": "verifying",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO9verifyingyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO9verifyingyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "verified",
+            "printedName": "verified",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO8verifiedyA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO8verifiedyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "readingChipError",
+            "printedName": "readingChipError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO16readingChipErroryA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO16readingChipErroryA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "verifyError",
+            "printedName": "verifyError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.DocumentFlowViewType.Type) -> self_ios_sdk.DocumentFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentFlowViewType",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType",
+                    "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.DocumentFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentFlowViewType",
+                        "printedName": "self_ios_sdk.DocumentFlowViewType",
+                        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO11verifyErroryA2CmF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO11verifyErroryA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentFlowViewType",
+                "printedName": "self_ios_sdk.DocumentFlowViewType",
+                "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentFlowViewType",
+                "printedName": "self_ios_sdk.DocumentFlowViewType",
+                "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO9hashValueSivp",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO9hashValueSivp",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO9hashValueSivg",
+                "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO9hashValueSivg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12self_ios_sdk20DocumentFlowViewTypeO",
+        "mangledName": "$s12self_ios_sdk20DocumentFlowViewTypeO",
+        "moduleName": "self_ios_sdk",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DocumentFlow",
+        "printedName": "DocumentFlow",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(account:devMode:onResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentFlow",
+                "printedName": "self_ios_sdk.DocumentFlow",
+                "usr": "s:12self_ios_sdk12DocumentFlowV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "self_ios_sdk.Account",
+                "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12self_ios_sdk12DocumentFlowV7account7devMode8onResultAcA7AccountC_SbySbcSgtcfc",
+            "mangledName": "$s12self_ios_sdk12DocumentFlowV7account7devMode8onResultAcA7AccountC_SbySbcSgtcfc",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk12DocumentFlowV4bodyQrvp",
+            "mangledName": "$s12self_ios_sdk12DocumentFlowV4bodyQrvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk12DocumentFlowV4bodyQrvg",
+                "mangledName": "$s12self_ios_sdk12DocumentFlowV4bodyQrvg",
+                "moduleName": "self_ios_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12self_ios_sdk12DocumentFlowV",
+        "mangledName": "$s12self_ios_sdk12DocumentFlowV",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -25977,6 +26994,68 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "readPassportChip",
+            "printedName": "readPassportChip(mrzKey:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7SelfSDKC16readPassportChip6mrzKey10completionySS_ys5Error_pSgcSgtFZ",
+            "mangledName": "$s12self_ios_sdk7SelfSDKC16readPassportChip6mrzKey10completionySS_ys5Error_pSgcSgtFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -30977,14 +32056,14 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/DocumentVerification.swift",
       "kind": "BooleanLiteral",
-      "offset": 993,
+      "offset": 1125,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/DocumentVerification.swift",
       "kind": "BooleanLiteral",
-      "offset": 2619,
+      "offset": 2903,
       "length": 5,
       "value": "false"
     },
@@ -31675,6 +32754,83 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 669,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 719,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 836,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 889,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 984,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "Array",
+      "offset": 1041,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1140,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1236,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1482,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1543,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1712,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/Attachment.swift",
       "kind": "StringLiteral",
       "offset": 705,
@@ -31754,14 +32910,14 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12259,
+      "offset": 12264,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 31322,
+      "offset": 31332,
       "length": 5,
       "value": "false"
     },

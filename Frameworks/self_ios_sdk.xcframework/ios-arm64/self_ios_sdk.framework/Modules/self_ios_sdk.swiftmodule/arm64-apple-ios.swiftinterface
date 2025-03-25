@@ -475,6 +475,13 @@ public enum ResponseStatus : Swift.String {
   public func details() -> [self_ios_sdk.Claim]
   @objc deinit
 }
+@_Concurrency.MainActor @preconcurrency public struct DocumentFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, devMode: Swift.Bool = false, onResult: ((Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk12DocumentFlowV4bodyQrvp", 0) __
+}
 public struct ez {
   public static func GetCurrentTimeStamp() -> Swift.String
   public static var appDisplayName: Swift.String? {
@@ -685,4 +692,5 @@ extension self_ios_sdk.Environment : Swift.RawRepresentable {}
 extension self_ios_sdk.ResponseStatus : Swift.Equatable {}
 extension self_ios_sdk.ResponseStatus : Swift.Hashable {}
 extension self_ios_sdk.ResponseStatus : Swift.RawRepresentable {}
+extension self_ios_sdk.DocumentFlow : Swift.Sendable {}
 extension self_ios_sdk.NewLivenessCheckFlow : Swift.Sendable {}

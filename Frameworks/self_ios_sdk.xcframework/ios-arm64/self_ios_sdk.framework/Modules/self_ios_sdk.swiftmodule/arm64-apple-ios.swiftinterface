@@ -308,6 +308,20 @@ public enum ComparisonOperator : Swift.String {
     get
   }
 }
+public enum ContentSummaryType : Swift.String {
+  case CHAT_REFERENCE
+  case CHAT_ATTACHMENT
+  case CREDENTIAL
+  case CHAT_MESSAGE
+  case PRESENTATION
+  case ASSET
+  case SIGNATURE
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum Environment : Swift.String {
   case dev
   case test
@@ -696,6 +710,9 @@ extension self_ios_sdk.LivenessCheckFlow : Swift.Sendable {}
 extension self_ios_sdk.ComparisonOperator : Swift.Equatable {}
 extension self_ios_sdk.ComparisonOperator : Swift.Hashable {}
 extension self_ios_sdk.ComparisonOperator : Swift.RawRepresentable {}
+extension self_ios_sdk.ContentSummaryType : Swift.Equatable {}
+extension self_ios_sdk.ContentSummaryType : Swift.Hashable {}
+extension self_ios_sdk.ContentSummaryType : Swift.RawRepresentable {}
 extension self_ios_sdk.Environment : Swift.Equatable {}
 extension self_ios_sdk.Environment : Swift.Hashable {}
 extension self_ios_sdk.Environment : Swift.RawRepresentable {}

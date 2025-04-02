@@ -10438,6 +10438,197 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Notification",
+        "printedName": "Notification",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toKMP",
+            "printedName": "toKMP()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Notification",
+                "printedName": "self_mobile_kmp.Notification",
+                "usr": "c:objc(cs)Self_mobile_kmpNotification"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk12NotificationC5toKMPSo015Self_mobile_kmpD0CyF",
+            "mangledName": "$s12self_ios_sdk12NotificationC5toKMPSo015Self_mobile_kmpD0CyF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fromKMP",
+            "printedName": "fromKMP(notification:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Notification",
+                "printedName": "self_ios_sdk.Notification",
+                "usr": "s:12self_ios_sdk12NotificationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Notification",
+                "printedName": "self_mobile_kmp.Notification",
+                "usr": "c:objc(cs)Self_mobile_kmpNotification"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk12NotificationC7fromKMP12notificationACSo015Self_mobile_kmpD0C_tFZ",
+            "mangledName": "$s12self_ios_sdk12NotificationC7fromKMP12notificationACSo015Self_mobile_kmpD0C_tFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "id",
+            "printedName": "id()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk12NotificationC2idSSyF",
+            "mangledName": "$s12self_ios_sdk12NotificationC2idSSyF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "type",
+            "printedName": "type()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk12NotificationC4typeSSyF",
+            "mangledName": "$s12self_ios_sdk12NotificationC4typeSSyF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "message",
+            "printedName": "message()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk12NotificationC7messageSSyF",
+            "mangledName": "$s12self_ios_sdk12NotificationC7messageSSyF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fromIdentifier",
+            "printedName": "fromIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk12NotificationC14fromIdentifierSSyF",
+            "mangledName": "$s12self_ios_sdk12NotificationC14fromIdentifierSSyF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12self_ios_sdk12NotificationC",
+        "mangledName": "$s12self_ios_sdk12NotificationC",
+        "moduleName": "self_ios_sdk",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "self_mobile_kmp",
+        "printedName": "self_mobile_kmp",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "KeyValue",
         "printedName": "KeyValue",
         "children": [
@@ -22861,8 +23052,8 @@
           },
           {
             "kind": "Function",
-            "name": "setOnUserInfoRequest",
-            "printedName": "setOnUserInfoRequest(_:)",
+            "name": "setOnInfoRequest",
+            "printedName": "setOnInfoRequest(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22897,8 +23088,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC20setOnUserInfoRequestyyypSgSScF",
-            "mangledName": "$s12self_ios_sdk7AccountC20setOnUserInfoRequestyyypSgSScF",
+            "usr": "s:12self_ios_sdk7AccountC16setOnInfoRequestyyypSgSScF",
+            "mangledName": "$s12self_ios_sdk7AccountC16setOnInfoRequestyyypSgSScF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
@@ -22909,8 +23100,8 @@
           },
           {
             "kind": "Function",
-            "name": "setOnUserInfoResponse",
-            "printedName": "setOnUserInfoResponse(_:)",
+            "name": "setOnInfoResponse",
+            "printedName": "setOnInfoResponse(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22963,8 +23154,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC21setOnUserInfoResponseyyySS_SDySSypGtcF",
-            "mangledName": "$s12self_ios_sdk7AccountC21setOnUserInfoResponseyyySS_SDySSypGtcF",
+            "usr": "s:12self_ios_sdk7AccountC17setOnInfoResponseyyySS_SDySSypGtcF",
+            "mangledName": "$s12self_ios_sdk7AccountC17setOnInfoResponseyyySS_SDySSypGtcF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
@@ -23426,6 +23617,54 @@
           },
           {
             "kind": "Function",
+            "name": "aliasCredential",
+            "printedName": "aliasCredential(identifierAddress:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC15aliasCredential17identifierAddress4info10Foundation4DataVSS_SDyS2SGtF",
+            "mangledName": "$s12self_ios_sdk7AccountC15aliasCredential17identifierAddress4info10Foundation4DataVSS_SDyS2SGtF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "generateAddress",
             "printedName": "generateAddress()",
             "children": [
@@ -23750,6 +23989,96 @@
               "AccessControl"
             ],
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectWith",
+            "printedName": "connectWith(address:info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC11connectWith7address4infoS2S_SDySSypGtYaKF",
+            "mangledName": "$s12self_ios_sdk7AccountC11connectWith7address4infoS2S_SDySSypGtYaKF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decryptNotification",
+            "printedName": "decryptNotification(forAddress:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "self_ios_sdk.Notification?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Notification",
+                    "printedName": "self_ios_sdk.Notification",
+                    "usr": "s:12self_ios_sdk12NotificationC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC19decryptNotification10forAddress7payloadAA0F0CSgSS_SStF",
+            "mangledName": "$s12self_ios_sdk7AccountC19decryptNotification10forAddress7payloadAA0F0CSgSS_SStF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -26599,12 +26928,30 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(log:)",
+            "printedName": "initialize(pushToken:log:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
               },
               {
                 "kind": "TypeNominal",
@@ -26635,8 +26982,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7SelfSDKC10initialize3logyySScSg_tFZ",
-            "mangledName": "$s12self_ios_sdk7SelfSDKC10initialize3logyySScSg_tFZ",
+            "usr": "s:12self_ios_sdk7SelfSDKC10initialize9pushToken3logySSyc_ySScSgtFZ",
+            "mangledName": "$s12self_ios_sdk7SelfSDKC10initialize9pushToken3logySSyc_ySScSgtFZ",
             "moduleName": "self_ios_sdk",
             "static": true,
             "declAttributes": [
@@ -32896,28 +33243,28 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4314,
+      "offset": 4427,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5262,
+      "offset": 5375,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12264,
+      "offset": 12377,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 31332,
+      "offset": 31445,
       "length": 5,
       "value": "false"
     },

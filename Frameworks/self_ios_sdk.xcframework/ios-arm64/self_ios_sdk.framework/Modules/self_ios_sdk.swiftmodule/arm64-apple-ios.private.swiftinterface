@@ -255,6 +255,13 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 extension self_ios_sdk.SelfSDK {
   public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
 }
+@_hasMissingDesignatedInitializers public class Notification {
+  public func id() -> Swift.String
+  public func type() -> Swift.String
+  public func message() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class KeyValue {
   public class Builder {
     public init()
@@ -591,8 +598,8 @@ public struct ez {
     public func build() -> self_ios_sdk.Account
     @objc deinit
   }
-  public func setOnUserInfoRequest(_ onUserInfoRequest: @escaping ((Swift.String) -> Any?))
-  public func setOnUserInfoResponse(_ onUserInfoResponse: @escaping ((Swift.String, [Swift.String : Any]) -> Swift.Void))
+  public func setOnInfoRequest(_ onInfoRequest: @escaping ((Swift.String) -> Any?))
+  public func setOnInfoResponse(_ onInfoResponse: @escaping ((Swift.String, [Swift.String : Any]) -> Swift.Void))
   public func setOnStatusListener(_ onStatus: @escaping ((Swift.UInt64) -> Swift.Void))
   public func setOnRelayConnectListener(_ onRelayConnect: @escaping (() -> Swift.Void))
   public func setOnMessageListener(_ onMessage: ((any self_ios_sdk.Message) -> Swift.Void)?)
@@ -604,6 +611,7 @@ public struct ez {
   public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async -> Swift.Bool
   public func registered() -> Swift.Bool
   public func presentationForAddress(forAddress: Swift.String, credentials: [self_ios_sdk.Credential]) -> Foundation.Data
+  public func aliasCredential(identifierAddress: Swift.String, info: [Swift.String : Swift.String]) -> Foundation.Data
   public func generateAddress() -> Swift.String
   public func send(message: any self_ios_sdk.Message, onAcknowledgement: @escaping (Swift.String, (any Swift.Error)?) -> Swift.Void) async throws
   public func credentials() -> [self_ios_sdk.Credential]
@@ -612,6 +620,8 @@ public struct ez {
   public func qrCode() async throws -> Foundation.Data
   public func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
   public func connectWith(qrCode: Foundation.Data) async throws
+  public func connectWith(address: Swift.String, info: [Swift.String : Any]) async throws -> Swift.String
+  public func decryptNotification(forAddress: Swift.String, payload: Swift.String) -> self_ios_sdk.Notification?
   public func backup() async -> Foundation.URL?
   public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async -> (any Swift.Error)?
   public func store(keyValue: self_ios_sdk.KeyValue)
@@ -644,7 +654,7 @@ public protocol Message {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SelfSDK {
-  public static func initialize(log: ((Swift.String) -> Swift.Void)? = nil)
+  public static func initialize(pushToken: @escaping (() -> Swift.String), log: ((Swift.String) -> Swift.Void)? = nil)
   public static func startPassportVerification(account: self_ios_sdk.Account, currentVC: UIKit.UIViewController? = nil, isDevMode: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   public static func readPassport(currentVC: UIKit.UIViewController, isDevMode: Swift.Bool = false, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   public static func verifyEmail(account: self_ios_sdk.Account, transitionAsModal: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)

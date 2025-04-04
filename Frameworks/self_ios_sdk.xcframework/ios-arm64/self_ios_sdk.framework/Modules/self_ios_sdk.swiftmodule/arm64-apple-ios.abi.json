@@ -26070,6 +26070,635 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SelfUI",
+        "printedName": "SelfUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmailFlowViewType",
+        "printedName": "EmailFlowViewType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "introduction",
+            "printedName": "introduction",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.EmailFlowViewType.Type) -> self_ios_sdk.EmailFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmailFlowViewType",
+                    "printedName": "self_ios_sdk.EmailFlowViewType",
+                    "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.EmailFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmailFlowViewType",
+                        "printedName": "self_ios_sdk.EmailFlowViewType",
+                        "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk17EmailFlowViewTypeO12introductionyA2CmF",
+            "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO12introductionyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "enterEmail",
+            "printedName": "enterEmail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.EmailFlowViewType.Type) -> self_ios_sdk.EmailFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmailFlowViewType",
+                    "printedName": "self_ios_sdk.EmailFlowViewType",
+                    "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.EmailFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmailFlowViewType",
+                        "printedName": "self_ios_sdk.EmailFlowViewType",
+                        "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk17EmailFlowViewTypeO05enterD0yA2CmF",
+            "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO05enterD0yA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "enterCode",
+            "printedName": "enterCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.EmailFlowViewType.Type) -> self_ios_sdk.EmailFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmailFlowViewType",
+                    "printedName": "self_ios_sdk.EmailFlowViewType",
+                    "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.EmailFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmailFlowViewType",
+                        "printedName": "self_ios_sdk.EmailFlowViewType",
+                        "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk17EmailFlowViewTypeO9enterCodeyA2CmF",
+            "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO9enterCodeyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "verifyError",
+            "printedName": "verifyError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.EmailFlowViewType.Type) -> self_ios_sdk.EmailFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmailFlowViewType",
+                    "printedName": "self_ios_sdk.EmailFlowViewType",
+                    "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.EmailFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmailFlowViewType",
+                        "printedName": "self_ios_sdk.EmailFlowViewType",
+                        "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk17EmailFlowViewTypeO11verifyErroryA2CmF",
+            "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO11verifyErroryA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "verified",
+            "printedName": "verified",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(self_ios_sdk.EmailFlowViewType.Type) -> self_ios_sdk.EmailFlowViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmailFlowViewType",
+                    "printedName": "self_ios_sdk.EmailFlowViewType",
+                    "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "self_ios_sdk.EmailFlowViewType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmailFlowViewType",
+                        "printedName": "self_ios_sdk.EmailFlowViewType",
+                        "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12self_ios_sdk17EmailFlowViewTypeO8verifiedyA2CmF",
+            "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO8verifiedyA2CmF",
+            "moduleName": "self_ios_sdk",
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EmailFlowViewType",
+                "printedName": "self_ios_sdk.EmailFlowViewType",
+                "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EmailFlowViewType",
+                "printedName": "self_ios_sdk.EmailFlowViewType",
+                "usr": "s:12self_ios_sdk17EmailFlowViewTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk17EmailFlowViewTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk17EmailFlowViewTypeO9hashValueSivp",
+            "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO9hashValueSivp",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk17EmailFlowViewTypeO9hashValueSivg",
+                "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO9hashValueSivg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk17EmailFlowViewTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12self_ios_sdk17EmailFlowViewTypeO",
+        "mangledName": "$s12self_ios_sdk17EmailFlowViewTypeO",
+        "moduleName": "self_ios_sdk",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmailFlow",
+        "printedName": "EmailFlow",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "viewModel",
+            "printedName": "viewModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmailFlowViewModel",
+                "printedName": "SelfUI.EmailFlowViewModel",
+                "usr": "s:6SelfUI18EmailFlowViewModelC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk9EmailFlowV9viewModel6SelfUI0de4ViewG0Cvp",
+            "mangledName": "$s12self_ios_sdk9EmailFlowV9viewModel6SelfUI0de4ViewG0Cvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmailFlowViewModel",
+                    "printedName": "SelfUI.EmailFlowViewModel",
+                    "usr": "s:6SelfUI18EmailFlowViewModelC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk9EmailFlowV9viewModel6SelfUI0de4ViewG0Cvg",
+                "mangledName": "$s12self_ios_sdk9EmailFlowV9viewModel6SelfUI0de4ViewG0Cvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$viewModel",
+            "printedName": "$viewModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Wrapper",
+                "printedName": "SwiftUI.ObservedObject<SelfUI.EmailFlowViewModel>.Wrapper",
+                "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk9EmailFlowV10$viewModel7SwiftUI14ObservedObjectV7WrapperVy04SelfI00de4ViewG0C_Gvp",
+            "mangledName": "$s12self_ios_sdk9EmailFlowV10$viewModel7SwiftUI14ObservedObjectV7WrapperVy04SelfI00de4ViewG0C_Gvp",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Wrapper",
+                    "printedName": "SwiftUI.ObservedObject<SelfUI.EmailFlowViewModel>.Wrapper",
+                    "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk9EmailFlowV10$viewModel7SwiftUI14ObservedObjectV7WrapperVy04SelfI00de4ViewG0C_Gvg",
+                "mangledName": "$s12self_ios_sdk9EmailFlowV10$viewModel7SwiftUI14ObservedObjectV7WrapperVy04SelfI00de4ViewG0C_Gvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(account:onResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmailFlow",
+                "printedName": "self_ios_sdk.EmailFlow",
+                "usr": "s:12self_ios_sdk9EmailFlowV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "self_ios_sdk.Account",
+                "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12self_ios_sdk9EmailFlowV7account8onResultAcA7AccountC_ySbcSgtcfc",
+            "mangledName": "$s12self_ios_sdk9EmailFlowV7account8onResultAcA7AccountC_ySbcSgtcfc",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk9EmailFlowV4bodyQrvp",
+            "mangledName": "$s12self_ios_sdk9EmailFlowV4bodyQrvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk9EmailFlowV4bodyQrvg",
+                "mangledName": "$s12self_ios_sdk9EmailFlowV4bodyQrvg",
+                "moduleName": "self_ios_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12self_ios_sdk9EmailFlowV",
+        "mangledName": "$s12self_ios_sdk9EmailFlowV",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -32130,6 +32759,132 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "topMostViewController",
+            "printedName": "topMostViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So13UIApplicationC12self_ios_sdkE21topMostViewControllerSo06UIViewH0CSgyF",
+            "mangledName": "$sSo13UIApplicationC12self_ios_sdkE21topMostViewControllerSo06UIViewH0CSgyF",
+            "moduleName": "self_ios_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Logger",
         "printedName": "Logger",
         "children": [
@@ -33323,21 +34078,21 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1627,
+      "offset": 1703,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7665,
+      "offset": 7861,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7685,
+      "offset": 7881,
       "length": 1,
       "value": "2"
     },
@@ -33578,6 +34333,41 @@
       "offset": 352,
       "length": 9,
       "value": "\"selfSdk\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/EmailFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 477,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/EmailFlow.swift",
+      "kind": "StringLiteral",
+      "offset": 535,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/EmailFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 579,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/EmailFlow.swift",
+      "kind": "IntegerLiteral",
+      "offset": 629,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/EmailFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2459,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Liveness\/FaceOrientationDetector.swift",

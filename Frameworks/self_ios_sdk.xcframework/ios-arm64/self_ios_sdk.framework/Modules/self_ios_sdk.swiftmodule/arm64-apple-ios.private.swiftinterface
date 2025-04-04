@@ -662,6 +662,13 @@ public protocol Message {
   func fromIdentifier() -> Swift.String
   func properties() -> [Swift.String : Swift.String]
 }
+@_Concurrency.MainActor @preconcurrency public struct EmailFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onResult: ((Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk9EmailFlowV4bodyQrvp", 0) __
+}
 @_hasMissingDesignatedInitializers public class Signable {
   public func issuer() -> Swift.String
   public func data() -> Foundation.Data
@@ -721,3 +728,4 @@ extension self_ios_sdk.ResponseStatus : Swift.Hashable {}
 extension self_ios_sdk.ResponseStatus : Swift.RawRepresentable {}
 extension self_ios_sdk.DocumentFlow : Swift.Sendable {}
 extension self_ios_sdk.NewLivenessCheckFlow : Swift.Sendable {}
+extension self_ios_sdk.EmailFlow : Swift.Sendable {}

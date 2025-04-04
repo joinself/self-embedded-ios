@@ -663,7 +663,7 @@ public protocol Message {
   func properties() -> [Swift.String : Swift.String]
 }
 @_Concurrency.MainActor @preconcurrency public struct EmailFlow : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onResult: ((Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, autoDismiss: Swift.Bool = true, onResult: ((Swift.Bool) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }

@@ -26523,9 +26523,54 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "autoDismiss",
+            "printedName": "autoDismiss",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12self_ios_sdk9EmailFlowV11autoDismissSbvp",
+            "mangledName": "$s12self_ios_sdk9EmailFlowV11autoDismissSbvp",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12self_ios_sdk9EmailFlowV11autoDismissSbvg",
+                "mangledName": "$s12self_ios_sdk9EmailFlowV11autoDismissSbvg",
+                "moduleName": "self_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(account:onResult:)",
+            "printedName": "init(account:autoDismiss:onResult:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -26538,6 +26583,13 @@
                 "name": "Account",
                 "printedName": "self_ios_sdk.Account",
                 "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -26568,8 +26620,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk9EmailFlowV7account8onResultAcA7AccountC_ySbcSgtcfc",
-            "mangledName": "$s12self_ios_sdk9EmailFlowV7account8onResultAcA7AccountC_ySbcSgtcfc",
+            "usr": "s:12self_ios_sdk9EmailFlowV7account11autoDismiss8onResultAcA7AccountC_SbySbcSgtcfc",
+            "mangledName": "$s12self_ios_sdk9EmailFlowV7account11autoDismiss8onResultAcA7AccountC_SbySbcSgtcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -34365,7 +34417,14 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/EmailFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 2459,
+      "offset": 837,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/EmailFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2500,
       "length": 5,
       "value": "false"
     },

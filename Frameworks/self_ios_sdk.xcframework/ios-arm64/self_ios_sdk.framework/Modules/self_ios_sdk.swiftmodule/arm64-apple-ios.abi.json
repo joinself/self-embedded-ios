@@ -23238,7 +23238,8 @@
                 "moduleName": "self_ios_sdk",
                 "isOpen": true,
                 "declAttributes": [
-                  "AccessControl"
+                  "AccessControl",
+                  "RawDocComment"
                 ],
                 "funcSelfKind": "NonMutating"
               },

@@ -24334,11 +24334,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKF",
-            "mangledName": "$s12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKF",
+            "usr": "s:12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKFZ",
+            "mangledName": "$s12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKFZ",
             "moduleName": "self_ios_sdk",
-            "isOpen": true,
+            "static": true,
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],

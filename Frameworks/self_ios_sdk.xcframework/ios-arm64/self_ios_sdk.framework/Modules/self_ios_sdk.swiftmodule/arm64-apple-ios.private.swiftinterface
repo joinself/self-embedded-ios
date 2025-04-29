@@ -633,7 +633,7 @@ public struct ez {
   public func credentialsByType() -> [self_ios_sdk.CredentialsByType]
   public func lookUpCredentials(claims: [self_ios_sdk.Claim]) -> [self_ios_sdk.Credential]
   public func qrCode() async throws -> Foundation.Data
-  public func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
+  public static func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
   public func connectWith(qrCode: Foundation.Data) async throws
   public func connectWith(address: Swift.String, info: [Swift.String : Any]) async throws -> Swift.String
   public func decryptNotification(forAddress: Swift.String, payload: Swift.String) -> self_ios_sdk.Notification?

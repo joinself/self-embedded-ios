@@ -1,0 +1,1512 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name SelfUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AVFoundation
+import AVKit
+import Combine
+import CoreText
+import DeveloperToolsSupport
+import Foundation
+import MessageUI
+import Network
+import PDFKit
+@_exported import SelfUI
+import Swift
+import SwiftUI
+import UIKit
+import UserNotifications
+import Vision
+import WebKit
+import _AVKit_SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class EmailFlowViewModel : Combine.ObservableObject {
+  @Combine.Published @_projectedValueProperty($isVerified) public var isVerified: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isVerified: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($emailAddress) public var emailAddress: Swift.String {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $emailAddress: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(isVerified: Swift.Bool)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct EmailVerificationFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(viewModel: SelfUI.EmailFlowViewModel, onEmail: ((Swift.String) -> Swift.Void)? = nil, onEnteredCode: ((Swift.String, SelfUI.EmailVerificationFlow) -> Swift.Void)? = nil, onResendCode: ((SelfUI.EmailVerificationFlow) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func showCodeView()
+  @_Concurrency.MainActor @preconcurrency public func showVerificationFailed()
+  @_Concurrency.MainActor @preconcurrency public func showRemainingAttemp(remaingNumber: Swift.Int)
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21EmailVerificationFlowV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct BannerView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI10BannerViewV4bodyQrvp", 0) __
+}
+
+public struct MessageType {
+  public static let SELF_TEXT: Swift.String
+  public static let SELF_CALL: Swift.String
+  public static let SELF_IMAGE: Swift.String
+  public static let SELF_VIDEO: Swift.String
+  public static let SELF_AUDIO: Swift.String
+  public static let SELF_LINK: Swift.String
+  public static let SELF_FILE: Swift.String
+  public static let SELF_CONNECTION: Swift.String
+  public static let GROUP_JOIN: Swift.String
+  public static let GROUP_LEAVE: Swift.String
+  public static let SELF_CREDENTIAL_REQUEST: Swift.String
+  public static let SELF_CREDENTIAL: Swift.String
+  public static let SELF_DOCUMENT_SIGN: Swift.String
+  public static let SELF_ACKNOWLEDGE: Swift.String
+  public static let SELF_APPROVAL: Swift.String
+  public static let SELF_NOTIFICATION: Swift.String
+  public static let SELF_ACCOUNT_DELETION: Swift.String
+  public static let SELF_CONNECTION_VERIFICATION: Swift.String
+  public static let SELF_CONNECTION_UNVERIFIED: Swift.String
+  public static let SELF_FORM: Swift.String
+  public static let SELF_FORM_RESPONSE: Swift.String
+  public static let SELF_BUTTONS: Swift.String
+  public static let SELF_SIGNING_REQUEST: Swift.String
+}
+public enum MessageFrom : Swift.String, Swift.CaseIterable {
+  case sender, receiver, system
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SelfUI.MessageFrom]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SelfUI.MessageFrom] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum MessageStatus : Swift.String, Swift.CaseIterable {
+  case none
+  case pending
+  case sent
+  case delivered
+  case read
+  case accepted
+  case rejected
+  case verified
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SelfUI.MessageStatus]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SelfUI.MessageStatus] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class MessageDTO : Foundation.ObservableObject, Swift.Identifiable, Swift.Equatable {
+  final public let id: Swift.String
+  final public let messageId: Swift.String
+  final public let text: Swift.String
+  public var image: UIKit.UIImage?
+  public var fileURLs: [Foundation.URL]
+  final public let mimeType: Swift.String
+  @Combine.Published @_projectedValueProperty($receiptStatus) public var receiptStatus: SelfUI.MessageStatus {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $receiptStatus: Combine.Published<SelfUI.MessageStatus>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($status) public var status: SelfUI.MessageStatus {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $status: Combine.Published<SelfUI.MessageStatus>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  final public let attachments: [SelfUI.AttachmentDTO]
+  public var reference: SelfUI.MessageDTO?
+  public static func == (lhs: SelfUI.MessageDTO, rhs: SelfUI.MessageDTO) -> Swift.Bool
+  public init(id: Swift.String, messageId: Swift.String = "", text: Swift.String, image: UIKit.UIImage? = nil, fileURLs: [Foundation.URL] = [], attachments: [SelfUI.AttachmentDTO] = [], credential: SelfUI.CredentialDTO? = nil, mimeType: Swift.String = MessageType.SELF_TEXT, fromType: SelfUI.MessageFrom = .sender, receiptStatus: SelfUI.MessageStatus = .pending, status: SelfUI.MessageStatus = .pending, timestamp: Swift.String = "", reference: SelfUI.MessageDTO? = nil)
+  public typealias ID = Swift.String
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum ConnectionType : Swift.String, Swift.CaseIterable {
+  case selfApp
+  case organizationApp
+  case individual
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SelfUI.ConnectionType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SelfUI.ConnectionType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class ChatHistory : Foundation.ObservableObject, Swift.Identifiable, Swift.Equatable {
+  final public let id: Swift.String
+  @Combine.Published @_projectedValueProperty($badge) public var badge: Swift.String {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $badge: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(id: Swift.String, title: Swift.String, subtitle: Swift.String, timestamp: Swift.String = "", badge: Swift.String, icon: SwiftUICore.Image? = nil, imageURL: Foundation.URL? = nil, appName: Swift.String? = nil, connectionType: SelfUI.ConnectionType = .selfApp)
+  public static func == (lhs: SelfUI.ChatHistory, rhs: SelfUI.ChatHistory) -> Swift.Bool
+  public typealias ID = Swift.String
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+
+public struct CredentialDTO : Swift.Hashable, Swift.Equatable, Swift.Identifiable {
+  public var id: Swift.String
+  public let subject: Swift.String
+  public let value: Swift.String
+  public init(subject: Swift.String, value: Swift.String, signer: Swift.String)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SelfUI.CredentialDTO, b: SelfUI.CredentialDTO) -> Swift.Bool
+  public typealias ID = Swift.String
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct PassportStartScanView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onGettingStarted: @escaping () -> Swift.Void, onNavigationBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21PassportStartScanViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BaseView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(enableBackNavigation: Swift.Bool = true, backgroundColor: SwiftUICore.Color = .white, brandTextColor: SwiftUICore.Color = .colorTextPrimary, onBack: (() -> Swift.Void)? = nil, @SwiftUICore.ViewBuilder content: () -> Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI8BaseViewV4bodyQrvp", 0) __<Content>
+}
+
+@_Concurrency.MainActor @preconcurrency public struct NavigationTitleView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: SwiftUICore.Binding<Swift.String> = .constant(""), switchable: Swift.Bool = true, isOn: SwiftUICore.Binding<Swift.Bool> = .constant(false), font: SwiftUICore.Binding<SwiftUICore.Font> = .constant(.navigationTitle), imageURL: Foundation.URL? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI19NavigationTitleViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BackupInfoView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isNetworkConnected: SwiftUICore.Binding<Swift.Bool> = .constant(true), onGettingStarted: @escaping () -> Swift.Void, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14BackupInfoViewV4bodyQrvp", 0) __
+}
+
+public class LivenessOverlayViewModel : Foundation.ObservableObject {
+  public init(text: Swift.String, tipImageName: Swift.String, isHighlighted: Swift.Bool)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct DocumentNFCCheckView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(documentType: SelfUI.DocumentType = .passport, onOK: (() -> Swift.Void)? = nil, onCancel: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var onSelectNegative: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI20DocumentNFCCheckViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct RestoreIntroView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onNext: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI16RestoreIntroViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CreatingAccountView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onNext: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI19CreatingAccountViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct NavBackButton : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isWhiteBackground: Swift.Bool = false, onClick: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI13NavBackButtonV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct AppUpdateView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onAccept: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI13AppUpdateViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct MessageListCell : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(chatHistory: SelfUI.ChatHistory, badge: SwiftUICore.Binding<Swift.String> = .constant(""))
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI15MessageListCellV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct OnboardingFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onFinish: ((Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14OnboardingFlowV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct SVGViewer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(url: SwiftUICore.Binding<Foundation.URL?>)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI9SVGViewerV4bodyQrvp", 0) __
+}
+
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct CaptureDocumentView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var onResult: ((SelfUI.MRZInfo?) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onCaptureImage: ((UIKit.UIImage) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onNavigateBack: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onSelectNegative: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(onResult: ((SelfUI.MRZInfo?) -> Swift.Void)? = nil, onCaptureImage: ((UIKit.UIImage) -> Swift.Void)? = nil, captureMode: SelfUI.CaptureMode = CaptureMode.detectPassportMRZ)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI19CaptureDocumentViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PassportFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI12PassportFlowV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct ReadingPassportChipInstructionView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onGettingStarted: @escaping () -> Swift.Void, onNavigationBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI34ReadingPassportChipInstructionViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct DataAttachmentCell : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(message: SelfUI.MessageDTO)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18DataAttachmentCellV4bodyQrvp", 0) __
+}
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct SelectDocumentView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var onSelect: ((_ documentType: SelfUI.DocumentType) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(onSelect: ((_ documentType: SelfUI.DocumentType) -> Swift.Void)? = nil, onResult: ((UIKit.UIImage, UIKit.UIImage) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18SelectDocumentViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PassportIntroductionView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onGettingStarted: @escaping () -> Swift.Void, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var onSelectNegative: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI24PassportIntroductionViewV4bodyQrvp", 0) __
+}
+
+@_hasMissingDesignatedInitializers public class FontLoader {
+  public static func loadFont(fontResourceName: Swift.String)
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct LoadingView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI11LoadingViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct ItemView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public let title: Swift.String
+  @_Concurrency.MainActor @preconcurrency public let iconName: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String, iconName: Swift.String? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI8ItemViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BadgeView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(badge: SwiftUICore.Binding<Swift.String> = .constant(""))
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI9BadgeViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct ThankYouView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(buttonColor: SwiftUICore.Color = .defaultPink, onGetStarted: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI12ThankYouViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CreateAccountNameView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onEnteredName: ((Swift.String) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21CreateAccountNameViewV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct OverlayLoadingView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18OverlayLoadingViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PinCodeView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(pinLength: Swift.Int = 6, pinCode: SwiftUICore.Binding<[Swift.String]> = .constant(Array(repeating: "", count: 6)), onEnteredCode: ((_ code: Swift.String) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI11PinCodeViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CustomDisclosureGroupStyle : SwiftUI.DisclosureGroupStyle {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeBody(configuration: SelfUI.CustomDisclosureGroupStyle.Configuration) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI26CustomDisclosureGroupStyleV8makeBody13configurationQr05SwiftB00deF13ConfigurationV_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct DisclosureGroupItemView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(items: [SelfUI.DocumentItem])
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI23DisclosureGroupItemViewV4bodyQrvp", 0) __
+}
+
+public struct AttachmentDTO : Swift.Equatable {
+  public let name: Swift.String
+  public let mime: Swift.String
+  public let localPath: Swift.String
+  public let size: Swift.Int64
+  public let formattedSize: Swift.String
+  public let isPlayable: Swift.Bool
+  public init(name: Swift.String, mime: Swift.String, localPath: Swift.String, size: Swift.Int64, formattedSize: Swift.String = "", isPlayable: Swift.Bool = false)
+  public static func == (a: SelfUI.AttachmentDTO, b: SelfUI.AttachmentDTO) -> Swift.Bool
+}
+@_Concurrency.MainActor @preconcurrency public struct UserDetailView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isEditing: Swift.Bool = false, uiImage: SwiftUICore.Binding<UIKit.UIImage?> = .constant(nil), name: SwiftUICore.Binding<Swift.String> = .constant("Tan Longname"), details: Swift.String = "Description", onFinish: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14UserDetailViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct ButtonView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String, backgroundColor: SwiftUICore.Color = .defaultGreen, buttonTitleColor: SwiftUICore.Color = .white, isActive: SwiftUICore.Binding<Swift.Bool> = .constant(true), onClicked: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI10ButtonViewV4bodyQrvp", 0) __
+}
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct NewLivenessCameraView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(viewModel: SelfUI.LivenessCheckViewModel, onBack: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func onHighlight(isPassed: Swift.Bool)
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21NewLivenessCameraViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct LivenessVerificationFailedView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(remainingRetryNumber: Swift.Int = 0, onGettingStarted: @escaping () -> Swift.Void, onNavigationBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI30LivenessVerificationFailedViewV4bodyQrvp", 0) __
+}
+
+public struct ValidatorHelper {
+  public static func validateName(_ name: Swift.String) -> Swift.Bool
+}
+@_Concurrency.MainActor @preconcurrency public struct QRScanFailView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onRetry: (() -> Swift.Void)? = nil, onExit: (() -> ())? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14QRScanFailViewV4bodyQrvp", 0) __
+}
+
+public enum CaptureMode : Swift.Int, Swift.CaseIterable {
+  case undefined
+  case detectPassportMRZ
+  case detectIDCardMRZ
+  case detectQRCode
+  case captureFrontPage
+  case captureBackPage
+  case captureLiveImage
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [SelfUI.CaptureMode]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [SelfUI.CaptureMode] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CameraManager : ObjectiveC.NSObject, Combine.ObservableObject {
+  public var capturePublisher: Combine.PassthroughSubject<CoreMedia.CMSampleBuffer?, Swift.Never>
+  public init(cameraPosition: AVFoundation.AVCaptureDevice.Position = .back, captureMode: SelfUI.CaptureMode = .detectPassportMRZ)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension SelfUI.CameraManager : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PageContentView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String, description: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI15PageContentViewV4bodyQrvp", 0) __
+}
+
+extension SwiftUICore.Font {
+  public static let body1: SwiftUICore.Font
+  public static let navigationTitle: SwiftUICore.Font
+}
+extension SwiftUICore.Color {
+  public static let colorPrimary: SwiftUICore.Color
+  public static let colorSecondary: SwiftUICore.Color
+  public static let colorTertiary: SwiftUICore.Color
+  public static let colorQuaternary: SwiftUICore.Color
+  public static let colorQuinary: SwiftUICore.Color
+  public static let backgroundPrimary: SwiftUICore.Color
+  public static let backgroundSecondary: SwiftUICore.Color
+  public static let colorTextPrimary: SwiftUICore.Color
+  public static let colorTextSecondary: SwiftUICore.Color
+  public static let colorTextTertiary: SwiftUICore.Color
+  public static let greyScaleDark: SwiftUICore.Color
+  public static let greyScaleMid: SwiftUICore.Color
+  public static let greyScaleLight: SwiftUICore.Color
+  public static let colorError: SwiftUICore.Color
+  public static let colorSuccess: SwiftUICore.Color
+  public static let colorInfo: SwiftUICore.Color
+  public static let colorWarning: SwiftUICore.Color
+  public static let defaultGreen: SwiftUICore.Color
+  public static let defaultPink: SwiftUICore.Color
+  public static let textPrimary: SwiftUICore.Color
+}
+@_Concurrency.MainActor @preconcurrency public struct ImagePreviewView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(uiImage: SwiftUICore.Binding<UIKit.UIImage?> = .constant(nil))
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI16ImagePreviewViewV4bodyQrvp", 0) __
+}
+
+
+
+
+
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct EnterEmailCodeView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(showAlert: SwiftUICore.Binding<Swift.Bool>, onCode: ((_ code: Swift.String) -> Swift.Void)? = nil, onResendCode: (() -> Swift.Void)? = nil, onCancel: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18EnterEmailCodeViewV4bodyQrvp", 0) __
+}
+
+public struct MRZInfo {
+  public let documentNumber: Swift.String
+  public let dateOfBirth: Swift.String
+  public let dateOfExpiry: Swift.String
+  public func isvalidMZR() -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class PassportUtils {
+  public static func getMRZKey(passportNumber: Swift.String, dateOfBirth: Swift.String, dateOfExpiry: Swift.String) -> Swift.String
+  @objc deinit
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PassportCheckChipView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onGettingStarted: @escaping () -> Swift.Void, onNavigationBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var onSelectNegative: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21PassportCheckChipViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PDFViewer : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL?)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI9PDFViewerV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct VerifyPhoneFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(phoneNumber: Swift.String, textMessage: Swift.String, onFinish: ((Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI15VerifyPhoneFlowV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PassportMRZView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var onResult: ((SelfUI.MRZInfo?) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onNavigateBack: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onSelectNegative: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(onEnterDataManually: (() -> Swift.Void)? = nil, onBack: (() -> Swift.Void)? = nil, onResult: ((SelfUI.MRZInfo?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI15PassportMRZViewV4bodyQrvp", 0) __
+}
+
+public enum Challenge : Swift.String {
+  case None, Done, Smile, Blink, TurnLeft, TurnRight, LookUp, LookDown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct LivenessView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var onNavigateBack: () -> Swift.Void
+  @_Concurrency.MainActor @preconcurrency public var onAppeared: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(onAppeared: (() -> Swift.Void)? = nil, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func onChallengeChanged(challenge: Swift.String, isPassed: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func onHighlight(isPassed: Swift.Bool)
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI12LivenessViewV4bodyQrvp", 0) __
+}
+
+
+
+@_hasMissingDesignatedInitializers public class SelfUISdk : Foundation.ObservableObject {
+  public static let shared: SelfUI.SelfUISdk
+  public func initialize(customization: Swift.Bool = false)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct VideoPreview : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI12VideoPreviewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CaptureImageView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onCapture: ((UIKit.UIImage, Swift.String?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI16CaptureImageViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct DocumentVerifiedView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onBack: (() -> Swift.Void)? = nil, onNext: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI20DocumentVerifiedViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BrandView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isDarked: Swift.Bool = true, textColor: SwiftUICore.Color = Color.textPrimary)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI9BrandViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CaptureDocumentIntroductionView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(documentType: SelfUI.DocumentType = .passport, onGettingStarted: @escaping () -> Swift.Void, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var onSelectNegative: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI31CaptureDocumentIntroductionViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BackupDoneView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onGettingStarted: @escaping () -> Swift.Void, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var onSelectNegative: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14BackupDoneViewV4bodyQrvp", 0) __
+}
+
+public struct DocumentItem : Swift.Hashable, Swift.Identifiable {
+  public var title: Swift.String
+  public var label: Swift.String
+  public var iconName: Swift.String?
+  public let isParent: Swift.Bool
+  public var children: [SelfUI.DocumentItem]?
+  public let id: Foundation.UUID
+  public init(title: Swift.String, isParent: Swift.Bool, iconName: Swift.String? = nil, label: Swift.String = "", children: [SelfUI.DocumentItem]? = nil)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SelfUI.DocumentItem, b: SelfUI.DocumentItem) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct ParentChildView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(items: [SelfUI.DocumentItem])
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI15ParentChildViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BackingupView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onGettingStarted: @escaping () -> Swift.Void, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var onSelectNegative: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI13BackingupViewV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct AvatarView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(icon: SwiftUICore.Binding<SwiftUICore.Image?> = .constant(nil), imageData: Foundation.Data? = nil, imageName: Swift.String = "", displayName: Swift.String? = nil, imageURL: Foundation.URL? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI10AvatarViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct LivenessCheckFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(viewModel: SelfUI.LivenessCheckViewModel, showLivenessCheckIntroduction: Swift.Bool = true, onRetry: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17LivenessCheckFlowV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct LivenessIntroductionView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String = "title_liveness_check".localized, subtitle: Swift.String = "msg_liveness_check".localized, activeStep: Swift.Int = 1, onGettingStarted: @escaping () -> Swift.Void, onNavigationBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI24LivenessIntroductionViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct DocumentVerifyingView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onBack: (() -> Swift.Void)? = nil, onNext: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21DocumentVerifyingViewV4bodyQrvp", 0) __
+}
+
+public enum DocumentType : Swift.CaseIterable {
+  case undefined
+  case passport
+  case identityCard
+  case drivingLicense
+  public static func == (a: SelfUI.DocumentType, b: SelfUI.DocumentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [SelfUI.DocumentType]
+  nonisolated public static var allCases: [SelfUI.DocumentType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+
+@_Concurrency.MainActor @preconcurrency public struct OutlinedButton : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String, outlineColor: SwiftUICore.Color = .defaultGreen, icon: SwiftUICore.Image? = nil, onClicked: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14OutlinedButtonV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct ButtonBack : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isWhiteBackground: Swift.Bool = false, onClick: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI10ButtonBackV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct RestoringBackupView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onNext: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI19RestoringBackupViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct EnterEmailView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onFinish: ((_ email: Swift.String) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14EnterEmailViewV4bodyQrvp", 0) __
+}
+
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct LivenessIntroView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String = "title_liveness_check".localized, subtitle: Swift.String = "msg_liveness_check".localized, activeStep: Swift.Int = 1, onGettingStarted: @escaping () -> Swift.Void, onNavigationBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17LivenessIntroViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct RestoringBackupFinishView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onNext: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI25RestoringBackupFinishViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct DataCredentialCell : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(message: SelfUI.MessageDTO)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18DataCredentialCellV4bodyQrvp", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct LivenessCameraView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var onNavigateBack: () -> Swift.Void
+  @_Concurrency.MainActor @preconcurrency public var onAppeared: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(faceChallenge: SwiftUICore.Binding<Swift.String> = .constant(""), isPassed: SwiftUICore.Binding<Swift.Bool> = .constant(false), onAppeared: (() -> Swift.Void)? = nil, onCapture: ((CoreMedia.CMSampleBuffer) -> Swift.Void)? = nil, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func onChallengeChanged(challenge: Swift.String, isPassed: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func onHighlight(isPassed: Swift.Bool)
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18LivenessCameraViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CustomDisclosureGroup : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String, imageName: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21CustomDisclosureGroupV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CreateAccountFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onEnteredName: ((Swift.String) -> Swift.Void)? = nil, onFinish: ((Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17CreateAccountFlowV4bodyQrvp", 0) __
+}
+
+
+public class LivenessCheckViewModel : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($title) public var title: Swift.String {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $title: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($subtitle) public var subtitle: Swift.String {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $subtitle: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isHighlighted) public var isHighlighted: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isHighlighted: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($attemptNumber) public var attemptNumber: Swift.Int {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $attemptNumber: Combine.Published<Swift.Int>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($showFailedView) public var showFailedView: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $showFailedView: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($showLivenessCamera) public var showLivenessCamera: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $showLivenessCamera: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($showVerifyingView) public var showVerifyingView: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $showVerifyingView: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: SelfUI.Challenge {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<SelfUI.Challenge>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($cameraManager) public var cameraManager: SelfUI.CameraManager {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $cameraManager: Combine.Published<SelfUI.CameraManager>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(text: Swift.String, tipImageName: Swift.String, isHighlighted: Swift.Bool, attemptNumber: Swift.Int = -1, title: Swift.String = "title_liveness_capture".localized, subtitle: Swift.String = "msg_liveness_check_capture_onboarding".localized)
+  public func update()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct BottomTab : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String = "Title", iconName: Swift.String = "ic_data", isSelected: SwiftUICore.Binding<Swift.Bool>, bundle: Foundation.Bundle? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI9BottomTabV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CustomTabItem : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(imageName: Swift.String, title: Swift.String, selectedTab: SwiftUICore.Binding<Swift.Int>, tag: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI13CustomTabItemV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct VerifyDocumentFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onResult: ((UIKit.UIImage, UIKit.UIImage) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18VerifyDocumentFlowV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CustomToggleStyle : SwiftUI.ToggleStyle {
+  @_Concurrency.MainActor @preconcurrency public init(onColor: SwiftUICore.Color, offColor: SwiftUICore.Color, thumbColor: SwiftUICore.Color)
+  @_Concurrency.MainActor @preconcurrency public func makeBody(configuration: SelfUI.CustomToggleStyle.Configuration) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17CustomToggleStyleV8makeBody13configurationQr05SwiftB00dE13ConfigurationV_tF", 0) __
+}
+
+
+@_Concurrency.MainActor @preconcurrency public struct LivenessFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI12LivenessFlowV4bodyQrvp", 0) __
+}
+
+
+extension Swift.String {
+  public var localized: Swift.String {
+    get
+  }
+}
+
+public class RestoreFlowViewModel : Combine.ObservableObject {
+  @Combine.Published @_projectedValueProperty($isRestored) public var isRestored: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isRestored: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isRestoring) public var isRestoring: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isRestoring: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($destination) public var destination: [SelfUI.RestoreDestinations] {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $destination: Combine.Published<[SelfUI.RestoreDestinations]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isNetworkConnected) public var isNetworkConnected: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isNetworkConnected: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum RestoreDestinations : Swift.String, Swift.CaseIterable, Swift.Hashable {
+  case Info
+  case LivenessCaptureIntroduction
+  case Restoring
+  case Done
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SelfUI.RestoreDestinations]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SelfUI.RestoreDestinations] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct RestoreFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(viewModel: SelfUI.RestoreFlowViewModel = RestoreFlowViewModel(), isNetworkConnected: SwiftUICore.Binding<Swift.Bool> = .constant(true), onNext: (() -> Swift.Void)? = nil, onDone: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI11RestoreFlowV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct OutlineTextField : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(label: Swift.String = "Label", imageName: Swift.String? = nil, text: SwiftUICore.Binding<Swift.String>)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI16OutlineTextFieldV4bodyQrvp", 0) __
+}
+
+@_hasMissingDesignatedInitializers public class ProgressStepViewModel : Foundation.ObservableObject {
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct QRReaderView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isCodeValid: SwiftUICore.Binding<Swift.Bool> = .constant(false), onCode: ((Swift.String?) -> Swift.Void)? = nil, onCodeData: ((Foundation.Data) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI12QRReaderViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BaseAvatarView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(@SwiftUICore.ViewBuilder content: () -> Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14BaseAvatarViewV4bodyQrvp", 0) __<Content>
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CaptureDocumentIntructionView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String, details: Swift.String, onGettingStarted: @escaping () -> Swift.Void, onNavigationBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI29CaptureDocumentIntructionViewV4bodyQrvp", 0) __
+}
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct SigningRequestCell : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(messageDTO: SelfUI.MessageDTO, actionAccept: (() -> Swift.Void)? = nil, actionReject: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18SigningRequestCellV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct CustomAlertView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String, message: Swift.String, onOK: (() -> Swift.Void)? = nil, onCancel: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI15CustomAlertViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct DocumentSorryView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onButtonClicked: @escaping () -> Swift.Void, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17DocumentSorryViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct WelcomeView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(buttonTitle: Swift.String = "button_signup_now".localized, buttonColor: SwiftUICore.Color = .defaultPink, onGetStarted: (() -> Swift.Void)? = nil, onRecover: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI11WelcomeViewV4bodyQrvp", 0) __
+}
+
+public class ChatObservableObject : Combine.ObservableObject {
+  public var newMessage: Combine.PassthroughSubject<SelfUI.MessageDTO, Swift.Never>
+  public init(messages: [SelfUI.MessageDTO])
+  public func updateMessages(newMessages: [SelfUI.MessageDTO])
+  public func updateMessageAt(message: SelfUI.MessageDTO, at: Swift.Int)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct ChatView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(conversationName: SwiftUICore.Binding<Swift.String>, imageURL: Foundation.URL? = nil, chatObservableObject: SelfUI.ChatObservableObject, actionAccept: ((SelfUI.MessageDTO) -> Swift.Void)? = nil, actionReject: ((SelfUI.MessageDTO) -> Swift.Void)? = nil, actionRead: ((SelfUI.MessageDTO) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI8ChatViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct Heading1TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Heading1TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17Heading1TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Heading2TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Heading2TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17Heading2TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Heading3TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary, lineLimit: Swift.Int? = nil, truncationMode: SwiftUICore.Text.TruncationMode = .tail, scale: CoreFoundation.CGFloat = 0.6)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Heading3TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17Heading3TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Heading4TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary, lineLimit: Swift.Int? = nil, truncationMode: SwiftUICore.Text.TruncationMode = .tail, scale: CoreFoundation.CGFloat = 0.6)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Heading4TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17Heading4TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Heading5TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Heading5TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17Heading5TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Heading6TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Heading6TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17Heading6TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Subtitle1TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Subtitle1TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18Subtitle1TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Subtitle2TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Subtitle2TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18Subtitle2TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct ButtonTextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.ButtonTextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI15ButtonTextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Body1TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary, font: SwiftUICore.Font = .body1)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Body1TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14Body1TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Body2TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Body2TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14Body2TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CaptionTextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.CaptionTextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI16CaptionTextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Hyperlink1TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Hyperlink1TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI19Hyperlink1TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct Hyperlink2TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.Hyperlink2TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI19Hyperlink2TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CaptionLink3TextStyle : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(color: SwiftUICore.Color = .textPrimary)
+  @_Concurrency.MainActor @preconcurrency public func body(content: SelfUI.CaptionLink3TextStyle.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21CaptionLink3TextStyleV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct RestoringErrorView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onNext: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI18RestoringErrorViewV4bodyQrvp", 0) __
+}
+
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct MessagingView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI13MessagingViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PassportReadingChipView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onViewAppeared: ((SelfUI.PassportReadingChipView) -> Swift.Void)? = nil, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var onCancel: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var onRetry: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func displayAlert(showingAlert: Swift.Bool)
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI23PassportReadingChipViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BackupFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(backupFinish: SwiftUICore.Binding<Swift.Bool> = .constant(false), isNetworkConnected: SwiftUICore.Binding<Swift.Bool> = .constant(true), onBackingup: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI10BackupFlowV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct EmailVerificationFailedView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI27EmailVerificationFailedViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct BaseNavigationBarView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: SwiftUICore.Binding<Swift.String>, onNavigateBack: (() -> ())? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI21BaseNavigationBarViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct PassportMRZFieldsManuallyView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(documentNumber: Swift.String = "", dob: Swift.String = "", doe: Swift.String = "", onResult: ((_ passportNumber: Swift.String, _ dob: Swift.String, _ doe: Swift.String) -> Swift.Void)? = nil, onNavigateBack: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI29PassportMRZFieldsManuallyViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct DevOnboardingFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(onStart: (() -> Swift.Void)? = nil, onEnterName: ((Swift.String) -> Swift.Void)? = nil, onFinish: (() -> Swift.Void)? = nil, onRecover: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI17DevOnboardingFlowV4bodyQrvp", 0) __
+}
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct ParentItemView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String, imageName: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s6SelfUI14ParentItemViewV4bodyQrvp", 0) __
+}
+
+@_hasMissingDesignatedInitializers public class Utils {
+  public static func vibrate()
+  public static func playCaptureSound()
+  public static func getDocumentName(type: SelfUI.DocumentType) -> Swift.String
+  @objc deinit
+}
+extension SelfUI.EmailVerificationFlow : Swift.Sendable {}
+extension SelfUI.BannerView : Swift.Sendable {}
+extension SelfUI.MessageFrom : Swift.Equatable {}
+extension SelfUI.MessageFrom : Swift.Hashable {}
+extension SelfUI.MessageFrom : Swift.RawRepresentable {}
+extension SelfUI.MessageStatus : Swift.Equatable {}
+extension SelfUI.MessageStatus : Swift.Hashable {}
+extension SelfUI.MessageStatus : Swift.RawRepresentable {}
+extension SelfUI.ConnectionType : Swift.Equatable {}
+extension SelfUI.ConnectionType : Swift.Hashable {}
+extension SelfUI.ConnectionType : Swift.RawRepresentable {}
+extension SelfUI.PassportStartScanView : Swift.Sendable {}
+extension SelfUI.BaseView : Swift.Sendable {}
+extension SelfUI.NavigationTitleView : Swift.Sendable {}
+extension SelfUI.BackupInfoView : Swift.Sendable {}
+extension SelfUI.DocumentNFCCheckView : Swift.Sendable {}
+extension SelfUI.RestoreIntroView : Swift.Sendable {}
+extension SelfUI.CreatingAccountView : Swift.Sendable {}
+extension SelfUI.NavBackButton : Swift.Sendable {}
+extension SelfUI.AppUpdateView : Swift.Sendable {}
+extension SelfUI.MessageListCell : Swift.Sendable {}
+extension SelfUI.OnboardingFlow : Swift.Sendable {}
+extension SelfUI.SVGViewer : Swift.Sendable {}
+extension SelfUI.CaptureDocumentView : Swift.Sendable {}
+extension SelfUI.PassportFlow : Swift.Sendable {}
+extension SelfUI.ReadingPassportChipInstructionView : Swift.Sendable {}
+extension SelfUI.DataAttachmentCell : Swift.Sendable {}
+extension SelfUI.SelectDocumentView : Swift.Sendable {}
+extension SelfUI.PassportIntroductionView : Swift.Sendable {}
+extension SelfUI.LoadingView : Swift.Sendable {}
+extension SelfUI.ItemView : Swift.Sendable {}
+extension SelfUI.BadgeView : Swift.Sendable {}
+extension SelfUI.ThankYouView : Swift.Sendable {}
+extension SelfUI.CreateAccountNameView : Swift.Sendable {}
+extension SelfUI.OverlayLoadingView : Swift.Sendable {}
+extension SelfUI.PinCodeView : Swift.Sendable {}
+extension SelfUI.CustomDisclosureGroupStyle : Swift.Sendable {}
+extension SelfUI.DisclosureGroupItemView : Swift.Sendable {}
+extension SelfUI.UserDetailView : Swift.Sendable {}
+extension SelfUI.ButtonView : Swift.Sendable {}
+extension SelfUI.NewLivenessCameraView : Swift.Sendable {}
+extension SelfUI.LivenessVerificationFailedView : Swift.Sendable {}
+extension SelfUI.QRScanFailView : Swift.Sendable {}
+extension SelfUI.CaptureMode : Swift.Equatable {}
+extension SelfUI.CaptureMode : Swift.Hashable {}
+extension SelfUI.CaptureMode : Swift.RawRepresentable {}
+extension SelfUI.PageContentView : Swift.Sendable {}
+extension SelfUI.ImagePreviewView : Swift.Sendable {}
+extension SelfUI.EnterEmailCodeView : Swift.Sendable {}
+extension SelfUI.PassportCheckChipView : Swift.Sendable {}
+extension SelfUI.PDFViewer : Swift.Sendable {}
+extension SelfUI.VerifyPhoneFlow : Swift.Sendable {}
+extension SelfUI.PassportMRZView : Swift.Sendable {}
+extension SelfUI.Challenge : Swift.Equatable {}
+extension SelfUI.Challenge : Swift.Hashable {}
+extension SelfUI.Challenge : Swift.RawRepresentable {}
+extension SelfUI.LivenessView : Swift.Sendable {}
+extension SelfUI.VideoPreview : Swift.Sendable {}
+extension SelfUI.CaptureImageView : Swift.Sendable {}
+extension SelfUI.DocumentVerifiedView : Swift.Sendable {}
+extension SelfUI.BrandView : Swift.Sendable {}
+extension SelfUI.CaptureDocumentIntroductionView : Swift.Sendable {}
+extension SelfUI.BackupDoneView : Swift.Sendable {}
+extension SelfUI.ParentChildView : Swift.Sendable {}
+extension SelfUI.BackingupView : Swift.Sendable {}
+extension SelfUI.AvatarView : Swift.Sendable {}
+extension SelfUI.LivenessCheckFlow : Swift.Sendable {}
+extension SelfUI.LivenessIntroductionView : Swift.Sendable {}
+extension SelfUI.DocumentVerifyingView : Swift.Sendable {}
+extension SelfUI.DocumentType : Swift.Equatable {}
+extension SelfUI.DocumentType : Swift.Hashable {}
+extension SelfUI.OutlinedButton : Swift.Sendable {}
+extension SelfUI.ButtonBack : Swift.Sendable {}
+extension SelfUI.RestoringBackupView : Swift.Sendable {}
+extension SelfUI.EnterEmailView : Swift.Sendable {}
+extension SelfUI.LivenessIntroView : Swift.Sendable {}
+extension SelfUI.RestoringBackupFinishView : Swift.Sendable {}
+extension SelfUI.DataCredentialCell : Swift.Sendable {}
+extension SelfUI.LivenessCameraView : Swift.Sendable {}
+extension SelfUI.CustomDisclosureGroup : Swift.Sendable {}
+extension SelfUI.CreateAccountFlow : Swift.Sendable {}
+extension SelfUI.BottomTab : Swift.Sendable {}
+extension SelfUI.CustomTabItem : Swift.Sendable {}
+extension SelfUI.VerifyDocumentFlow : Swift.Sendable {}
+extension SelfUI.CustomToggleStyle : Swift.Sendable {}
+extension SelfUI.LivenessFlow : Swift.Sendable {}
+extension SelfUI.RestoreDestinations : Swift.RawRepresentable {}
+extension SelfUI.RestoreFlow : Swift.Sendable {}
+extension SelfUI.OutlineTextField : Swift.Sendable {}
+extension SelfUI.QRReaderView : Swift.Sendable {}
+extension SelfUI.BaseAvatarView : Swift.Sendable {}
+extension SelfUI.CaptureDocumentIntructionView : Swift.Sendable {}
+extension SelfUI.SigningRequestCell : Swift.Sendable {}
+extension SelfUI.CustomAlertView : Swift.Sendable {}
+extension SelfUI.DocumentSorryView : Swift.Sendable {}
+extension SelfUI.WelcomeView : Swift.Sendable {}
+extension SelfUI.ChatView : Swift.Sendable {}
+extension SelfUI.Heading1TextStyle : Swift.Sendable {}
+extension SelfUI.Heading2TextStyle : Swift.Sendable {}
+extension SelfUI.Heading3TextStyle : Swift.Sendable {}
+extension SelfUI.Heading4TextStyle : Swift.Sendable {}
+extension SelfUI.Heading5TextStyle : Swift.Sendable {}
+extension SelfUI.Heading6TextStyle : Swift.Sendable {}
+extension SelfUI.Subtitle1TextStyle : Swift.Sendable {}
+extension SelfUI.Subtitle2TextStyle : Swift.Sendable {}
+extension SelfUI.ButtonTextStyle : Swift.Sendable {}
+extension SelfUI.Body1TextStyle : Swift.Sendable {}
+extension SelfUI.Body2TextStyle : Swift.Sendable {}
+extension SelfUI.CaptionTextStyle : Swift.Sendable {}
+extension SelfUI.Hyperlink1TextStyle : Swift.Sendable {}
+extension SelfUI.Hyperlink2TextStyle : Swift.Sendable {}
+extension SelfUI.CaptionLink3TextStyle : Swift.Sendable {}
+extension SelfUI.RestoringErrorView : Swift.Sendable {}
+extension SelfUI.MessagingView : Swift.Sendable {}
+extension SelfUI.PassportReadingChipView : Swift.Sendable {}
+extension SelfUI.BackupFlow : Swift.Sendable {}
+extension SelfUI.EmailVerificationFailedView : Swift.Sendable {}
+extension SelfUI.BaseNavigationBarView : Swift.Sendable {}
+extension SelfUI.PassportMRZFieldsManuallyView : Swift.Sendable {}
+extension SelfUI.DevOnboardingFlow : Swift.Sendable {}
+extension SelfUI.ParentItemView : Swift.Sendable {}

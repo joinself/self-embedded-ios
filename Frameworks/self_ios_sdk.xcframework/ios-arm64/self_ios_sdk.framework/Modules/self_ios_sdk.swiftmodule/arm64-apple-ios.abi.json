@@ -27992,12 +27992,27 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(pushToken:log:)",
+            "printedName": "initialize(applicationAddress:pushToken:log:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -28055,13 +28070,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7SelfSDKC10initialize9pushToken3logySSycSg_ySScSgtFZ",
-            "mangledName": "$s12self_ios_sdk7SelfSDKC10initialize9pushToken3logySSycSg_ySScSgtFZ",
+            "usr": "s:12self_ios_sdk7SelfSDKC10initialize18applicationAddress9pushToken3logySSSg_SSycSgySScSgtFZ",
+            "mangledName": "$s12self_ios_sdk7SelfSDKC10initialize18applicationAddress9pushToken3logySSSg_SSycSgySScSgtFZ",
             "moduleName": "self_ios_sdk",
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -34484,28 +34500,28 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4432,
+      "offset": 4735,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5380,
+      "offset": 5683,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12382,
+      "offset": 12685,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SelfSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 31450,
+      "offset": 31753,
       "length": 5,
       "value": "false"
     },

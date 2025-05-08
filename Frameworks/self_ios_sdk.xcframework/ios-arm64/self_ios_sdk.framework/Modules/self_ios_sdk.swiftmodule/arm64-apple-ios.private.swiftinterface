@@ -676,7 +676,7 @@ public protocol Message {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SelfSDK {
-  public static func initialize(pushToken: (() -> Swift.String)? = nil, log: ((Swift.String) -> Swift.Void)? = nil)
+  public static func initialize(applicationAddress: Swift.String? = nil, pushToken: (() -> Swift.String)? = nil, log: ((Swift.String) -> Swift.Void)? = nil)
   public static func startPassportVerification(account: self_ios_sdk.Account, currentVC: UIKit.UIViewController? = nil, isDevMode: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   public static func readPassport(currentVC: UIKit.UIViewController, isDevMode: Swift.Bool = false, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   public static func verifyEmail(account: self_ios_sdk.Account, transitionAsModal: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)

@@ -26100,6 +26100,100 @@
       },
       {
         "kind": "Import",
+        "name": "self_mobile_kmp",
+        "printedName": "self_mobile_kmp",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SdkLogger",
+        "printedName": "SdkLogger",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk9SdkLoggerV3logyySSFZ",
+            "mangledName": "$s12self_ios_sdk9SdkLoggerV3logyySSFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SdkLogger",
+                "printedName": "self_ios_sdk.SdkLogger",
+                "usr": "s:12self_ios_sdk9SdkLoggerV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12self_ios_sdk9SdkLoggerVACycfc",
+            "mangledName": "$s12self_ios_sdk9SdkLoggerVACycfc",
+            "moduleName": "self_ios_sdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12self_ios_sdk9SdkLoggerV",
+        "mangledName": "$s12self_ios_sdk9SdkLoggerV",
+        "moduleName": "self_ios_sdk",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -34437,7 +34531,7 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Logging.swift",
       "kind": "StringLiteral",
-      "offset": 352,
+      "offset": 500,
       "length": 9,
       "value": "\"selfSdk\""
     },

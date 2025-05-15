@@ -20952,7 +20952,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(account:devMode:onResult:)",
+            "printedName": "init(account:devMode:onInfo:onResult:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20972,6 +20972,41 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Foundation.URL]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Foundation.URL]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URL]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -21002,8 +21037,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk12DocumentFlowV7account7devMode8onResultAcA7AccountC_SbySbcSgtcfc",
-            "mangledName": "$s12self_ios_sdk12DocumentFlowV7account7devMode8onResultAcA7AccountC_SbySbcSgtcfc",
+            "usr": "s:12self_ios_sdk12DocumentFlowV7account7devMode6onInfo0I6ResultAcA7AccountC_SbySay10Foundation3URLVGcSgySbcSgtcfc",
+            "mangledName": "$s12self_ios_sdk12DocumentFlowV7account7devMode6onInfo0I6ResultAcA7AccountC_SbySay10Foundation3URLVGcSgySbcSgtcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -33086,6 +33121,169 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "FileManager",
+        "printedName": "FileManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cachesDirectory",
+            "printedName": "cachesDirectory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So13NSFileManagerC12self_ios_sdkE15cachesDirectory10Foundation3URLVvpZ",
+            "mangledName": "$sSo13NSFileManagerC12self_ios_sdkE15cachesDirectory10Foundation3URLVvpZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So13NSFileManagerC12self_ios_sdkE15cachesDirectory10Foundation3URLVvgZ",
+                "mangledName": "$sSo13NSFileManagerC12self_ios_sdkE15cachesDirectory10Foundation3URLVvgZ",
+                "moduleName": "self_ios_sdk",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "createFolderAtURL",
+            "printedName": "createFolderAtURL(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So13NSFileManagerC12self_ios_sdkE17createFolderAtURL3urly10Foundation0I0V_tFZ",
+            "mangledName": "$sSo13NSFileManagerC12self_ios_sdkE17createFolderAtURL3urly10Foundation0I0V_tFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSFileManager",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "objc_name": "NSFileManager",
+        "declAttributes": [
+          "ObjC",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Logger",
         "printedName": "Logger",
         "children": [
@@ -34475,9 +34673,30 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 1678,
+      "offset": 1721,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "StringLiteral",
+      "offset": 12246,
+      "length": 16,
+      "value": "\"frontImage.jpg\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "StringLiteral",
+      "offset": 12359,
+      "length": 15,
+      "value": "\"backImage.jpg\""
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "StringLiteral",
+      "offset": 12465,
+      "length": 12,
+      "value": "\"selfie.jpg\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/Attachment.swift",

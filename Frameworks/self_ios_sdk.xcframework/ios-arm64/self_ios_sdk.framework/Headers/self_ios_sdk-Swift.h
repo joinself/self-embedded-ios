@@ -326,6 +326,7 @@ SWIFT_CLASS("_TtC12self_ios_sdk7Account")
 
 
 
+
 SWIFT_CLASS("_TtC12self_ios_sdk13LivenessCheck")
 @interface LivenessCheck : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

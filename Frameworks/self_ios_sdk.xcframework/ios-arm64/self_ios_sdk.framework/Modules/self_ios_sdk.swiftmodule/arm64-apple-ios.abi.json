@@ -24537,17 +24537,17 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "name": "Array",
+                "printedName": "[self_ios_sdk.Credential]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
+                    "name": "Credential",
+                    "printedName": "self_ios_sdk.Credential",
+                    "usr": "s:12self_ios_sdk10CredentialC"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
@@ -24563,14 +24563,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC7restore10backupFile11selfieImages5Error_pSg10Foundation3URLV_AI4DataVtYaF",
-            "mangledName": "$s12self_ios_sdk7AccountC7restore10backupFile11selfieImages5Error_pSg10Foundation3URLV_AI4DataVtYaF",
+            "usr": "s:12self_ios_sdk7AccountC7restore10backupFile11selfieImageSayAA10CredentialCG10Foundation3URLV_AJ4DataVtYaKF",
+            "mangledName": "$s12self_ios_sdk7AccountC7restore10backupFile11selfieImageSayAA10CredentialCG10Foundation3URLV_AJ4DataVtYaKF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {

@@ -497,7 +497,7 @@ public enum ResponseStatus : Swift.String {
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct DocumentFlow : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, devMode: Swift.Bool = false, onInfo: (([Foundation.URL]) -> Swift.Void)? = nil, onResult: ((Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, devMode: Swift.Bool = false, autoCaptureImage: Swift.Bool = false, onInfo: (([Foundation.URL]) -> Swift.Void)? = nil, onResult: ((Swift.Bool) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }

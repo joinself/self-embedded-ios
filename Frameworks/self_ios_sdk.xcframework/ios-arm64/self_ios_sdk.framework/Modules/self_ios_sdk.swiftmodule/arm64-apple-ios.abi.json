@@ -20952,7 +20952,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(account:devMode:onInfo:onResult:)",
+            "printedName": "init(account:devMode:autoCaptureImage:onInfo:onResult:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20965,6 +20965,13 @@
                 "name": "Account",
                 "printedName": "self_ios_sdk.Account",
                 "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -21037,8 +21044,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk12DocumentFlowV7account7devMode6onInfo0I6ResultAcA7AccountC_SbySay10Foundation3URLVGcSgySbcSgtcfc",
-            "mangledName": "$s12self_ios_sdk12DocumentFlowV7account7devMode6onInfo0I6ResultAcA7AccountC_SbySay10Foundation3URLVGcSgySbcSgtcfc",
+            "usr": "s:12self_ios_sdk12DocumentFlowV7account7devMode16autoCaptureImage6onInfo0L6ResultAcA7AccountC_S2bySay10Foundation3URLVGcSgySbcSgtcfc",
+            "mangledName": "$s12self_ios_sdk12DocumentFlowV7account7devMode16autoCaptureImage6onInfo0L6ResultAcA7AccountC_S2bySay10Foundation3URLVGcSgySbcSgtcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -34653,49 +34660,63 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 1382,
+      "offset": 1190,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 1443,
+      "offset": 1487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 1509,
+      "offset": 1548,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 1721,
+      "offset": 1614,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1826,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1858,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 12246,
+      "offset": 13864,
       "length": 16,
       "value": "\"frontImage.jpg\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 12359,
+      "offset": 13977,
       "length": 15,
       "value": "\"backImage.jpg\""
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-next-ios-app\/self-mobile-embedded\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 12465,
+      "offset": 14083,
       "length": 12,
       "value": "\"selfie.jpg\""
     },

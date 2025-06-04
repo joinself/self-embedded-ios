@@ -9298,9 +9298,6 @@
             "mangledName": "$s12self_ios_sdk20DocumentVerificationC14verifyPassport7account8passport10selfieData3mrz9isDevMode10completionyAA7AccountC_17NFCPassportReader0R5ModelCSg10Foundation0K0VSSSgSbySbcSgtYaF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -9463,9 +9460,6 @@
             "mangledName": "$s12self_ios_sdk20DocumentVerificationC06verifyD11WithoutChip7account10frontImage04backK006selfieK08callbackyAA7AccountC_10Foundation4DataVA2NySbctYaF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -33701,14 +33695,14 @@
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/DocumentVerification.swift",
       "kind": "BooleanLiteral",
-      "offset": 1111,
+      "offset": 1079,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/longpham\/aldgate-ventures\/projects\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/DocumentVerification.swift",
       "kind": "BooleanLiteral",
-      "offset": 2926,
+      "offset": 2894,
       "length": 5,
       "value": "false"
     },

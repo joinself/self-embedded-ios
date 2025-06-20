@@ -620,7 +620,6 @@ public struct ez {
   public func setOnMessageListener(_ onMessage: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnRequestListener(_ onRequest: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)
-  public func addResponseListenerForRequest(id: Swift.String, callback: @escaping (Any) -> Swift.Void)
   public func register(selfieImage: Foundation.Data, credentials: [self_ios_sdk.Credential]) async throws -> Swift.Bool
   public func register(selfieImage: Foundation.Data, forAddress: Swift.String, presentation: Foundation.Data) async throws -> Swift.Bool
   public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async -> Swift.Bool
@@ -632,11 +631,12 @@ public struct ez {
   public func credentials() -> [self_ios_sdk.Credential]
   public func credentialsByType() -> [self_ios_sdk.CredentialsByType]
   public func lookUpCredentials(claims: [self_ios_sdk.Claim]) -> [self_ios_sdk.Credential]
+  public func storeCredentials(credentials: [self_ios_sdk.Credential])
   public func qrCode() async throws -> Foundation.Data
   public static func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
   public func connectWith(qrCode: Foundation.Data) async throws
   public func connectWith(address: Swift.String, info: [Swift.String : Any]) async throws -> Swift.String
-  public func decryptNotification(forAddress: Swift.String, payload: Swift.String) -> self_ios_sdk.Notification?
+  public func decryptNotification(forAddress: Swift.String, payload: Swift.String) throws -> self_ios_sdk.Notification?
   public func backup() async -> Foundation.URL?
   public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async throws -> [self_ios_sdk.Credential]
   public func store(keyValue: self_ios_sdk.KeyValue)
@@ -662,6 +662,22 @@ public protocol Message {
   func toIdentifier() -> Swift.String
   func fromIdentifier() -> Swift.String
   func properties() -> [Swift.String : Swift.String]
+}
+@_hasMissingDesignatedInitializers public class CredentialMessage : self_ios_sdk.Message {
+  public class Builder {
+    public init()
+    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.CredentialMessage.Builder
+    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.CredentialMessage.Builder
+    public func withCredentials(_ credentials: [self_ios_sdk.Credential]) -> self_ios_sdk.CredentialMessage.Builder
+    public func build() -> self_ios_sdk.CredentialMessage
+    @objc deinit
+  }
+  public func id() -> Swift.String
+  public func toIdentifier() -> Swift.String
+  public func fromIdentifier() -> Swift.String
+  public func properties() -> [Swift.String : Swift.String]
+  public func credentials() -> [self_ios_sdk.Credential]
+  @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct EmailFlow : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, autoDismiss: Swift.Bool = true, onResult: ((Swift.Bool) -> Swift.Void)? = nil)

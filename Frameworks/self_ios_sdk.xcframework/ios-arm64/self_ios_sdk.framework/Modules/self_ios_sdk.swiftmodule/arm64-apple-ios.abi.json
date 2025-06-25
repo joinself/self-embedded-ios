@@ -24285,7 +24285,7 @@
           {
             "kind": "Function",
             "name": "credential",
-            "printedName": "credential(subject:value:)",
+            "printedName": "credential(types:subject:value:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24303,23 +24303,37 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC10credential7subject5valueAA10CredentialCSgSS_SStKF",
-            "mangledName": "$s12self_ios_sdk7AccountC10credential7subject5valueAA10CredentialCSgSS_SStKF",
+            "usr": "s:12self_ios_sdk7AccountC10credential5types7subject5valueAA10CredentialCSgSaySSG_SSyptKF",
+            "mangledName": "$s12self_ios_sdk7AccountC10credential5types7subject5valueAA10CredentialCSgSaySSG_SSyptKF",
             "moduleName": "self_ios_sdk",
             "isOpen": true,
             "declAttributes": [
+              "AccessControl",
               "RawDocComment"
             ],
             "throwing": true,

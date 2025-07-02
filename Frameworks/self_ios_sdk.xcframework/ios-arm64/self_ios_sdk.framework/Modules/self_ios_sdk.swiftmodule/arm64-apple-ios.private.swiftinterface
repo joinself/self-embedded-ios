@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name self_ios_sdk
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name self_ios_sdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import Combine
 import CoreLocation
@@ -90,7 +90,6 @@ public struct DiscoveryData {
   public var sandbox: Swift.Bool
 }
 extension self_ios_sdk.SelfSDK {
-  public static func startLiveness(account: self_ios_sdk.Account? = nil, currentVC: UIKit.UIViewController? = nil, isVerificationRequired: Swift.Bool = true, dismissal: Swift.Bool = true, isRequireCaptureSelfieImage: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
   public static func showLiveness(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, isRequireCaptureSelfie: Swift.Bool = false, autoDismiss: Swift.Bool = true, isVerificationRequired: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
 }
 @_hasMissingDesignatedInitializers public class ChatMessage : self_ios_sdk.Message {
@@ -251,9 +250,6 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
   public func requestId() -> Swift.String
   public func status() -> self_ios_sdk.ResponseStatus
   @objc deinit
-}
-extension self_ios_sdk.SelfSDK {
-  public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping (Swift.Bool) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class Notification {
   public func id() -> Swift.String
@@ -589,7 +585,7 @@ public struct ez {
     get
   }
   public static func requestImage(_ url: Swift.String, success: @escaping (UIKit.UIImage?) -> Swift.Void)
-  public static func requestJSON(_ url: Swift.String, success: @escaping (Any?) -> Swift.Void, error: ((Foundation.NSError) -> Swift.Void)?)
+  public static func requestJSON(_ url: Swift.String, success: @escaping ((Any?) -> Swift.Void), error: ((Foundation.NSError) -> Swift.Void)?)
 }
 @_hasMissingDesignatedInitializers public class Attachment : self_ios_sdk.DataObject {
   public class Builder {
@@ -613,10 +609,10 @@ public struct ez {
     public func build() -> self_ios_sdk.Account
     @objc deinit
   }
-  public func setOnInfoRequest(_ onInfoRequest: @escaping (Swift.String) -> Any?)
-  public func setOnInfoResponse(_ onInfoResponse: @escaping (Swift.String, [Swift.String : Any]) -> Swift.Void)
-  public func setOnStatusListener(_ onStatus: @escaping (Swift.UInt64) -> Swift.Void)
-  public func setOnRelayConnectListener(_ onRelayConnect: @escaping () -> Swift.Void)
+  public func setOnInfoRequest(_ onInfoRequest: @escaping ((Swift.String) -> Any?))
+  public func setOnInfoResponse(_ onInfoResponse: @escaping ((Swift.String, [Swift.String : Any]) -> Swift.Void))
+  public func setOnStatusListener(_ onStatus: @escaping ((Swift.UInt64) -> Swift.Void))
+  public func setOnRelayConnectListener(_ onRelayConnect: @escaping (() -> Swift.Void))
   public func setOnMessageListener(_ onMessage: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnRequestListener(_ onRequest: ((any self_ios_sdk.Message) -> Swift.Void)?)
   public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)

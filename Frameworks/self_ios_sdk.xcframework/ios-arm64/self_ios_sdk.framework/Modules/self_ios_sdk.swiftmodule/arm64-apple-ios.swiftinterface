@@ -90,7 +90,6 @@ public struct DiscoveryData {
   public var sandbox: Swift.Bool
 }
 extension self_ios_sdk.SelfSDK {
-  public static func startLiveness(account: self_ios_sdk.Account? = nil, currentVC: UIKit.UIViewController? = nil, isVerificationRequired: Swift.Bool = true, dismissal: Swift.Bool = true, isRequireCaptureSelfieImage: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
   public static func showLiveness(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, isRequireCaptureSelfie: Swift.Bool = false, autoDismiss: Swift.Bool = true, isVerificationRequired: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
 }
 @_hasMissingDesignatedInitializers public class ChatMessage : self_ios_sdk.Message {
@@ -251,9 +250,6 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
   public func requestId() -> Swift.String
   public func status() -> self_ios_sdk.ResponseStatus
   @objc deinit
-}
-extension self_ios_sdk.SelfSDK {
-  public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
 }
 @_hasMissingDesignatedInitializers public class Notification {
   public func id() -> Swift.String

@@ -14,31 +14,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mKAUCf1WaC9J4uQITIzYYI0CFKY=
+		9n0tFCOOXqFAMx51bn8g9jImnDc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		oiXxM7HxeqeWcenJ1lw9uQ1LeuQ=
 		</data>
+		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<data>
+		M7iOiDi54yOmrbKG4iSyqyVl9S8=
+		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1VY75KSj4Pcxs1V7zVFkzq0P4c4=
+		3nO83fB7JK0wojh9OYthqb3Icho=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		NYN4GGmlm3ENcYtfvYjoA+aIZvM=
+		xENjef+ga7rpWrDQqiU8CoEcw7g=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		gv+fQ5xsGhDxzRrdINYD/y7MJYk=
+		cJBBGBr0vvcMu0arwY/96TObXS8=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		NYN4GGmlm3ENcYtfvYjoA+aIZvM=
+		xENjef+ga7rpWrDQqiU8CoEcw7g=
 		</data>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2nAfh+khkyAoQCbTAPYrdPtYP+c=
+		hyHzlZzuZ7yJA2lKg8EamXWpkH0=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -73,39 +77,46 @@
 			vXlPCyr24dM2T7GHBv1ixPiElAZREoA+ks9bnyAv9BI=
 			</data>
 		</dict>
+		<key>Modules/self_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XHmi38ge6b5eMkn1PZh+ALFScrN0HoR2LfQ+OIdNwyA=
+			</data>
+		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W8d4PiW40OoA1Ghv4H4S2kt/bkrbXkYcHATqMCeV/HU=
+			x1rsrZ1E+yaDmANQgEBM2d08/tBcf3TqJGOx3uVMdAY=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2jo8Y891YOdglX9JDfseJh9iTFNB5fzRGb/Y2PdXbnY=
+			I1IlxLzDXWJR48uXAS1kGikftkV5gN2os1zEyOq/Hbs=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wg9RM2M6AJb8ajiABu5AGAoqSfsG7j0nMpvet40W9ug=
+			KqvVzd7CLKuTckbKbUXpYsKhhnHJjOPp4g9ZLIaZUUo=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2jo8Y891YOdglX9JDfseJh9iTFNB5fzRGb/Y2PdXbnY=
+			I1IlxLzDXWJR48uXAS1kGikftkV5gN2os1zEyOq/Hbs=
 			</data>
 		</dict>
 		<key>Modules/self_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lN0lMxCu+Uk1J4SmhOyoSncxx+Si3bG+2rTe2qnkEFw=
+			sG4RDVMm9Xfe3j9BcDPA4iNrYDQOAnr1ahhBZEFu6HU=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>

@@ -90,6 +90,7 @@ public struct DiscoveryData {
   public var sandbox: Swift.Bool
 }
 extension self_ios_sdk.SelfSDK {
+  public static func startLiveness(account: self_ios_sdk.Account? = nil, currentVC: UIKit.UIViewController? = nil, isVerificationRequired: Swift.Bool = true, dismissal: Swift.Bool = true, isRequireCaptureSelfieImage: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
   public static func showLiveness(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, isRequireCaptureSelfie: Swift.Bool = false, autoDismiss: Swift.Bool = true, isVerificationRequired: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
 }
 @_hasMissingDesignatedInitializers public class ChatMessage : self_ios_sdk.Message {
@@ -251,27 +252,14 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
   public func status() -> self_ios_sdk.ResponseStatus
   @objc deinit
 }
+extension self_ios_sdk.SelfSDK {
+  public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
+}
 @_hasMissingDesignatedInitializers public class Notification {
   public func id() -> Swift.String
   public func type() -> Swift.String
   public func message() -> Swift.String
   public func fromIdentifier() -> Swift.String
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class KeyValue {
-  public class Builder {
-    public init()
-    public func withKey(_ key: Swift.String) -> self_ios_sdk.KeyValue.Builder
-    public func withValue(_ value: Swift.String) -> self_ios_sdk.KeyValue.Builder
-    public func withMime(_ mime: Swift.String) -> self_ios_sdk.KeyValue.Builder
-    public func withSensitive(_ sensitive: Swift.Bool) -> self_ios_sdk.KeyValue.Builder
-    public func build() -> self_ios_sdk.KeyValue
-    @objc deinit
-  }
-  public func key() -> Swift.String
-  public func value() -> Swift.String
-  public func mime() -> Swift.String
-  public func isSensitive() -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Claim {
@@ -630,13 +618,14 @@ public struct ez {
   public func storeCredentials(credentials: [self_ios_sdk.Credential])
   public func qrCode() async throws -> Foundation.Data
   public static func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
-  public func connectWith(qrCode: Foundation.Data) async throws
+  public func connectWith(qrCode: Foundation.Data) async throws -> Swift.String
   public func connectWith(address: Swift.String, info: [Swift.String : Any]) async throws -> Swift.String
   public func decryptNotification(forAddress: Swift.String, payload: Swift.String) throws -> self_ios_sdk.Notification?
   public func backup() async -> Foundation.URL?
   public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async throws -> [self_ios_sdk.Credential]
-  public func store(keyValue: self_ios_sdk.KeyValue)
-  public func get(key: Swift.String, credentials: [self_ios_sdk.Credential]) -> self_ios_sdk.KeyValue?
+  public func valueStore(key: Swift.String, value: Foundation.Data) throws
+  public func valueLookup(key: Swift.String) throws -> Foundation.Data?
+  public func valueRemove(key: Swift.String) throws
   public func close() async throws
   public func location() async throws -> [self_ios_sdk.Credential]
   @objc deinit

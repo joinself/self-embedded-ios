@@ -2,7 +2,7 @@
 
 ## Installation & Usage
 
-***Swift Package Manager***, add the following to your Package.swift or add via XCode:
+***Swift Package Manager***, add the following to your Package.swift or add via Xcode:
 ```
 dependencies: [
     .package(url: "https://github.com/joinself/self-embedded-ios.git", .upToNextMajor(from: "0.0.39"))

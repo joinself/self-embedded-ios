@@ -19,8 +19,5 @@ let package = Package(
                     name: "self_ios_sdk",
                     path: "Frameworks/self_ios_sdk.xcframework"
                 ),
-        .testTarget(
-            name: "self_ios_sdkTests",
-            dependencies: ["self_ios_sdk"]),
     ]
 )

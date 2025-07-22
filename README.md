@@ -1,13 +1,8 @@
 # Self Embedded iOS
 
 ## Installation & Usage
-If using ***Cocoapods*** . Just add this line to your `Podfile`
 
-```
-pod 'self-embedded-ios', :git => 'https://github.com/joinself/self-embedded-ios.git'
-```
-
-If using ***Swift Package Manager***, add the following to your Package.swift or add via XCode:
+***Swift Package Manager***, add the following to your Package.swift or add via XCode:
 ```
 dependencies: [
     .package(url: "https://github.com/joinself/self-embedded-ios.git", .upToNextMajor(from: "0.0.39"))

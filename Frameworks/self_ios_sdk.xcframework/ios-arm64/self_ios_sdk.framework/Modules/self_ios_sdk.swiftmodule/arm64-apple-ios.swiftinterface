@@ -18,64 +18,49 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_exported import self_ios_sdk
-@_hasMissingDesignatedInitializers public class CredentialRequest : self_ios_sdk.Message {
+@_hasMissingDesignatedInitializers public class CredentialRequest : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CredentialRequest.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CredentialRequest.Builder
     public func withId(_ messageId: Swift.String) -> self_ios_sdk.CredentialRequest.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.CredentialRequest.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.CredentialRequest.Builder
-    public func withDetails(_ details: [self_ios_sdk.Claim]) -> self_ios_sdk.CredentialRequest.Builder
     public func withTypes(_ types: [Swift.String]) -> self_ios_sdk.CredentialRequest.Builder
     public func build() -> self_ios_sdk.CredentialRequest
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
-  public func details() -> [self_ios_sdk.Claim]
   public func types() -> [Swift.String]
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class Credential : self_ios_sdk.Signable {
-  public func types() -> [Swift.String]
-  public func claims() -> [self_ios_sdk.Claim]
-  public func attachment() -> self_ios_sdk.Attachment?
-  public func created() -> Swift.Int64
-  public func validFrom() -> Swift.Int64
-  @objc deinit
+@_Concurrency.MainActor @preconcurrency public struct SigningRequestView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk18SigningRequestViewV4bodyQrvp", 0) __
 }
-public struct CredentialsByType {
-  public let types: [Swift.String]
-  public let credentials: [self_ios_sdk.Credential]
-}
-@_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.Message {
+
+@_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
     public func withRequestId(_ requestId: Swift.String) -> self_ios_sdk.VerificationResponse.Builder
     public func withStatus(_ status: self_ios_sdk.ResponseStatus) -> self_ios_sdk.VerificationResponse.Builder
     public func withTypes(_ types: [Swift.String]) -> self_ios_sdk.VerificationResponse.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.VerificationResponse.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.VerificationResponse.Builder
-    public func withCredentials(_ credentials: [self_ios_sdk.Credential]) -> self_ios_sdk.VerificationResponse.Builder
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.VerificationResponse.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.VerificationResponse.Builder
     public func build() -> self_ios_sdk.VerificationResponse
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
   public func addProperties(values: [Swift.String : Swift.String])
   public func requestId() -> Swift.String
   public func status() -> self_ios_sdk.ResponseStatus
   public func types() -> [Swift.String]
-  public func credentials() -> [self_ios_sdk.Credential]
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DataObject {
   public class Builder {
     public init()
     public func withData(_ data: Foundation.Data) -> self_ios_sdk.DataObject.Builder
+    public func withName(_ name: Swift.String) -> self_ios_sdk.DataObject.Builder
     public func withContentType(_ contentType: Swift.String) -> self_ios_sdk.DataObject.Builder
     public func build() -> self_ios_sdk.DataObject
     @objc deinit
@@ -86,78 +71,59 @@ public struct CredentialsByType {
 }
 public struct DiscoveryData {
   public var requestId: Swift.String
-  public var address: Swift.String
+  public var address: self_ios_sdk.PublicKey
   public var sandbox: Swift.Bool
 }
-extension self_ios_sdk.SelfSDK {
-  public static func startLiveness(account: self_ios_sdk.Account? = nil, currentVC: UIKit.UIViewController? = nil, isVerificationRequired: Swift.Bool = true, dismissal: Swift.Bool = true, isRequireCaptureSelfieImage: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
-  public static func showLiveness(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, isRequireCaptureSelfie: Swift.Bool = false, autoDismiss: Swift.Bool = true, isVerificationRequired: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
-}
-@_hasMissingDesignatedInitializers public class ChatMessage : self_ios_sdk.Message {
+@_hasMissingDesignatedInitializers public class ChatMessage : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.ChatMessage.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.ChatMessage.Builder
     public func withId(_ messageId: Swift.String) -> self_ios_sdk.ChatMessage.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.ChatMessage.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.ChatMessage.Builder
     public func withMessage(_ message: Swift.String) -> self_ios_sdk.ChatMessage.Builder
     public func withReference(_ reference: Swift.String) -> self_ios_sdk.ChatMessage.Builder
-    public func withAttachments(_ attachments: [self_ios_sdk.Attachment]) -> self_ios_sdk.ChatMessage.Builder
+    public func withAttachments(_ attachments: [self_ios_sdk.DataObject]) -> self_ios_sdk.ChatMessage.Builder
     public func build() -> self_ios_sdk.ChatMessage
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
   public func message() -> Swift.String
   public func reference() -> Swift.String?
-  public func attachments() -> [self_ios_sdk.Attachment]
+  public func attachments() -> [self_ios_sdk.DataObject]
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class SigningResponse : self_ios_sdk.Message {
+
+@_hasMissingDesignatedInitializers public class SigningResponse : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
     public func withRequestId(_ requestId: Swift.String) -> self_ios_sdk.SigningResponse.Builder
     public func withStatus(_ status: self_ios_sdk.ResponseStatus) -> self_ios_sdk.SigningResponse.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.SigningResponse.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.SigningResponse.Builder
-    public func withCredentials(_ credentials: [self_ios_sdk.Credential]) -> self_ios_sdk.SigningResponse.Builder
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SigningResponse.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SigningResponse.Builder
     public func build() -> self_ios_sdk.SigningResponse
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
   public func requestId() -> Swift.String
   public func status() -> self_ios_sdk.ResponseStatus
-  public func credentials() -> [self_ios_sdk.Credential]
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ShareResources {
   public static func subjectToFriendlyString(subject: Swift.String) -> Swift.String
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class CredentialResponse : self_ios_sdk.Message {
+@_hasMissingDesignatedInitializers public class CredentialResponse : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
     public func withRequestId(_ requestId: Swift.String) -> self_ios_sdk.CredentialResponse.Builder
     public func withStatus(_ status: self_ios_sdk.ResponseStatus) -> self_ios_sdk.CredentialResponse.Builder
     public func withTypes(_ types: [Swift.String]) -> self_ios_sdk.CredentialResponse.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.CredentialResponse.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.CredentialResponse.Builder
-    public func withCredentials(_ credentials: [self_ios_sdk.Credential]) -> self_ios_sdk.CredentialResponse.Builder
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CredentialResponse.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CredentialResponse.Builder
     public func build() -> self_ios_sdk.CredentialResponse
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
   public func requestId() -> Swift.String
   public func status() -> self_ios_sdk.ResponseStatus
   public func types() -> [Swift.String]
-  public func credentials() -> [self_ios_sdk.Credential]
   @objc deinit
 }
 extension Foundation.Date {
@@ -201,7 +167,6 @@ extension UIKit.UIImage {
   public var currentChallenge: self_ios_sdk.LivenessCheck.ChallengeState
   public var onStatusUpdated: ((self_ios_sdk.LivenessCheck.Status) -> Swift.Void)?
   public var onChallengeChanged: ((self_ios_sdk.LivenessCheck.Challenge, self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
-  public var onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)?
   public var isVerificationRequired: Swift.Bool
   public var properties: [Swift.String : Swift.String]
   public func getAttemptsNumber() -> Swift.Int
@@ -234,20 +199,24 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk17LivenessCheckFlowV4bodyQrvp", 0) __
 }
 
-@_hasMissingDesignatedInitializers public class SecurityCodeResponse : self_ios_sdk.Message {
+@_Concurrency.MainActor @preconcurrency public struct MessageView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, message: any self_ios_sdk.Message)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk11MessageViewV4bodyQrvp", 0) __
+}
+
+@_hasMissingDesignatedInitializers public class SecurityCodeResponse : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SecurityCodeResponse.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SecurityCodeResponse.Builder
     public func withRequestId(_ requestId: Swift.String) -> self_ios_sdk.SecurityCodeResponse.Builder
     public func withStatus(_ status: self_ios_sdk.ResponseStatus) -> self_ios_sdk.SecurityCodeResponse.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.SecurityCodeResponse.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.SecurityCodeResponse.Builder
     public func build() -> self_ios_sdk.SecurityCodeResponse
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
   public func requestId() -> Swift.String
   public func status() -> self_ios_sdk.ResponseStatus
   @objc deinit
@@ -255,29 +224,29 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 extension self_ios_sdk.SelfSDK {
   public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
 }
+@_Concurrency.MainActor @preconcurrency public struct CredentialRequestView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, message: any self_ios_sdk.Message)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk21CredentialRequestViewV4bodyQrvp", 0) __
+}
+
 @_hasMissingDesignatedInitializers public class Notification {
   public func id() -> Swift.String
   public func type() -> Swift.String
   public func message() -> Swift.String
-  public func fromIdentifier() -> Swift.String
+  public func fromAddress() -> self_ios_sdk.PublicKey?
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class Claim {
-  public class Builder {
-    public init()
-    public func withTypes(_ types: [Swift.String]) -> self_ios_sdk.Claim.Builder
-    public func withSubject(_ subject: Swift.String) -> self_ios_sdk.Claim.Builder
-    public func withValue(_ value: Swift.String) -> self_ios_sdk.Claim.Builder
-    public func withComparisonOperator(_ cOperator: Swift.String) -> self_ios_sdk.Claim.Builder
-    public func build() -> self_ios_sdk.Claim
-    @objc deinit
+public enum QRCodeEncoding {
+  case svg
+  case unicode
+  public static func == (a: self_ios_sdk.QRCodeEncoding, b: self_ios_sdk.QRCodeEncoding) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
   }
-  public func subject() -> Swift.String
-  public func types() -> [Swift.String]
-  public func value() -> Swift.String
-  public func comparisonOperator() -> Swift.String
-  public func subjectToFriendlyString() -> Swift.String
-  @objc deinit
 }
 public enum ComparisonOperator : Swift.String {
   case EQUALS
@@ -386,7 +355,15 @@ public struct CredentialType {
   public static let DrivingLicense: Swift.String
   public static let Document: Swift.String
 }
-public class NewLivenessCheckViewModel : Foundation.ObservableObject {
+@_Concurrency.MainActor @preconcurrency public struct RegistrationFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk16RegistrationFlowV4bodyQrvp", 0) __
+}
+
+@_hasMissingDesignatedInitializers public class NewLivenessCheckViewModel : Foundation.ObservableObject {
   final public let account: self_ios_sdk.Account
   @Combine.Published @_projectedValueProperty($livenessCheck) public var livenessCheck: self_ios_sdk.LivenessCheck {
     get
@@ -400,7 +377,6 @@ public class NewLivenessCheckViewModel : Foundation.ObservableObject {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  public init(account: self_ios_sdk.Account, showIntroduction: Swift.Bool = true, isVerificationRequired: Swift.Bool = true, customLivenessIntroductionTitle: Swift.String, customLivenessIntroductionBody: Swift.String, onResult: ((Foundation.Data, [self_ios_sdk.Credential], (any Swift.Error)?) -> Swift.Void)? = nil)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
@@ -413,42 +389,42 @@ public class NewLivenessCheckViewModel : Foundation.ObservableObject {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class SecurityCodeRequest : self_ios_sdk.Message {
+@_hasMissingDesignatedInitializers public class SecurityCodeRequest : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.SecurityCodeRequest.Builder
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SecurityCodeRequest.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SecurityCodeRequest.Builder
     public func withType(_ type: Swift.String) -> self_ios_sdk.SecurityCodeRequest.Builder
-    public func withProofs(_ proofs: [Swift.String : self_ios_sdk.DataObject]) -> self_ios_sdk.SecurityCodeRequest.Builder
+    public func withEvidence(_ evidence: [Swift.String : self_ios_sdk.DataObject]) -> self_ios_sdk.SecurityCodeRequest.Builder
     public func build() -> self_ios_sdk.SecurityCodeRequest
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
   public func type() -> Swift.String
-  public func proofs() -> [Swift.String : self_ios_sdk.DataObject]
+  public func evidence() -> [Swift.String : self_ios_sdk.DataObject]
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class VerificationRequest : self_ios_sdk.Message {
+@_hasMissingDesignatedInitializers public class VerificationRequest : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
     public func withId(_ messageId: Swift.String) -> self_ios_sdk.VerificationRequest.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.VerificationRequest.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.VerificationRequest.Builder
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.VerificationRequest.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.VerificationRequest.Builder
     public func withTypes(_ types: [Swift.String]) -> self_ios_sdk.VerificationRequest.Builder
-    public func withProofs(_ proofs: [Swift.String : self_ios_sdk.DataObject]) -> self_ios_sdk.VerificationRequest.Builder
+    public func withEvidence(_ evidence: [Swift.String : self_ios_sdk.DataObject]) -> self_ios_sdk.VerificationRequest.Builder
     public func build() -> self_ios_sdk.VerificationRequest
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
   public func addProperties(values: [Swift.String : Swift.String])
   public func types() -> [Swift.String]
-  public func proofs() -> [Swift.String : self_ios_sdk.DataObject]
+  public func evidence() -> [Swift.String : self_ios_sdk.DataObject]
   @objc deinit
+}
+public protocol AccountDelegate {
+  func onConnect()
+  func onAcknowledgement(id: Swift.String)
+  func onMessage(message: any self_ios_sdk.Message)
+  func onDisconnect(errorMessage: Swift.String?)
+  func onError(id: Swift.String, errorMessage: Swift.String?)
 }
 public enum ResponseStatus : Swift.String {
   case none
@@ -462,22 +438,17 @@ public enum ResponseStatus : Swift.String {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class SigningRequest : self_ios_sdk.Message {
+
+@_hasMissingDesignatedInitializers public class SigningRequest : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SigningRequest.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SigningRequest.Builder
     public func withId(_ messageId: Swift.String) -> self_ios_sdk.SigningRequest.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.SigningRequest.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.SigningRequest.Builder
-    public func withDetails(_ details: [self_ios_sdk.Claim]) -> self_ios_sdk.SigningRequest.Builder
     public func withTypes(_ types: [Swift.String]) -> self_ios_sdk.SigningRequest.Builder
     public func build() -> self_ios_sdk.SigningRequest
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
-  public func details() -> [self_ios_sdk.Claim]
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct DocumentFlow : SwiftUICore.View {
@@ -575,18 +546,6 @@ public struct ez {
   public static func requestImage(_ url: Swift.String, success: @escaping (UIKit.UIImage?) -> Swift.Void)
   public static func requestJSON(_ url: Swift.String, success: @escaping ((Any?) -> Swift.Void), error: ((Foundation.NSError) -> Swift.Void)?)
 }
-@_hasMissingDesignatedInitializers public class Attachment : self_ios_sdk.DataObject {
-  public class Builder {
-    public init()
-    public func withName(_ name: Swift.String) -> self_ios_sdk.Attachment.Builder
-    public func withData(_ data: Foundation.Data) -> self_ios_sdk.Attachment.Builder
-    public func withContentType(_ contentType: Swift.String) -> self_ios_sdk.Attachment.Builder
-    public func build() -> self_ios_sdk.Attachment
-    @objc deinit
-  }
-  public func name() -> Swift.String
-  @objc deinit
-}
 @objc @_hasMissingDesignatedInitializers public class Account : ObjectiveC.NSObject {
   public class Builder {
     public init()
@@ -594,74 +553,76 @@ public struct ez {
     public func withSandbox(_ sandbox: Swift.Bool) -> self_ios_sdk.Account.Builder
     public func withGroupId(_ groupId: Swift.String) -> self_ios_sdk.Account.Builder
     public func withStoragePath(_ storagePath: Swift.String) -> self_ios_sdk.Account.Builder
+    public func withDelegate(delegate: (any self_ios_sdk.AccountDelegate)?) -> self_ios_sdk.Account.Builder
     public func build() -> self_ios_sdk.Account
     @objc deinit
   }
-  public func setOnInfoRequest(_ onInfoRequest: @escaping ((Swift.String) -> Any?))
-  public func setOnInfoResponse(_ onInfoResponse: @escaping ((Swift.String, [Swift.String : Any]) -> Swift.Void))
-  public func setOnStatusListener(_ onStatus: @escaping ((Swift.UInt64) -> Swift.Void))
-  public func setOnRelayConnectListener(_ onRelayConnect: @escaping (() -> Swift.Void))
-  public func setOnMessageListener(_ onMessage: ((any self_ios_sdk.Message) -> Swift.Void)?)
-  public func setOnRequestListener(_ onRequest: ((any self_ios_sdk.Message) -> Swift.Void)?)
-  public func setOnResponseListener(_ onResponse: ((any self_ios_sdk.Message) -> Swift.Void)?)
-  public func register(selfieImage: Foundation.Data, credentials: [self_ios_sdk.Credential]) async throws -> Swift.Bool
-  public func register(selfieImage: Foundation.Data, forAddress: Swift.String, presentation: Foundation.Data) async throws -> Swift.Bool
-  public func handleSignInRequestForSDK(deviceId: Swift.String, publicKeyBase64: Swift.String) async -> Swift.Bool
   public func registered() -> Swift.Bool
-  public func presentationForAddress(forAddress: Swift.String, credentials: [self_ios_sdk.Credential]) -> Foundation.Data
-  public func aliasCredential(identifierAddress: Swift.String, info: [Swift.String : Swift.String]) -> Foundation.Data
-  public func generateAddress() -> Swift.String
-  public func send(message: any self_ios_sdk.Message, onAcknowledgement: @escaping (Swift.String, (any Swift.Error)?) -> Swift.Void) async throws
-  public func credentials() -> [self_ios_sdk.Credential]
-  public func credentialsByType() -> [self_ios_sdk.CredentialsByType]
-  public func lookUpCredentials(claims: [self_ios_sdk.Claim]) -> [self_ios_sdk.Credential]
-  public func storeCredentials(credentials: [self_ios_sdk.Credential])
-  public func qrCode() async throws -> Foundation.Data
+  public func aliasCredential(identifierAddress: self_ios_sdk.PublicKey, info: [Swift.String : Swift.String]) -> Foundation.Data
+  public func generateAddress() -> self_ios_sdk.PublicKey?
+  public func send(toAddress: self_ios_sdk.PublicKey, message: any self_ios_sdk.Message) async throws -> Swift.String?
+  public func qrCode(encoding: self_ios_sdk.QRCodeEncoding) async throws -> Foundation.Data
   public static func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
-  public func connectWith(qrCode: Foundation.Data) async throws -> Swift.String
-  public func connectWith(address: Swift.String, info: [Swift.String : Any]) async throws -> Swift.String
-  public func decryptNotification(forAddress: Swift.String, payload: Swift.String) throws -> self_ios_sdk.Notification?
-  public func backup() async -> Foundation.URL?
-  public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async throws -> [self_ios_sdk.Credential]
+  public func connectWith(qrCode: Foundation.Data) async throws -> self_ios_sdk.PublicKey?
+  public func connectWith(address: self_ios_sdk.PublicKey, info: [Swift.String : Any]) async throws -> self_ios_sdk.PublicKey?
+  public func decryptNotification(forAddress: self_ios_sdk.PublicKey, payload: Swift.String) throws -> self_ios_sdk.Notification?
   public func valueStore(key: Swift.String, value: Foundation.Data) throws
   public func valueLookup(key: Swift.String) throws -> Foundation.Data?
   public func valueRemove(key: Swift.String) throws
   public func close() async throws
-  public func location() async throws -> [self_ios_sdk.Credential]
   @objc deinit
 }
-extension self_ios_sdk.Account : CoreLocation.CLLocationManagerDelegate {
-  @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
-  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
-  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
-}
-@_Concurrency.MainActor @preconcurrency public struct NewLivenessCheckFlow : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(viewModel: self_ios_sdk.NewLivenessCheckViewModel, autoDismiss: Swift.Bool = true, onResult: ((Foundation.Data, [self_ios_sdk.Credential], self_ios_sdk.LivenessCheck.Error?) -> Swift.Void)? = nil)
+@_Concurrency.MainActor @preconcurrency public struct BackupFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, iCloudContainerIdentifier: Swift.String, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk20NewLivenessCheckFlowV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk10BackupFlowV4bodyQrvp", 0) __
 }
+
+@_Concurrency.MainActor @preconcurrency public struct RestoreFlow : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, iCloudContainerIdentifier: Swift.String, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk11RestoreFlowV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct VerificationRequestView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk23VerificationRequestViewV4bodyQrvp", 0) __
+}
+
 public protocol Message {
   func id() -> Swift.String
-  func toIdentifier() -> Swift.String
-  func fromIdentifier() -> Swift.String
+  func toAddress() -> self_ios_sdk.PublicKey
+  func fromAddress() -> self_ios_sdk.PublicKey
   func properties() -> [Swift.String : Swift.String]
 }
-@_hasMissingDesignatedInitializers public class CredentialMessage : self_ios_sdk.Message {
+public protocol Evidence {
+  func evidence() -> [Swift.String : self_ios_sdk.DataObject]
+}
+@_hasMissingDesignatedInitializers public class BaseMessage : self_ios_sdk.Message {
+  public func id() -> Swift.String
+  public func toAddress() -> self_ios_sdk.PublicKey
+  public func fromAddress() -> self_ios_sdk.PublicKey
+  public func properties() -> [Swift.String : Swift.String]
+  @objc deinit
+}
+public struct PublicKey {
+  public init(rawValue: Swift.String)
+  public func getRawValue() -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class CredentialMessage : self_ios_sdk.BaseMessage {
   public class Builder {
-    public init()
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.CredentialMessage.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.CredentialMessage.Builder
-    public func withCredentials(_ credentials: [self_ios_sdk.Credential]) -> self_ios_sdk.CredentialMessage.Builder
+    public init(id: Swift.String)
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CredentialMessage.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CredentialMessage.Builder
     public func build() -> self_ios_sdk.CredentialMessage
     @objc deinit
   }
-  public func id() -> Swift.String
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
-  public func credentials() -> [self_ios_sdk.Credential]
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct EmailFlow : SwiftUICore.View {
@@ -672,8 +633,8 @@ public protocol Message {
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk9EmailFlowV4bodyQrvp", 0) __
 }
 @_hasMissingDesignatedInitializers public class Signable {
-  public func issuer() -> Swift.String
-  public func data() -> Foundation.Data
+  public func getIssuer() -> Swift.String
+  public func getData() -> Foundation.Data
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SelfSDK {
@@ -682,27 +643,24 @@ public protocol Message {
   public static func verifyPhoneNumber(account: self_ios_sdk.Account, sendTo: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class Receipt : self_ios_sdk.Message {
+@_hasMissingDesignatedInitializers public class Receipt : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
     public func withRead(_ read: [Swift.String]) -> self_ios_sdk.Receipt.Builder
     public func withDelivered(_ delivered: [Swift.String]) -> self_ios_sdk.Receipt.Builder
-    public func toIdentifier(_ toIdentifier: Swift.String) -> self_ios_sdk.Receipt.Builder
-    public func fromIdentifier(_ fromIdentifier: Swift.String) -> self_ios_sdk.Receipt.Builder
+    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.Receipt.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.Receipt.Builder
     public func build() -> self_ios_sdk.Receipt
     @objc deinit
   }
-  public func id() -> Swift.String
   public func read() -> [Swift.String]
   public func delivered() -> [Swift.String]
-  public func toIdentifier() -> Swift.String
-  public func fromIdentifier() -> Swift.String
-  public func properties() -> [Swift.String : Swift.String]
   @objc deinit
 }
 extension self_ios_sdk.SelfSDK {
   public static func readingPassportChip(mrzKey: Swift.String, completion: ((Foundation.Data?, [Swift.String : Swift.String]?) -> Swift.Void)? = nil)
 }
+extension self_ios_sdk.SigningRequestView : Swift.Sendable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.Equatable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.Hashable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.RawRepresentable {}
@@ -714,6 +672,10 @@ extension self_ios_sdk.LivenessCheck.Status : Swift.Hashable {}
 extension self_ios_sdk.LivenessCheck.Status : Swift.RawRepresentable {}
 extension self_ios_sdk.QRCodeReaderView : Swift.Sendable {}
 extension self_ios_sdk.LivenessCheckFlow : Swift.Sendable {}
+extension self_ios_sdk.MessageView : Swift.Sendable {}
+extension self_ios_sdk.CredentialRequestView : Swift.Sendable {}
+extension self_ios_sdk.QRCodeEncoding : Swift.Equatable {}
+extension self_ios_sdk.QRCodeEncoding : Swift.Hashable {}
 extension self_ios_sdk.ComparisonOperator : Swift.Equatable {}
 extension self_ios_sdk.ComparisonOperator : Swift.Hashable {}
 extension self_ios_sdk.ComparisonOperator : Swift.RawRepresentable {}
@@ -723,9 +685,12 @@ extension self_ios_sdk.ContentSummaryType : Swift.RawRepresentable {}
 extension self_ios_sdk.Environment : Swift.Equatable {}
 extension self_ios_sdk.Environment : Swift.Hashable {}
 extension self_ios_sdk.Environment : Swift.RawRepresentable {}
+extension self_ios_sdk.RegistrationFlow : Swift.Sendable {}
 extension self_ios_sdk.ResponseStatus : Swift.Equatable {}
 extension self_ios_sdk.ResponseStatus : Swift.Hashable {}
 extension self_ios_sdk.ResponseStatus : Swift.RawRepresentable {}
 extension self_ios_sdk.DocumentFlow : Swift.Sendable {}
-extension self_ios_sdk.NewLivenessCheckFlow : Swift.Sendable {}
+extension self_ios_sdk.BackupFlow : Swift.Sendable {}
+extension self_ios_sdk.RestoreFlow : Swift.Sendable {}
+extension self_ios_sdk.VerificationRequestView : Swift.Sendable {}
 extension self_ios_sdk.EmailFlow : Swift.Sendable {}

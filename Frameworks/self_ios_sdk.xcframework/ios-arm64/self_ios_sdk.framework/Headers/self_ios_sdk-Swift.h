@@ -281,9 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import AVFoundation;
-@import CoreLocation;
 @import CoreMedia;
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -314,13 +312,12 @@ SWIFT_CLASS("_TtC12self_ios_sdk7Account")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class CLLocationManager;
-@class CLLocation;
 
-@interface Account (SWIFT_EXTENSION(self_ios_sdk)) <CLLocationManagerDelegate>
-- (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+
+SWIFT_CLASS("_TtC12self_ios_sdk13BackupManager")
+@interface BackupManager : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

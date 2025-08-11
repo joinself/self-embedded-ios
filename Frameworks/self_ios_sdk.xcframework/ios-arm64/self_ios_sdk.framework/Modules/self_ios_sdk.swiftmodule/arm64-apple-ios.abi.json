@@ -1315,8 +1315,8 @@
               },
               {
                 "kind": "Function",
-                "name": "withContentType",
-                "printedName": "withContentType(_:)",
+                "name": "withMineType",
+                "printedName": "withMineType(_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1332,8 +1332,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:12self_ios_sdk10DataObjectC7BuilderC15withContentTypeyAESSF",
-                "mangledName": "$s12self_ios_sdk10DataObjectC7BuilderC15withContentTypeyAESSF",
+                "usr": "s:12self_ios_sdk10DataObjectC7BuilderC12withMineTypeyAESSF",
+                "mangledName": "$s12self_ios_sdk10DataObjectC7BuilderC12withMineTypeyAESSF",
                 "moduleName": "self_ios_sdk",
                 "declAttributes": [
                   "AccessControl"
@@ -20251,14 +20251,14 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/DataObject.swift",
       "kind": "StringLiteral",
-      "offset": 707,
+      "offset": 704,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/DataObject.swift",
       "kind": "StringLiteral",
-      "offset": 745,
+      "offset": 742,
       "length": 2,
       "value": "\"\""
     },
@@ -21637,14 +21637,14 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SDKRequests.swift",
       "kind": "IntegerLiteral",
-      "offset": 3218,
+      "offset": 3209,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/SDKRequests.swift",
       "kind": "BooleanLiteral",
-      "offset": 3270,
+      "offset": 3261,
       "length": 5,
       "value": "false"
     },

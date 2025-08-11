@@ -73,7 +73,7 @@ import _SwiftConcurrencyShims
     public init()
     public func withData(_ data: Foundation.Data) -> self_ios_sdk.DataObject.Builder
     public func withName(_ name: Swift.String) -> self_ios_sdk.DataObject.Builder
-    public func withContentType(_ contentType: Swift.String) -> self_ios_sdk.DataObject.Builder
+    public func withMineType(_ mimeType: Swift.String) -> self_ios_sdk.DataObject.Builder
     public func build() -> self_ios_sdk.DataObject
     @objc deinit
   }

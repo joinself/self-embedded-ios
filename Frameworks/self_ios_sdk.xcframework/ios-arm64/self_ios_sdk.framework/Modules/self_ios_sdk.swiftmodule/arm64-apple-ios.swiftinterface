@@ -184,7 +184,7 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
   @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
 }
 @_Concurrency.MainActor @preconcurrency public struct QRCodeReaderView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(onResult: ((Swift.String?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<self_ios_sdk.DiscoveryData, any Swift.Error>) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -562,7 +562,6 @@ public struct ez {
   public func generateAddress() -> self_ios_sdk.PublicKey?
   public func send(toAddress: self_ios_sdk.PublicKey, message: any self_ios_sdk.Message) async throws -> Swift.String?
   public func qrCode(encoding: self_ios_sdk.QRCodeEncoding) async throws -> Foundation.Data
-  public static func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
   public func connectWith(qrCode: Foundation.Data) async throws -> self_ios_sdk.PublicKey?
   public func connectWith(address: self_ios_sdk.PublicKey, info: [Swift.String : Any]) async throws -> self_ios_sdk.PublicKey?
   public func decryptNotification(forAddress: self_ios_sdk.PublicKey, payload: Swift.String) throws -> self_ios_sdk.Notification?

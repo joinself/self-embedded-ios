@@ -4955,6 +4955,13 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
+        "kind": "Import",
         "name": "SelfUI",
         "printedName": "SelfUI",
         "declKind": "Import",
@@ -4971,7 +4978,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(onResult:)",
+            "printedName": "init(account:onComplete:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4981,43 +4988,46 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String?) -> ())?",
+                "name": "Account",
+                "printedName": "self_ios_sdk.Account",
+                "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<self_ios_sdk.DiscoveryData, any Swift.Error>) -> ()",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String?) -> ()",
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<self_ios_sdk.DiscoveryData, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "DiscoveryData",
+                        "printedName": "self_ios_sdk.DiscoveryData",
+                        "usr": "s:12self_ios_sdk13DiscoveryDataV"
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
                       }
-                    ]
+                    ],
+                    "usr": "s:s6ResultO"
                   }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
+                ]
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk16QRCodeReaderViewV8onResultACySSSgcSg_tcfc",
-            "mangledName": "$s12self_ios_sdk16QRCodeReaderViewV8onResultACySSSgcSg_tcfc",
+            "usr": "s:12self_ios_sdk16QRCodeReaderViewV7account10onCompleteAcA7AccountC_ys6ResultOyAA13DiscoveryDataVs5Error_pGctcfc",
+            "mangledName": "$s12self_ios_sdk16QRCodeReaderViewV7account10onCompleteAcA7AccountC_ys6ResultOyAA13DiscoveryDataVs5Error_pGctcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -16363,45 +16373,6 @@
           },
           {
             "kind": "Function",
-            "name": "qrCode",
-            "printedName": "qrCode(data:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "self_ios_sdk.DiscoveryData?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DiscoveryData",
-                    "printedName": "self_ios_sdk.DiscoveryData",
-                    "usr": "s:12self_ios_sdk13DiscoveryDataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKFZ",
-            "mangledName": "$s12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKFZ",
-            "moduleName": "self_ios_sdk",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "connectWith",
             "printedName": "connectWith(qrCode:)",
             "children": [
@@ -20653,6 +20624,13 @@
       "offset": 18364,
       "length": 21,
       "value": "\"checking_your_image\""
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/QRCodeReaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1073,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LivenessCheckFlow.swift",

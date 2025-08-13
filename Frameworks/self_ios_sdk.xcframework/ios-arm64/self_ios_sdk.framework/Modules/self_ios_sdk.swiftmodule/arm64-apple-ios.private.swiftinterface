@@ -219,20 +219,6 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk11MessageViewV4bodyQrvp", 0) __
 }
 
-@_hasMissingDesignatedInitializers public class SecurityCodeResponse : self_ios_sdk.BaseMessage {
-  public class Builder {
-    public init()
-    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SecurityCodeResponse.Builder
-    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SecurityCodeResponse.Builder
-    public func withRequestId(_ requestId: Swift.String) -> self_ios_sdk.SecurityCodeResponse.Builder
-    public func withStatus(_ status: self_ios_sdk.ResponseStatus) -> self_ios_sdk.SecurityCodeResponse.Builder
-    public func build() -> self_ios_sdk.SecurityCodeResponse
-    @objc deinit
-  }
-  public func requestId() -> Swift.String
-  public func status() -> self_ios_sdk.ResponseStatus
-  @objc deinit
-}
 extension self_ios_sdk.SelfSDK {
   public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
 }
@@ -414,29 +400,6 @@ public struct CredentialType {
     set
   }
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class Document : self_ios_sdk.DataObject {
-  public class Builder {
-    public init()
-    public func withData(_ data: Foundation.Data) -> self_ios_sdk.Document.Builder
-    public func build() -> self_ios_sdk.Document
-    @objc deinit
-  }
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class SecurityCodeRequest : self_ios_sdk.BaseMessage {
-  public class Builder {
-    public init()
-    public func toAddress(_ toAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SecurityCodeRequest.Builder
-    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.SecurityCodeRequest.Builder
-    public func withType(_ type: Swift.String) -> self_ios_sdk.SecurityCodeRequest.Builder
-    public func withEvidence(_ evidence: [Swift.String : self_ios_sdk.DataObject]) -> self_ios_sdk.SecurityCodeRequest.Builder
-    public func build() -> self_ios_sdk.SecurityCodeRequest
-    @objc deinit
-  }
-  public func type() -> Swift.String
-  public func evidence() -> [Swift.String : self_ios_sdk.DataObject]
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VerificationRequest : self_ios_sdk.BaseMessage {
@@ -691,11 +654,6 @@ public struct PublicKey {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk9EmailFlowV4bodyQrvp", 0) __
-}
-@_hasMissingDesignatedInitializers public class Signable {
-  public func getIssuer() -> Swift.String
-  public func getData() -> Foundation.Data
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SelfSDK {
   public static func initialize(applicationAddress: Swift.String? = nil, pushToken: (() -> Swift.String)? = nil, log: ((Swift.String) -> Swift.Void)? = nil)

@@ -16373,6 +16373,49 @@
           },
           {
             "kind": "Function",
+            "name": "qrCode",
+            "printedName": "qrCode(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "self_ios_sdk.DiscoveryData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscoveryData",
+                    "printedName": "self_ios_sdk.DiscoveryData",
+                    "usr": "s:12self_ios_sdk13DiscoveryDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKFZ",
+            "mangledName": "$s12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "InternalUse"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "connectWith",
             "printedName": "connectWith(qrCode:)",
             "children": [

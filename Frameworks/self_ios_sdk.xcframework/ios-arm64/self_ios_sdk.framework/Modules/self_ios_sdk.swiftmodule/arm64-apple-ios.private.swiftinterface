@@ -610,6 +610,7 @@ public struct ez {
   public func generateAddress() -> self_ios_sdk.PublicKey?
   public func send(toAddress: self_ios_sdk.PublicKey, message: any self_ios_sdk.Message) async throws -> Swift.String?
   public func qrCode(encoding: self_ios_sdk.QRCodeEncoding) async throws -> Foundation.Data
+  @_spi(InternalUse) public static func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
   public func connectWith(qrCode: Foundation.Data) async throws -> self_ios_sdk.PublicKey?
   public func connectWith(address: self_ios_sdk.PublicKey, info: [Swift.String : Any]) async throws -> self_ios_sdk.PublicKey?
   public func decryptNotification(forAddress: self_ios_sdk.PublicKey, payload: Swift.String) throws -> self_ios_sdk.Notification?

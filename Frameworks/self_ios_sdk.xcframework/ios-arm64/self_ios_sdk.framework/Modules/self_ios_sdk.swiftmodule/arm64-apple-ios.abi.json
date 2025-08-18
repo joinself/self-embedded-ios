@@ -6033,7 +6033,7 @@
           {
             "kind": "Function",
             "name": "getBackupFile",
-            "printedName": "getBackupFile(backupFileType:)",
+            "printedName": "getBackupFile(sandbox:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6051,14 +6051,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "BackupFileType",
-                "printedName": "self_ios_sdk.BackupFileType",
-                "usr": "s:12self_ios_sdk14BackupFileTypeO"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk13BackupManagerC03getD4File06backupG4Type10Foundation3URLVSgAA0dgI0O_tF",
-            "mangledName": "$s12self_ios_sdk13BackupManagerC03getD4File06backupG4Type10Foundation3URLVSgAA0dgI0O_tF",
+            "usr": "s:12self_ios_sdk13BackupManagerC03getD4File7sandbox10Foundation3URLVSgSb_tF",
+            "mangledName": "$s12self_ios_sdk13BackupManagerC03getD4File7sandbox10Foundation3URLVSgSb_tF",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "AccessControl",
@@ -12129,6 +12129,96 @@
             "printedName": "Message",
             "usr": "s:12self_ios_sdk7MessageP",
             "mangledName": "$s12self_ios_sdk7MessageP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FileHelper",
+        "printedName": "FileHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "findBackupFile",
+            "printedName": "findBackupFile(account:iCloudContainerIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.URL]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "self_ios_sdk.Account",
+                "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk10FileHelperV010findBackupD07account25iCloudContainerIdentifierSay10Foundation3URLVGAA7AccountC_SStFZ",
+            "mangledName": "$s12self_ios_sdk10FileHelperV010findBackupD07account25iCloudContainerIdentifierSay10Foundation3URLVGAA7AccountC_SStFZ",
+            "moduleName": "self_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "InternalUse"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12self_ios_sdk10FileHelperV",
+        "mangledName": "$s12self_ios_sdk10FileHelperV",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "InternalUse"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -19985,7 +20075,7 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/InternalApi\/BackupManager.swift",
       "kind": "StringLiteral",
-      "offset": 6676,
+      "offset": 6782,
       "length": 12,
       "value": "\"production\""
     },
@@ -20881,28 +20971,28 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4724,
+      "offset": 4619,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4817,
+      "offset": 4712,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4896,
+      "offset": 4791,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4926,
+      "offset": 4821,
       "length": 2,
       "value": "\"\""
     },

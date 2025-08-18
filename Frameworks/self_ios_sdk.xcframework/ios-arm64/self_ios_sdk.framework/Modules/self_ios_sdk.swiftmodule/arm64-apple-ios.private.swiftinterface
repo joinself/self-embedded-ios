@@ -237,7 +237,7 @@ extension self_ios_sdk.SelfSDK {
 }
 @_spi(InternalUse) @objc public class BackupManager : ObjectiveC.NSObject {
   @_spi(InternalUse) public init(iCloudContainerIdentifier: Swift.String, environment: Swift.String)
-  @_spi(InternalUse) public func getBackupFile(backupFileType: self_ios_sdk.BackupFileType) -> Foundation.URL?
+  @_spi(InternalUse) public func getBackupFile(sandbox: Swift.Bool) -> Foundation.URL?
   @_spi(InternalUse) @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct CredentialRequestView : SwiftUICore.View {
@@ -417,6 +417,9 @@ public struct CredentialType {
   public func types() -> [Swift.String]
   public func evidence() -> [Swift.String : self_ios_sdk.DataObject]
   @objc deinit
+}
+@_spi(InternalUse) public struct FileHelper {
+  @_spi(InternalUse) public static func findBackupFile(account: self_ios_sdk.Account, iCloudContainerIdentifier: Swift.String) -> [Foundation.URL]
 }
 public protocol AccountDelegate {
   func onConnect()

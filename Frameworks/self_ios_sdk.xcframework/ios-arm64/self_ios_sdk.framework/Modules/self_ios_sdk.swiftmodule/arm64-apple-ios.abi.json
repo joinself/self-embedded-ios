@@ -5384,7 +5384,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(account:message:)",
+            "printedName": "init(account:message:onChange:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5403,11 +5403,52 @@
                 "name": "Message",
                 "printedName": "any self_ios_sdk.Message",
                 "usr": "s:12self_ios_sdk7MessageP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<Swift.String, any Swift.Error>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<Swift.String, any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<Swift.String, any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk11MessageViewV7account7messageAcA7AccountC_AA0D0_ptcfc",
-            "mangledName": "$s12self_ios_sdk11MessageViewV7account7messageAcA7AccountC_AA0D0_ptcfc",
+            "usr": "s:12self_ios_sdk11MessageViewV7account7message8onChangeAcA7AccountC_AA0D0_pys6ResultOySSs5Error_pGcSgtcfc",
+            "mangledName": "$s12self_ios_sdk11MessageViewV7account7message8onChangeAcA7AccountC_AA0D0_pys6ResultOySSs5Error_pGcSgtcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -19886,6 +19927,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
+      "kind": "StringLiteral",
+      "offset": 7718,
+      "length": 25,
+      "value": "\"Action failed: \""
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
+      "kind": "StringLiteral",
+      "offset": 7742,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/DocumentVerification.swift",
       "kind": "BooleanLiteral",
       "offset": 1079,
@@ -20777,28 +20832,28 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2219,
+      "offset": 2424,
       "length": 27,
       "value": "\"iCloudContainerIdentifier\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2337,
+      "offset": 2542,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2416,
+      "offset": 2621,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2446,
+      "offset": 2651,
       "length": 2,
       "value": "\"\""
     },
@@ -20826,28 +20881,28 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4703,
+      "offset": 4724,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4796,
+      "offset": 4817,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4875,
+      "offset": 4896,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4905,
+      "offset": 4926,
       "length": 2,
       "value": "\"\""
     },

@@ -200,7 +200,7 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 }
 
 @_Concurrency.MainActor @preconcurrency public struct MessageView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, message: any self_ios_sdk.Message)
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, message: any self_ios_sdk.Message, onChange: ((Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }

@@ -20068,14 +20068,14 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/InternalApi\/BackupManager.swift",
       "kind": "StringLiteral",
-      "offset": 4222,
+      "offset": 4273,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/InternalApi\/BackupManager.swift",
       "kind": "StringLiteral",
-      "offset": 6782,
+      "offset": 6833,
       "length": 12,
       "value": "\"production\""
     },

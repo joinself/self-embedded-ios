@@ -31,13 +31,6 @@ import _SwiftConcurrencyShims
   public func types() -> [Swift.String]
   @objc deinit
 }
-@_Concurrency.MainActor @preconcurrency public struct SigningRequestView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk18SigningRequestViewV4bodyQrvp", 0) __
-}
 
 @_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.BaseMessage {
   public class Builder {
@@ -73,6 +66,7 @@ public struct DiscoveryData {
   public var requestId: Swift.String
   public var address: self_ios_sdk.PublicKey
   public var sandbox: Swift.Bool
+  public var qrCode: Foundation.Data?
 }
 @_hasMissingDesignatedInitializers public class ChatMessage : self_ios_sdk.BaseMessage {
   public class Builder {
@@ -209,13 +203,6 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 
 extension self_ios_sdk.SelfSDK {
   public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
-}
-@_Concurrency.MainActor @preconcurrency public struct CredentialRequestView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, message: any self_ios_sdk.Message)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk21CredentialRequestViewV4bodyQrvp", 0) __
 }
 
 @_hasMissingDesignatedInitializers public class Notification {
@@ -550,12 +537,6 @@ public struct ez {
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk11RestoreFlowV4bodyQrvp", 0) __
 }
 
-@_Concurrency.MainActor @preconcurrency public struct VerificationRequestView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk23VerificationRequestViewV4bodyQrvp", 0) __
-}
 
 public protocol Message {
   func id() -> Swift.String
@@ -617,7 +598,6 @@ public struct PublicKey {
 extension self_ios_sdk.SelfSDK {
   public static func readingPassportChip(mrzKey: Swift.String, completion: ((Foundation.Data?, [Swift.String : Swift.String]?) -> Swift.Void)? = nil)
 }
-extension self_ios_sdk.SigningRequestView : Swift.Sendable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.Equatable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.Hashable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.RawRepresentable {}
@@ -630,7 +610,6 @@ extension self_ios_sdk.LivenessCheck.Status : Swift.RawRepresentable {}
 extension self_ios_sdk.QRCodeReaderView : Swift.Sendable {}
 extension self_ios_sdk.LivenessCheckFlow : Swift.Sendable {}
 extension self_ios_sdk.MessageView : Swift.Sendable {}
-extension self_ios_sdk.CredentialRequestView : Swift.Sendable {}
 extension self_ios_sdk.QRCodeEncoding : Swift.Equatable {}
 extension self_ios_sdk.QRCodeEncoding : Swift.Hashable {}
 extension self_ios_sdk.ComparisonOperator : Swift.Equatable {}
@@ -649,5 +628,4 @@ extension self_ios_sdk.ResponseStatus : Swift.RawRepresentable {}
 extension self_ios_sdk.DocumentFlow : Swift.Sendable {}
 extension self_ios_sdk.BackupFlow : Swift.Sendable {}
 extension self_ios_sdk.RestoreFlow : Swift.Sendable {}
-extension self_ios_sdk.VerificationRequestView : Swift.Sendable {}
 extension self_ios_sdk.EmailFlow : Swift.Sendable {}

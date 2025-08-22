@@ -212,7 +212,6 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk11MessageViewV4bodyQrvp", 0) __
 }
-
 extension self_ios_sdk.SelfSDK {
   public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
 }

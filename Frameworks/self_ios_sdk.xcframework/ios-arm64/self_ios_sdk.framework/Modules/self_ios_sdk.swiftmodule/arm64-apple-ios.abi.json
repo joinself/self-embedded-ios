@@ -19698,6 +19698,27 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3942,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
+      "kind": "StringLiteral",
+      "offset": 10402,
+      "length": 25,
+      "value": "\"Action failed: \""
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
+      "kind": "StringLiteral",
+      "offset": 10426,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/DocumentVerification.swift",
       "kind": "BooleanLiteral",
       "offset": 1079,

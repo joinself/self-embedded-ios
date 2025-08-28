@@ -43,7 +43,6 @@ import _SwiftConcurrencyShims
   @_spi(InternalUse) public let types: [Swift.String]
   @_spi(InternalUse) public let credentials: [self_ios_sdk.Credential]
 }
-
 @_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
@@ -97,7 +96,6 @@ public struct DiscoveryData {
   public func attachments() -> [self_ios_sdk.DataObject]
   @objc deinit
 }
-
 @_hasMissingDesignatedInitializers public class SigningResponse : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
@@ -234,7 +232,6 @@ extension self_ios_sdk.SelfSDK {
   @_spi(InternalUse) public func getBackupFile(sandbox: Swift.Bool) -> Foundation.URL?
   @_spi(InternalUse) @objc deinit
 }
-
 @_hasMissingDesignatedInitializers public class Notification {
   public func id() -> Swift.String
   public func type() -> Swift.String
@@ -600,7 +597,6 @@ public struct ez {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk11RestoreFlowV4bodyQrvp", 0) __
 }
-
 
 public protocol Message {
   func id() -> Swift.String

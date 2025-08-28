@@ -167,8 +167,7 @@
                 "mangledName": "$s12self_ios_sdk17CredentialRequestC7BuilderC9withTypesyAESaySSGF",
                 "moduleName": "self_ios_sdk",
                 "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
+                  "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
               },
@@ -243,8 +242,7 @@
             "mangledName": "$s12self_ios_sdk17CredentialRequestC5typesSaySSGyF",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -651,26 +649,6 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SelfUI",
-        "printedName": "SelfUI",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {
@@ -1762,6 +1740,23 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2157,26 +2152,6 @@
         "kind": "Import",
         "name": "self_mobile_kmp",
         "printedName": "self_mobile_kmp",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SelfUI",
-        "printedName": "SelfUI",
         "declKind": "Import",
         "moduleName": "self_ios_sdk",
         "declAttributes": [
@@ -6195,33 +6170,6 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "self_ios_sdk"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk"
-      },
-      {
-        "kind": "Import",
-        "name": "SelfUI",
-        "printedName": "SelfUI",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk",
-        "declAttributes": [
-          "AccessControl"
-        ]
       },
       {
         "kind": "Import",
@@ -16969,26 +16917,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SelfUI",
-        "printedName": "SelfUI",
-        "declKind": "Import",
-        "moduleName": "self_ios_sdk",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19238,14 +19166,14 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/CredentialRequest.swift",
       "kind": "Array",
-      "offset": 886,
+      "offset": 878,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/CredentialRequest.swift",
       "kind": "Array",
-      "offset": 927,
+      "offset": 919,
       "length": 2,
       "value": "[]"
     },
@@ -19700,21 +19628,35 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3942,
+      "offset": 239,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 431,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "StringLiteral",
-      "offset": 10402,
+      "offset": 10784,
       "length": 25,
       "value": "\"Action failed: \""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "StringLiteral",
-      "offset": 10426,
+      "offset": 10808,
       "length": 2,
       "value": "\"\""
     },
@@ -20554,35 +20496,49 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 1826,
+      "offset": 2053,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 1858,
+      "offset": 2085,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2454,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 13864,
+      "offset": 14745,
       "length": 16,
       "value": "\"frontImage.jpg\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 13977,
+      "offset": 14858,
       "length": 15,
       "value": "\"backImage.jpg\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 14083,
+      "offset": 14964,
       "length": 12,
       "value": "\"selfie.jpg\""
     },

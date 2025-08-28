@@ -31,7 +31,6 @@ import _SwiftConcurrencyShims
   public func types() -> [Swift.String]
   @objc deinit
 }
-
 @_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
@@ -85,7 +84,6 @@ public struct DiscoveryData {
   public func attachments() -> [self_ios_sdk.DataObject]
   @objc deinit
 }
-
 @_hasMissingDesignatedInitializers public class SigningResponse : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
@@ -204,7 +202,6 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 extension self_ios_sdk.SelfSDK {
   public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
 }
-
 @_hasMissingDesignatedInitializers public class Notification {
   public func id() -> Swift.String
   public func type() -> Swift.String
@@ -536,7 +533,6 @@ public struct ez {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk11RestoreFlowV4bodyQrvp", 0) __
 }
-
 
 public protocol Message {
   func id() -> Swift.String

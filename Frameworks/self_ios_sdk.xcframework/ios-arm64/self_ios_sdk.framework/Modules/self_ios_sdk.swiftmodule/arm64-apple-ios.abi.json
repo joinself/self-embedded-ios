@@ -16261,53 +16261,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "lookUpCredentials",
-            "printedName": "lookUpCredentials(claims:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[self_ios_sdk.Credential]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Credential",
-                    "printedName": "self_ios_sdk.Credential",
-                    "usr": "s:12self_ios_sdk10CredentialC"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[self_ios_sdk.Claim]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Claim",
-                    "printedName": "self_ios_sdk.Claim",
-                    "usr": "s:12self_ios_sdk5ClaimC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC17lookUpCredentials6claimsSayAA10CredentialCGSayAA5ClaimCG_tF",
-            "mangledName": "$s12self_ios_sdk7AccountC17lookUpCredentials6claimsSayAA10CredentialCGSayAA5ClaimCG_tF",
-            "moduleName": "self_ios_sdk",
-            "declAttributes": [
-              "AccessControl",
-              "SPIAccessControl"
-            ],
-            "spi_group_names": [
-              "InternalUse"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -19166,14 +19119,7 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/CredentialRequest.swift",
       "kind": "Array",
-      "offset": 878,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/CredentialRequest.swift",
-      "kind": "Array",
-      "offset": 919,
+      "offset": 885,
       "length": 2,
       "value": "[]"
     },

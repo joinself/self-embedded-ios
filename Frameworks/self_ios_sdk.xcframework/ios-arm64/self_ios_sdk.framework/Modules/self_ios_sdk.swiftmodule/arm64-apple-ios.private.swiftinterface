@@ -579,7 +579,6 @@ public struct ez {
   @_spi(InternalUse) public func credentials() -> [self_ios_sdk.Credential]
   @_spi(InternalUse) public func respondToCredentialMessage(credentialMessage: self_ios_sdk.CredentialMessage, status: self_ios_sdk.ResponseStatus)
   @_spi(InternalUse) public func credentialsByType() -> [self_ios_sdk.CredentialsByType]
-  @_spi(InternalUse) public func lookUpCredentials(claims: [self_ios_sdk.Claim]) -> [self_ios_sdk.Credential]
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct BackupFlow : SwiftUICore.View {

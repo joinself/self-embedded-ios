@@ -16261,6 +16261,92 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "getSharedCredentialRequests",
+            "printedName": "getSharedCredentialRequests(fromAddress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[self_ios_sdk.CredentialRequest]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CredentialRequest",
+                    "printedName": "self_ios_sdk.CredentialRequest",
+                    "usr": "s:12self_ios_sdk17CredentialRequestC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "self_ios_sdk.PublicKey?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PublicKey",
+                    "printedName": "self_ios_sdk.PublicKey",
+                    "usr": "s:12self_ios_sdk9PublicKeyV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC27getSharedCredentialRequests11fromAddressSayAA0G7RequestCGAA9PublicKeyVSg_tF",
+            "mangledName": "$s12self_ios_sdk7AccountC27getSharedCredentialRequests11fromAddressSayAA0G7RequestCGAA9PublicKeyVSg_tF",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSharedVerificationRequests",
+            "printedName": "getSharedVerificationRequests(fromAddress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[self_ios_sdk.VerificationRequest]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VerificationRequest",
+                    "printedName": "self_ios_sdk.VerificationRequest",
+                    "usr": "s:12self_ios_sdk19VerificationRequestC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "self_ios_sdk.PublicKey?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PublicKey",
+                    "printedName": "self_ios_sdk.PublicKey",
+                    "usr": "s:12self_ios_sdk9PublicKeyV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC29getSharedVerificationRequests11fromAddressSayAA0G7RequestCGAA9PublicKeyVSg_tF",
+            "mangledName": "$s12self_ios_sdk7AccountC29getSharedVerificationRequests11fromAddressSayAA0G7RequestCGAA9PublicKeyVSg_tF",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -20470,21 +20556,21 @@
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 14745,
+      "offset": 15314,
       "length": 16,
       "value": "\"frontImage.jpg\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 14858,
+      "offset": 15427,
       "length": 15,
       "value": "\"backImage.jpg\""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 14964,
+      "offset": 15533,
       "length": 12,
       "value": "\"selfie.jpg\""
     },

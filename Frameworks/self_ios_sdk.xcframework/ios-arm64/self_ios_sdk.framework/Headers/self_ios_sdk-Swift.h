@@ -314,14 +314,6 @@ SWIFT_CLASS("_TtC12self_ios_sdk7Account")
 
 
 
-SWIFT_CLASS("_TtC12self_ios_sdk13BackupManager")
-@interface BackupManager : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
 
 
 SWIFT_CLASS("_TtC12self_ios_sdk13LivenessCheck")

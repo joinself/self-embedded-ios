@@ -214,24 +214,6 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 extension self_ios_sdk.SelfSDK {
   public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
 }
-@_spi(InternalUse) public enum BackupFileType : Swift.String, Swift.CaseIterable {
-  @_spi(InternalUse) case sandbox
-  @_spi(InternalUse) case production
-  @_spi(InternalUse) public init?(rawValue: Swift.String)
-  @_spi(InternalUse) public typealias AllCases = [self_ios_sdk.BackupFileType]
-  @_spi(InternalUse) public typealias RawValue = Swift.String
-  @_spi(InternalUse) nonisolated public static var allCases: [self_ios_sdk.BackupFileType] {
-    @_spi(InternalUse) get
-  }
-  @_spi(InternalUse) public var rawValue: Swift.String {
-    @_spi(InternalUse) get
-  }
-}
-@_spi(InternalUse) @objc public class BackupManager : ObjectiveC.NSObject {
-  @_spi(InternalUse) public init(iCloudContainerIdentifier: Swift.String, environment: Swift.String)
-  @_spi(InternalUse) public func getBackupFile(sandbox: Swift.Bool) -> Foundation.URL?
-  @_spi(InternalUse) @objc deinit
-}
 @_hasMissingDesignatedInitializers public class Notification {
   public func id() -> Swift.String
   public func type() -> Swift.String
@@ -671,9 +653,6 @@ extension self_ios_sdk.LivenessCheck.Status : Swift.RawRepresentable {}
 extension self_ios_sdk.QRCodeReaderView : Swift.Sendable {}
 extension self_ios_sdk.LivenessCheckFlow : Swift.Sendable {}
 extension self_ios_sdk.MessageView : Swift.Sendable {}
-@_spi(InternalUse) extension self_ios_sdk.BackupFileType : Swift.Equatable {}
-@_spi(InternalUse) extension self_ios_sdk.BackupFileType : Swift.Hashable {}
-@_spi(InternalUse) extension self_ios_sdk.BackupFileType : Swift.RawRepresentable {}
 extension self_ios_sdk.QRCodeEncoding : Swift.Equatable {}
 extension self_ios_sdk.QRCodeEncoding : Swift.Hashable {}
 extension self_ios_sdk.ComparisonOperator : Swift.Equatable {}

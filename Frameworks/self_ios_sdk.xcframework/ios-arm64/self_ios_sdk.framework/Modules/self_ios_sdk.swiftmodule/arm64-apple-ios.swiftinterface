@@ -516,8 +516,6 @@ public struct ez {
   public func valueLookup(key: Swift.String) throws -> Foundation.Data?
   public func valueRemove(key: Swift.String) throws
   public func close() async throws
-  public func getSharedCredentialRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.CredentialRequest]
-  public func getSharedVerificationRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.VerificationRequest]
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct BackupFlow : SwiftUICore.View {

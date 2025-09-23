@@ -542,7 +542,6 @@ public struct ez {
   public func generateAddress() -> self_ios_sdk.PublicKey?
   public func send(toAddress: self_ios_sdk.PublicKey, message: any self_ios_sdk.Message) async throws -> Swift.String?
   public func qrCode(encoding: self_ios_sdk.QRCodeEncoding) async throws -> Foundation.Data
-  @_spi(InternalUse) public static func qrCode(data: Foundation.Data) async throws -> self_ios_sdk.DiscoveryData?
   public func connectWith(qrCode: Foundation.Data) async throws -> self_ios_sdk.PublicKey?
   public func connectWith(address: self_ios_sdk.PublicKey, info: [Swift.String : Any]) async throws -> self_ios_sdk.PublicKey?
   public func decryptNotification(forAddress: self_ios_sdk.PublicKey, payload: Swift.String) throws -> self_ios_sdk.Notification?
@@ -559,10 +558,9 @@ public struct ez {
   @_spi(InternalUse) public func setSelfieImageData(_ selfieData: Foundation.Data)
   @_spi(InternalUse) public func getSelfieImageData() -> Foundation.Data?
   @_spi(InternalUse) public func credentials() -> [self_ios_sdk.Credential]
-  @_spi(InternalUse) public func respondToCredentialMessage(credentialMessage: self_ios_sdk.CredentialMessage, status: self_ios_sdk.ResponseStatus)
   @_spi(InternalUse) public func credentialsByType() -> [self_ios_sdk.CredentialsByType]
-  public func getSharedCredentialRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.CredentialRequest]
-  public func getSharedVerificationRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.VerificationRequest]
+  @_spi(InternalUse) public func getSharedCredentialRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.CredentialRequest]
+  @_spi(InternalUse) public func getSharedVerificationRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.VerificationRequest]
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct BackupFlow : SwiftUICore.View {

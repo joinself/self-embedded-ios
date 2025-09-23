@@ -14824,8 +14824,7 @@
                 "mangledName": "$s12self_ios_sdk7AccountC7BuilderC5buildACyF",
                 "moduleName": "self_ios_sdk",
                 "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
+                  "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
               }
@@ -15020,49 +15019,6 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "qrCode",
-            "printedName": "qrCode(data:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "self_ios_sdk.DiscoveryData?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DiscoveryData",
-                    "printedName": "self_ios_sdk.DiscoveryData",
-                    "usr": "s:12self_ios_sdk13DiscoveryDataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKFZ",
-            "mangledName": "$s12self_ios_sdk7AccountC6qrCode4dataAA13DiscoveryDataVSg10Foundation0I0V_tYaKFZ",
-            "moduleName": "self_ios_sdk",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "SPIAccessControl",
-              "RawDocComment"
-            ],
-            "spi_group_names": [
-              "InternalUse"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -15671,43 +15627,6 @@
           },
           {
             "kind": "Function",
-            "name": "respondToCredentialMessage",
-            "printedName": "respondToCredentialMessage(credentialMessage:status:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CredentialMessage",
-                "printedName": "self_ios_sdk.CredentialMessage",
-                "usr": "s:12self_ios_sdk17CredentialMessageC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ResponseStatus",
-                "printedName": "self_ios_sdk.ResponseStatus",
-                "usr": "s:12self_ios_sdk14ResponseStatusO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC26respondToCredentialMessage010credentialH06statusyAA0gH0C_AA14ResponseStatusOtF",
-            "mangledName": "$s12self_ios_sdk7AccountC26respondToCredentialMessage010credentialH06statusyAA0gH0C_AA14ResponseStatusOtF",
-            "moduleName": "self_ios_sdk",
-            "declAttributes": [
-              "AccessControl",
-              "SPIAccessControl",
-              "RawDocComment"
-            ],
-            "spi_group_names": [
-              "InternalUse"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "credentialsByType",
             "printedName": "credentialsByType()",
             "children": [
@@ -15732,7 +15651,8 @@
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "AccessControl",
-              "SPIAccessControl"
+              "SPIAccessControl",
+              "RawDocComment"
             ],
             "spi_group_names": [
               "InternalUse"
@@ -15778,7 +15698,11 @@
             "mangledName": "$s12self_ios_sdk7AccountC27getSharedCredentialRequests11fromAddressSayAA0G7RequestCGAA9PublicKeyVSg_tF",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "InternalUse"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15821,7 +15745,11 @@
             "mangledName": "$s12self_ios_sdk7AccountC29getSharedVerificationRequests11fromAddressSayAA0G7RequestCGAA9PublicKeyVSg_tF",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "InternalUse"
             ],
             "funcSelfKind": "NonMutating"
           },

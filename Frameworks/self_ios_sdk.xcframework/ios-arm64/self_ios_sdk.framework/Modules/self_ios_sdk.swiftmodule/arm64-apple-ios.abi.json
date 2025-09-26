@@ -19087,15 +19087,22 @@
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 540,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "StringLiteral",
-      "offset": 10785,
+      "offset": 10863,
       "length": 25,
       "value": "\"Action failed: \""
     },
     {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "StringLiteral",
-      "offset": 10809,
+      "offset": 10887,
       "length": 2,
       "value": "\"\""
     },

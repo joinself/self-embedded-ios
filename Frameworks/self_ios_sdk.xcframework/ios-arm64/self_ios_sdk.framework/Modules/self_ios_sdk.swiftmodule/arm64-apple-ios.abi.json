@@ -19177,13 +19177,6 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/private\/Claim.swift",
-      "kind": "StringLiteral",
-      "offset": 694,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/ops\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1768,

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name self_ios_sdk
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name self_ios_sdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import Combine
 import CoreLocation
@@ -92,7 +92,9 @@ public struct DiscoveryData {
     @objc deinit
   }
   public func message() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func reference() -> Swift.String?
+  #endif
   public func attachments() -> [self_ios_sdk.DataObject]
   @objc deinit
 }
@@ -143,7 +145,9 @@ extension UIKit.UIImage {
 @objc @_inheritsConvenienceInitializers public class LivenessCheck : ObjectiveC.NSObject, Foundation.ObservableObject {
   public enum Challenge : Swift.String {
     case None, Done, Smile, Blink, TurnLeft, TurnRight, LookUp, LookDown
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -151,7 +155,9 @@ extension UIKit.UIImage {
   }
   public enum Error : Swift.String {
     case FaceChanged, OutOfPreview
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -159,7 +165,9 @@ extension UIKit.UIImage {
   }
   public enum Status : Swift.String {
     case Info, Passed, Error
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -188,7 +196,9 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
   @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
 }
 @_Concurrency.MainActor @preconcurrency public struct QRCodeReaderView : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<self_ios_sdk.DiscoveryData, any Swift.Error>) -> Swift.Void)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -196,7 +206,9 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 }
 
 @_Concurrency.MainActor @preconcurrency public struct LivenessCheckFlow : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(callback: ((_ selfieImageData: Foundation.Data) -> Swift.Void)? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -204,7 +216,9 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 }
 
 @_Concurrency.MainActor @preconcurrency public struct MessageView : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, message: any self_ios_sdk.Message, onChange: ((Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -212,13 +226,15 @@ extension self_ios_sdk.LivenessCheck : AVFoundation.AVCaptureVideoDataOutputSamp
 }
 
 extension self_ios_sdk.SelfSDK {
-  public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping ((Swift.Bool) -> Swift.Void))
+  public static func showOnboarding(account: self_ios_sdk.Account, onFinish: @escaping (Swift.Bool) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class Notification {
   public func id() -> Swift.String
   public func type() -> Swift.String
   public func message() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func fromAddress() -> self_ios_sdk.PublicKey?
+  #endif
   @objc deinit
 }
 @_spi(InternalUse) @_hasMissingDesignatedInitializers public class Claim {
@@ -243,7 +259,9 @@ public enum ComparisonOperator : Swift.String {
   case GREATER_THAN_OR_EQUALS
   case LESS_THAN
   case LESS_THAN_OR_EQUALS
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -257,7 +275,9 @@ public enum ContentSummaryType : Swift.String {
   case PRESENTATION
   case ASSET
   case SIGNATURE
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -269,7 +289,9 @@ public enum Environment : Swift.String {
   case preview
   case staging
   case production
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -344,7 +366,9 @@ public struct CredentialType {
   public static let Document: Swift.String
 }
 @_Concurrency.MainActor @preconcurrency public struct RegistrationFlow : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -391,8 +415,12 @@ public protocol AccountDelegate {
   func onConnect()
   func onAcknowledgement(id: Swift.String)
   func onMessage(message: any self_ios_sdk.Message)
+  #if compiler(>=5.3) && $NonescapableTypes
   func onDisconnect(errorMessage: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func onError(id: Swift.String, errorMessage: Swift.String?)
+  #endif
 }
 public enum ResponseStatus : Swift.String {
   case none
@@ -400,7 +428,9 @@ public enum ResponseStatus : Swift.String {
   case accepted
   case rejected
   case verified
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -411,8 +441,12 @@ public enum ResponseStatus : Swift.String {
   @_spi(InternalUse) public let credentials: [self_ios_sdk.Credential]
 }
 @_spi(InternalUse) @_Concurrency.MainActor @preconcurrency public struct LivenessFlow : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, isVerificationRequired: Swift.Bool = true, autoDismiss: Swift.Bool = true, onComplete: ((Swift.Result<self_ios_sdk.LivenessData, any Swift.Error>) -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, isVerificationRequired: Swift.Bool = true, autoDismiss: Swift.Bool = true, onFinish: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #endif
   @_spi(InternalUse) @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     @_spi(InternalUse) get
   }
@@ -432,7 +466,9 @@ public enum ResponseStatus : Swift.String {
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct DocumentFlow : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, devMode: Swift.Bool = false, autoCaptureImage: Swift.Bool = false, onInfo: (([Foundation.URL]) -> Swift.Void)? = nil, onResult: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -440,21 +476,31 @@ public enum ResponseStatus : Swift.String {
 }
 public struct ez {
   public static func GetCurrentTimeStamp() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var appDisplayName: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var appVersion: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var appBuild: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var appBundleID: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var appVersionAndBuild: Swift.String? {
     get
   }
+  #endif
   public static var deviceVersion: Swift.String {
     get
   }
@@ -488,17 +534,21 @@ public struct ez {
   public static var screenHeightWithoutStatusBar: CoreFoundation.CGFloat {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var currentRegion: Swift.String? {
     get
   }
+  #endif
   public static func iterateEnum<T>(_: T.Type) -> Swift.AnyIterator<T> where T : Swift.Hashable
   public static func dispatchDelay(_ second: Swift.Double, closure: @escaping () -> Swift.Void)
   public static func runThisAfterDelay(seconds: Swift.Double, after: @escaping () -> Swift.Void)
   public static func runThisAfterDelay(seconds: Swift.Double, queue: Dispatch.DispatchQueue, after: @escaping () -> Swift.Void)
   public static func runThisInMainThread(_ block: @escaping () -> Swift.Void)
   public static func runThisInBackground(_ block: @escaping () -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func runThisEvery(seconds: Foundation.TimeInterval, startAfterSeconds: Foundation.TimeInterval, handler: @escaping (CoreFoundation.CFRunLoopTimer?) -> Swift.Void) -> Foundation.Timer
+  #endif
   @available(*, deprecated, renamed: "DispatchQueue.main")
   public var globalMainQueue: Dispatch.DispatchQueue {
     get
@@ -523,8 +573,12 @@ public struct ez {
   public var globalQueue: Dispatch.DispatchQueue {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func requestImage(_ url: Swift.String, success: @escaping (UIKit.UIImage?) -> Swift.Void)
-  public static func requestJSON(_ url: Swift.String, success: @escaping ((Any?) -> Swift.Void), error: ((Foundation.NSError) -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func requestJSON(_ url: Swift.String, success: @escaping (Any?) -> Swift.Void, error: ((Foundation.NSError) -> Swift.Void)?)
+  #endif
 }
 @objc @_hasMissingDesignatedInitializers public class Account : ObjectiveC.NSObject {
   public class Builder {
@@ -533,38 +587,64 @@ public struct ez {
     public func withSandbox(_ sandbox: Swift.Bool) -> self_ios_sdk.Account.Builder
     public func withGroupId(_ groupId: Swift.String) -> self_ios_sdk.Account.Builder
     public func withStoragePath(_ storagePath: Swift.String) -> self_ios_sdk.Account.Builder
+    #if compiler(>=5.3) && $NonescapableTypes
     public func withDelegate(delegate: (any self_ios_sdk.AccountDelegate)?) -> self_ios_sdk.Account.Builder
+    #endif
     public func build() -> self_ios_sdk.Account
     @objc deinit
   }
   public func registered() -> Swift.Bool
   public func aliasCredential(identifierAddress: self_ios_sdk.PublicKey, info: [Swift.String : Swift.String]) -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func generateAddress() -> self_ios_sdk.PublicKey?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func send(toAddress: self_ios_sdk.PublicKey, message: any self_ios_sdk.Message) async throws -> Swift.String?
+  #endif
   public func qrCode(encoding: self_ios_sdk.QRCodeEncoding) async throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func connectWith(qrCode: Foundation.Data) async throws -> self_ios_sdk.PublicKey?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func connectWith(address: self_ios_sdk.PublicKey, info: [Swift.String : Any]) async throws -> self_ios_sdk.PublicKey?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func decryptNotification(forAddress: self_ios_sdk.PublicKey, payload: Swift.String) throws -> self_ios_sdk.Notification?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func backup() async -> Foundation.URL?
+  #endif
   @_spi(InternalUse) public func restore(backupFile: Foundation.URL, selfieImage: Foundation.Data) async throws -> [self_ios_sdk.Credential]
   public func valueStore(key: Swift.String, value: Foundation.Data) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func valueLookup(key: Swift.String) throws -> Foundation.Data?
+  #endif
   public func valueRemove(key: Swift.String) throws
   public func close() async throws
   @_spi(InternalUse) public func register(selfieImage: Foundation.Data, forAddress: self_ios_sdk.PublicKey, presentation: Foundation.Data) async throws -> Swift.Bool
   @_spi(InternalUse) public func presentationForAddress(forAddress: self_ios_sdk.PublicKey, credentials: [self_ios_sdk.Credential]) -> Foundation.Data
   @_spi(InternalUse) public func setLivenessCredential(_ credentials: [self_ios_sdk.Credential])
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func getLivenessCredentials() -> [self_ios_sdk.Credential]?
+  #endif
   @_spi(InternalUse) public func setSelfieImageData(_ selfieData: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func getSelfieImageData() -> Foundation.Data?
+  #endif
   @_spi(InternalUse) public func credentials() -> [self_ios_sdk.Credential]
   @_spi(InternalUse) public func credentialsByType() -> [self_ios_sdk.CredentialsByType]
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func getSharedCredentialRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.CredentialRequest]
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func getSharedVerificationRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.VerificationRequest]
+  #endif
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct BackupFlow : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, iCloudContainerIdentifier: Swift.String, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -572,7 +652,9 @@ public struct ez {
 }
 
 @_Concurrency.MainActor @preconcurrency public struct RestoreFlow : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, iCloudContainerIdentifier: Swift.String, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -610,16 +692,24 @@ public struct PublicKey {
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct EmailFlow : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, autoDismiss: Swift.Bool = true, onResult: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk9EmailFlowV4bodyQrvp", 0) __
 }
 @_hasMissingDesignatedInitializers public class SelfSDK {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func initialize(applicationAddress: Swift.String? = nil, pushToken: (() -> Swift.String)? = nil, log: ((Swift.String) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func verifyEmail(account: self_ios_sdk.Account, transitionAsModal: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func verifyPhoneNumber(account: self_ios_sdk.Account, sendTo: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Receipt : self_ios_sdk.BaseMessage {
@@ -637,7 +727,9 @@ public struct PublicKey {
   @objc deinit
 }
 extension self_ios_sdk.SelfSDK {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func readingPassportChip(mrzKey: Swift.String, completion: ((Foundation.Data?, [Swift.String : Swift.String]?) -> Swift.Void)? = nil)
+  #endif
 }
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.Equatable {}
 extension self_ios_sdk.LivenessCheck.Challenge : Swift.Hashable {}

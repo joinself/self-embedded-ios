@@ -10340,6 +10340,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "SelfUI",
+        "printedName": "SelfUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RegistrationFlow",
         "printedName": "RegistrationFlow",
@@ -20147,28 +20157,35 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 297,
+      "offset": 320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 371,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2830,
+      "offset": 3353,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2917,
+      "offset": 3440,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2947,
+      "offset": 3470,
       "length": 2,
       "value": "\"\""
     },

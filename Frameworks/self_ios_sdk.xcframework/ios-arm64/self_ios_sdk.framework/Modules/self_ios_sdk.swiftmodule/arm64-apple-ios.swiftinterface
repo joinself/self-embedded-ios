@@ -359,7 +359,7 @@ public struct CredentialType {
 
 @_Concurrency.MainActor @preconcurrency public struct LivenessVerificationView : SwiftUICore.View {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
   #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get

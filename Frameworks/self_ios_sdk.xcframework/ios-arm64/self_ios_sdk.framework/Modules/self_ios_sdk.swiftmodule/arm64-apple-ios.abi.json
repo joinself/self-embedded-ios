@@ -10865,19 +10865,14 @@
                 "usr": "c:@M@self_ios_sdk@objc(cs)Account"
               },
               {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<(), any Swift.Error>) -> ())?",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<(), any Swift.Error>",
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -10886,19 +10881,33 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
                       }
-                    ],
-                    "usr": "s:s6ResultO"
+                    ]
                   }
-                ]
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk24LivenessVerificationViewV7account10onCompleteAcA7AccountC_ys6ResultOyyts5Error_pGctcfc",
-            "mangledName": "$s12self_ios_sdk24LivenessVerificationViewV7account10onCompleteAcA7AccountC_ys6ResultOyyts5Error_pGctcfc",
+            "usr": "s:12self_ios_sdk24LivenessVerificationViewV7account10onCompleteAcA7AccountC_ys6ResultOyyts5Error_pGcSgtcfc",
+            "mangledName": "$s12self_ios_sdk24LivenessVerificationViewV7account10onCompleteAcA7AccountC_ys6ResultOyyts5Error_pGcSgtcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -20145,21 +20154,21 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2162,
+      "offset": 2830,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2249,
+      "offset": 2917,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2279,
+      "offset": 2947,
       "length": 2,
       "value": "\"\""
     },
@@ -20565,35 +20574,35 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1077,
+      "offset": 1157,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1126,
+      "offset": 1206,
       "length": 3,
       "value": "1.3"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 26111,
+      "offset": 26309,
       "length": 30,
       "value": "\"Liveness check is completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 26195,
+      "offset": 26393,
       "length": 36,
       "value": "\"Liveness check is failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 26230,
+      "offset": 26428,
       "length": 2,
       "value": "\"\""
     },

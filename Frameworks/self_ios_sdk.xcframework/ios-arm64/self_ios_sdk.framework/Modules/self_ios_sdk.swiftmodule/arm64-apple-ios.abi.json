@@ -12998,7 +12998,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(account:onComplete:)",
+            "printedName": "init(account:isVerificationRequired:onComplete:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13011,6 +13011,13 @@
                 "name": "Account",
                 "printedName": "self_ios_sdk.Account",
                 "usr": "c:@M@self_ios_sdk@objc(cs)Account"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -13054,8 +13061,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk7LFCViewV7account10onCompleteAcA7AccountC_ys6ResultOyyts5Error_pGcSgtcfc",
-            "mangledName": "$s12self_ios_sdk7LFCViewV7account10onCompleteAcA7AccountC_ys6ResultOyyts5Error_pGcSgtcfc",
+            "usr": "s:12self_ios_sdk7LFCViewV7account22isVerificationRequired10onCompleteAcA7AccountC_Sbys6ResultOyyts5Error_pGcSgtcfc",
+            "mangledName": "$s12self_ios_sdk7LFCViewV7account22isVerificationRequired10onCompleteAcA7AccountC_Sbys6ResultOyyts5Error_pGcSgtcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -20375,21 +20382,21 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3336,
+      "offset": 2690,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3423,
+      "offset": 2777,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3453,
+      "offset": 2807,
       "length": 2,
       "value": "\"\""
     },
@@ -20704,21 +20711,21 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 15314,
+      "offset": 15304,
       "length": 16,
       "value": "\"frontImage.jpg\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 15427,
+      "offset": 15417,
       "length": 15,
       "value": "\"backImage.jpg\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 15533,
+      "offset": 15523,
       "length": 12,
       "value": "\"selfie.jpg\""
     },
@@ -20738,57 +20745,71 @@
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 729,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 987,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2360,
+      "offset": 2689,
       "length": 21,
       "value": "\"success: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2380,
+      "offset": 2709,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2460,
+      "offset": 2789,
       "length": 25,
       "value": "\"LFCView error: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2484,
+      "offset": 2813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2738,
+      "offset": 3067,
       "length": 31,
       "value": "\"livenessData: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2768,
+      "offset": 3097,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2848,
+      "offset": 3177,
       "length": 25,
       "value": "\"LFCView error: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2872,
+      "offset": 3201,
       "length": 2,
       "value": "\"\""
     },
@@ -20865,28 +20886,28 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4619,
+      "offset": 4623,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4712,
+      "offset": 4716,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4791,
+      "offset": 4795,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RestoreFlow.swift",
       "kind": "StringLiteral",
-      "offset": 4821,
+      "offset": 4825,
       "length": 2,
       "value": "\"\""
     },
@@ -21340,36 +21361,43 @@
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1117,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1157,
+      "offset": 1225,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1206,
+      "offset": 1274,
       "length": 3,
       "value": "1.3"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 26309,
+      "offset": 27180,
       "length": 30,
       "value": "\"Liveness check is completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 26393,
+      "offset": 27264,
       "length": 36,
       "value": "\"Liveness check is failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 26428,
+      "offset": 27299,
       "length": 2,
       "value": "\"\""
     },

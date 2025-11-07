@@ -21382,22 +21382,29 @@
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2437,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 27180,
+      "offset": 27543,
       "length": 30,
       "value": "\"Liveness check is completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 27264,
+      "offset": 27627,
       "length": 36,
       "value": "\"Liveness check is failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 27299,
+      "offset": 27662,
       "length": 2,
       "value": "\"\""
     },

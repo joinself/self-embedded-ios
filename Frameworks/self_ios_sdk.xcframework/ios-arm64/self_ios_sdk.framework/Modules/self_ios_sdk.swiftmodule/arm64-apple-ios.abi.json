@@ -20822,43 +20822,43 @@
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
+      "kind": "StringLiteral",
+      "offset": 235,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 220,
+      "offset": 1414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "StringLiteral",
-      "offset": 281,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
-      "kind": "StringLiteral",
-      "offset": 2424,
+      "offset": 5547,
       "length": 27,
       "value": "\"iCloudContainerIdentifier\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2542,
+      "offset": 5665,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2621,
+      "offset": 5744,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/BackupFlow.swift",
       "kind": "StringLiteral",
-      "offset": 2651,
+      "offset": 5774,
       "length": 2,
       "value": "\"\""
     },

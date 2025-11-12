@@ -21237,97 +21237,97 @@
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "StringLiteral",
       "offset": 1736,
-      "length": 33,
-      "value": "\"Position your face in the frame\""
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1800,
+      "offset": 1804,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1844,
+      "offset": 1848,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1888,
+      "offset": 1892,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2033,
+      "offset": 2037,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2127,
+      "offset": 2131,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2242,
+      "offset": 2246,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2322,
+      "offset": 2326,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2468,
+      "offset": 2472,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2502,
+      "offset": 2506,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2540,
+      "offset": 2544,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2632,
+      "offset": 2636,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2667,
+      "offset": 2671,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/Managers\/LivenessChallengeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2702,
+      "offset": 2706,
       "length": 1,
       "value": "5"
     },
@@ -21390,21 +21390,21 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 27543,
+      "offset": 27617,
       "length": 30,
       "value": "\"Liveness check is completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 27627,
+      "offset": 27701,
       "length": 36,
       "value": "\"Liveness check is failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 27662,
+      "offset": 27736,
       "length": 2,
       "value": "\"\""
     },

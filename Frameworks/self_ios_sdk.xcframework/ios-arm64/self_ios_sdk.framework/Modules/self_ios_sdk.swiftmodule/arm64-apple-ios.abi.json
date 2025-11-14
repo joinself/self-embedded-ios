@@ -20746,70 +20746,84 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "BooleanLiteral",
-      "offset": 729,
+      "offset": 692,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 861,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "BooleanLiteral",
-      "offset": 987,
+      "offset": 1119,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1145,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2689,
+      "offset": 3143,
       "length": 21,
       "value": "\"success: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2709,
+      "offset": 3163,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2789,
+      "offset": 3243,
       "length": 25,
       "value": "\"LFCView error: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 2813,
+      "offset": 3267,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 3067,
+      "offset": 3521,
       "length": 31,
       "value": "\"livenessData: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 3097,
+      "offset": 3551,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 3177,
+      "offset": 3631,
       "length": 25,
       "value": "\"LFCView error: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/LFCView.swift",
       "kind": "StringLiteral",
-      "offset": 3201,
+      "offset": 3655,
       "length": 2,
       "value": "\"\""
     },

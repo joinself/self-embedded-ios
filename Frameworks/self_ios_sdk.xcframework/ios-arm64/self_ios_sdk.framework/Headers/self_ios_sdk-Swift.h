@@ -281,8 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AVFoundation;
-@import CoreMedia;
 @import ObjectiveC;
 #endif
 
@@ -311,17 +309,6 @@ SWIFT_CLASS("_TtC12self_ios_sdk7Account")
 @interface Account : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC12self_ios_sdk13LivenessCheck")
-@interface LivenessCheck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class AVCaptureOutput;
-@class AVCaptureConnection;
-@interface LivenessCheck (SWIFT_EXTENSION(self_ios_sdk)) <AVCaptureVideoDataOutputSampleBufferDelegate>
-- (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
 
 #endif

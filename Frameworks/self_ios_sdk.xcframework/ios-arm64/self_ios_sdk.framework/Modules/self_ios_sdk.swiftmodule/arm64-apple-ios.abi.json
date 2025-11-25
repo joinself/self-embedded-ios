@@ -17768,21 +17768,21 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 15572,
+      "offset": 15590,
       "length": 16,
       "value": "\"frontImage.jpg\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 15685,
+      "offset": 15703,
       "length": 15,
       "value": "\"backImage.jpg\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/DocumentFlow.swift",
       "kind": "StringLiteral",
-      "offset": 15791,
+      "offset": 15809,
       "length": 12,
       "value": "\"selfie.jpg\""
     },

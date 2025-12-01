@@ -292,6 +292,17 @@ public struct CredentialType {
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk16RegistrationFlowV4bodyQrvp", 0) __
 }
 
+@_Concurrency.MainActor @preconcurrency public struct LivenessVerificationView : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk24LivenessVerificationViewV4bodyQrvp", 0) __
+}
+
+public func print(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n")
 @_hasMissingDesignatedInitializers public class VerificationRequest : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
@@ -581,17 +592,6 @@ public struct PublicKey {
   #endif
   @objc deinit
 }
-@_Concurrency.MainActor @preconcurrency public struct LivenessVerificationView : SwiftUICore.View {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
-  #endif
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk24LivenessVerificationViewV4bodyQrvp", 0) __
-}
-
-public func print(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n")
 @_hasMissingDesignatedInitializers public class Receipt : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
@@ -611,6 +611,19 @@ extension self_ios_sdk.SelfSDK {
   public static func readingPassportChip(mrzKey: Swift.String, completion: ((Foundation.Data?, [Swift.String : Swift.String]?) -> Swift.Void)? = nil)
   #endif
 }
+public enum SelfError : Swift.Error, Swift.Equatable {
+  case InvalidAccountError(Swift.String)
+  case InvalidAttestationError(Swift.String)
+  case InvalidParameterError(Swift.String)
+  case PermissionRequired(Swift.String)
+  case UnknownError(Swift.String)
+  case NoBackupFile(Swift.String)
+  case LivenessCheckFailure(Swift.String)
+  case CredentialMissing([Swift.String])
+  case iCloudNotAvailable
+  case UserCancelled
+  public static func == (a: self_ios_sdk.SelfError, b: self_ios_sdk.SelfError) -> Swift.Bool
+}
 extension self_ios_sdk.QRCodeReaderView : Swift.Sendable {}
 extension self_ios_sdk.MessageView : Swift.Sendable {}
 extension self_ios_sdk.QRCodeEncoding : Swift.Equatable {}
@@ -625,6 +638,7 @@ extension self_ios_sdk.Environment : Swift.Equatable {}
 extension self_ios_sdk.Environment : Swift.Hashable {}
 extension self_ios_sdk.Environment : Swift.RawRepresentable {}
 extension self_ios_sdk.RegistrationFlow : Swift.Sendable {}
+extension self_ios_sdk.LivenessVerificationView : Swift.Sendable {}
 extension self_ios_sdk.ResponseStatus : Swift.Equatable {}
 extension self_ios_sdk.ResponseStatus : Swift.Hashable {}
 extension self_ios_sdk.ResponseStatus : Swift.RawRepresentable {}
@@ -633,4 +647,3 @@ extension self_ios_sdk.LFCView : Swift.Sendable {}
 extension self_ios_sdk.BackupFlow : Swift.Sendable {}
 extension self_ios_sdk.RestoreFlow : Swift.Sendable {}
 extension self_ios_sdk.EmailFlow : Swift.Sendable {}
-extension self_ios_sdk.LivenessVerificationView : Swift.Sendable {}

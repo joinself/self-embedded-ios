@@ -489,6 +489,7 @@ public struct ez {
     public func withSandbox(_ sandbox: Swift.Bool) -> self_ios_sdk.Account.Builder
     public func withGroupId(_ groupId: Swift.String) -> self_ios_sdk.Account.Builder
     public func withStoragePath(_ storagePath: Swift.String) -> self_ios_sdk.Account.Builder
+    public func withApplicationAddress(_ applicationAddress: Swift.String) -> self_ios_sdk.Account.Builder
     #if compiler(>=5.3) && $NonescapableTypes
     public func withDelegate(delegate: (any self_ios_sdk.AccountDelegate)?) -> self_ios_sdk.Account.Builder
     #endif
@@ -582,7 +583,7 @@ public struct PublicKey {
 }
 @_hasMissingDesignatedInitializers public class SelfSDK {
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func initialize(applicationAddress: Swift.String? = nil, pushToken: (() -> Swift.String)? = nil, log: ((Swift.String) -> Swift.Void)? = nil)
+  public static func initialize(pushToken: (() -> Swift.String)? = nil, log: ((Swift.String) -> Swift.Void)? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public static func verifyEmail(account: self_ios_sdk.Account, transitionAsModal: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void)? = nil)
@@ -615,6 +616,7 @@ public enum SelfError : Swift.Error, Swift.Equatable {
   case InvalidAccountError(Swift.String)
   case InvalidAttestationError(Swift.String)
   case InvalidParameterError(Swift.String)
+  case BackupFailed(Swift.String)
   case PermissionRequired(Swift.String)
   case UnknownError(Swift.String)
   case NoBackupFile(Swift.String)

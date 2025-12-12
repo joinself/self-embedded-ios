@@ -18042,21 +18042,21 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3353,
+      "offset": 3347,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3440,
+      "offset": 3434,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3470,
+      "offset": 3464,
       "length": 2,
       "value": "\"\""
     },

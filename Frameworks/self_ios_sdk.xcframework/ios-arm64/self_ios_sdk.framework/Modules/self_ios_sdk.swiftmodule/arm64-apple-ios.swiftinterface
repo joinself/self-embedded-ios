@@ -514,6 +514,7 @@ public struct ez {
   #if compiler(>=5.3) && $NonescapableTypes
   public func decryptNotification(forAddress: self_ios_sdk.PublicKey, payload: Swift.String) throws -> self_ios_sdk.Notification?
   #endif
+  public func sendIntroduction(toAddress: self_ios_sdk.PublicKey) async throws
   public func valueStore(key: Swift.String, value: Foundation.Data) throws
   #if compiler(>=5.3) && $NonescapableTypes
   public func valueLookup(key: Swift.String) throws -> Foundation.Data?

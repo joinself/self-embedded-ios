@@ -13031,6 +13031,34 @@
           },
           {
             "kind": "Function",
+            "name": "sendIntroduction",
+            "printedName": "sendIntroduction(toAddress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PublicKey",
+                "printedName": "self_ios_sdk.PublicKey",
+                "usr": "s:12self_ios_sdk9PublicKeyV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC16sendIntroduction9toAddressyAA9PublicKeyV_tYaKF",
+            "mangledName": "$s12self_ios_sdk7AccountC16sendIntroduction9toAddressyAA9PublicKeyV_tYaKF",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "backup",
             "printedName": "backup()",
             "children": [
@@ -13233,6 +13261,126 @@
           },
           {
             "kind": "Function",
+            "name": "setOnInfoRequest",
+            "printedName": "setOnInfoRequest(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC16setOnInfoRequestyyypSgSScF",
+            "mangledName": "$s12self_ios_sdk7AccountC16setOnInfoRequestyyypSgSScF",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "InternalUse"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnInfoResponse",
+            "printedName": "setOnInfoResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, [Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, [Swift.String : Any])",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC17setOnInfoResponseyyySS_SDySSypGtcF",
+            "mangledName": "$s12self_ios_sdk7AccountC17setOnInfoResponseyyySS_SDySSypGtcF",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "InternalUse"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "register",
             "printedName": "register(primaryImageData:secondaryImageData:)",
             "children": [
@@ -13268,86 +13416,6 @@
               "InternalUse"
             ],
             "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setLivenessCredential",
-            "printedName": "setLivenessCredential(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[self_ios_sdk.Credential]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Credential",
-                    "printedName": "self_ios_sdk.Credential",
-                    "usr": "s:12self_ios_sdk10CredentialC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC21setLivenessCredentialyySayAA0G0CGF",
-            "mangledName": "$s12self_ios_sdk7AccountC21setLivenessCredentialyySayAA0G0CGF",
-            "moduleName": "self_ios_sdk",
-            "declAttributes": [
-              "AccessControl",
-              "SPIAccessControl",
-              "RawDocComment"
-            ],
-            "spi_group_names": [
-              "InternalUse"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLivenessCredentials",
-            "printedName": "getLivenessCredentials()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[self_ios_sdk.Credential]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[self_ios_sdk.Credential]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Credential",
-                        "printedName": "self_ios_sdk.Credential",
-                        "usr": "s:12self_ios_sdk10CredentialC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC22getLivenessCredentialsSayAA10CredentialCGSgyF",
-            "mangledName": "$s12self_ios_sdk7AccountC22getLivenessCredentialsSayAA10CredentialCGSgyF",
-            "moduleName": "self_ios_sdk",
-            "declAttributes": [
-              "AccessControl",
-              "SPIAccessControl"
-            ],
-            "spi_group_names": [
-              "InternalUse"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {

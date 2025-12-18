@@ -535,6 +535,7 @@ public struct ez {
   #if compiler(>=5.3) && $NonescapableTypes
   public func decryptNotification(forAddress: self_ios_sdk.PublicKey, payload: Swift.String) throws -> self_ios_sdk.Notification?
   #endif
+  public func sendIntroduction(toAddress: self_ios_sdk.PublicKey) async throws
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func backup() async -> Foundation.URL?
   #endif
@@ -545,11 +546,11 @@ public struct ez {
   #endif
   public func valueRemove(key: Swift.String) throws
   public func close() async throws
-  @_spi(InternalUse) public func register(primaryImageData: Foundation.Data, secondaryImageData: Foundation.Data) async throws -> Swift.Bool
-  @_spi(InternalUse) public func setLivenessCredential(_ credentials: [self_ios_sdk.Credential])
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(InternalUse) public func getLivenessCredentials() -> [self_ios_sdk.Credential]?
+  @_spi(InternalUse) public func setOnInfoRequest(_ onInfoRequest: @escaping (Swift.String) -> Any?)
   #endif
+  @_spi(InternalUse) public func setOnInfoResponse(_ onInfoResponse: @escaping (Swift.String, [Swift.String : Any]) -> Swift.Void)
+  @_spi(InternalUse) public func register(primaryImageData: Foundation.Data, secondaryImageData: Foundation.Data) async throws -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func getSelfieImageData() -> Foundation.Data?
   #endif

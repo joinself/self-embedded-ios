@@ -2994,7 +2994,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(account:onComplete:)",
+            "printedName": "init(account:onComplete:onBack:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3039,11 +3039,37 @@
                     "usr": "s:s6ResultO"
                   }
                 ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk16QRCodeReaderViewV7account10onCompleteAcA7AccountC_ys6ResultOyAA13DiscoveryDataVs5Error_pGctcfc",
-            "mangledName": "$s12self_ios_sdk16QRCodeReaderViewV7account10onCompleteAcA7AccountC_ys6ResultOyAA13DiscoveryDataVs5Error_pGctcfc",
+            "usr": "s:12self_ios_sdk16QRCodeReaderViewV7account10onComplete0H4BackAcA7AccountC_ys6ResultOyAA13DiscoveryDataVs5Error_pGcyycSgtcfc",
+            "mangledName": "$s12self_ios_sdk16QRCodeReaderViewV7account10onComplete0H4BackAcA7AccountC_ys6ResultOyAA13DiscoveryDataVs5Error_pGcyycSgtcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -17515,7 +17541,7 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/QRCodeReaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1074,
+      "offset": 1104,
       "length": 5,
       "value": "false"
     },

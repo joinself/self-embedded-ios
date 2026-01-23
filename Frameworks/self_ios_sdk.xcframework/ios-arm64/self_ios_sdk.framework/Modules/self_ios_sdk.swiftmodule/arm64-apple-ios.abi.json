@@ -18136,21 +18136,21 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3347,
+      "offset": 3452,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3434,
+      "offset": 3539,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3464,
+      "offset": 3569,
       "length": 2,
       "value": "\"\""
     },
@@ -18612,21 +18612,21 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 29114,
+      "offset": 29271,
       "length": 30,
       "value": "\"Liveness check is completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 29198,
+      "offset": 29355,
       "length": 36,
       "value": "\"Liveness check is failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/TruedepthLiveness\/UI\/LivenessVerificationView.swift",
       "kind": "StringLiteral",
-      "offset": 29233,
+      "offset": 29390,
       "length": 2,
       "value": "\"\""
     },

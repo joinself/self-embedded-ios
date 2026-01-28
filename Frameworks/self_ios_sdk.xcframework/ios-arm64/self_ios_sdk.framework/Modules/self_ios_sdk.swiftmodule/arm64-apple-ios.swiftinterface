@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios17.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name self_ios_sdk
+// swift-module-flags: -target arm64-apple-ios16.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name self_ios_sdk
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import Combine
@@ -292,6 +292,7 @@ public struct CredentialType {
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk16RegistrationFlowV4bodyQrvp", 0) __
 }
 
+@available(iOS 17.0, *)
 @_Concurrency.MainActor @preconcurrency public struct LivenessVerificationView : SwiftUICore.View {
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
@@ -299,9 +300,9 @@ public struct CredentialType {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 17.0, *)
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk24LivenessVerificationViewV4bodyQrvp", 0) __
 }
-
 public func print(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n")
 @_hasMissingDesignatedInitializers public class VerificationRequest : self_ios_sdk.BaseMessage {
   public class Builder {
@@ -641,6 +642,7 @@ extension self_ios_sdk.Environment : Swift.Equatable {}
 extension self_ios_sdk.Environment : Swift.Hashable {}
 extension self_ios_sdk.Environment : Swift.RawRepresentable {}
 extension self_ios_sdk.RegistrationFlow : Swift.Sendable {}
+@available(iOS 17.0, *)
 extension self_ios_sdk.LivenessVerificationView : Swift.Sendable {}
 extension self_ios_sdk.ResponseStatus : Swift.Equatable {}
 extension self_ios_sdk.ResponseStatus : Swift.Hashable {}

@@ -29,6 +29,7 @@ import _SwiftConcurrencyShims
     @objc deinit
   }
   public func types() -> [Swift.String]
+  public func expires() -> Swift.Int64
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VerificationResponse : self_ios_sdk.BaseMessage {
@@ -46,6 +47,9 @@ import _SwiftConcurrencyShims
   public func requestId() -> Swift.String
   public func status() -> self_ios_sdk.ResponseStatus
   public func types() -> [Swift.String]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CustomMessage : self_ios_sdk.BaseMessage {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DataObject {
@@ -292,7 +296,6 @@ public struct CredentialType {
   public typealias Body = @_opaqueReturnTypeOf("$s12self_ios_sdk16RegistrationFlowV4bodyQrvp", 0) __
 }
 
-public func print(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n")
 @_hasMissingDesignatedInitializers public class VerificationRequest : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()
@@ -307,6 +310,7 @@ public func print(_ items: Any..., separator: Swift.String = " ", terminator: Sw
   public func addProperties(values: [Swift.String : Swift.String])
   public func types() -> [Swift.String]
   public func evidence() -> [Swift.String : self_ios_sdk.DataObject]
+  public func expires() -> Swift.Int64
   @objc deinit
 }
 public protocol AccountDelegate {
@@ -345,6 +349,7 @@ public enum ResponseStatus : Swift.String {
     public func build() -> self_ios_sdk.SigningRequest
     @objc deinit
   }
+  public func expires() -> Swift.Int64
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct DocumentFlow : SwiftUICore.View {
@@ -584,6 +589,7 @@ public struct PublicKey {
   #endif
   @objc deinit
 }
+public func print(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n")
 @_hasMissingDesignatedInitializers public class Receipt : self_ios_sdk.BaseMessage {
   public class Builder {
     public init()

@@ -621,6 +621,7 @@ public enum SelfError : Swift.Error, Swift.Equatable {
   case CredentialMissing([Swift.String])
   case iCloudNotAvailable
   case UserCancelled
+  case RegisterAndConnectError
   public static func == (a: self_ios_sdk.SelfError, b: self_ios_sdk.SelfError) -> Swift.Bool
 }
 extension self_ios_sdk.QRCodeReaderView : Swift.Sendable {}

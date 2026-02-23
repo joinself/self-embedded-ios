@@ -50,6 +50,13 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CustomMessage : self_ios_sdk.BaseMessage {
+  public class Builder {
+    public init()
+    public func withId(_ messageId: Swift.String) -> self_ios_sdk.CustomMessage.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CustomMessage.Builder
+    public func build() -> self_ios_sdk.CustomMessage
+    @objc deinit
+  }
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DataObject {
@@ -288,7 +295,7 @@ public struct CredentialType {
 }
 @_Concurrency.MainActor @preconcurrency public struct RegistrationFlow : SwiftUICore.View {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<self_ios_sdk.PublicKey, any Swift.Error>) -> Swift.Void)
   #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get

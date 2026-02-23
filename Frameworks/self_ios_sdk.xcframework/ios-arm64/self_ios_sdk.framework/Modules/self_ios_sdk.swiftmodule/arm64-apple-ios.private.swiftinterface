@@ -62,6 +62,13 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CustomMessage : self_ios_sdk.BaseMessage {
+  public class Builder {
+    public init()
+    public func withId(_ messageId: Swift.String) -> self_ios_sdk.CustomMessage.Builder
+    public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CustomMessage.Builder
+    public func build() -> self_ios_sdk.CustomMessage
+    @objc deinit
+  }
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DataObject {
@@ -306,7 +313,7 @@ public struct CredentialType {
 }
 @_Concurrency.MainActor @preconcurrency public struct RegistrationFlow : SwiftUICore.View {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public init(account: self_ios_sdk.Account, onComplete: @escaping (Swift.Result<self_ios_sdk.PublicKey, any Swift.Error>) -> Swift.Void)
   #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -525,6 +532,9 @@ public struct ez {
   public func connectWith(qrCode: Foundation.Data) async throws -> self_ios_sdk.PublicKey?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(InternalUse) public func handleDeveloperProtoQRCode(qrCode: Foundation.Data) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func connectWith(address: self_ios_sdk.PublicKey, info: [Swift.String : Any]) async throws -> self_ios_sdk.PublicKey?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
@@ -545,7 +555,9 @@ public struct ez {
   @_spi(InternalUse) public func setOnInfoRequest(_ onInfoRequest: @escaping (Swift.String) -> Any?)
   #endif
   @_spi(InternalUse) public func setOnInfoResponse(_ onInfoResponse: @escaping (Swift.String, [Swift.String : Any]) -> Swift.Void)
-  @_spi(InternalUse) public func register(primaryImageData: Foundation.Data, secondaryImageData: Foundation.Data) async throws -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(InternalUse) public func register(primaryImageData: Foundation.Data, secondaryImageData: Foundation.Data) async throws -> self_ios_sdk.PublicKey?
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func getSelfieImageData() -> Foundation.Data?
   #endif
@@ -559,6 +571,9 @@ public struct ez {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(InternalUse) public func getSharedVerificationRequests(fromAddress: self_ios_sdk.PublicKey?) -> [self_ios_sdk.VerificationRequest]
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(InternalUse) public func getCustomMessage(id: Swift.String) -> self_ios_sdk.CustomMessage?
   #endif
   @objc deinit
 }

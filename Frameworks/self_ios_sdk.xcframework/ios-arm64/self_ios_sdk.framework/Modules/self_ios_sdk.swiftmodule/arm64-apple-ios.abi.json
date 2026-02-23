@@ -1081,6 +1081,134 @@
         "kind": "TypeDecl",
         "name": "CustomMessage",
         "printedName": "CustomMessage",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Builder",
+            "printedName": "Builder",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "self_ios_sdk.CustomMessage.Builder",
+                    "usr": "s:12self_ios_sdk13CustomMessageC7BuilderC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:12self_ios_sdk13CustomMessageC7BuilderCAEycfc",
+                "mangledName": "$s12self_ios_sdk13CustomMessageC7BuilderCAEycfc",
+                "moduleName": "self_ios_sdk",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "withId",
+                "printedName": "withId(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "self_ios_sdk.CustomMessage.Builder",
+                    "usr": "s:12self_ios_sdk13CustomMessageC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12self_ios_sdk13CustomMessageC7BuilderC6withIdyAESSF",
+                "mangledName": "$s12self_ios_sdk13CustomMessageC7BuilderC6withIdyAESSF",
+                "moduleName": "self_ios_sdk",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "fromAddress",
+                "printedName": "fromAddress(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "self_ios_sdk.CustomMessage.Builder",
+                    "usr": "s:12self_ios_sdk13CustomMessageC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PublicKey",
+                    "printedName": "self_ios_sdk.PublicKey",
+                    "usr": "s:12self_ios_sdk9PublicKeyV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12self_ios_sdk13CustomMessageC7BuilderC11fromAddressyAeA9PublicKeyVF",
+                "mangledName": "$s12self_ios_sdk13CustomMessageC7BuilderC11fromAddressyAeA9PublicKeyVF",
+                "moduleName": "self_ios_sdk",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "build",
+                "printedName": "build()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomMessage",
+                    "printedName": "self_ios_sdk.CustomMessage",
+                    "usr": "s:12self_ios_sdk13CustomMessageC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12self_ios_sdk13CustomMessageC7BuilderC5buildACyF",
+                "mangledName": "$s12self_ios_sdk13CustomMessageC7BuilderC5buildACyF",
+                "moduleName": "self_ios_sdk",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:12self_ios_sdk13CustomMessageC7BuilderC",
+            "mangledName": "$s12self_ios_sdk13CustomMessageC7BuilderC",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
         "declKind": "Class",
         "usr": "s:12self_ios_sdk13CustomMessageC",
         "mangledName": "$s12self_ios_sdk13CustomMessageC",
@@ -1832,6 +1960,16 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "self_ios_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SelfUI",
+        "printedName": "SelfUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -3316,6 +3454,16 @@
         "kind": "Import",
         "name": "SelfUI",
         "printedName": "SelfUI",
+        "declKind": "Import",
+        "moduleName": "self_ios_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "self_mobile_kmp",
+        "printedName": "self_mobile_kmp",
         "declKind": "Import",
         "moduleName": "self_ios_sdk",
         "declAttributes": [
@@ -8347,7 +8495,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<self_ios_sdk.PublicKey, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -8357,12 +8505,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<(), any Swift.Error>",
+                    "printedName": "Swift.Result<self_ios_sdk.PublicKey, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "PublicKey",
+                        "printedName": "self_ios_sdk.PublicKey",
+                        "usr": "s:12self_ios_sdk9PublicKeyV"
                       },
                       {
                         "kind": "TypeNominal",
@@ -8377,8 +8526,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12self_ios_sdk16RegistrationFlowV7account10onCompleteAcA7AccountC_ys6ResultOyyts5Error_pGctcfc",
-            "mangledName": "$s12self_ios_sdk16RegistrationFlowV7account10onCompleteAcA7AccountC_ys6ResultOyyts5Error_pGctcfc",
+            "usr": "s:12self_ios_sdk16RegistrationFlowV7account10onCompleteAcA7AccountC_ys6ResultOyAA9PublicKeyVs5Error_pGctcfc",
+            "mangledName": "$s12self_ios_sdk16RegistrationFlowV7account10onCompleteAcA7AccountC_ys6ResultOyAA9PublicKeyVs5Error_pGctcfc",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "Preconcurrency",
@@ -12575,6 +12724,46 @@
           },
           {
             "kind": "Function",
+            "name": "handleDeveloperProtoQRCode",
+            "printedName": "handleDeveloperProtoQRCode(qrCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC26handleDeveloperProtoQRCode6qrCodeSSSg10Foundation4DataV_tYaKF",
+            "mangledName": "$s12self_ios_sdk7AccountC26handleDeveloperProtoQRCode6qrCodeSSSg10Foundation4DataV_tYaKF",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "InternalUse"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "connectWith",
             "printedName": "connectWith(address:info:)",
             "children": [
@@ -13027,9 +13216,17 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Optional",
+                "printedName": "self_ios_sdk.PublicKey?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PublicKey",
+                    "printedName": "self_ios_sdk.PublicKey",
+                    "usr": "s:12self_ios_sdk9PublicKeyV"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -13045,8 +13242,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12self_ios_sdk7AccountC8register16primaryImageData09secondarygH0Sb10Foundation0H0V_AItYaKF",
-            "mangledName": "$s12self_ios_sdk7AccountC8register16primaryImageData09secondarygH0Sb10Foundation0H0V_AItYaKF",
+            "usr": "s:12self_ios_sdk7AccountC8register16primaryImageData09secondarygH0AA9PublicKeyVSg10Foundation0H0V_ALtYaKF",
+            "mangledName": "$s12self_ios_sdk7AccountC8register16primaryImageData09secondarygH0AA9PublicKeyVSg10Foundation0H0V_ALtYaKF",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "AccessControl",
@@ -13277,6 +13474,45 @@
             "declKind": "Func",
             "usr": "s:12self_ios_sdk7AccountC29getSharedVerificationRequests11fromAddressSayAA0G7RequestCGAA9PublicKeyVSg_tF",
             "mangledName": "$s12self_ios_sdk7AccountC29getSharedVerificationRequests11fromAddressSayAA0G7RequestCGAA9PublicKeyVSg_tF",
+            "moduleName": "self_ios_sdk",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "InternalUse"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCustomMessage",
+            "printedName": "getCustomMessage(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "self_ios_sdk.CustomMessage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomMessage",
+                    "printedName": "self_ios_sdk.CustomMessage",
+                    "usr": "s:12self_ios_sdk13CustomMessageC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12self_ios_sdk7AccountC16getCustomMessage2idAA0fG0CSgSS_tF",
+            "mangledName": "$s12self_ios_sdk7AccountC16getCustomMessage2idAA0fG0CSgSS_tF",
             "moduleName": "self_ios_sdk",
             "declAttributes": [
               "AccessControl",
@@ -17098,6 +17334,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/CustomMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 631,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/DataObject.swift",
       "kind": "StringLiteral",
       "offset": 704,
@@ -17159,6 +17402,13 @@
       "offset": 2056,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageViewModel.swift",
+      "kind": "Dictionary",
+      "offset": 4161,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/ChatMessage.swift",
@@ -17506,7 +17756,7 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/QRCodeReaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1104,
+      "offset": 1590,
       "length": 5,
       "value": "false"
     },
@@ -17527,42 +17777,42 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 239,
+      "offset": 271,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 431,
+      "offset": 463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 484,
+      "offset": 516,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 540,
+      "offset": 572,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "StringLiteral",
-      "offset": 10863,
+      "offset": 12677,
       "length": 25,
       "value": "\"Action failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/MessageView.swift",
       "kind": "StringLiteral",
-      "offset": 10887,
+      "offset": 12701,
       "length": 2,
       "value": "\"\""
     },
@@ -18087,35 +18337,35 @@
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 320,
+      "offset": 325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 371,
+      "offset": 376,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3608,
+      "offset": 3604,
       "length": 25,
       "value": "\"Registration completed!\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3695,
+      "offset": 3691,
       "length": 31,
       "value": "\"Registration failed: \""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/UI\/RegistrationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 3725,
+      "offset": 3721,
       "length": 2,
       "value": "\"\""
     },

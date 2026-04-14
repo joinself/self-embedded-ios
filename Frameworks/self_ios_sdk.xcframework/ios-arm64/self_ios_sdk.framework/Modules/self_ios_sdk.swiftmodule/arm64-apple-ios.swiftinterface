@@ -25,6 +25,7 @@ import _SwiftConcurrencyShims
     public func fromAddress(_ fromAddress: self_ios_sdk.PublicKey) -> self_ios_sdk.CredentialRequest.Builder
     public func withId(_ messageId: Swift.String) -> self_ios_sdk.CredentialRequest.Builder
     public func withTypes(_ types: [Swift.String]) -> self_ios_sdk.CredentialRequest.Builder
+    public func withChallenge(_ challenge: Swift.String) -> self_ios_sdk.CredentialRequest.Builder
     public func build() -> self_ios_sdk.CredentialRequest
     @objc deinit
   }

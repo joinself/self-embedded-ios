@@ -173,6 +173,33 @@
               },
               {
                 "kind": "Function",
+                "name": "withChallenge",
+                "printedName": "withChallenge(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "self_ios_sdk.CredentialRequest.Builder",
+                    "usr": "s:12self_ios_sdk17CredentialRequestC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12self_ios_sdk17CredentialRequestC7BuilderC13withChallengeyAESSF",
+                "mangledName": "$s12self_ios_sdk17CredentialRequestC7BuilderC13withChallengeyAESSF",
+                "moduleName": "self_ios_sdk",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
                 "name": "build",
                 "printedName": "build()",
                 "children": [
@@ -17311,6 +17338,13 @@
       "offset": 885,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/CredentialRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 928,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/opsjoinself\/actions-runner\/_work\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/self-ios-sdk\/Models\/VerificationResponse.swift",
